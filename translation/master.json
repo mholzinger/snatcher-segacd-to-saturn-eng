@@ -8893,3732 +8893,3732 @@
   "chunk": "chunk_024",
   "offset": "0x130d",
   "jp": "＠緑私はＪＵＮＫＥＲ本部、<br>マザー・コンピュータ、<br>人工知能システム　＠黄ガウディ＠緑。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑I am the JUNKER HQ<br>mother computer,<br>artificial intelligence system　＠黄Gaudi＠緑.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1366",
   "jp": "＠緑あなたのＩＤカードを入れて下さい。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Please insert your ID card.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x138d",
   "jp": "・・・へえ？ω人格があるのか。",
-  "en": null,
-  "status": "untranslated"
+  "en": "...Huh?ωSo it's got a personality.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x13ac",
   "jp": "・・・いちいち聞くんだな。<br>融通のきかんコンピュータだ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "...It has to ask every time.<br>Inflexible machine.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x13e5",
   "jp": "カード使う",
-  "en": null,
-  "status": "untranslated"
+  "en": "Use card",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x13f0",
   "jp": "・・・よしＪＵＮＫＥＲカードを入れよう。",
-  "en": null,
-  "status": "untranslated"
+  "en": "...All right, let's insert the JUNKER card.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1419",
   "jp": "・・・カードを入れるぞ・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "...Inserting the card...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1436",
   "jp": "ガウディ使わない",
-  "en": null,
-  "status": "untranslated"
+  "en": "Don't use Gaudi",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1447",
   "jp": "・・・やっぱり今度にしよう。",
-  "en": null,
-  "status": "untranslated"
+  "en": "...Maybe another time.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1464",
   "jp": "・・・やっぱ、やめとこう。",
-  "en": null,
-  "status": "untranslated"
+  "en": "...On second thought, forget it.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x147f",
   "jp": "＠緑・・・ギリアン・シード。<br>ユーザーＩＤ確認しました。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑...Gillian Seed.<br>User ID confirmed.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x14b8",
   "jp": "＠緑　どんな情報が必要ですか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　What information do you need?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x14d7",
   "jp": "・・・よかった。<br>確認してくれたか・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "...Good.<br>It confirmed me...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1500",
   "jp": "人物ファイル呼ぶ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Person file",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1511",
   "jp": "　　　＠緑人物ファイル。<br>探したい人物名をカーソルで入力して下さい。",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　　＠緑Person file.<br>Enter the name of the person you seek with the cursor.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1556",
   "jp": "＠緑姓と名の間は詰めて入力して下さい。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Enter the surname and given name with no space between.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x157d",
   "jp": "＠緑例えばスズキ・コナミは<br>＠黄『スズキコナミ』＠緑<br>・・・と入力して下さい。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑For example, for Suzuki Konami,<br>enter＠黄'Suzukikonami'＠緑<br>...like that.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x15cc",
   "jp": "＠緑または・・・<br>＠黄『スズキ』＠緑<br>・・・と入力しても検索可能です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Or...<br>you can also search by entering<br>＠黄'Suzuki'＠緑.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1613",
   "jp": "事柄ファイル呼ぶ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Subject file",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1624",
   "jp": "　　　＠緑事柄ファイル。<br>検索したい事柄をセレクトして下さい。",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　　＠緑Subject file.<br>Select the subject you wish to search.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1663",
   "jp": "モンタージュ作成",
-  "en": null,
-  "status": "untranslated"
+  "en": "Create montage",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1674",
   "jp": "＠緑モンタージュ・モードです。<br>顔の各パーツを選んで作成して下さい。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Montage mode.<br>Select each facial part to build the face.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x16b9",
   "jp": "使用をやめる",
-  "en": null,
-  "status": "untranslated"
+  "en": "Stop using",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x16c6",
   "jp": "＠緑お役にたちましたでしょうか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Was I of service?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x16e7",
   "jp": "＠緑　　お疲れさまでした・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　　Good work...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1706",
   "jp": "＠緑　・・・またのご利用を・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　...Please come again...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x172c",
   "jp": "大惨事",
-  "en": null,
-  "status": "untranslated"
+  "en": "The Catastrophe",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1733",
   "jp": "　　　　＠緑『大惨事』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　　　＠緑'The Catastrophe'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x174a",
   "jp": "＠緑▽１９９１年６月６日モスクワチェルノートン研究所において原因不明の大爆発。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽June 6, 1991: A massive explosion of unknown cause at the Chernoton Research Institute in Moscow.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1799",
   "jp": "＠緑当時、旧ソ連軍が開発中の細菌兵器『ルシファーα』が大気中に洩れる史上最大のバイオ・ハザード（生物漏洩）が発生。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The germ weapon 'Lucifer-α', then under development by the old Soviet military, leaked into the air, causing the largest bio-hazard (biological leak) in history.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x180c",
   "jp": "＠緑一週間のうちに東欧、ユーラシア大陸のほぼ８０％を死滅させるに至った。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Within a week it wiped out nearly 80% of Eastern Europe and the Eurasian continent.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1855",
   "jp": "＠緑▽半年後、アジア圏へ迫っていた『ルシファーα』は突然変異の後、無害に帰した。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Six months later, 'Lucifer-α', closing in on Asia, mutated and turned harmless.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x18a6",
   "jp": "＠緑▽以後、無人となった北部ユーラシア地域は世界情勢の注目の中、現在もなお国連中立領土となっている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Since then, the depopulated northern Eurasian region has remained, under the world's watchful eye, a UN neutral territory to this day.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x190b",
   "jp": "＠緑以上の事項、『大惨事』と呼ばれている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The above events are known as 'The Catastrophe'.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1936",
   "jp": "＠緑▽事故後、膨大な量の報告書が提出されたが事故の真相は明らかにされていない。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽After the incident, countless reports were filed, yet the truth of it has never been revealed.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1985",
   "jp": "第三次世界大戦",
-  "en": null,
-  "status": "untranslated"
+  "en": "World War III",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1994",
   "jp": "　　＠緑『第三次世界大戦』<br>　（２００５〜２００６）",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　＠緑'World War III'<br>　(2005-2006)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x19c9",
   "jp": "＠緑▽２００５年８月２４日『大惨事』から１４年間、最大の緩衝地帯だった『国連中立領土』をめぐって第三次世界大戦勃発。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽August 24, 2005: World War III breaks out over the 'UN Neutral Territory', which for 14 years since 'The Catastrophe' had been the largest buffer zone.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1a3e",
   "jp": "＠緑▽大惨事から運よく逃れた旧ソ連軍の右派残党を、中国が軍事支援して中立地帯への軍事侵攻をはかったのである。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽China gave military backing to right-wing remnants of the old Soviet army who had survived the Catastrophe, and moved to invade the neutral zone.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1aab",
   "jp": "＠緑▽しかし欧米側の経済封鎖政策により呆気なく中国が手をひき国連軍の勝利が決まった。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽But the West's economic blockade forced China to withdraw with little resistance, and the UN forces claimed victory.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1b00",
   "jp": "＠緑このわずか６カ月で終了した大戦は『半年戦争』と呼ばれる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑This war, over in a mere six months, is called the 'Half-Year War'.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1b3d",
   "jp": "シベリア中立領土",
-  "en": null,
-  "status": "untranslated"
+  "en": "Siberian Neutral Territory",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1b4e",
   "jp": "　　＠緑『シベリア中立領土』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　＠緑'Siberian Neutral Territory'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1b6b",
   "jp": "＠緑▽大惨事により無人となったシベリア地域は国連によって管理され、非干渉エリアとして５０年間放棄されている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Left uninhabited by the Catastrophe, the Siberian region is administered by the UN and has been abandoned as a non-intervention zone for 50 years.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1bd8",
   "jp": "＠緑『ルシファーα』の後遺症の為今後半世紀間は動植物が全く育たない状況にあるからである。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑This is because, due to the after-effects of 'Lucifer-α', no plant or animal life can grow there for the next half-century.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1c31",
   "jp": "＠緑▽国連は『第三次大戦』の再燃をおそれ、毎年『シベリア探索隊』を派遣し、中立地帯の監視を続けている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Fearing a resurgence of 'World War III', the UN dispatches a 'Siberian Search Team' each year to keep watch over the neutral zone.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1c98",
   "jp": "核の消滅",
-  "en": null,
-  "status": "untranslated"
+  "en": "Abolition of Nukes",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1ca1",
   "jp": "　　　＠緑『核兵器の根絶』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　　＠緑'Eradication of Nuclear Weapons'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1cbc",
   "jp": "＠緑▽１９８７年のＩＮＦ（中距離核戦力全廃条約）がきっかけとなり、以来、戦略核の削減が進むようになる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽The 1987 INF Treaty (Intermediate-Range Nuclear Forces) set things in motion, and strategic nuclear arms have been cut back ever since.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1d23",
   "jp": "＠緑▽２００７年、ＩＡＥＡ（国際原子力機関）による『兵器用核分裂性物質の生産停止協定』の施行によって・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽In 2007, with the IAEA (International Atomic Energy Agency) enforcing the 'Agreement to Halt Production of Weapons-Grade Fissile Material'...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1d8e",
   "jp": "＠緑国連加盟国の軍事核は根絶された。ただし非加盟国の中には核兵器を生産、保有している国もあると言われている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑the military nukes of UN member states were eradicated. Some non-member states, however, are said to still produce and hold nuclear weapons.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1dfb",
   "jp": "＠緑現在では、国連の管理下に、平和維持のための、いわゆる『抑止力としての核』が置かれているのみである。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Today only the so-called 'nuclear deterrent', kept under UN control for peacekeeping, remains.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1e62",
   "jp": "魔女狩り",
-  "en": null,
-  "status": "untranslated"
+  "en": "Witch Hunt",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1e6b",
   "jp": "　　　　＠緑『魔女狩り』<br>　（バイオロイド・ハント）",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　　　＠緑'Witch Hunt'<br>　(Bioroid Hunt)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1ea0",
   "jp": "＠緑▽スナッチャー問題が引き起こした社会現象。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽A social phenomenon brought about by the SNATCHER problem.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1ecf",
   "jp": "＠緑スナッチャー汚染に対する恐怖のあまり、無実の人間をスナッチャーだとして糾弾、殺傷に至るヒステリー的集団暴力。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Out of sheer terror of SNATCHER contamination, innocent people are denounced as SNATCHERs and beaten or killed—hysterical mob violence.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1f40",
   "jp": "＠緑主として社会的立場の弱い人々が犠牲者となる。<br>中世の『魔女狩り』に似ている事からこの名がつけられた。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The victims are mainly the socially vulnerable.<br>The name comes from its resemblance to the medieval 'witch hunts'.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x1fa9",
   "jp": "＠緑▽特に問題となったのは、南北問題と関係して『北』の市民層が集団で『南』のスラムの住民を襲うという・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽The worst of it was tied to the North-South divide: mobs of the 'North' citizenry attacking residents of the 'South' slums...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2014",
   "jp": "＠緑反スラム感情と結びついた動きで、このためスナッチャーとは無関係の多くの人々が命を落とした。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A movement fueled by anti-slum sentiment, in which many people with no connection to the SNATCHERs lost their lives.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2073",
   "jp": "＠緑▽この『魔女狩り』現象は、スナッチの対象が重要人物に限られる事が判明したのちに鎮静化したが・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽This 'Witch Hunt' died down once it was learned that snatching targeted only important figures, but...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x20d8",
   "jp": "＠緑現在も一部のカルト集団がこの残虐行為を続けており、南北間の対立を深める原因となっている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑even now, certain cult groups carry on these atrocities, deepening the rift between North and South.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2135",
   "jp": "メニューに戻る",
-  "en": null,
-  "status": "untranslated"
+  "en": "Back to menu",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2144",
   "jp": "ＪＵＮＫＥＲ関係",
-  "en": null,
-  "status": "untranslated"
+  "en": "About JUNKER",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2155",
   "jp": "組織解説",
-  "en": null,
-  "status": "untranslated"
+  "en": "Organization",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x215e",
   "jp": "正式名称",
-  "en": null,
-  "status": "untranslated"
+  "en": "Full name",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2167",
   "jp": "＠緑　『ＪＵＮＫＥＲ正式名称』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　'JUNKER Full Name'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2186",
   "jp": "＠緑▽Ｊｕｄｇｅｍｅｎｔ<br>　　　　　　　　（判定する）▽Ｕｎｉｎｆｅｃｔｅｄ<br>　　　　（感染されていない）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Judgement<br>　　　　　　　　(to judge)▽Uninfected<br>　　　　(not infected)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x21f1",
   "jp": "＠緑▽Ｎａｋｅｄ　　　（純粋な）▽Ｋｉｎｄ　　　　　（人類）　ａｎｄ　　　（かどうかを）　　　（そして必要であれば）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Naked　　　(pure)▽Kind　　　　　(humankind)　and　　　(whether or not)　　　(and if necessary)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2266",
   "jp": "＠緑▽Ｅｘｅｃｕｔｅ<br>　　　　　　　　（処理する）▽Ｒａｎｇｅｒ<br>　　　　　　　　　（特捜隊）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Execute<br>　　　　　　　　(to eliminate)▽Ranger<br>　　　　　　　　　(special task force)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x22c5",
   "jp": "＠緑さらに『《ＪＵＮＫ（鉄屑）》　　　＋《ＥＲ（人）》<br>　　　＝鉄屑処理屋』<br>の意味も含む。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑It also holds the meaning '《JUNK (scrap metal)》　　　＋《ER (person)》<br>　　　＝scrap-metal handler'<br>as well.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2322",
   "jp": "設立年譜",
-  "en": null,
-  "status": "untranslated"
+  "en": "Founding history",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x232b",
   "jp": "　＠緑『ＪＵＮＫＥＲ設立年譜』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　＠緑'JUNKER Founding Chronology'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x234a",
   "jp": "＠緑▽２０４２年４月<br>警視庁『対スナッチャー特殊警察班』設置",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽April 2042<br>The Metropolitan Police forms the 'Anti-SNATCHER Special Police Unit'.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2387",
   "jp": "＠緑▽２０４２年５月<br>政府諜報機関対スナッチャー・サイエンスチーム・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽May 2042<br>The government intelligence agency's anti-SNATCHER science team...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x23d0",
   "jp": "＠緑『ＲＵＧ・ＨＵＮＴ（ラグ・ハント：屑処理屋）』設立",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑'RUG HUNT (scrap handlers)' is founded.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2407",
   "jp": "＠緑▽２０４２年８月<br>警視庁チームとラグ・ハントが合併、政府直属機関として正式にＪＵＮＫＥＲが設立。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽August 2042<br>The Metropolitan Police team and Rug Hunt merge, and JUNKER is officially founded as a government agency.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2471",
   "jp": "　＠緑『ＪＵＮＫＥＲの構成』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　＠緑'Structure of JUNKER'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x248e",
   "jp": "＠緑局長を『ヘッド（ブレイン）』とし、『メカニック』、『オペレーター』、実際に捜査を行う『ランナー』、それに同行の",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The Director serves as the 'Head (Brain)', along with the 'Mechanic', the 'Operator', the 'Runner' who carries out the actual investigation, and the accompanying",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2501",
   "jp": "＠緑『ナビゲーター』といわれるサポート・ロボットから構成されている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑support robot known as the 'Navigator'.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2546",
   "jp": "＠緑さらに間接部門として『ＪＵＮＫ』と呼ばれる鑑識科が付随する。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑In addition, a forensics division called 'JUNK' is attached as a support arm.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2587",
   "jp": "＠緑▽『メカニック』はＪＵＮＫＥＲで使用される全ての装備品の開発、メンテナンスを行う。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽The 'Mechanic' develops and maintains all equipment used by JUNKER.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x25de",
   "jp": "＠緑▽『オペレーター』はナビゲーターなどから送られてくる、あらゆるデータの処理を行う。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽The 'Operator' processes all data sent in from the Navigators and other sources.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2635",
   "jp": "＠緑▽『ヘッド』は全ての状況把握を行い、ランナーに指示を与えるブレインである。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽The 'Head' grasps the whole situation and directs the Runners—the brain of the outfit.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2684",
   "jp": "＠緑▽『ランナー』はナビゲーターを使って実捜査を行う、危険を伴う任務である。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽The 'Runner' uses a Navigator to carry out field investigations—dangerous duty.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x26d1",
   "jp": "＠緑▽『ＪＵＮＫ』はランナーの処理した現場のアフター・ケアを行う。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽'JUNK' handles the after-care of the scenes a Runner has dealt with.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2714",
   "jp": "スタッフ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Staff",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x271d",
   "jp": "　＠緑『ＪＵＮＫＥＲスタッフ』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　＠緑'JUNKER Staff'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x273c",
   "jp": "＠緑▽ベンソン・カニンガム<br>　　　　　　　　　　（局長）▽ハリー・ベンソン<br>　　　　　　　（メカニック）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Benson Cunningham<br>　　　　　　　　　　(Chief)▽Harry Benson<br>　　　　　　　(Mechanic)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x27a5",
   "jp": "＠緑▽ミカ・スレイトン<br>　　　　　　（オペレーター）▽ギリアン・シード<br>　　　　　　　　（ランナー）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Mika Slayton<br>　　　　　　(Operator)▽Gillian Seed<br>　　　　　　　　(Runner)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x280a",
   "jp": "＠緑▽ルイス・ギルモア<br>　　　　　（ランナー：殉職）▽セルジオ・グレイザー<br>　　　　　（ランナー：殉職）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Louis Gilmore<br>　　　　　(Runner: died on duty)▽Sergio Glazer<br>　　　　　(Runner: died on duty)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2873",
   "jp": "＠緑▽デビッド・ジョンソン<br>　　　　　（ランナー：退職）▽シュルツ・デッカード<br>　　　　　（ランナー：殉職）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽David Johnson<br>　　　　　(Runner: retired)▽Schultz Deckard<br>　　　　　(Runner: died on duty)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x28e0",
   "jp": "＠緑▽ジャン・ジャック・ギブスン　　　　　（ランナー：殉職）　《２０４２年１２月　現在》",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Jean-Jack Gibson　　　　　(Runner: died on duty)　《As of December 2042》",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2939",
   "jp": "＠緑▽ベンソン・カニンガム<br>　　　　　　　　　　（局長）▽ジャン・ジャック・ギブスン　　　　　　　　（ランナー）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Benson Cunningham<br>　　　　　　　　　　(Chief)▽Jean-Jack Gibson　　　　　　　　(Runner)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x29aa",
   "jp": "＠緑▽ハリー・ベンソン<br>　　　　　　　（メカニック）▽ミカ・スレイトン<br>　　　　　　（オペレーター）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Harry Benson<br>　　　　　　　(Mechanic)▽Mika Slayton<br>　　　　　　(Operator)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2a0f",
   "jp": "＠緑▽ギリアン・シード<br>　　　　　（ランナー：新任）▽ルイス・ギルモア<br>　　　　　（ランナー：殉職）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Gillian Seed<br>　　　　　(Runner: new)▽Louis Gilmore<br>　　　　　(Runner: died on duty)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2a74",
   "jp": "＠緑▽セルジオ・グレイザー<br>　　　　　（ランナー：殉職）▽デビッド・ジョンソン<br>　　　　　（ランナー：退職）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Sergio Glazer<br>　　　　　(Runner: died on duty)▽David Johnson<br>　　　　　(Runner: retired)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2ae1",
   "jp": "＠緑▽シュルツ・デッカード<br>　　　　　（ランナー：殉職）　《２０４２年１２月　現在》",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Schultz Deckard<br>　　　　　(Runner: died on duty)　《As of December 2042》",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2b36",
   "jp": "本部設備",
-  "en": null,
-  "status": "untranslated"
+  "en": "HQ facilities",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2b3f",
   "jp": "＠緑『ＪＵＮＫＥＲ本部の設備』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑'JUNKER HQ Facilities'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2b5e",
   "jp": "＠緑▽フロント　▽廊下　▽局長室▽メカニック・ルーム<br>▽射撃ルーム（射撃訓練システム：ジャンカーズ・アイ）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Reception　▽Corridor　▽Chief's Office▽Mechanic Room<br>▽Firing Range (shooting training system: JUNKER's Eye)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2bc9",
   "jp": "＠緑▽デカ部屋ω▽コンピュータ・ルーム（人工知能ガウディ）<br>▽トライサイクル駐車場",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Detectives' Room ω▽Computer Room (AI Gaudi)<br>▽Tricycle Parking",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2c1c",
   "jp": "本部データ",
-  "en": null,
-  "status": "untranslated"
+  "en": "HQ data",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2c27",
   "jp": "　＠緑『ＪＵＮＫＥＲデータ』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　＠緑'JUNKER Data'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2c44",
   "jp": "＠緑▽住所　ネオ・コウベ・シティ　セントラル区　ポート・アイ　ランド　ＭＴ−７−３−２",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Address: Neo Kobe City, Central Ward, Port Island, MT-7-3-2",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2c9b",
   "jp": "＠緑『コナミ・オムニビル』<br>　フロア　１５０",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑'Konami Omni-Building'<br>　Floor 150",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2cc8",
   "jp": "＠緑▽《コナミ・オムニビル・・・　地上１６５階、地下３５階、　高さ６３０メートル》",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽《Konami Omni-Building... 165 floors above ground, 35 below, 630 meters tall》",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2d1b",
   "jp": "＠緑▽ビデオフォン・ナンバー<br>　２５６−１２８番<br>（スナッチャー１１０番）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Videophone number<br>　256-128<br>(SNATCHER Hotline)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2d66",
   "jp": "五箇条",
-  "en": null,
-  "status": "untranslated"
+  "en": "Five Articles",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2d6d",
   "jp": "　＠緑『ＪＵＮＫＥＲ五箇条』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　＠緑'The Five Articles of JUNKER'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2d8a",
   "jp": "＠緑▽ＪＵＮＫＥＲの行動・捜査の基底となる規制。<br>大きく５つに分かれる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽The regulations at the base of JUNKER conduct and investigation.<br>They divide broadly into five.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2dd3",
   "jp": "＠緑１）ＪＵＮＫＥＲの目的はバイオロイド・スナッチャーを処理することである。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑1) The purpose of JUNKER is to eliminate bioroid SNATCHERs.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2e20",
   "jp": "＠緑２）ＪＵＮＫＥＲは、たとえ第一条を実行する為であっても、人を傷つけてはならない。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑2) JUNKER must not harm a human being, even to carry out the First Article.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2e75",
   "jp": "＠緑３）ＪＵＮＫＥＲは『民事法第１８条１２項スナッチャー問題に関する人権保護』により、",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑3) Under 'Civil Code Article 18, Clause 12: Protection of Human Rights Concerning the SNATCHER Problem', JUNKER",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2ecc",
   "jp": "＠緑スナッチャーであるという完全な証拠がない限り、容疑者に対し直接捜査物理的拘束を行うことはできない。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑may not subject a suspect to direct investigation or physical restraint without conclusive proof that they are a SNATCHER.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2f33",
   "jp": "＠緑４）ＪＵＮＫＥＲは『刑事法特記事項３項　バウンティ・ハンターの補助』により・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑4) Under 'Criminal Code Special Provision 3: Assistance of Bounty Hunters', JUNKER...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2f88",
   "jp": "＠緑民間人バウンティ・ハンターと協力、サポートの義務がある。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑is obligated to cooperate with and support civilian bounty hunters.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x2fc5",
   "jp": "＠緑５）ＪＵＮＫＥＲは第一条を実行する為の特殊権限として、ブラスター、ナビゲーターの所持が許可されている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑5) As a special authority for carrying out the First Article, JUNKER is permitted to carry a Blaster and a Navigator.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3030",
   "jp": "スキャニング令状",
-  "en": null,
-  "status": "untranslated"
+  "en": "Scanning warrant",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3041",
   "jp": "＠緑　　『スキャニング令状』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　　'Scanning Warrant'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x305e",
   "jp": "＠緑▽『民事法　第１８条１２項　スナッチャー問題に関する人権保護』により、国民にはＪＵＮＫＥＲからの・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Under 'Civil Code Article 18, Clause 12: Protection of Human Rights Concerning the SNATCHER Problem', citizens are granted...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x30c9",
   "jp": "＠緑直接検査（スキャニング）の拒否権が与えられている。<br>ＪＵＮＫＥＲの科学的直接検査（ダイレクト・スキャニング）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑the right to refuse direct examination (scanning) by JUNKER.<br>JUNKER's scientific direct examination (direct scanning)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x313a",
   "jp": "＠緑は、裁判所によって発行されたスキャニング令状の提示によってのみ許可される。<br>従って個人に対する、あらゆる",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑is permitted only upon presentation of a scanning warrant issued by a court.<br>Therefore, any and all",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x31a7",
   "jp": "＠緑センサー類による科学的スキャニングは令状発行まで禁止されている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑scientific scanning of an individual by sensors is prohibited until a warrant is issued.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x31ec",
   "jp": "ランナーの装備",
-  "en": null,
-  "status": "untranslated"
+  "en": "Runner's gear",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x31fb",
   "jp": "ライフアイテム",
-  "en": null,
-  "status": "untranslated"
+  "en": "Life items",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x320a",
   "jp": "ＪＫカード",
-  "en": null,
-  "status": "untranslated"
+  "en": "JK Card",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3215",
   "jp": "　　　＠緑『ＪＫカード』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　　＠緑'JK Card'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x322e",
   "jp": "＠緑ＪＵＮＫＥＲ専用のＩＣチップを用いたＩＤカード。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A JUNKER-only ID card that uses an IC chip.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3263",
   "jp": "＠緑所持者の存在を保証するためにＤＮＡパターンを含む個人のあらゆるデータを記録している。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑It records every piece of personal data, including DNA patterns, to verify the holder's identity.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x32bc",
   "jp": "ＪＫコート",
-  "en": null,
-  "status": "untranslated"
+  "en": "JK Coat",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x32c7",
   "jp": "　　　＠緑『ＪＫコート』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　　＠緑'JK Coat'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x32e0",
   "jp": "＠緑ランナー専用のコート。アラミド繊維＋フレックス・アーマー素材を使用。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A coat exclusive to Runners. Made of aramid fiber plus Flex-Armor material.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3329",
   "jp": "＠緑メタ−メタ型（耐熱、８００℃まで）とパラ−パラ型（耐久、直径０．１ミリで５０キロを支える）の二種のアラミド繊維を",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑It uses two kinds of aramid fiber—meta-meta type (heat-resistant to 800°C) and para-para type (so durable a 0.1mm strand holds 50kg)—",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x339e",
   "jp": "＠緑使用する事で耐熱・耐久効果をあげている。<br>また圧力や衝撃により強度硬化するフレックス・アーマーを襟",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑to boost heat and impact resistance.<br>Flex-Armor, which hardens under pressure or impact, is also used at the collar",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3405",
   "jp": "＠緑胸部に用い局所強化をはかっている。<br>これらの素材を使用するため、コートはランナーの体格、身体",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑and chest for localized reinforcement.<br>Because of these materials, each coat is made to fit the Runner's build and body",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3466",
   "jp": "＠緑構造に合わせてつくられる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑structure.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3485",
   "jp": "ＪＫベルト",
-  "en": null,
-  "status": "untranslated"
+  "en": "JK Belt",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3490",
   "jp": "　　　＠緑『ＪＫベルト』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　　＠緑'JK Belt'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x34a9",
   "jp": "＠緑素材に形状記憶合金＋形状記憶セラミック＋熱可塑性フレキシブル・プラスティックを使用。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Made of shape-memory alloy, shape-memory ceramic, and thermoplastic flexible plastic.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3502",
   "jp": "＠緑非常時にはバックル内の電極に電圧をかける事により警棒になる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑In an emergency, applying voltage to the electrodes inside the buckle turns it into a baton.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3543",
   "jp": "人工皮膚スプレー",
-  "en": null,
-  "status": "untranslated"
+  "en": "Artificial Skin Spray",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3554",
   "jp": "　＠緑『人工皮膚スプレー』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　＠緑'Artificial Skin Spray'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x356f",
   "jp": "＠緑プロテインエンジニアリング・バイオケミストリーにより開発された人工皮膚組織スプレー。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑An artificial skin-tissue spray developed through protein-engineering biochemistry.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x35c8",
   "jp": "＠緑身体の露出部分に塗る事で皮膚の保護を行い、耐熱・耐ショック効果を生む。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Applied to exposed skin, it protects the body and provides heat and shock resistance.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3613",
   "jp": "＠緑酸素交換は可能だが、発汗・老廃物の交換が不可能なため２４時間以内に剥離しなければならない。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑It allows oxygen exchange, but blocks sweat and waste, so it must be peeled off within 24 hours.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3672",
   "jp": "Ｊブラッド",
-  "en": null,
-  "status": "untranslated"
+  "en": "J-Blood",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x367d",
   "jp": "　　　＠緑『Ｊブラッド』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　　＠緑'J-Blood'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3696",
   "jp": "＠緑負傷の多いランナーは、以下の二通りの血液交換法により生命維持率を高め死亡率を引き下げる努力をしている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Runners, often wounded, use the two blood-replacement methods below to raise their survival odds and lower mortality.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3701",
   "jp": "＠緑（１）人工血液交換<br>本人の血液と人工血液とを入れ換え、本人の血液を保存し、必要に応じて入れ換える方法。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑(1) Artificial blood replacement<br>The subject's blood is swapped for artificial blood; the real blood is stored and swapped back as needed.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x376c",
   "jp": "＠緑人工血液はいくらでも生産・輸血が可能なため、出血多量の心配はない。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Since artificial blood can be produced and transfused without limit, there's no worry of severe blood loss.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x37b3",
   "jp": "＠緑ただし人工血液の浄化は腎臓に負担をかけるため、人工透析を必要とする。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Purifying artificial blood strains the kidneys, however, so dialysis is required.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x37fc",
   "jp": "＠緑（２）自己凍結血液交換<br>　　　（自己血液ドーピング）　あらかじめ本人の血液に高価な栄養を与えて濃縮し・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑(2) Self-frozen blood replacement<br>　　　(autologous blood doping)　The subject's own blood is enriched in advance with costly nutrients and concentrated...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x386b",
   "jp": "＠緑摂氏マイナス４２度の条件で保存、随時解凍して本人に輸血する。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑then stored at minus 42°C, thawed and transfused back into the subject as needed.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x38ac",
   "jp": "ジャンカーズハイ",
-  "en": null,
-  "status": "untranslated"
+  "en": "JUNKER's High",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x38bd",
   "jp": "　　＠緑『ジャンカーズハイ』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　＠緑'JUNKER's High'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x38da",
   "jp": "＠緑ＪＵＮＫＥＲに支給されるアドレナリン入りチューインガム。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Adrenaline-laced chewing gum issued to JUNKERs.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3917",
   "jp": "＠緑緊急事態時のアドレナリン補給を目的とした軍用品。<br>第三次大戦で注目を浴びた。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A military product meant to supply adrenaline in emergencies.<br>It drew attention in World War III.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3968",
   "jp": "＠緑アドレナリンにより、緊急事態にあるＪＵＮＫＥＲの恒常性・反射性・体力を高める。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The adrenaline heightens a JUNKER's stability, reflexes, and stamina in a crisis.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x39bb",
   "jp": "＠緑長時間使用による副作用があり虚脱感・疲労感を感じる。業界では『火事場の馬鹿力の素』と呼ばれている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Prolonged use has side effects—exhaustion and fatigue. In the trade it's called 'a dose of hysterical strength'.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3a22",
   "jp": "ナノマシン",
-  "en": null,
-  "status": "untranslated"
+  "en": "Nanomachines",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3a2d",
   "jp": "　　　＠緑『ナノマシン』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　　＠緑'Nanomachines'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3a46",
   "jp": "＠緑超小型の医療ロボット。<br>ＪＵＮＫＥＲメカニックであるハリー・ベンソンによって開発される。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Ultra-miniature medical robots.<br>Developed by JUNKER mechanic Harry Benson.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3aa3",
   "jp": "＠緑体内に注入すると、血液中を移動し、体内から異常箇所を治療する。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Injected into the body, they travel through the bloodstream and heal damaged areas from within.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3ae6",
   "jp": "＠緑特殊コーティングを施しているため、抗体反応をおこすことはない。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Thanks to a special coating, they provoke no antibody response.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3b29",
   "jp": "ナビゲーター",
-  "en": null,
-  "status": "untranslated"
+  "en": "Navigator",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3b36",
   "jp": "＠緑　　　『ナビゲーター』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　　　'Navigator'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3b51",
   "jp": "＠緑ランナーの捜査活動をサポートする分析ロボット。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑An analysis robot that supports a Runner's investigative work.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3b84",
   "jp": "＠緑ナビゲーターは主に、捜査上の分析、記録、通信を行い、ＪＵＮＫＥＲの捜査活動が円滑に行えるように設計されている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The Navigator mainly handles investigative analysis, recording, and communication, designed to keep JUNKER operations running smoothly.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3bf7",
   "jp": "＠緑ランナー個人の個性に合わせてプログラムされ、緊張の多いランナーを心理的にもサポートするように配慮されている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑It is programmed to suit each Runner's personality, and designed to support the high-stress Runner psychologically as well.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3c68",
   "jp": "＠緑また各種センサーを搭載し、あらゆる危険を察知することができる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑It also carries various sensors, letting it detect any danger.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3cab",
   "jp": "＠緑また、『スキャニング令状』が発行された後には、人体へのスキャニングが可能となる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Once a 'Scanning Warrant' is issued, it can also scan the human body.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3d00",
   "jp": "＠緑しかし『スキャニング令状』がない場合はいかなる命令にも反応しない制御回路が備えられている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑But it is fitted with a control circuit that ignores any such command when no 'Scanning Warrant' exists.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3d5f",
   "jp": "トライサイクル",
-  "en": null,
-  "status": "untranslated"
+  "en": "Tricycle",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3d6e",
   "jp": "＠緑　　『トライサイクル』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　　'Tricycle'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3d89",
   "jp": "＠緑ＪＵＮＫＥＲが使用する空陸両用車。地上走行は三輪駆動、ホバー走行及び空中飛行は車輪収納・ジェット飛行。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑An air-and-ground vehicle used by JUNKER. On land it runs on three-wheel drive; to hover or fly it retracts its wheels and switches to jet propulsion.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3df4",
   "jp": "＠緑シティの交通網管理システムと直結、自動操縦を行う。<br>オート走行、マニュアル走行切り替え可能。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Linked directly to the city's traffic control system, it can drive itself.<br>Switchable between auto and manual driving.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3e55",
   "jp": "＠緑マニュアル走行時には、ドライバー各人の運転技量や性格に対応して車載コンピュータが操作をサポートする。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑In manual mode, the onboard computer adapts to each driver's skill and temperament to assist with the controls.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3ebe",
   "jp": "＠緑コンピュータの判断により強制的にオート操作に変換するセイフティ機能搭載。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑It has a safety feature that forcibly switches to auto control at the computer's discretion.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3f0b",
   "jp": "ブラスター",
-  "en": null,
-  "status": "untranslated"
+  "en": "Blaster",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3f16",
   "jp": "＠緑　　　『ブラスター』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　　　'Blaster'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3f2f",
   "jp": "＠緑スナッチャーを処理することのできる唯一の公式銃火器。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The only official firearm capable of eliminating a SNATCHER.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3f68",
   "jp": "＠緑スーパー・エンジニアリング・プラスチックと炭素繊維およびセラミックを使用した本体は、超軽量のうえ温度変化に",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Its body, made of super-engineering plastic, carbon fiber, and ceramic, is ultra-light and shows no deformation from",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x3fd7",
   "jp": "＠緑よる変形がない。<br>グリップ、トリガーは使用者の手に合わせて設計される、エルゴ・デザイン。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑temperature change.<br>The grip and trigger are ergonomically designed to fit the user's hand.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4034",
   "jp": "＠緑フィードバック機構を採用し、使用者の反射速度によって無限に速射性が高まる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑It employs a feedback mechanism, so its rate of fire rises without limit to match the user's reflexes.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4083",
   "jp": "スナッチャー関係",
-  "en": null,
-  "status": "untranslated"
+  "en": "About SNATCHERs",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4094",
   "jp": "インセクター",
-  "en": null,
-  "status": "untranslated"
+  "en": "Insector",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x40a1",
   "jp": "　　　＠緑『インセクター』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　　＠緑'Insector'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x40bc",
   "jp": "＠緑▽スナッチャーが警戒センサー用に使うクモ型ロボット。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽A spider-type robot SNATCHERs use as a warning sensor.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x40f5",
   "jp": "＠緑尻部よりセンサー錦糸を出して張り巡らせ、これに触れた者をニードル・ガンで攻撃する。<br>ジェット推進、ジャンプ可能。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑It spins sensor threads from its abdomen into a web; anyone who touches them is attacked with a needle gun.<br>Capable of jet propulsion and jumping.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x416a",
   "jp": "＠緑『ＪＵＮＫ』により幾度となく解析を試みたが、自爆装置が働くため、詳細については不明な点が多い。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑'JUNK' has tried to analyze it time and again, but its self-destruct device leaves much about it unknown.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x41cd",
   "jp": "＠緑体長３０センチ。<br>重量５００グラム。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Body length 30cm.<br>Weight 500g.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x41f6",
   "jp": "判明点",
-  "en": null,
-  "status": "untranslated"
+  "en": "Known facts",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x41fd",
   "jp": "　＠緑『スナッチャーの判明点』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　＠緑'What Is Known About SNATCHERs'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x421c",
   "jp": "＠緑１）スナッチャーは冬のしかも夜に行動する。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑1) SNATCHERs act in winter, and only at night.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x424b",
   "jp": "＠緑２）スナッチャーはＶＩＰしかスナッチしない。彼等の目的はスナッチそれ自体ではなく、２次的効果にあると思われる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑2) SNATCHERs only snatch VIPs. Their aim appears to lie not in the snatching itself, but in its secondary effects.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x42be",
   "jp": "＠緑３）スナッチャーのスナッチ能力には限界がある。身体の各部分、関節、骨格の伸縮にある程度の規格があるからである。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑3) A SNATCHER's snatching ability has limits, because there are set specs to how far its body parts, joints, and skeleton can stretch.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4331",
   "jp": "＠緑その範囲は身長１５０〜１８０センチであろうと推測される。よって、子供、老人に関してはスナッチできないと思われる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑That range is estimated at 150 to 180cm in height. Thus children and the elderly are believed to be un-snatchable.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x43a6",
   "jp": "＠緑４）スナッチャーの武器<br>口腔内のレーザー・カノン。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑4) SNATCHER weapon<br>A laser cannon inside the mouth.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x43dd",
   "jp": "＠緑５）スナッチャーの弱点<br>頭部スリットの装甲のうすい部分。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑5) SNATCHER weak point<br>The thinly armored slit on the head.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x441a",
   "jp": "＠緑６）スナッチャーの不完全な人工皮膚は、紫外線を長時間浴びるとガン化する。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑6) A SNATCHER's imperfect artificial skin turns cancerous under prolonged UV exposure.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4467",
   "jp": "＠緑７）スナッチャーは、スノースギと言われる特殊な杉の生息する地域に、潜んでいると考えられる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑7) SNATCHERs are believed to hide in areas where a special cedar known as Snow Cedar grows.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x44cb",
   "jp": "　＠緑『スナッチャーの年譜』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　＠緑'SNATCHER Chronology'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x44e8",
   "jp": "＠緑▽２０３９年１２月２２日<br>（ファースト・コンタクト）　",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽December 22, 2039<br>(First Contact)　",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4523",
   "jp": "＠緑六甲山中に墜落したＳＯＳ４００３便からバイオロイドの残骸が発見される。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The wreckage of a bioroid is found aboard Flight SOS4003, which crashed in the Rokko Mountains.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x456e",
   "jp": "＠緑▽２０４０年２月１８日<br>コウベ市長のＢ・オコナー（当時）に化けていたスナッチャーを逮捕したが護送中に自爆。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽February 18, 2040<br>A SNATCHER posing as then-Kobe Mayor B. O'Connor is arrested, but self-destructs during transport.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x45dd",
   "jp": "＠緑▽２０４１年１２月<br>ネオ・コウベ・シティ、パニックに陥る。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽December 2041<br>Neo Kobe City falls into panic.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x461c",
   "jp": "＠緑『バイオロイド・ハント』と称する、魔女狩りを思わせる動きが各地で展開される。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A movement called the 'Bioroid Hunt', reminiscent of a witch hunt, spreads across the region.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x466d",
   "jp": "＠緑▽２０４２年１１月３日<br>ＫＢＣニュース・キャスター、スナッチャーと判明、処理。　残骸、自爆により消滅。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽November 3, 2042<br>A KBC news anchor is exposed as a SNATCHER and eliminated. The remains are lost to self-destruction.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x46d8",
   "jp": "＠緑▽１１月１５日<br>革新派新興宗教グループ教祖、スナッチャーと判明、追跡中に交通事故により炎上。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽November 15<br>The founder of a radical new religious sect is exposed as a SNATCHER; during pursuit, a traffic accident sets it ablaze.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4739",
   "jp": "＠緑▽１１月２０日<br>バイオ技術関連企業の前社長、スナッチャーと判明、処理。　残骸、輸送中に奪われる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽November 20<br>The former president of a biotech firm is exposed as a SNATCHER and eliminated. The remains are stolen in transport.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x479e",
   "jp": "賞金稼ぎ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Bounty Hunter",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x47a7",
   "jp": "＠緑『バウンティ・ハンター<br>　　　　　（賞金稼ぎ）制度』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑'The Bounty Hunter<br>　　　　　System'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x47e0",
   "jp": "＠緑▽警視庁は２０４１年末に、スナッチャー処理に関して市民の協力を仰ぎ、以下のバウンティ制度を設けた。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽At the end of 2041, the Metropolitan Police sought public cooperation in eliminating SNATCHERs and set up the bounty system below.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4847",
   "jp": "＠緑選挙権保有の全コウベ市民に対し、簡単な手続き（銃器所有証明、心理テスト、ＪＵＮＫＥＲテスト・・・ｅｔｃ）により",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Any Kobe citizen with voting rights may, through a simple process (firearms license, psychological test, JUNKER test... etc.),",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x48ba",
   "jp": "＠緑バウンティ・ハンターとして登録できる『バウンティ・ハンター制度』を施行。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑register as a bounty hunter—the 'Bounty Hunter System' now in effect.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4907",
   "jp": "＠緑スナッチャー処理後の報酬は状況により検討される。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Payment for eliminating a SNATCHER is decided case by case.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x493c",
   "jp": "＠緑登録済みのハンターに関し、任務遂行中の事故には多額の保険金制度が加味されている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Registered hunters are covered by a substantial insurance plan for accidents in the line of duty.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4991",
   "jp": "ネオ・コウベ関係",
-  "en": null,
-  "status": "untranslated"
+  "en": "About Neo Kobe",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x49a2",
   "jp": "ネオコウベデータ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Neo Kobe data",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x49b3",
   "jp": "　＠緑『ネオ・コウベのデータ』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　＠緑'Neo Kobe Data'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x49d2",
   "jp": "＠緑▽総人口・・・・・５８３万人▽人種・・ジャパニーズ３０％・・・・・チャイニーズ２４％・・・・コーカソイド系１６％",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Total population... 5,830,000▽Ethnicity... Japanese 30%... Chinese 24%... Caucasian 16%",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4a47",
   "jp": "＠緑・・・・・・・ロシア系１０％・・・・・・スパニッシュ５％・・・・・フィリッピーノ５％・・・・・・・・ユダヤ系３％",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑...Russian 10%... Spanish 5%... Filipino 5%... Jewish 3%",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4abc",
   "jp": "＠緑・・・・・・・・・その他７％▽未登録人口・・・１２０万人　　　　　　　　　　（推定）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑...Other 7%▽Unregistered population... 1,200,000　　　　　　　　　　(estimated)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4b15",
   "jp": "＠緑▽総面積・・・・・・詳細不明",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Total area... unknown",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4b36",
   "jp": "＠緑　　『シティの成立ち』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　　'Origins of the City'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4b51",
   "jp": "＠緑２０世紀末に、ポートアイランド、六甲アイランド、新神戸国際空港等、瀬戸内海に浮かぶ人工島の連結工事が開始される。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑At the end of the 20th century, work began to connect the man-made islands of the Inland Sea—Port Island, Rokko Island, New Kobe International Airport, and others.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4bc6",
   "jp": "＠緑２１世紀初頭、５ブロックに分かれていた人工島群を一つにまとめる『ネオ・コウベ・シティ計画』が進められる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑In the early 21st century, the 'Neo Kobe City Project' set out to merge the five separate blocks of artificial islands into one.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4c33",
   "jp": "＠緑１０年後、コウベ万博開催と同時に完成。新たな国際人工都市としてスタート、アジア圏からの大量移民を受け入れる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Ten years later it was completed to coincide with the Kobe World Expo. It launched as a new international artificial city, taking in mass immigration from across Asia.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4ca4",
   "jp": "＠緑２０４０年、世界一の犯罪都市『クライムビル』として悪評を高める。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑By 2040 it had earned infamy as the world's number-one crime city—'Crime-Ville'.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4ce9",
   "jp": "コウベ・ブリッジ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Kobe Bridge",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4cfa",
   "jp": "＠緑　　『コウベ・ブリッジ』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　　'Kobe Bridge'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4d17",
   "jp": "＠緑▽２０４２年１２月１日<br>スナッチャー感染防止対策としてネオ・コウベ完全隔離が施行される。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽December 1, 2042<br>Neo Kobe is placed under full quarantine to prevent SNATCHER contamination.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4d74",
   "jp": "＠緑ネオ・コウベと本土とを唯一つなぐ『コウベ・ブリッジ』を閉鎖、空路、海路共に軍、市警察の管理下におかれる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The 'Kobe Bridge', the only link between Neo Kobe and the mainland, is shut down, and both air and sea routes fall under military and city police control.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4de1",
   "jp": "＠緑橋を通過するには通行パスと厳密なチェックが必要となる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Crossing the bridge now requires a transit pass and a rigorous check.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4e1c",
   "jp": "アルファビル",
-  "en": null,
-  "status": "untranslated"
+  "en": "Alphaville",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4e29",
   "jp": "＠緑　　　『アルファビル』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　　　'Alphaville'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4e44",
   "jp": "＠緑ネオ・コウベ・シティを統制管理するマザーコンピュータ・システム。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The mother computer system that governs and manages Neo Kobe City.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4e89",
   "jp": "＠緑シティ内に散在する数百のコンピュータを連結、人間の脳神経回路をシミュレートし、超高速処理が可能な大規模超並列処理",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑It links the hundreds of computers scattered across the city, simulates the human neural network, and performs ultra-high-speed massively parallel processing—",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4efe",
   "jp": "＠緑タイプ『ニューロンコンピュータ』である。情報集積統制の中枢としてシティ内の、あらゆる",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑a 'neuron computer' type. As the hub of centralized information control, it holds every scrap of data on the city's",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4f57",
   "jp": "＠緑個人・企業・団体のデータを保有し、金融・流通・交通などの分野を日常的に管理する。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑individuals, corporations, and organizations, and manages finance, distribution, transport, and more day to day.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4fac",
   "jp": "＠緑アルファビルのソフト・メンテナンスはコナミ株式会社、開発４８部が行っている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Alphaville's software maintenance is handled by Konami Corporation, Development Division 48.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x4ffd",
   "jp": "スノースギ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Snow Cedar",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5008",
   "jp": "＠緑　　　『スノースギ』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　　　'Snow Cedar'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5021",
   "jp": "＠緑遺伝子操作によって生まれた杉の品種改良種。（一般的にはその花粉のこともさす）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A genetically engineered strain of cedar. (The term also commonly refers to its pollen.)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5072",
   "jp": "＠緑軍事用に開発されたもので、その花粉には強い電波撹乱作用がある。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Developed for military use, its pollen has a powerful radio-jamming effect.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x50b5",
   "jp": "＠緑また人体に対しても有害で、吸入量が多いと呼吸器障害をおこし、時にはショック死に至ることもある。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑It is also harmful to humans; heavy inhalation causes respiratory failure and can even lead to fatal shock.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5118",
   "jp": "＠緑吸入量が少ない場合でも、鼻水やクシャミなどのアレルギーをひきおこす。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Even in small amounts, it triggers allergic reactions such as a runny nose and sneezing.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5161",
   "jp": "＠緑通常の杉より花粉が大きく、雪に似ている事からスノー・スギの名がつけられた。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Its pollen is larger than ordinary cedar's and resembles snow, hence the name Snow Cedar.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x51b0",
   "jp": "＠緑繁殖力が強く環境にも悪影響を与えるので、戦後は除去作業が盛んに行われ、数も減少した。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Highly invasive and bad for the environment, it was cleared aggressively after the war, and its numbers fell.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5209",
   "jp": "＠緑だが、現在でも温帯から亜寒帯気候の河川など水の豊富な地域を中心に数多く繁殖している。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Even so, it still grows in great numbers, mainly in water-rich areas like the rivers of temperate to subarctic climates.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5262",
   "jp": "＠緑現在、シティでスノー・スギの分布が確認されている地域は、イナ川流域だけ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The only area in the city where Snow Cedar has been confirmed is the Ina River basin.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x52af",
   "jp": "＠緑スナッチャーが活動したあとからこの花粉が発見される事から両者の関係が注目されるようになっている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Because this pollen turns up in the wake of SNATCHER activity, a link between the two has drawn attention.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5314",
   "jp": "ＳＴＢＯ",
-  "en": null,
-  "status": "untranslated"
+  "en": "STBO",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x531d",
   "jp": "＠緑　　　　『ＳＴＢＯ』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　　　　'STBO'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5336",
   "jp": "＠緑２０３０年以降、フランスを中心に流行している正体不明の病気。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑An unidentified disease that has spread since 2030, centered on France.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5377",
   "jp": "＠緑ネオ・コウベでの患者第一号は２０３５年の夏に確認された。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Neo Kobe's first patient was confirmed in the summer of 2035.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x53b4",
   "jp": "＠緑現在、ＳＴＢＯ認定患者は全世界で１５万３千人だが、潜在感染患者はその５倍は存在すると言われている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑There are currently 153,000 confirmed STBO cases worldwide, but latent infections are said to number five times that.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x541b",
   "jp": "＠緑感染すると発熱、関節痛、筋肉痛、下痢、リンパ腺腫よう、けいれん、肺炎を併発し、致死率は６０％を越える。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Infection brings fever, joint pain, muscle pain, diarrhea, swollen lymph nodes, convulsions, and pneumonia, with a fatality rate over 60%.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5486",
   "jp": "＠緑感染経路は血液、唾液、精液を媒介する事が確認されており、性交渉、静脈注射等により感染することが多いと思われる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑It is confirmed to spread through blood, saliva, and semen, and is thought to be transmitted most often by sexual contact and intravenous injection.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x54f9",
   "jp": "＠緑一説には、５０年前に流行した『ＡＩＤＳ』ウィルス（ヒトＴ細胞白血病ウィルス）の突然変異とも言われているが",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Some say it is a mutation of the 'AIDS' virus (human T-cell leukemia virus) that spread 50 years ago, but",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5566",
   "jp": "＠緑現在のところ効果的なワクチンや治療法は見つかっていない。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑no effective vaccine or treatment has yet been found.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x55a3",
   "jp": "＠緑覚醒剤投与、闇病院で使われる不衛生な注射針が原因で、貧しい人々の間での流行が深刻化している。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Fueled by stimulant use and the unsanitary needles of back-alley clinics, its spread among the poor has grown severe.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5604",
   "jp": "＠緑このウィルスにより、人々のコミュニケーションは崩壊し、スナッチャーを蔓延させる間接的要因ともなっている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑This virus has broken down human contact, becoming an indirect factor in the spread of the SNATCHERs.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5671",
   "jp": "リキッド・スカイ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Liquid Sky",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5682",
   "jp": "　　＠緑『リキッド・スカイ』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　＠緑'Liquid Sky'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x569f",
   "jp": "＠緑アルカロイド系の新種の幻覚剤（トリッパー薬）。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A new alkaloid-based hallucinogen (tripper drug).",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x56d2",
   "jp": "＠緑使用方法は経口または静脈・皮下注射。神経系統に強く作用し興奮状態や視覚異常をひきおこす。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Taken orally or by intravenous or subcutaneous injection. It acts strongly on the nervous system, causing excitement and visual distortion.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x572f",
   "jp": "＠緑人間の脳内物質をモデルに合成され、特に精神状態から不安・恐怖を取り除く作用がある。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Synthesized to model the brain's own chemicals, it works above all to strip anxiety and fear from the user's mind.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5786",
   "jp": "＠緑２０３０年代後半から若者達の間で爆発的にひろまっている。脳内物質の分泌を抑制する作用があり、長期間使用すると、",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑It has spread explosively among the young since the late 2030s. It suppresses the brain's natural chemical output, and with long-term use,",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x57f9",
   "jp": "＠緑耐性が形成され、使用をやめると中枢神経が不全になることもある。<br>",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑a tolerance builds, and quitting can cause central nervous system failure.<br>",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x583e",
   "jp": "＠緑ネオ・コウベ・シティではミスター・ビッグ（第一級指名手配中）が牛耳る。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑In Neo Kobe City it is controlled by Mister Big (a top-priority wanted criminal).",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x588e",
   "jp": "　　　　　＠緑『闇市』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　　　　＠緑'The Black Market'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x58a5",
   "jp": "＠緑ネオ・コウベ・シティにおける非合法マーケットをさす。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Refers to the illegal market in Neo Kobe City.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x58de",
   "jp": "＠緑非合法・未認可の市場だけに、取り引きされている商品も正規不正規を問わず豊富。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Being an illegal, unlicensed market, it deals in an abundance of goods, legitimate and not.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x592f",
   "jp": "＠緑ここに商才に富む中国系移民が多く流れ込んだことから闇市場は大きく発展を遂げた。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A flood of business-minded Chinese immigrants helped the black market grow enormously.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5982",
   "jp": "＠緑その規模は正規の市場を越えるのではないかとすら言われている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Its scale is even said to rival the legitimate market.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x59c3",
   "jp": "＠緑主として大陸からの移民・不法入国者がその客層を形成しており、地下社会の市場の役割を果たしていたが・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Its customers were mainly immigrants and illegal entrants from the mainland, and it served as the market of the underworld, but...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5a2e",
   "jp": "＠緑近年ではその規模と価格の安さに惹かれて一般の市民も多数利用しており、正規の市場に打撃を与えている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑In recent years, drawn by its scale and low prices, ordinary citizens use it in droves, dealing a blow to the legitimate market.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5a95",
   "jp": "＠緑ネオ・コウベで最も大きな規模を誇る闇市エリアが、『ＪＯＹ　ＤＩＶＩＳＩＯＮ』である。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The largest black-market area in Neo Kobe is 'JOY DIVISION'.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5af3",
   "jp": "チューブライナー",
-  "en": null,
-  "status": "untranslated"
+  "en": "Tube Liner",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5b04",
   "jp": "　　＠緑『チューブライナー』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　＠緑'Tube Liner'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5b21",
   "jp": "＠緑超伝導を利用したリニア・モーター・トレイン。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A linear-motor train using superconductivity.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5b52",
   "jp": "＠緑シティの交通を戦後四十年間支えてきたが『南』のスラム化、『自動交通システム』の登場により廃止となる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑It carried the city's traffic for forty years after the war, but was abolished as the 'South' turned to slums and the 'Automated Traffic System' arrived.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5bbb",
   "jp": "＠緑初期計画では真空に近いチューブの中に列車を走らせ空気抵抗をゼロに近づけるシステムを構築する予定であったが・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The original plan was to run the train through a near-vacuum tube, building a system that cut air resistance to almost zero, but...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5c2e",
   "jp": "＠緑コストの上昇と、人工島の地盤の脆さから実現はしなかった。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑rising costs and the fragile ground of the artificial islands kept it from being realized.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5c6b",
   "jp": "＠緑現在もシティの地下には廃線となったチューブ・ライナーのトンネルがそのまま残っている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The tunnels of the abandoned Tube Liner still remain beneath the city today.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5cc4",
   "jp": "＠緑以後、土地所有問題や地盤の関係から、チューブライナー跡は手つかずで放置されている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Since then, due to land-ownership disputes and ground conditions, the Tube Liner ruins have been left untouched.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5d1b",
   "jp": "自動交通システム",
-  "en": null,
-  "status": "untranslated"
+  "en": "Automated Traffic System",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5d2c",
   "jp": "　　＠緑『自動交通システム』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　＠緑'Automated Traffic System'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5d49",
   "jp": "＠緑ネオ・コウベ内の全ての道路、水路、航路などの交通網を『アルファ・ビル』で管理する事により交通秩序を保つシステム。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A system that keeps traffic orderly by having 'Alphaville' manage every road, waterway, and air route in Neo Kobe.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5dbe",
   "jp": "＠緑特に先進安全自動車（ＡＳＶ）との組み合わせにより、路上での交通事故・渋滞は解消し、交通問題は過去のものとなった。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Combined especially with Advanced Safety Vehicles (ASV), it wiped out road accidents and congestion, making traffic problems a thing of the past.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5e33",
   "jp": "＠緑この徹底した自動交通システムの到来により、集団輸送手段は不必要となった。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑With the arrival of this thorough automated traffic system, mass transit became unnecessary.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5e80",
   "jp": "闇タクシー",
-  "en": null,
-  "status": "untranslated"
+  "en": "Black-Market Taxi",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5e8b",
   "jp": "＠緑　　　『闇タクシー』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　　　'Black-Market Taxi'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5ea4",
   "jp": "＠緑非合法の有人タクシーのこと。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑An illegal, human-driven taxi.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5ec5",
   "jp": "＠緑通常『タクシー』と言えば自動交通システムによりコンピュータ制御された無人タクシーを指すが、これは市民としての身元",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Normally 'taxi' means a driverless, computer-controlled cab run by the automated traffic system, but boarding one requires proof of citizenship",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5f3a",
   "jp": "＠緑証明がないと乗車できず情報集積統制区域内での利用しかできないうえ、乗下車の位置が記録される。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑—without it you can't ride—and it can only be used within the centralized information-control zone, with every pickup and drop-off logged.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x5f9b",
   "jp": "＠緑そのためシティの人口の２５％を超えるといわれる移民や不法入国者は無人タクシーを利用することができない。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑So the immigrants and illegal entrants who make up over 25% of the city's population cannot use driverless taxis.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6006",
   "jp": "＠緑これに対し『闇タクシー』は、乗客の身元は問わず、シティ内のあらゆる場所への移動が可能なので、乗客の人気が高い。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The 'black-market taxi', by contrast, asks no questions about identity and can go anywhere in the city, making it popular with riders.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6079",
   "jp": "＠緑このため非合法でありながらも『闇タクシー』は公然と活動を続けており、組織化すらされている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑As a result, though illegal, 'black-market taxis' operate openly and are even organized.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x60d8",
   "jp": "＠緑こういった現状から政府もこの存在を無視する訳にはいかず、来年４月より新法を施行し、これらの非合法業者に対し・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Given all this, the government can no longer ignore them, and from next April a new law will take effect that, for these illegal operators,...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x614d",
   "jp": "＠緑審査のうえ営業許可を与え、合法化する方向で検討をすすめている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑moves toward legalization by granting operating licenses after screening.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6190",
   "jp": "文化科学",
-  "en": null,
-  "status": "untranslated"
+  "en": "Culture & Science",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x619e",
   "jp": "宇宙開発",
-  "en": null,
-  "status": "untranslated"
+  "en": "Space Development",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x61a7",
   "jp": "＠緑　　　　『宇宙開発』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　　　　'Space Development'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x61c0",
   "jp": "＠緑２０世紀後半、人類を宇宙に送り出す構想がだされていたが、急進する地球温暖化やバイオ・ハザードなどによる・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑In the late 20th century, plans were laid to send humanity into space, but the decline of Earth's environment—through accelerating global warming, bio-hazards, and the like—",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6231",
   "jp": "＠緑地球環境の悪化はこの傾向に拍車をかけることとなった。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑only spurred this trend on.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x626a",
   "jp": "＠緑米国の宇宙基地『フリーダム』建設、核融合ロケットの開発により人類の宇宙進出は長足の進歩を遂げた。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑With the U.S. building the space station 'Freedom' and developing fusion rockets, humanity's push into space advanced by leaps and bounds.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x62cf",
   "jp": "＠緑２０１０年、人類初の宇宙コロニー「ビヨンドコースト」が完成、宇宙への移住が現実のものとなる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑In 2010, humanity's first space colony, 'Beyond Coast', was completed, making migration to space a reality.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6330",
   "jp": "＠緑現在、核融合用のヘリウム３採掘月面基地が稼働中、また、火星への進出も進んでいる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Today a lunar base mines helium-3 for fusion, and the push toward Mars is under way as well.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6385",
   "jp": "火星年代記",
-  "en": null,
-  "status": "untranslated"
+  "en": "Martian Chronicles",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6390",
   "jp": "＠緑『火星についての惑星探査データ』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑'Planetary Exploration Data on Mars'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x63b5",
   "jp": "＠緑▽１９８８年８月フォボス計画フォボス１号、２号により火星及びその衛星であるフォボス、ダイモス調査。（旧ソ連）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽August 1988: The Phobos Program surveys Mars and its moons Phobos and Deimos with Phobos 1 and 2. (USSR)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6426",
   "jp": "＠緑▽１９８９年１０月　マース・オブザーバー火星探査機による火星探査。火星の気象、地質調査。（アメリカ）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽October 1989: The Mars Observer probe explores Mars, surveying its weather and geology. (USA)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x648f",
   "jp": "＠緑▽１９９２年　ペスタ計画。　火星、小惑星、すい星の探査。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽1992: The Vesta Program. Exploration of Mars, asteroids, and comets.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x64cc",
   "jp": "＠緑当初、東欧諸国により進められていたが、大惨事による混乱後アメリカによって援助。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Initially led by the Eastern European nations, it was taken over with U.S. aid after the chaos of the Catastrophe.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x651f",
   "jp": "＠緑▽２００５年<br>火星無人ロボット工場『ウェルズ』着手。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽2005<br>Work begins on the unmanned Martian robot factory 'Wells'.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6558",
   "jp": "＠緑▽２０１２年<br>初の火星有人飛行。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽2012<br>First manned flight to Mars.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x657d",
   "jp": "＠緑▽２０１５年<br>有人実験基地『ル・グィン』着手。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽2015<br>Work begins on the manned experimental base 'Le Guin'.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x65b0",
   "jp": "＠緑▽２０２２年<br>火星宇宙港『マキャフリィ』着手。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽2022<br>Work begins on the Martian spaceport 'McCaffrey'.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x65e3",
   "jp": "＠緑▽２０２５年<br>火星初期基地『ディック』完成する。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽2025<br>The early Martian base 'Dick' is completed.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6618",
   "jp": "＠緑▽２０３０年<br>火星フルスケール基地『パローズ』起動。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽2030<br>The full-scale Martian base 'Burroughs' goes online.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6651",
   "jp": "＠緑▽２０３５年<br>火星鉱山第１号『アシモフ』起動。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽2035<br>Mars Mine No. 1, 'Asimov', begins operation.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6684",
   "jp": "火星緑化計画",
-  "en": null,
-  "status": "untranslated"
+  "en": "Mars Greening Plan",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6691",
   "jp": "＠緑　　　『火星緑化計画』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　　　'Mars Greening Plan'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x66ac",
   "jp": "＠緑無人の惑星火星を、地球のような緑あふれる大地にかえようという計画。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A plan to turn the uninhabited planet Mars into a green, living land like Earth.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x66f3",
   "jp": "＠緑まず火星軌道上に反射鏡を設置し、地表に降り注ぐ太陽光を増加させると共に、地表では温室効果ガスを散布し・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑First, mirrors placed in Mars orbit increase the sunlight reaching the surface, while greenhouse gases are released on the ground...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6762",
   "jp": "＠緑火星の温暖化をはかり、酵母や細菌が生息可能な状態にする。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑to warm Mars until yeasts and bacteria can live there.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x679f",
   "jp": "＠緑次いで酵母や細胞の出す酸素を使って、より高度な生物が住めるようにするというもの。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Then, using the oxygen those yeasts and microbes produce, it is made habitable for more advanced life.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x67f4",
   "jp": "＠緑火星基地の調査により明らかになった地下で氷結している大量の水資源の存在が、この計画ににわかに現実味を与えた。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The vast underground reserves of frozen water revealed by Martian base surveys have suddenly given this plan real credibility.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6865",
   "jp": "＠緑現在『赤い惑星を緑の大地に』『火星新植民地』というフレーズのもと計画がすすめられ、その第一段階として・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The plan now moves forward under the slogans 'From Red Planet to Green Land' and 'New Martian Colony', and as its first stage...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x68d4",
   "jp": "＠緑２０４５年に太陽光反射鏡が設置される予定である。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑the solar mirrors are scheduled to be installed in 2045.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6909",
   "jp": "＠緑なお先日、第一次火星調査移民団を乗せた『ビーグル・エルサレム号』が打ち上げられた。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Recently, the 'Beagle Jerusalem', carrying the first Mars survey migrant group, was launched.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6960",
   "jp": "バイ・コミュ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Bio-Comm",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x696d",
   "jp": "＠緑『バイオコミュニケーション』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑'Bio-Communication'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x698e",
   "jp": "＠緑生命体のだす化学物質等の生体反応を機械的に検出・信号化する事で、言語を介さずに行うコミュニケーション。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Communication without language, achieved by mechanically detecting a living being's biological responses—such as the chemicals it emits—and turning them into signals.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x69f9",
   "jp": "＠緑将来的には人類と他の生物とのコミュニケーションが期待されているが、倫理問題のため、現状では人間が他の生物を・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Communication between humans and other creatures is hoped for in the future, but for ethical reasons, for now humans only...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6a6e",
   "jp": "＠緑観察・調査するだけの一方通行になっている。<br>なお、脊椎動物の意識のしくみは・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑observe and study other creatures—it stays one-way.<br>The workings of vertebrate consciousness, meanwhile,...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6ac3",
   "jp": "＠緑ＰＥＴ（陽電子放射断層撮影）による脳髄活動の調査結果とあわせ、ほぼ理解できるようになりつつある。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑together with PET (positron emission tomography) studies of brain activity, are becoming almost fully understood.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6b28",
   "jp": "ドリームコーダー",
-  "en": null,
-  "status": "untranslated"
+  "en": "Dream Coder",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6b39",
   "jp": "＠緑　『ドリーム・コーダー』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　'Dream Coder'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6b56",
   "jp": "＠緑人の夢を記録する装置。<br>脳波信号等を中心に視覚、聴覚味覚、触覚などを具象化して記録する。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A device that records a person's dreams.<br>Working mainly from brainwave signals, it renders and records sight, sound, taste, and touch.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6bb3",
   "jp": "＠緑ただし、再生できるのは資格のある精神分析医かカウンセラーのみ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑However, only a qualified psychoanalyst or counselor may play them back.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6bf6",
   "jp": "＠緑さらに、現状では法的証拠には認められていない。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Moreover, they are not currently admissible as legal evidence.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6c29",
   "jp": "文化・スポーツ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Culture & Sports",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6c38",
   "jp": "バイオ・ズー",
-  "en": null,
-  "status": "untranslated"
+  "en": "Bio-Zoo",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6c45",
   "jp": "＠緑　　　『バイオ・ズー』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　　　'Bio-Zoo'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6c60",
   "jp": "＠緑遺伝子操作による珍獣、絶滅種などの保護動物を扱っている、生きた遺伝子博物館。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A living genetic museum housing protected animals—genetically engineered rarities and extinct species.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6cb1",
   "jp": "＠緑絶滅に瀕しているほ乳類、鳥類などを保護、再生、繁殖させる目的で国際自然保護連合（ＩＵＣＮ）によって作られた。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑It was created by the International Union for Conservation of Nature (IUCN) to protect, restore, and breed endangered mammals, birds, and the like.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6d22",
   "jp": "＠緑生きた動物の飼育だけではなくあらゆる種の遺伝子の冷凍保存もしている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Beyond keeping live animals, it also cryogenically preserves the genes of every species.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6d6b",
   "jp": "＠緑４２年にユニコーンの赤ちゃんが生まれて（自然分娩に成功）話題を呼んだ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑In '42, the birth of a baby unicorn (a successful natural birth) made headlines.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6db6",
   "jp": "＠緑このベイビー・ユニコーンはネオ・コウベのマスコットにも起用されている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑This baby unicorn has even been made a mascot of Neo Kobe.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6e01",
   "jp": "ロボミュージカル",
-  "en": null,
-  "status": "untranslated"
+  "en": "Robo-Musical",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6e12",
   "jp": "　　＠緑『ロボミュージカル』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　＠緑'Robo-Musical'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6e2f",
   "jp": "＠緑ヒューマノイド型ロボットによるミュージカル。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A musical performed by humanoid robots.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6e60",
   "jp": "＠緑各ロボットの表情や動きは実際の俳優からサンプリングされたものなので、演技は本物と差異はない。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Each robot's expressions and movements are sampled from real actors, so the performance is indistinguishable from the real thing.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6ec1",
   "jp": "＠緑ロボット・ミュージカルの人気は、さまざまな俳優の演技を寸分の狂いもなく何度でも再現できるという所にある。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The appeal of the robot musical lies in reproducing various actors' performances flawlessly, any number of times.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6f2e",
   "jp": "＠緑ソフトを変更するだけで様々な演目を講演でき、近年では歌舞伎や能などの伝統芸能のソフトも人気を集めている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Simply changing the software allows different productions, and lately software for traditional arts like kabuki and noh has grown popular too.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6f9b",
   "jp": "＠緑また、往年の名優の演技や踊りも再現できることから高齢の演劇ファンにも支持されている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑And because it can recreate the performances and dances of legendary actors of old, it enjoys support among elderly theater fans as well.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x6ff4",
   "jp": "＠緑４２年の現在、引き続きロングランを続けているのは・・・　『オペラ座の怪人』である。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑As of '42, the long-running hit still going strong is... 'The Phantom of the Opera'.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x704b",
   "jp": "ポシェットペット",
-  "en": null,
-  "status": "untranslated"
+  "en": "Pochette Pet",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x705c",
   "jp": "　　＠緑『ポシェットペット』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　＠緑'Pochette Pet'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7079",
   "jp": "＠緑有袋類を改良して創られた、　ポシェットにもなるペット。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A pet bred from marsupials that doubles as a pouch bag.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x70b4",
   "jp": "＠緑バッグにもなるという付加価値をペットに加えたことで４０年代に大ヒットしたもの。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑By adding the extra value of doubling as a bag, it became a huge hit in the '40s.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7107",
   "jp": "＠緑当初、別の用途でＣＭに登場したが、一部のマスコミに取り上げられ、ポシェット・ペットとして一大ブームを築いた。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑It first appeared in commercials for a different purpose, but after some media picked it up, it built a huge craze as the Pochette Pet.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7178",
   "jp": "＠緑当時、ポシェット・ペットの著作権をめぐって数社のトラブルが生じた。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑At the time, disputes broke out among several companies over the rights to the Pochette Pet.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x71bf",
   "jp": "＠緑４１年に動物愛護協会からのクレームが出た為に一時、下火になった。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑In '41, complaints from the animal welfare society caused it to cool off for a while.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7204",
   "jp": "コウベ焼き",
-  "en": null,
-  "status": "untranslated"
+  "en": "Kobe-yaki",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x720f",
   "jp": "＠緑　　　『コウベ焼き』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　　　'Kobe-yaki'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7228",
   "jp": "＠緑ある学生がお好み焼きの具をダシ汁の中に落としたことから、生まれた食べ物。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A dish born when a student dropped okonomiyaki ingredients into a pot of dashi broth.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7275",
   "jp": "＠緑ダシに浮いてくる様子とネオ・コウベを掛け合わせてこう呼ばれている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The name plays on the way the ingredients float up in the broth, combined with Neo Kobe.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x72bc",
   "jp": "＠緑中に入れる具によって、様々な種類のコウベ焼きが氾濫している。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Depending on the ingredients inside, all sorts of Kobe-yaki now abound.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x72fd",
   "jp": "＠緑現在、コウベ焼きは関西の新しい食文化として全国的に人気を集めている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Today Kobe-yaki has caught on nationwide as a new Kansai food culture.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7346",
   "jp": "網膜占い",
-  "en": null,
-  "status": "untranslated"
+  "en": "Retina Reading",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x734f",
   "jp": "　　　　＠緑『網膜占い』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　　　＠緑'Retina Reading'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7368",
   "jp": "＠緑人間の網膜パターンを見て、その人物の運勢を占う、新種のハイテク占い。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A new kind of high-tech fortune-telling that reads a person's fate from their retinal pattern.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x73b1",
   "jp": "＠緑網膜パターンは指紋や声紋と同じく、個人で異なるところから来ている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑It stems from the fact that retinal patterns, like fingerprints and voiceprints, differ from person to person.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x73f8",
   "jp": "エアロサーフィン",
-  "en": null,
-  "status": "untranslated"
+  "en": "Aero-Surfing",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7409",
   "jp": "　　＠緑『エアロサーフィン』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　＠緑'Aero-Surfing'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7426",
   "jp": "＠緑若者の間で爆発的な人気を博しているスポーツ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A sport enjoying explosive popularity among the young.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7457",
   "jp": "＠緑海が汚染されてしまったシティでは空気力学を応用した新しいサーフィンが現代のサーファーたちを刺激した。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑In a city whose seas have been polluted, a new form of surfing based on aerodynamics has captured today's surfers.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x74c0",
   "jp": "＠緑エアロサーフィンは、プロテクター、エア・サーフボードと簡単な空気波動発生装置（エア・ウェーブ・システム）が",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Aero-surfing needs only protective gear, an air surfboard, and a simple air-wave generator (Air Wave System)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x752f",
   "jp": "＠緑あれば手軽に楽しめるため、特にスラムの若者達に人気が集中した。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑to enjoy casually, so it caught on especially among the young people of the slums.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7572",
   "jp": "＠緑波の高低も自由にコントロールでき、オール・シーズン可能なため、各地で大会が催されている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Wave height can be freely controlled and it can be done year-round, so tournaments are held everywhere.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x75cf",
   "jp": "ドラゴンフォース",
-  "en": null,
-  "status": "untranslated"
+  "en": "Dragon Force",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x75e0",
   "jp": "　　＠緑『ドラゴンフォース』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　＠緑'Dragon Force'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x75fd",
   "jp": "＠緑遺伝子操作によって創り出された有翼馬（ドラゴン・ホース）を駆るスポーツ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A sport ridden on genetically engineered winged horses (Dragon Horses).",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x764a",
   "jp": "＠緑イギリスから上陸したハイソサエティ・スポーツで滑空距離と滑空時間を競う。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A high-society sport imported from England, contested on gliding distance and gliding time.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7697",
   "jp": "＠緑有翼馬ドラゴン・ホースは小型のポニー程の大きさで、飛行距離は４０〜７０メートル程度。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The winged Dragon Horse is about the size of a small pony, with a flight range of roughly 40 to 70 meters.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x76f0",
   "jp": "＠緑ネオ・コウベでは４０年に初めて公式な大会が洋上プラントで行われた。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑In Neo Kobe, the first official tournament was held on an offshore platform in '40.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7737",
   "jp": "＠緑第一回大会の公式優勝記録は、飛行距離８２メートル、飛行時間３０秒。外国からの招待馬、オラシオン・ハイランダー種。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The winning record of the first tournament was 82 meters over 30 seconds of flight, set by an invited foreign horse of the Oración Highlander breed.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x77b1",
   "jp": "シティ隔離政策",
-  "en": null,
-  "status": "untranslated"
+  "en": "City Quarantine Policy",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x77c0",
   "jp": "　　＠緑『シティ隔離政策』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　＠緑'City Quarantine Policy'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x77db",
   "jp": "＠緑ネオ・コウベ・シティにおける『スナッチャー汚染』の事態を重くみた政府はシティを汚染地域とみなし、",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Taking the 'SNATCHER contamination' in Neo Kobe City gravely, the government declared the city a contaminated zone,",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7840",
   "jp": "＠緑ネオ・コウベ・ブリッジ以外の交通路を陸海全域にわたって強制封鎖することを閣議決定。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑and the cabinet resolved to forcibly seal off every land and sea route except the Neo Kobe Bridge.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7897",
   "jp": "＠緑２０４２年１２月１日をもって実施にうつされた。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑It was put into effect on December 1, 2042.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x78ca",
   "jp": "＠緑これにより他地域への汚染はくい止められたが、シティは孤立を深めることになった。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑This halted contamination of other regions, but deepened the city's isolation.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x791d",
   "jp": "＠緑しかしスナッチャー問題は根本的な解決方法を見いだせないまま現在に至っている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Yet the SNATCHER problem has reached the present day with no fundamental solution in sight.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x796e",
   "jp": "南北問題",
-  "en": null,
-  "status": "untranslated"
+  "en": "North-South Divide",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7977",
   "jp": "　　　　＠緑『南北問題』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　　　＠緑'The North-South Divide'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7990",
   "jp": "＠緑２０２０年『多民族都市宣言』以来、ネオ・コウベ・シティには多くの民族・人種が移住してきたが、それは必然的に・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Since the 2020 'Multiethnic City Declaration', many peoples and races have migrated to Neo Kobe City, but this inevitably...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7a05",
   "jp": "＠緑社会を分裂させ貧富の差を生み出すに至った。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑came to split society and open a divide between rich and poor.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7a34",
   "jp": "＠緑主としてシティ北部の官庁街周辺には古くからの居住者の富裕層が住み、南部の新興地域には貧しい流入者層が住み着いた。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The wealthy long-time residents settled mainly around the government district in the city's north, while the poor newcomers took root in the developing areas of the south.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7aa9",
   "jp": "＠緑この傾向に拍車をかけたのが、『大惨事』後、大量に流入してきた移民達である。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑What spurred this trend was the flood of immigrants who poured in after 'The Catastrophe'.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7af8",
   "jp": "＠緑彼らがいわゆる『裏社会』をつくりあげる事で、シティには　『北』と『南』のふたつの社会が存在する事となった。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑As they built up the so-called 'underworld', the city came to hold two societies—the 'North' and the 'South'.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7b67",
   "jp": "自由人族",
-  "en": null,
-  "status": "untranslated"
+  "en": "Freemen",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7b70",
   "jp": "　　　　＠緑『自由人族』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　　　＠緑'The Freemen'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7b89",
   "jp": "＠緑国家や共同体のデータバンクから、自己の個人データを抹消して生活するホームレス（フリーマン）のこと。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The homeless (Freemen) who live having erased their personal data from the databanks of the state and community.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7bf0",
   "jp": "＠緑高度情報化の進む現在では個人データの登録抹消はその社会的存在を否定する事であり、『自由人』の増加は・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑In today's highly information-driven age, erasing one's registered data is to deny one's social existence, and the rise of 'Freemen'...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7c5d",
   "jp": "＠緑治安や労働の問題として、一部に深刻な影響を与えている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑is having a serious impact in places, as a matter of public order and labor.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7c98",
   "jp": "＠緑また、『自由人』となるのはコンピュータ・ネットワーク関係の職業の者に多く、情報集積時代の新たな問題になっている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Those who become 'Freemen' are often people in computer-network professions, making it a new problem of the information age.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7d0d",
   "jp": "＠緑自由人族は情報集積外地域や、チューブ・ライナー跡の地下に多く住み着いている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The Freemen mostly settle in areas outside information control and underground in the ruins of the Tube Liner.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7d5e",
   "jp": "移民問題",
-  "en": null,
-  "status": "untranslated"
+  "en": "Immigration Problem",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7d67",
   "jp": "　　　　＠緑『移民問題』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　　　＠緑'The Immigration Problem'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7d80",
   "jp": "＠緑『大惨事』により、住む土地を失ったユーラシア系住民は外部へ流出、大量移民の問題が発生した。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Having lost their homeland to 'The Catastrophe', the Eurasian population fled outward, giving rise to the problem of mass immigration.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7ddf",
   "jp": "＠緑特に中国系移民の数は多く、日本へは計５回にわたり１０万人もの数が流れ込んだ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Chinese immigrants were especially numerous; some 100,000 poured into Japan over a total of five waves.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7e30",
   "jp": "＠緑日本政府は受け入れた移民の大半を、『多民族都市』をうたっていた当時のネオ・コウベ・シティに集中させた。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The Japanese government concentrated most of the immigrants it took in within Neo Kobe City, which then billed itself a 'multiethnic city'.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7e9b",
   "jp": "＠緑このためシティにおける中国人の人口比率は日本人につぐものとなったが、その生活水準は低く大半の人々は・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑As a result, the Chinese became the city's second-largest population after the Japanese, but their standard of living was low, and most of them...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7f08",
   "jp": "＠緑『南』のスラム街に住むことを余儀なくされている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑are forced to live in the slums of the 'South'.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7f3d",
   "jp": "＠緑これに不満を持つ中国系移民の数は多く、彼らの大部分は地下勢力となって行政の手が及ばない裏社会を形成している。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Many Chinese immigrants resent this, and most of them have become an underground force, forming an underworld beyond the reach of the authorities.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7fae",
   "jp": "キョウトサミット",
-  "en": null,
-  "status": "untranslated"
+  "en": "Kyoto Summit",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7fbf",
   "jp": "＠緑　　『キョウトサミット』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　　'Kyoto Summit'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x7fdc",
   "jp": "＠緑２０４２年１２月、キョウトで開催予定のサミット（先進国首脳会議）。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑A summit (of the leading industrial nations) scheduled to be held in Kyoto in December 2042.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8023",
   "jp": "＠緑主題はシベリア中立地帯の資源所有問題だが、スナッチャー問題も議題に上がっていることでマスコミを賑わしている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Its main theme is the question of resource ownership in the Siberian neutral zone, but with the SNATCHER problem also on the agenda, it has the media abuzz.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8094",
   "jp": "＠緑スナッチャー汚染は全世界から注目されているが、ネオ・コウベ・シティ以外の都市でスナッチャーの目撃例はなく・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑SNATCHER contamination has the whole world's attention, yet there have been no SNATCHER sightings in any city outside Neo Kobe...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8107",
   "jp": "＠緑シティ外へのスナッチャー流出を未然に防ぐ方法が検討されるものと思われる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑so ways to keep SNATCHERs from escaping the city are expected to be discussed.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8154",
   "jp": "＠緑仏首相が、シティを核により消滅させるべきだとの発言をしたことで一気にこのサミットの注目度が高まる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Attention on the summit surged when the French premier stated the city should be wiped out with a nuclear strike.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x81bb",
   "jp": "情報統制外地区",
-  "en": null,
-  "status": "untranslated"
+  "en": "Info-Control-Free Zone",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x81ca",
   "jp": "　　＠緑『情報統制外地区』",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　＠緑'The Info-Control-Free Zone'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x81e5",
   "jp": "＠緑ネオ・コウベは、光ファイバーや衛星を使った情報集積管理地区とその管理から洩れたスラム地域とに分かれる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Neo Kobe is split between the centralized information-managed zone, run by fiber optics and satellites, and the slum areas that slipped through that control.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8250",
   "jp": "＠緑個人の身元保証やＩＤが取れない者達は必然的にこの情報集積管理外へ集まる。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Those who cannot obtain identity verification or an ID inevitably gather outside this information-managed zone.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x829d",
   "jp": "＠緑ここではいかなるカードも使用できず、現金だけが通貨手段として認められている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Here no card of any kind works, and cash alone is accepted as currency.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x82ee",
   "jp": "＠緑シティは数年前からこの地域の一掃を図る法案を提出しているが、様々な要因から、未だ可決されていないのが現状である。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑The city has submitted bills to clear out this area for several years, but for various reasons none has yet passed.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8363",
   "jp": "＠緑実際、シティのほぼ３割がこの情報集積統制外地域として認定されている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑In fact, nearly 30% of the city is designated as this information-control-free zone.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x83ac",
   "jp": "＠緑まだ認定されていない候補地域を含めると４割にも達する。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Counting candidate areas not yet designated, it reaches as much as 40%.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x83e7",
   "jp": "それではモンタージュで遊びましょう。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Well then, let's have some fun with the montage.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x840c",
   "jp": "ただし・・・モンタージュは、照合できません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "However... this montage can't be matched.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8439",
   "jp": "それではモンタージュ写真を<br>作成しましょう。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Then let's create a<br>montage photo.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8466",
   "jp": "作成したモンタージュは、<br>『照合する』のコマンドで、<br>検索できます。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The montage you make can be<br>searched with the<br>'Match' command.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x84ab",
   "jp": "作成やめる",
-  "en": null,
-  "status": "untranslated"
+  "en": "Stop creating",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x84b6",
   "jp": "照合する",
-  "en": null,
-  "status": "untranslated"
+  "en": "Match",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x84bf",
   "jp": "　＠赤ＦＩＬＥ　ＳＥＡＲＣＨ＠Ｃ",
-  "en": null,
-  "status": "untranslated"
+  "en": "　＠赤FILE　SEARCH＠Ｃ",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x84e0",
   "jp": "＠緑作成したモンタージュを<br>『アルファ・ビル』に照合します。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Matching the montage you made<br>against 'Alphaville'.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x851d",
   "jp": "　　＠黄ＦＩＬＥ　ＥＸＩＳＴ＠Ｃ",
-  "en": null,
-  "status": "untranslated"
+  "en": "　　＠黄FILE　EXIST＠Ｃ",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x853e",
   "jp": "やったぞっ！！",
-  "en": null,
-  "status": "untranslated"
+  "en": "We got it!!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x854d",
   "jp": "やりましたね！ωギリアン！！",
-  "en": null,
-  "status": "untranslated"
+  "en": "We did it!ωGillian!!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x856a",
   "jp": "＠緑モンタージュ写真の該当者<br>２名あり。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Two matches for the<br>montage photo.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8593",
   "jp": "＠緑　　一人目、該当率７０％",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　　First candidate, 70% match",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x85b0",
   "jp": "＠緑　『イワン・ロドリゲス』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　'Ivan Rodriguez'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x85cd",
   "jp": "＠緑▽エアロ・サーファー<br>　　　　　　　（アマチュア）▽２７歳",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Aero-surfer<br>　　　　　　　(amateur)▽Age 27",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x860c",
   "jp": "＠緑▽住所　ＳＮ地区　サウス・イタヤド　５−２２<br>　注）『集積情報統制外地域』▽家族　なし",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Address: SN District, South Itayado 5-22<br>　Note) 'Info-control-free zone'▽Family: none",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8667",
   "jp": "＠緑　　二人目、該当率６５％",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　　Second candidate, 65% match",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8684",
   "jp": "＠緑　『フレディ・ニールセン』",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑　'Freddy Nielsen'",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x86a3",
   "jp": "＠緑▽タクシー・ドライバー<br>　　　　　　　　　（無所属）▽２９歳",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Taxi driver<br>　　　　　　　　　(independent)▽Age 29",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x86e4",
   "jp": "＠緑▽住所　ＭＲ地区　ニューオカモト　３−７　ドミトル岡本２０２号<br>▽家族　妻：リサ　２５歳。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑▽Address: MR District, New Okamoto 3-7, Dormitor Okamoto #202<br>▽Family: wife Lisa, age 25.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8743",
   "jp": "＠緑モンタージュ写真をプリントアウトします。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠緑Printing out the montage photo.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8770",
   "jp": "ギリアン、モンタージュがプリント・アウトされました。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian, the montage has been printed out.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x87a5",
   "jp": "これがあれば・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "With this...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x87b8",
   "jp": "３Ｄ画像を簡易的に２次元に置き換えたものですが・・・<br>捜査の役にはたつでしょう。",
-  "en": null,
-  "status": "untranslated"
+  "en": "It's just a simplified 2D version of the 3D image, but...<br>it should help with the investigation.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8809",
   "jp": "さあ、容疑者の氏名、住所もわかったんだ。出かけようか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Now we've got the suspects' names and addresses. Shall we head out?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8840",
   "jp": "この二人のうちのどちらかがジャンをやったスナッチャーです。",
-  "en": null,
-  "status": "untranslated"
+  "en": "One of these two is the SNATCHER that got Jean.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x887b",
   "jp": "ようやくここまで来たぞ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "We've finally made it this far.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8894",
   "jp": "容疑者達を調べにでかけましょう、<br>ギリアン！",
-  "en": null,
-  "status": "untranslated"
+  "en": "Let's go check out the suspects,<br>Gillian!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x88c1",
   "jp": "＠赤ＦＩＬＥ　ＮＯＴ　ＦＯＵＮＤ＠Ｃ",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠赤FILE　NOT　FOUND＠Ｃ",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x88e6",
   "jp": "輪郭が違うのでは・・・？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Isn't the outline wrong...?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x88ff",
   "jp": "眼の部分が違うのでは・・・？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Aren't the eyes wrong...?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x891c",
   "jp": "鼻の部分が違うのでは・・・？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Isn't the nose wrong...?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8939",
   "jp": "口の部分が違うのでは・・・？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Isn't the mouth wrong...?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8956",
   "jp": "髪型が違うのでは・・・？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Isn't the hairstyle wrong...?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x896f",
   "jp": "モンタージュが間違っているのではないで<br>しょうか？ωもう一度、特徴を思い出して<br>やり直してみましょう。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Could the montage be<br>mistaken?ωTry to recall the features<br>again and start over.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x89d6",
   "jp": "ギリアン、<br>これではデータが不充分です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian,<br>this data isn't enough.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x89ff",
   "jp": "ギリアン、よく見て下さい・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian, look carefully...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8a1e",
   "jp": "輪郭のデータが抜けてますよ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The outline data is missing.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8a3b",
   "jp": "眼のデータが抜けてますよ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The eye data is missing.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8a56",
   "jp": "鼻のデータが抜けてますよ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The nose data is missing.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8a71",
   "jp": "口のデータが抜けてますよ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The mouth data is missing.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8a8c",
   "jp": "髪型のデータが抜けてますよ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The hairstyle data is missing.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8aa9",
   "jp": "まだ未完成です、これでは人間の顔とは言えませんよ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "It's still unfinished; you couldn't call this a human face.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8adc",
   "jp": "まだ、<br>何も入力してないじゃないですか・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "You haven't<br>entered anything yet...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8b0e",
   "jp": "イザベラは・・・＠赤骨ばった感じかなぁ？＠白と<br>いってましたが？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Isabella said...＠赤kind of bony, maybe?＠白<br>didn't she?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8b4f",
   "jp": "・・・２番か、３番だろうな？",
-  "en": null,
-  "status": "untranslated"
+  "en": "...Number 2 or 3, I'd say?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8b6c",
   "jp": "輪郭１",
-  "en": null,
-  "status": "untranslated"
+  "en": "Outline 1",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8b73",
   "jp": "輪郭１です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Outline 1.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8b80",
   "jp": "輪郭２",
-  "en": null,
-  "status": "untranslated"
+  "en": "Outline 2",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8b87",
   "jp": "輪郭２です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Outline 2.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8b94",
   "jp": "・・・ちょっと尖り過ぎかな？",
-  "en": null,
-  "status": "untranslated"
+  "en": "...A bit too pointed, maybe?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8bb1",
   "jp": "輪郭３",
-  "en": null,
-  "status": "untranslated"
+  "en": "Outline 3",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8bb8",
   "jp": "輪郭３です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Outline 3.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8bc5",
   "jp": "輪郭４",
-  "en": null,
-  "status": "untranslated"
+  "en": "Outline 4",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8bcc",
   "jp": "輪郭４です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Outline 4.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8bd9",
   "jp": "輪郭５",
-  "en": null,
-  "status": "untranslated"
+  "en": "Outline 5",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8be0",
   "jp": "輪郭５です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Outline 5.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8bed",
   "jp": "輪郭６",
-  "en": null,
-  "status": "untranslated"
+  "en": "Outline 6",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8bf4",
   "jp": "輪郭６です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Outline 6.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8c04",
   "jp": "イザベラは・・・＠赤鋭い目つきだったわ。威嚇するような。＠白といってましたが？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Isabella said...＠赤a sharp look in the eyes. Menacing.＠白 didn't she?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8c53",
   "jp": "・・・３番か、６番だろうな？",
-  "en": null,
-  "status": "untranslated"
+  "en": "...Number 3 or 6, I'd say?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8c75",
   "jp": "眼１です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Eyes 1.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8c85",
   "jp": "眼２です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Eyes 2.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8c95",
   "jp": "眼３です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Eyes 3.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8ca5",
   "jp": "眼４です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Eyes 4.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8cb5",
   "jp": "眼５です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Eyes 5.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8cc5",
   "jp": "眼６です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Eyes 6.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8cd3",
   "jp": "イザベラは・・・＠赤わしのように尖ってたわ。＠白といってましたが？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Isabella said...＠赤pointed, like an eagle's beak.＠白 didn't she?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8d16",
   "jp": "・・・１番か、３番だろうな？",
-  "en": null,
-  "status": "untranslated"
+  "en": "...Number 1 or 3, I'd say?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8d38",
   "jp": "鼻１です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Nose 1.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8d48",
   "jp": "鼻２です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Nose 2.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8d58",
   "jp": "鼻３です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Nose 3.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8d63",
   "jp": "・・・これは違うようだな？",
-  "en": null,
-  "status": "untranslated"
+  "en": "...This one seems wrong, doesn't it?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8d83",
   "jp": "鼻４です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Nose 4.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8d93",
   "jp": "鼻５です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Nose 5.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8da3",
   "jp": "鼻６です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Nose 6.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8db1",
   "jp": "イザベラは・・・＠赤そう、唇はうすかったわ。＠白といってましたが？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Isabella said...＠赤yes, the lips were thin.＠白 didn't she?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8df4",
   "jp": "うすい、か・・・<br>２番か、３番だな・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Thin, huh...<br>Number 2 or 3...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8e22",
   "jp": "口１です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Mouth 1.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8e32",
   "jp": "口２です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Mouth 2.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8e42",
   "jp": "口３です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Mouth 3.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8e52",
   "jp": "口４です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Mouth 4.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8e62",
   "jp": "口５です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Mouth 5.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8e72",
   "jp": "口６です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Mouth 6.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8e82",
   "jp": "イザベラは・・・＠赤さらっと、後ろにながしたような感じ。＠白といってましたが？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Isabella said...＠赤smooth, swept back, kind of.＠白 didn't she?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8ed1",
   "jp": "さらっとか？・・・２番か、３番かな？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Swept back, huh?...Number 2 or 3, maybe?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8ef6",
   "jp": "髪型１",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hair 1",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8efd",
   "jp": "髪型１です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hair 1.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8f0a",
   "jp": "髪型２",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hair 2",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8f11",
   "jp": "髪型２です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hair 2.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8f1e",
   "jp": "髪型３",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hair 3",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8f25",
   "jp": "髪型３です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hair 3.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8f32",
   "jp": "髪型４",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hair 4",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8f39",
   "jp": "髪型４です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hair 4.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8f46",
   "jp": "髪型５",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hair 5",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8f4d",
   "jp": "髪型５です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hair 5.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8f5a",
   "jp": "髪型６",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hair 6",
+  "status": "translated"
  },
  {
   "chunk": "chunk_024",
   "offset": "0x8f61",
   "jp": "髪型６です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hair 6.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_025",
