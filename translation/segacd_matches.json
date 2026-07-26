@@ -1,0 +1,432 @@
+[
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2a17",
+  "jp": "わしのことは気にせんでくれ。",
+  "draft_en": "Don't mind me.",
+  "segacd_en": "Don't lie to me...",
+  "score": 0.692,
+  "segacd_file": "SP35.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2a34",
+  "jp": "ＪＵＮＫＥＲ本部です。<br>何のご用でしょうか？",
+  "draft_en": "Welcome to JUNKER HQ.<br>May I help you?",
+  "segacd_en": "Welcome to Junker Headquarters.<br>May I help you?",
+  "score": 0.875,
+  "segacd_file": "SP06.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2a6a",
+  "jp": "ここから先へはＪＵＮＫＥＲ関係者しか<br>入れません。",
+  "draft_en": "Only JUNKER personnel may<br>proceed beyond this point.",
+  "segacd_en": "Only authorized personnel are<br>allowed beyond this point.",
+  "score": 0.774,
+  "segacd_file": "SP06.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2a9d",
+  "jp": "これより先は関係者以外の方は、立入禁止になっております。",
+  "draft_en": "Unauthorized persons are not permitted past here.",
+  "segacd_en": "There are no security cameras<br>here.",
+  "score": 0.537,
+  "segacd_file": "SP27.BIN",
+  "verdict": "saturn_exclusive_or_reworded"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2ad6",
+  "jp": "身元のわからない人を通すわけには<br>ゆきません。",
+  "draft_en": "I can't admit anyone whose<br>identity is unknown.",
+  "segacd_en": "I'm afraid I can't let in anyone<br>who hasn't identified themselves.",
+  "score": 0.542,
+  "segacd_file": "SP06.BIN",
+  "verdict": "saturn_exclusive_or_reworded"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2b05",
+  "jp": "失礼ですが、どちら様でしょうか？",
+  "draft_en": "Excuse me, but who are you?",
+  "segacd_en": "Excuse me, but I'm a Junker.",
+  "score": 0.68,
+  "segacd_file": "SP10.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2b26",
+  "jp": "どのようなご用件でしょうか？",
+  "draft_en": "What is your business here?",
+  "segacd_en": "What is your business here?",
+  "score": 1.0,
+  "segacd_file": "SP15.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2b4f",
+  "jp": "東洋系のなかなかの美人だ。",
+  "draft_en": "Quite an Oriental beauty.",
+  "segacd_en": "Quite a convenient little item.",
+  "score": 0.556,
+  "segacd_file": "SP06.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2b6a",
+  "jp": "なんとかっていう女優に似ているな。",
+  "draft_en": "She resembles some actress.",
+  "segacd_en": "There's still some left, right?",
+  "score": 0.519,
+  "segacd_file": "SP13.BIN",
+  "verdict": "saturn_exclusive_or_reworded"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2b8d",
+  "jp": "これは期待できそうだな。<br>ＪＵＮＫＥＲにはこんな美人もいるのか。",
+  "draft_en": "This looks promising.<br>JUNKER has beauties like this too?",
+  "segacd_en": "This looks promising.  They've got<br>some real beauties on the staff.",
+  "score": 0.667,
+  "segacd_file": "SP06.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2bce",
+  "jp": "軍のスタッフとは大違いだな・・・",
+  "draft_en": "A far cry from the army staff...",
+  "segacd_en": "What?! Where? From the front?",
+  "score": 0.556,
+  "segacd_file": "SP09.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2bf8",
+  "jp": "ＪＵＮＫＥＲ募集の広告か・・・",
+  "draft_en": "A JUNKER recruitment ad...",
+  "segacd_en": "It's just a Junker recruiting ad.",
+  "score": 0.741,
+  "segacd_file": "SP06.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2c17",
+  "jp": "あまり趣味のいいものとはいえんな。",
+  "draft_en": "Not exactly in the best taste.",
+  "segacd_en": "Not exactly in the best taste, if<br>you ask me.",
+  "score": 0.806,
+  "segacd_file": "SP06.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2c3d",
+  "jp": "どうやら本部内へつながっているようだ。",
+  "draft_en": "It seems to lead into HQ.",
+  "segacd_en": "It seems that the line is busy.",
+  "score": 0.593,
+  "segacd_file": "SP35.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2c64",
+  "jp": "本部内に入るにはこの扉しかないようだな。",
+  "draft_en": "This door is the only way in.",
+  "segacd_en": "This is the SNATCHER'S weak<br>point?",
+  "score": 0.633,
+  "segacd_file": "SP36.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2c94",
+  "jp": "政府広報か・・・<br>よほど人手不足らしい。",
+  "draft_en": "A government notice...<br>They're really short-handed.",
+  "segacd_en": "Looks like a government ad.<br>They must be really short on<br>people.",
+  "score": 0.636,
+  "segacd_file": "SP06.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2cbd",
+  "jp": "１８０度ホログラム印刷・・・<br>予算が苦しいんだな。",
+  "draft_en": "180-degree hologram print...<br>Money must be tight.",
+  "segacd_en": "It's a 180 holographic printing.<br>They must be on a tight budget.",
+  "score": 0.648,
+  "segacd_file": "SP06.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2cf0",
+  "jp": "ロックされている。<br>受付のポッド内からしか<br>操作できないみたいだ。",
+  "draft_en": "It's locked.<br>Looks like it only opens<br>from inside the pod.",
+  "segacd_en": "It's locked.  It looks like the only<br>switch for it is in the operator's<br>pod.",
+  "score": 0.698,
+  "segacd_file": "SP06.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2d33",
+  "jp": "やっぱり、このおねえさんに中から開けて<br>もらわないとダメらしい。",
+  "draft_en": "This lady will have to open it<br>from the inside after all.",
+  "segacd_en": "This will be our own little secret.",
+  "score": 0.556,
+  "segacd_file": "SP10.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2d79",
+  "jp": "仕方ない・・・<br>このおねえさんに話してみよう。",
+  "draft_en": "No choice...<br>I'll try talking to this lady.",
+  "segacd_en": "It looks like you've taken a liking<br>to this city.",
+  "score": 0.565,
+  "segacd_file": "SP06.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2da8",
+  "jp": "あなた・・・どちらの方ですか？",
+  "draft_en": "You... who might you be?",
+  "segacd_en": "Napoleon might know something.",
+  "score": 0.49,
+  "segacd_file": "SP08.BIN",
+  "verdict": "saturn_exclusive_or_reworded"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2dc7",
+  "jp": "失礼ですが・・・お名前は？",
+  "draft_en": "Excuse me... your name?",
+  "segacd_en": "...give me your name.",
+  "score": 0.778,
+  "segacd_file": "SP09.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2de9",
+  "jp": "本部内の監視カメラのようだ。",
+  "draft_en": "Looks like an HQ security camera.",
+  "segacd_en": "It looks like a security camera.",
+  "score": 0.889,
+  "segacd_file": "SP06.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2e06",
+  "jp": "手でも振ってみようか。",
+  "draft_en": "Shall I give it a wave?",
+  "segacd_en": "All right, let's give it a shot!",
+  "score": 0.627,
+  "segacd_file": "SP21.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2e1d",
+  "jp": "フロント・ポッド",
+  "draft_en": "Front Pod",
+  "segacd_en": "FRONT POD",
+  "score": 1.0,
+  "segacd_file": "SP06.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2e2e",
+  "jp": "ポッド式の受付だ。<br>フロント自体がシールド・カプセルで<br>覆われている。",
+  "draft_en": "A pod-style reception.<br>The front itself is covered<br>by a shield capsule.",
+  "segacd_en": "It's one of those pod-type<br>reception units where the<br>operator sits in a shielded<br>capsule.",
+  "score": 0.61,
+  "segacd_file": "SP06.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2e75",
+  "jp": "受付嬢が安全なように設計されている。",
+  "draft_en": "Designed to keep the<br>receptionist safe.",
+  "segacd_en": "It's designed to protect the<br>operator.",
+  "score": 0.568,
+  "segacd_file": "SP06.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2ea1",
+  "jp": "ＪＵＮＫＥＲ本部のフロントらしい。<br>・・・警戒が厳重だ。",
+  "draft_en": "The JUNKER HQ front, it seems.<br>...Security is tight.",
+  "segacd_en": "This seems to be Junker<br>Headquarter's lobby.  Their<br>security looks really tight.",
+  "score": 0.525,
+  "segacd_file": "SP06.BIN",
+  "verdict": "saturn_exclusive_or_reworded"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2eda",
+  "jp": "金庫室の入口のようだな。",
+  "draft_en": "Looks like the vault entrance.",
+  "segacd_en": "Looks like they take insurance<br>here.",
+  "score": 0.688,
+  "segacd_file": "SP24.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2ef3",
+  "jp": "受付嬢以外は誰もいないみたいだ。",
+  "draft_en": "Nobody here but the receptionist.",
+  "segacd_en": "There's nobody around but the<br>operator.",
+  "score": 0.58,
+  "segacd_file": "SP06.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2f14",
+  "jp": "本部内でモニターしているみたいだ。",
+  "draft_en": "They're monitoring inside HQ.",
+  "segacd_en": "There is a coat hanging inside<br>the locker.",
+  "score": 0.588,
+  "segacd_file": "SP08.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2f37",
+  "jp": "耐熱、耐ショック・シールドだ。<br>対スナッチャー用だろう。",
+  "draft_en": "A heat- and shock-proof shield.<br>Anti-Snatcher, no doubt.",
+  "segacd_en": "The shield is heat proof and<br>shock proof.  It's specially<br>designed to withstand an attack<br>by SNATCHERS.",
+  "score": 0.483,
+  "segacd_file": "SP06.BIN",
+  "verdict": "saturn_exclusive_or_reworded"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2f70",
+  "jp": "これなら戦車でも破れないだろう。",
+  "draft_en": "Even a tank couldn't break this.",
+  "segacd_en": "Not even a tank could break<br>through this.",
+  "score": 0.8,
+  "segacd_file": "SP06.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2f91",
+  "jp": "・・・シールドに守られていて駄目だ。",
+  "draft_en": "...The shield blocks me. No good.",
+  "segacd_en": "He must have had some good<br>reason.",
+  "score": 0.525,
+  "segacd_file": "SP09.BIN",
+  "verdict": "saturn_exclusive_or_reworded"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2fb6",
+  "jp": "残念だ。<br>なかなかのグラマーなのにな・・・",
+  "draft_en": "A shame.<br>And such a glamorous one too...",
+  "segacd_en": "I'm such a putz.",
+  "score": 0.44,
+  "segacd_file": "SP18.BIN",
+  "verdict": "saturn_exclusive_or_reworded"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2fe1",
+  "jp": "ＪＵＮＫＥＲに興味がおありなんですか？",
+  "draft_en": "Are you interested in JUNKER?",
+  "segacd_en": "Are you interested in Junker<br>operations?",
+  "score": 0.836,
+  "segacd_file": "SP06.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x3008",
+  "jp": "ＪＵＮＫＥＲ募集の件で来られたんですか？",
+  "draft_en": "Are you here about the<br>JUNKER recruitment?",
+  "segacd_en": "Are you here to answer the<br>Junker help-wanted<br>advertisement?",
+  "score": 0.646,
+  "segacd_file": "SP06.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x30a7",
+  "jp": "そのカメラ映像、局長も見てるはずよ。",
+  "draft_en": "The chief is watching that<br>camera feed too, you know.",
+  "segacd_en": "Watch it, buddy! That's my wife,<br>you know!",
+  "score": 0.568,
+  "segacd_file": "SP03.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x30ff",
+  "jp": "ここがスナッチャーに襲われるのか？",
+  "draft_en": "This place gets attacked by<br>Snatchers?",
+  "segacd_en": "This is the SNATCHER'S weak<br>point?",
+  "score": 0.551,
+  "segacd_file": "SP36.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x3213",
+  "jp": "それはすまなかった。",
+  "draft_en": "I'm sorry about that.",
+  "segacd_en": "Sorry about that...Hello?",
+  "score": 0.8,
+  "segacd_file": "SP02.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x32af",
+  "jp": "君みたいな美人がいるなんて運がいい。",
+  "draft_en": "Lucky me, a beauty like you here.",
+  "segacd_en": "I'm sure you'll like it here.",
+  "score": 0.526,
+  "segacd_file": "SP06.BIN",
+  "verdict": "saturn_exclusive_or_reworded"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x3375",
+  "jp": "ほんと・・・きれいだね。",
+  "draft_en": "Really... you're beautiful.",
+  "segacd_en": "You're really forgetful...",
+  "score": 0.636,
+  "segacd_file": "SP18.BIN",
+  "verdict": "adopt_official"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x338e",
+  "jp": "・・・・ありがとう。",
+  "draft_en": "....Thank you.",
+  "segacd_en": "...thank you.",
+  "score": 1.0,
+  "segacd_file": "SP06.BIN",
+  "verdict": "adopt_official"
+ }
+]

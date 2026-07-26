@@ -259,3 +259,21 @@ Remaining Phase 4: half-width font build (sites above) · relocating inserter ·
 - Half-width build recipe (all sites known): inject 95 ASCII glyphs into a free VRAM font region
   via an added transfer in FUN_060b4530's path → map English codes to those slots → set pitch
   table 0x060E5358 to step 8 (34/row) → set size 0x060E0CC0 to 0x010E. Multi-step but fully scoped.
+
+## Session 13 — SOURCE OF TRUTH established (master DB + matcher) + key correctness finding
+
+- **`translation/master.json` = the project's source of truth**: all 12,259 Saturn lines keyed by
+  (chunk, offset) with jp / en / status. Built by `tools/build_master_db.py` (merges
+  translation/*.json overrides). Currently 43/12,259 translated (JunkerHQ scene).
+- **`tools/match_segacd.py`**: fuzzy-matches drafted English vs the SegaCD official localization.
+- **CRITICAL FINDING — matcher must be ADVISORY, not automatic.** The SegaCD is English-only (no JP
+  side to match against), so matching is English-surface only → false positives on shared sentence
+  openers (e.g. Saturn "Quite an Oriental beauty" fuzz-matched SegaCD "Quite a convenient little
+  item", 0.556; blind adoption would be WRONG). Also: Saturn (1996) has different/added content vs
+  SegaCD (1994) — line-by-line correspondence is partial.
+  → **Correct pipeline:** faithful fresh translation of the Saturn JP is the source of truth;
+  SegaCD text is a *phrasing reference* adopted only on HIGH score (>0.8) AND human confirmation
+  (recovers the beloved official wording for true matches like "Welcome to Junker Headquarters.
+  May I help you?"). Low/mid scores stay as the faithful Saturn translation.
+- Remaining: translate the other 35 scenes (faithful JP→EN), run matcher to flag official-wording
+  candidates, human-confirm the high-score adoptions.
