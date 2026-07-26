@@ -63,3 +63,10 @@ File naming is completely different between versions — no shared `SP*.BIN` on 
 1. Trace text-draw opcode in script VM → find font base + index encoding.
 2. Look for font bitmap in decompressed chunks / MAIN_L.BIN tail / chunk 0.
 3. Then: ADPCM clip boundary table (voice IDs → offsets), CD-DA↔scene map (Phase 2 leftover).
+
+## Script alignment strategy (added 2026-07-26)
+Once glyph indices → JP text is solved, alignment of JP↔EN lines is automated:
+1. Glyph→char table: kana/punct by hand; kanji via OCR or SJIS-ordered font (check first — free if so).
+2. Machine-translate each JP line (API: Google/DeepL/Claude) — used ONLY as an alignment key, never shipped.
+3. Fuzzy-match rough EN vs the 10,728-string SegaCD dump + structural signals (scene order, speaker ID, menu structure).
+4. Human review of low-confidence matches. Saturn-exclusive lines: MT draft + human polish → subtitles.
