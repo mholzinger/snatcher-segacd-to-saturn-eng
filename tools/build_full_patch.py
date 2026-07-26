@@ -34,6 +34,7 @@ FW_FIX = {"'": "’", '"': "”", "-": "－", "~": "〜"}
 
 
 def to_fullwidth(s):
+    s = s.replace("<br>", "￥")  # line-break control char, already full-width/SJIS
     out = []
     for ch in s:
         o = ord(ch)
@@ -53,7 +54,12 @@ def to_fullwidth(s):
     return "".join(out)
 
 
+LINE_BREAK = "￥"  # SJIS 0x818F; extractor renders it as <br>
+
+
 def encode(text):
+    # restore the line-break control char before tokenizing
+    text = text.replace("<br>", LINE_BREAK)
     b = b""
     for c in text:
         s = struct.unpack(">H", c.encode("shift_jis"))[0]

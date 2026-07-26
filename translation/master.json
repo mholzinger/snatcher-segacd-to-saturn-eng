@@ -3,1940 +3,1940 @@
   "chunk": "chunk_021",
   "offset": "0x1a64",
   "jp": "＠赤本体ＲＡＭのバックアップの準備がまだ<br>できていません。<br>（初期化されていません）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠赤System RAM is not yet ready for<br>backup.<br>(It has not been initialized.)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x1ab9",
   "jp": "＠白ゲームを始める前に、本体ＲＡＭの全ての<br>記録を消さなければなりません。<br>（初期化しなければなりません）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠白Before starting the game, all data in<br>System RAM must be erased.<br>(It must be initialized.)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x1b24",
   "jp": "本体ＲＡＭの全ての記録を消してもよろしいですか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Erase all data in System RAM?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x1b5a",
   "jp": "それでは本体ＲＡＭの全ての記録を消去<br>します。<br>（初期化します）",
-  "en": null,
-  "status": "untranslated"
+  "en": "All data in System RAM will now be<br>erased.<br>(It will be initialized.)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x1b9b",
   "jp": "いいえ",
-  "en": null,
-  "status": "untranslated"
+  "en": "No",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x1ba2",
   "jp": "＠赤カートリッジＲＡＭのバックアップの準備がまだできていません。<br>（初期化されていません）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠赤Cartridge RAM is not yet ready for backup.<br>(It has not been initialized.)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x1bfd",
   "jp": "＠白ゲームを始める前に、カートリッジＲＡＭの全ての記録を消さなければなりません。<br>（初期化しなければなりません）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠白Before starting the game, all data in Cartridge RAM must be erased.<br>(It must be initialized.)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x1c6e",
   "jp": "カートリッジＲＡＭの全ての記録を消してもよろしいですか？<br>（初期化してもよろしいですか？）",
-  "en": null,
-  "status": "untranslated"
+  "en": "Erase all data in Cartridge RAM?<br>(Initialize it?)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x1cc9",
   "jp": "それではカートリッジＲＡＭの全ての記録を消去します。<br>（初期化します）",
-  "en": null,
-  "status": "untranslated"
+  "en": "All data in Cartridge RAM will now be erased.<br>(It will be initialized.)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x1d10",
   "jp": "＠赤本体ＲＡＭとカートリッジＲＡＭのバック<br>アップの準備がまだできていません。<br>（初期化されていません）",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠赤System RAM and Cartridge RAM are not<br>yet ready for backup.<br>(They have not been initialized.)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x1d79",
   "jp": "＠白ゲームを始める前に、本体ＲＡＭと<br>カートリッジＲＡＭの全ての記録を<br>消さなければなりません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠白Before starting the game, all data in<br>System RAM and Cartridge RAM<br>must be erased.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x1dda",
   "jp": "本体ＲＡＭとカートリッジＲＡＭの全ての<br>記録を消してもよろしいですか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Erase all data in System RAM and<br>Cartridge RAM?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x1e21",
   "jp": "それでは本体ＲＡＭとカートリッジＲＡＭの全ての記録を消去します。<br>（初期化します）",
-  "en": null,
-  "status": "untranslated"
+  "en": "All data in System RAM and Cartridge RAM will now be erased.<br>(It will be initialized.)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x1e74",
   "jp": "本体ＲＡＭの全ての記録を消しました。<br>（初期化しました）",
-  "en": null,
-  "status": "untranslated"
+  "en": "All data in System RAM has been erased.<br>(It has been initialized.)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x1ead",
   "jp": "ライトプロテクトがかかっています。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Write protection is enabled.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x1ed0",
   "jp": "本体ＲＡＭの全ての記録を消すことができませんでした。<br>（初期化できませんでした）",
-  "en": null,
-  "status": "untranslated"
+  "en": "The data in System RAM could not be erased.<br>(It could not be initialized.)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x1f21",
   "jp": "もう一度試しますか？<br>（初期化しますか？）",
-  "en": null,
-  "status": "untranslated"
+  "en": "Try again?<br>(Initialize?)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x1f4c",
   "jp": "カートリッジＲＡＭの全ての記録を消し<br>ました。<br>（初期化しました）",
-  "en": null,
-  "status": "untranslated"
+  "en": "All data in Cartridge RAM has been<br>erased.<br>(It has been initialized.)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x1f8f",
   "jp": "カートリッジＲＡＭの全ての記録を消すことができませんでした。<br>（初期化できませんでした）",
-  "en": null,
-  "status": "untranslated"
+  "en": "The data in Cartridge RAM could not be erased.<br>(It could not be initialized.)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x1fe8",
   "jp": "バックアップＲＡＭにデータをセーブする<br>ための十分な空き容量がありません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "There is not enough free space in<br>backup RAM to save data.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2033",
   "jp": "新しいデータをセーブするには６４の空き<br>容量が必要です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Saving new data requires 64 blocks of<br>free space.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x206c",
   "jp": "このままゲームを開始した場合、<br>以前のデータを消さない限り新しいデータをセーブすることができません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "If you start the game as is,<br>you will not be able to save new data unless you first erase your previous data.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x20d1",
   "jp": "ゲームを開始しますか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Start the game?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x20e8",
   "jp": "セーブデータが見つかりませんでした。",
-  "en": null,
-  "status": "untranslated"
+  "en": "No save data was found.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x210d",
   "jp": "データのロードを中止します。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Data loading has been canceled.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x212a",
   "jp": "このままゲームを開始した場合、<br>データをセーブすることができません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "If you start the game as is,<br>you will not be able to save data.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x216f",
   "jp": "セガサターンの保存データ管理画面で、他<br>のデータを消すか、カートリッジＲＡＭに<br>コピーしてゲームを再スタートして下さい。",
-  "en": null,
-  "status": "untranslated"
+  "en": "In the Sega Saturn data management<br>screen, erase other data or copy it to<br>Cartridge RAM, then restart the game.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x21e8",
   "jp": "デバッグモードに入ります。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Entering debug mode.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2203",
   "jp": "＠赤バックアップＲＡＭチェック時に何らかの<br>異常が発生しました。バックアップＲＡＭ<br>の確認をしてみてください。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠赤An error occurred while checking<br>backup RAM. Please check the backup<br>RAM.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2272",
   "jp": "確認した",
-  "en": null,
-  "status": "untranslated"
+  "en": "Checked",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x227b",
   "jp": "ゲームを終了",
-  "en": null,
-  "status": "untranslated"
+  "en": "Quit game",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2288",
   "jp": "それでは、ゲームを終了します。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The game will now end.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x22a7",
   "jp": "本体ＲＡＭとカートリッジＲＡＭに<br>データがあります。<br>どちらのデータをロードしますか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "There is data in both System RAM and<br>Cartridge RAM.<br>Which data would you like to load?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x22fe",
   "jp": "本体ＲＡＭ",
-  "en": null,
-  "status": "untranslated"
+  "en": "System RAM",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2309",
   "jp": "では本体ＲＡＭのデータをロードします。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Loading data from System RAM.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2330",
   "jp": "カートリッジＲＡＭ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Cartridge RAM",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2343",
   "jp": "ではカートリッジＲＡＭのデータを<br>ロードします。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Loading data from<br>Cartridge RAM.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2374",
   "jp": "１ωＮＯωＤＡＴＡ",
-  "en": null,
-  "status": "untranslated"
+  "en": "1 NO DATA",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2387",
   "jp": "１ωＡＣＴ１",
-  "en": null,
-  "status": "untranslated"
+  "en": "1 ACT1",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2394",
   "jp": "１ωＡＣＴ２",
-  "en": null,
-  "status": "untranslated"
+  "en": "1 ACT2",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x23a1",
   "jp": "１ωＡＣＴ３",
-  "en": null,
-  "status": "untranslated"
+  "en": "1 ACT3",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x23ae",
   "jp": "１ωＡＣＴ１ＥＮＤ",
-  "en": null,
-  "status": "untranslated"
+  "en": "1 ACT1 END",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x23c1",
   "jp": "１ωＡＣＴ２ＥＮＤ",
-  "en": null,
-  "status": "untranslated"
+  "en": "1 ACT2 END",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x23d4",
   "jp": "２ωＮＯωＤＡＴＡ",
-  "en": null,
-  "status": "untranslated"
+  "en": "2 NO DATA",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x23e7",
   "jp": "２ωＡＣＴ１",
-  "en": null,
-  "status": "untranslated"
+  "en": "2 ACT1",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x23f4",
   "jp": "２ωＡＣＴ２",
-  "en": null,
-  "status": "untranslated"
+  "en": "2 ACT2",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2401",
   "jp": "２ωＡＣＴ３",
-  "en": null,
-  "status": "untranslated"
+  "en": "2 ACT3",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x240e",
   "jp": "２ωＡＣＴ１ＥＮＤ",
-  "en": null,
-  "status": "untranslated"
+  "en": "2 ACT1 END",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2421",
   "jp": "２ωＡＣＴ２ＥＮＤ",
-  "en": null,
-  "status": "untranslated"
+  "en": "2 ACT2 END",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2434",
   "jp": "３ωＮＯωＤＡＴＡ",
-  "en": null,
-  "status": "untranslated"
+  "en": "3 NO DATA",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2447",
   "jp": "３ωＡＣＴ１",
-  "en": null,
-  "status": "untranslated"
+  "en": "3 ACT1",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2454",
   "jp": "３ωＡＣＴ２",
-  "en": null,
-  "status": "untranslated"
+  "en": "3 ACT2",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2461",
   "jp": "３ωＡＣＴ３",
-  "en": null,
-  "status": "untranslated"
+  "en": "3 ACT3",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x246e",
   "jp": "３ωＡＣＴ１ＥＮＤ",
-  "en": null,
-  "status": "untranslated"
+  "en": "3 ACT1 END",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2481",
   "jp": "３ωＡＣＴ２ＥＮＤ",
-  "en": null,
-  "status": "untranslated"
+  "en": "3 ACT2 END",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2494",
   "jp": "４ωＮＯωＤＡＴＡ",
-  "en": null,
-  "status": "untranslated"
+  "en": "4 NO DATA",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x24a7",
   "jp": "４ωＡＣＴ１",
-  "en": null,
-  "status": "untranslated"
+  "en": "4 ACT1",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x24b4",
   "jp": "４ωＡＣＴ２",
-  "en": null,
-  "status": "untranslated"
+  "en": "4 ACT2",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x24c1",
   "jp": "４ωＡＣＴ３",
-  "en": null,
-  "status": "untranslated"
+  "en": "4 ACT3",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x24ce",
   "jp": "４ωＡＣＴ１ＥＮＤ",
-  "en": null,
-  "status": "untranslated"
+  "en": "4 ACT1 END",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x24e1",
   "jp": "４ωＡＣＴ２ＥＮＤ",
-  "en": null,
-  "status": "untranslated"
+  "en": "4 ACT2 END",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x24f4",
   "jp": "ロードやめる",
-  "en": null,
-  "status": "untranslated"
+  "en": "Cancel load",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2501",
   "jp": "ではロードをとりやめます。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Load canceled.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x251c",
   "jp": "バックアップＲＡＭが接続されていません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Backup RAM is not connected.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2545",
   "jp": "バックアップＲＡＭの準備ができて<br>いません。<br>（初期化されていません）",
-  "en": null,
-  "status": "untranslated"
+  "en": "Backup RAM is not<br>ready.<br>(It has not been initialized.)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x258c",
   "jp": "セガサターンの保存データ管理画面で<br>バックアップＲＡＭの全ての記録を消<br>してください。",
-  "en": null,
-  "status": "untranslated"
+  "en": "In the Sega Saturn data management<br>screen, please erase all data in<br>backup RAM.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x25e3",
   "jp": "セーブデータが見つかりませんでした",
-  "en": null,
-  "status": "untranslated"
+  "en": "No save data was found",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2606",
   "jp": "このセーブデータは使用できません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "This save data cannot be used.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2629",
   "jp": "セガサターンの保存データ管理画面で<br>このデータを消去してください。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Please erase this data in the Sega<br>Saturn data management screen.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x266c",
   "jp": "ＡＣＴ１",
-  "en": null,
-  "status": "untranslated"
+  "en": "ACT1",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2675",
   "jp": "ＡＣＴ２",
-  "en": null,
-  "status": "untranslated"
+  "en": "ACT2",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x267e",
   "jp": "ＡＣＴ３",
-  "en": null,
-  "status": "untranslated"
+  "en": "ACT3",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2687",
   "jp": "その他",
-  "en": null,
-  "status": "untranslated"
+  "en": "Other",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x268e",
   "jp": "質問答える",
-  "en": null,
-  "status": "untranslated"
+  "en": "Answer questions",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2699",
   "jp": "カトリーヌ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Katrina",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x26a4",
   "jp": "ギブスン家玄関前",
-  "en": null,
-  "status": "untranslated"
+  "en": "Outside Gibson home",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x26b5",
   "jp": "自宅シヤワー後",
-  "en": null,
-  "status": "untranslated"
+  "en": "After home shower",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x26c4",
   "jp": "ナポレオン",
-  "en": null,
-  "status": "untranslated"
+  "en": "Napoleon",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x26d4",
   "jp": "アウター中",
-  "en": null,
-  "status": "untranslated"
+  "en": "Inside Outer Heaven",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x26df",
   "jp": "ＢＧＭ",
-  "en": null,
-  "status": "untranslated"
+  "en": "BGM",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x26e6",
   "jp": "メタル登場",
-  "en": null,
-  "status": "untranslated"
+  "en": "Metal appears",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x26f1",
   "jp": "工場行き車中",
-  "en": null,
-  "status": "untranslated"
+  "en": "In car to factory",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x26fe",
   "jp": "工場から帰還",
-  "en": null,
-  "status": "untranslated"
+  "en": "Return from factory",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x270b",
   "jp": "酔いハリー",
-  "en": null,
-  "status": "untranslated"
+  "en": "Drunk Harry",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2716",
   "jp": "ランダム登場",
-  "en": null,
-  "status": "untranslated"
+  "en": "Random appears",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2723",
   "jp": "暴走まで",
-  "en": null,
-  "status": "untranslated"
+  "en": "Before rampage",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x272c",
   "jp": "局長の話１",
-  "en": null,
-  "status": "untranslated"
+  "en": "Chief's talk 1",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2737",
   "jp": "局長の話２",
-  "en": null,
-  "status": "untranslated"
+  "en": "Chief's talk 2",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2742",
   "jp": "ジェミーＴＥＬ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Jamie's call",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2756",
   "jp": "暴走後",
-  "en": null,
-  "status": "untranslated"
+  "en": "After rampage",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x275d",
   "jp": "モルグ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Morgue",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2769",
   "jp": "ハリー死ぬ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Harry dies",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2774",
   "jp": "局長死ぬ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Chief dies",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x277d",
   "jp": "ミカ私も行く",
-  "en": null,
-  "status": "untranslated"
+  "en": "Mika: I'm coming too",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x278a",
   "jp": "ビーム",
-  "en": null,
-  "status": "untranslated"
+  "en": "Beam",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2796",
   "jp": "荒木くしゃみ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Araki sneezes",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x27a8",
   "jp": "工場１",
-  "en": null,
-  "status": "untranslated"
+  "en": "Factory 1",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x27af",
   "jp": "工場２",
-  "en": null,
-  "status": "untranslated"
+  "en": "Factory 2",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x27b6",
   "jp": "工場３",
-  "en": null,
-  "status": "untranslated"
+  "en": "Factory 3",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x27bd",
   "jp": "フレディ家",
-  "en": null,
-  "status": "untranslated"
+  "en": "Freddy's house",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x27c8",
   "jp": "ギブスン家",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gibson house",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x27d3",
   "jp": "地下道１",
-  "en": null,
-  "status": "untranslated"
+  "en": "Underground passage 1",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x27dc",
   "jp": "地下道２",
-  "en": null,
-  "status": "untranslated"
+  "en": "Underground passage 2",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x27e5",
   "jp": "数９４０",
-  "en": null,
-  "status": "untranslated"
+  "en": "No. 940",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x27ee",
   "jp": "数９５０",
-  "en": null,
-  "status": "untranslated"
+  "en": "No. 950",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x27fc",
   "jp": "ＡＣＴ１終わる",
-  "en": null,
-  "status": "untranslated"
+  "en": "ACT1 ends",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x280b",
   "jp": "ＡＣＴ２終わる",
-  "en": null,
-  "status": "untranslated"
+  "en": "ACT2 ends",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x281a",
   "jp": "ＡＣＴ１前半",
-  "en": null,
-  "status": "untranslated"
+  "en": "ACT1 first half",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x282c",
   "jp": "最初から",
-  "en": null,
-  "status": "untranslated"
+  "en": "From the start",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2835",
   "jp": "局長の話し終わる",
-  "en": null,
-  "status": "untranslated"
+  "en": "Chief's talk ends",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2846",
   "jp": "射撃訓練",
-  "en": null,
-  "status": "untranslated"
+  "en": "Shooting training",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x284f",
   "jp": "トライサイクル",
-  "en": null,
-  "status": "untranslated"
+  "en": "Tricycle",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x285e",
   "jp": "工場到着",
-  "en": null,
-  "status": "untranslated"
+  "en": "Arrive at factory",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2867",
   "jp": "メモリー取り",
-  "en": null,
-  "status": "untranslated"
+  "en": "Retrieve memory",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2874",
   "jp": "ギブスン発見",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gibson found",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2881",
   "jp": "動体反応",
-  "en": null,
-  "status": "untranslated"
+  "en": "Motion detected",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x288a",
   "jp": "くしゃみ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Sneeze",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2893",
   "jp": "構内射撃",
-  "en": null,
-  "status": "untranslated"
+  "en": "Grounds shooting",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x289c",
   "jp": "構内１",
-  "en": null,
-  "status": "untranslated"
+  "en": "Grounds 1",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x28a3",
   "jp": "構内２",
-  "en": null,
-  "status": "untranslated"
+  "en": "Grounds 2",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x28aa",
   "jp": "臨死体験",
-  "en": null,
-  "status": "untranslated"
+  "en": "Near-death experience",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x28b3",
   "jp": "爆発前",
-  "en": null,
-  "status": "untranslated"
+  "en": "Before explosion",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x28ba",
   "jp": "本部２",
-  "en": null,
-  "status": "untranslated"
+  "en": "HQ 2",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x28c1",
   "jp": "デカ部屋",
-  "en": null,
-  "status": "untranslated"
+  "en": "Detectives' room",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x28ca",
   "jp": "証拠そろう",
-  "en": null,
-  "status": "untranslated"
+  "en": "Evidence gathered",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x28d5",
   "jp": "証拠そろって、メカ室",
-  "en": null,
-  "status": "untranslated"
+  "en": "Evidence gathered, mech room",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x28ea",
   "jp": "無駄遣い怒り局長",
-  "en": null,
-  "status": "untranslated"
+  "en": "Chief angry over waste",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x28fb",
   "jp": "ＡＣＴ１後半",
-  "en": null,
-  "status": "untranslated"
+  "en": "ACT1 second half",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2908",
   "jp": "家の前",
-  "en": null,
-  "status": "untranslated"
+  "en": "Outside house",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x290f",
   "jp": "質問直後",
-  "en": null,
-  "status": "untranslated"
+  "en": "Just after questions",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2918",
   "jp": "パソコン前",
-  "en": null,
-  "status": "untranslated"
+  "en": "At computer",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2923",
   "jp": "わんわん",
-  "en": null,
-  "status": "untranslated"
+  "en": "Woof woof",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2931",
   "jp": "ギリアン自宅",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian's home",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x293e",
   "jp": "アルタミラ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Altamira",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2949",
   "jp": "アルタ到着",
-  "en": null,
-  "status": "untranslated"
+  "en": "Arrive at Altamira",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2954",
   "jp": "ナポと遭遇",
-  "en": null,
-  "status": "untranslated"
+  "en": "Encounter Napoleon",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x295f",
   "jp": "占師登場",
-  "en": null,
-  "status": "untranslated"
+  "en": "Fortune teller appears",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2968",
   "jp": "ナンパ出来ます",
-  "en": null,
-  "status": "untranslated"
+  "en": "Can flirt",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2977",
   "jp": "ジョイディビジョン",
-  "en": null,
-  "status": "untranslated"
+  "en": "Joy Division",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x298a",
   "jp": "ジョイ到着",
-  "en": null,
-  "status": "untranslated"
+  "en": "Arrive at Joy Division",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2995",
   "jp": "ネオコウベ焼き",
-  "en": null,
-  "status": "untranslated"
+  "en": "Neo Kobe grill",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x29a4",
   "jp": "エロビデオ購入",
-  "en": null,
-  "status": "untranslated"
+  "en": "Buy porn video",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x29b3",
   "jp": "アウターヘブン",
-  "en": null,
-  "status": "untranslated"
+  "en": "Outer Heaven",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x29c2",
   "jp": "イワン捜査",
-  "en": null,
-  "status": "untranslated"
+  "en": "Ivan investigation",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x29cd",
   "jp": "イワン家到着",
-  "en": null,
-  "status": "untranslated"
+  "en": "Arrive at Ivan's house",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x29da",
   "jp": "イワン家玄関",
-  "en": null,
-  "status": "untranslated"
+  "en": "Ivan's house entrance",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x29e7",
   "jp": "射撃前",
-  "en": null,
-  "status": "untranslated"
+  "en": "Before shooting",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x29ee",
   "jp": "射撃後居間",
-  "en": null,
-  "status": "untranslated"
+  "en": "Living room after shooting",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x29f9",
   "jp": "浴室直前居間",
-  "en": null,
-  "status": "untranslated"
+  "en": "Living room before bathroom",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2a06",
   "jp": "風呂調べたよ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Checked the bath",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2a13",
   "jp": "スキャニング後",
-  "en": null,
-  "status": "untranslated"
+  "en": "After scanning",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2a22",
   "jp": "フレディ捜査",
-  "en": null,
-  "status": "untranslated"
+  "en": "Freddy investigation",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2a2f",
   "jp": "フレディ家到着",
-  "en": null,
-  "status": "untranslated"
+  "en": "Arrive at Freddy's house",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2a3e",
   "jp": "入れてもらえる",
-  "en": null,
-  "status": "untranslated"
+  "en": "Allowed inside",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2a4d",
   "jp": "質問終わり",
-  "en": null,
-  "status": "untranslated"
+  "en": "Questions end",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2a58",
   "jp": "浴室入る",
-  "en": null,
-  "status": "untranslated"
+  "en": "Enter bathroom",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2a61",
   "jp": "リサ射撃",
-  "en": null,
-  "status": "untranslated"
+  "en": "Lisa shooting",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2a6a",
   "jp": "リサ射撃後",
-  "en": null,
-  "status": "untranslated"
+  "en": "After Lisa shooting",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2a75",
   "jp": "外出る",
-  "en": null,
-  "status": "untranslated"
+  "en": "Go outside",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2a7c",
   "jp": "中入る",
-  "en": null,
-  "status": "untranslated"
+  "en": "Go inside",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2a83",
   "jp": "再び浴室",
-  "en": null,
-  "status": "untranslated"
+  "en": "Bathroom again",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2a8c",
   "jp": "元に戻る",
-  "en": null,
-  "status": "untranslated"
+  "en": "Return",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2a95",
   "jp": "ＡＣＴ２前半",
-  "en": null,
-  "status": "untranslated"
+  "en": "ACT2 first half",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2aa2",
   "jp": "ＡＣＴ２開始",
-  "en": null,
-  "status": "untranslated"
+  "en": "ACT2 start",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2aaf",
   "jp": "局長話終わり",
-  "en": null,
-  "status": "untranslated"
+  "en": "Chief's talk ends",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2abc",
   "jp": "占い登場",
-  "en": null,
-  "status": "untranslated"
+  "en": "Fortune teller appears",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2ac5",
   "jp": "うどん屋",
-  "en": null,
-  "status": "untranslated"
+  "en": "Udon shop",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2ace",
   "jp": "サンタナポ登場",
-  "en": null,
-  "status": "untranslated"
+  "en": "Santa Napoleon appears",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2add",
   "jp": "くさめと別れナポ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Sneeze, part with Napoleon",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2aee",
   "jp": "カトリーヌを探すぜ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Let's find Katrina",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2b01",
   "jp": "オウリン病院",
-  "en": null,
-  "status": "untranslated"
+  "en": "Oulin Hospital",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2b13",
   "jp": "台詞前",
-  "en": null,
-  "status": "untranslated"
+  "en": "Before dialogue",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2b1a",
   "jp": "ギブスン宅",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gibson residence",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2b25",
   "jp": "ぴくぴくアリス",
-  "en": null,
-  "status": "untranslated"
+  "en": "Twitching Alice",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2b34",
   "jp": "おら、夢先案内人ペトロビッチ！！<br>仲良くしてくれよな！",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hey there, I'm Petrovich, your guide to dreams!!<br>Let's get along, yeah!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2b70",
   "jp": "自宅到着",
-  "en": null,
-  "status": "untranslated"
+  "en": "Arrive home",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2b79",
   "jp": "シャワーブース開",
-  "en": null,
-  "status": "untranslated"
+  "en": "Shower booth opens",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2b8a",
   "jp": "カトリーヌと検索",
-  "en": null,
-  "status": "untranslated"
+  "en": "Search with Katrina",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2b9b",
   "jp": "検索終了後",
-  "en": null,
-  "status": "untranslated"
+  "en": "After search ends",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2ba6",
   "jp": "クィーン病院１",
-  "en": null,
-  "status": "untranslated"
+  "en": "Queen Hospital 1",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2bb5",
   "jp": "病院到着",
-  "en": null,
-  "status": "untranslated"
+  "en": "Arrive at hospital",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2bbe",
   "jp": "ライト直前",
-  "en": null,
-  "status": "untranslated"
+  "en": "Just before light",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2bc9",
   "jp": "ＡＣＴ２後半",
-  "en": null,
-  "status": "untranslated"
+  "en": "ACT2 second half",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2bd6",
   "jp": "アウターヘブン２",
-  "en": null,
-  "status": "untranslated"
+  "en": "Outer Heaven 2",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2bec",
   "jp": "ベンソン当てる前",
-  "en": null,
-  "status": "untranslated"
+  "en": "Before naming Benson",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2bfd",
   "jp": "局ハいない本部",
-  "en": null,
-  "status": "untranslated"
+  "en": "HQ, Chief absent",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2c0c",
   "jp": "ランダム同行クィーン病院",
-  "en": null,
-  "status": "untranslated"
+  "en": "Queen Hospital, Random along",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2c25",
   "jp": "じゃんけん",
-  "en": null,
-  "status": "untranslated"
+  "en": "Rock-paper-scissors",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2c30",
   "jp": "手術室射撃１",
-  "en": null,
-  "status": "untranslated"
+  "en": "Operating room shooting 1",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2c3d",
   "jp": "手術室射撃２",
-  "en": null,
-  "status": "untranslated"
+  "en": "Operating room shooting 2",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2c4a",
   "jp": "クィーン病院地下",
-  "en": null,
-  "status": "untranslated"
+  "en": "Queen Hospital basement",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2c5b",
   "jp": "地下の廊下",
-  "en": null,
-  "status": "untranslated"
+  "en": "Basement corridor",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2c66",
   "jp": "地下モルグ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Basement morgue",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2c71",
   "jp": "遺体復元",
-  "en": null,
-  "status": "untranslated"
+  "en": "Body reconstruction",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2c7a",
   "jp": "びっくりしたなぁ",
-  "en": null,
-  "status": "untranslated"
+  "en": "That startled me",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2c8b",
   "jp": "陳話１",
-  "en": null,
-  "status": "untranslated"
+  "en": "Chin's talk 1",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2c92",
   "jp": "陳話２",
-  "en": null,
-  "status": "untranslated"
+  "en": "Chin's talk 2",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2c99",
   "jp": "地下道とタクシー",
-  "en": null,
-  "status": "untranslated"
+  "en": "Underground passage and taxi",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2caf",
   "jp": "地下鉄",
-  "en": null,
-  "status": "untranslated"
+  "en": "Subway",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2cb6",
   "jp": "フレディの風呂",
-  "en": null,
-  "status": "untranslated"
+  "en": "Freddy's bath",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2cc5",
   "jp": "タクシー",
-  "en": null,
-  "status": "untranslated"
+  "en": "Taxi",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2cce",
   "jp": "ラスト本部",
-  "en": null,
-  "status": "untranslated"
+  "en": "Final HQ",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2cd9",
   "jp": "本部到着",
-  "en": null,
-  "status": "untranslated"
+  "en": "Arrive at HQ",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2ce2",
   "jp": "ブース開く",
-  "en": null,
-  "status": "untranslated"
+  "en": "Booth opens",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2ced",
   "jp": "ハリー死後",
-  "en": null,
-  "status": "untranslated"
+  "en": "After Harry's death",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2cf8",
   "jp": "天井局長",
-  "en": null,
-  "status": "untranslated"
+  "en": "Ceiling Chief",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2d07",
   "jp": "フロント局長",
-  "en": null,
-  "status": "untranslated"
+  "en": "Front Chief",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2d14",
   "jp": "フロント到着",
-  "en": null,
-  "status": "untranslated"
+  "en": "Arrive at front",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2d21",
   "jp": "局長死ぬとこ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Where Chief dies",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2d2e",
   "jp": "ＡＣＴ３開始",
-  "en": null,
-  "status": "untranslated"
+  "en": "ACT3 start",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2d3b",
   "jp": "おやじさんが",
-  "en": null,
-  "status": "untranslated"
+  "en": "The old man",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2d48",
   "jp": "謎が解けた",
-  "en": null,
-  "status": "untranslated"
+  "en": "Mystery solved",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2d58",
   "jp": "教会行き",
-  "en": null,
-  "status": "untranslated"
+  "en": "To church",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2d61",
   "jp": "教会到着",
-  "en": null,
-  "status": "untranslated"
+  "en": "Arrive at church",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2d6a",
   "jp": "礼拝堂",
-  "en": null,
-  "status": "untranslated"
+  "en": "Chapel",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2d71",
   "jp": "保存庫",
-  "en": null,
-  "status": "untranslated"
+  "en": "Storage vault",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2d78",
   "jp": "培養ルーム",
-  "en": null,
-  "status": "untranslated"
+  "en": "Incubation room",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2d83",
   "jp": "培養ルーム到着",
-  "en": null,
-  "status": "untranslated"
+  "en": "Arrive at incubation room",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2d92",
   "jp": "スナッチ過程",
-  "en": null,
-  "status": "untranslated"
+  "en": "Snatch process",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2d9f",
   "jp": "偉いスナッチャー",
-  "en": null,
-  "status": "untranslated"
+  "en": "High Snatcher",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2db0",
   "jp": "教会虫射撃",
-  "en": null,
-  "status": "untranslated"
+  "en": "Church insect shooting",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2dbb",
   "jp": "教会スナ射撃",
-  "en": null,
-  "status": "untranslated"
+  "en": "Church Snatcher shooting",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2dc8",
   "jp": "ジェミー再会後",
-  "en": null,
-  "status": "untranslated"
+  "en": "After reunion with Jamie",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2dd7",
   "jp": "ランダム瓶前",
-  "en": null,
-  "status": "untranslated"
+  "en": "Before Random's jar",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2de4",
   "jp": "ジェミーと再会",
-  "en": null,
-  "status": "untranslated"
+  "en": "Reunion with Jamie",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2df3",
   "jp": "兵隊の絵",
-  "en": null,
-  "status": "untranslated"
+  "en": "Painting of soldiers",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2dfc",
   "jp": "あなたはＣＩＡ",
-  "en": null,
-  "status": "untranslated"
+  "en": "You are CIA",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2e0b",
   "jp": "エリア登場",
-  "en": null,
-  "status": "untranslated"
+  "en": "Elijah appears",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2e16",
   "jp": "エリア登場２",
-  "en": null,
-  "status": "untranslated"
+  "en": "Elijah appears 2",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2e23",
   "jp": "政治屋",
-  "en": null,
-  "status": "untranslated"
+  "en": "Politician",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2e2a",
   "jp": "何をするつもりだ",
-  "en": null,
-  "status": "untranslated"
+  "en": "What are you planning to do",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2e3b",
   "jp": "ランダム瓶後",
-  "en": null,
-  "status": "untranslated"
+  "en": "After Random's jar",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2e48",
   "jp": "ランダム瓶詰め",
-  "en": null,
-  "status": "untranslated"
+  "en": "Random bottled up",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2e57",
   "jp": "馬鹿なシーン７１",
-  "en": null,
-  "status": "untranslated"
+  "en": "Stupid scene 71",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2e68",
   "jp": "シーン７６",
-  "en": null,
-  "status": "untranslated"
+  "en": "Scene 76",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2e73",
   "jp": "ブラ撃つギリ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian shoots bra",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2e80",
   "jp": "ランダム走る",
-  "en": null,
-  "status": "untranslated"
+  "en": "Random runs",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2e8d",
   "jp": "すまない",
-  "en": null,
-  "status": "untranslated"
+  "en": "Sorry",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2e96",
   "jp": "朝多君用",
-  "en": null,
-  "status": "untranslated"
+  "en": "For Asada",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2e9f",
   "jp": "ラン顔",
-  "en": null,
-  "status": "untranslated"
+  "en": "Random's face",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2ea6",
   "jp": "ほうやはり",
-  "en": null,
-  "status": "untranslated"
+  "en": "Ah, just as I thought",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2eb1",
   "jp": "逆さ読み",
-  "en": null,
-  "status": "untranslated"
+  "en": "Read backwards",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2eba",
   "jp": "死んでるのか",
-  "en": null,
-  "status": "untranslated"
+  "en": "Is he dead?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2ec7",
   "jp": "サミットはもう",
-  "en": null,
-  "status": "untranslated"
+  "en": "The summit already...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2ed6",
   "jp": "サミットがどうした",
-  "en": null,
-  "status": "untranslated"
+  "en": "What about the summit?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2ee9",
   "jp": "オーラス２",
-  "en": null,
-  "status": "untranslated"
+  "en": "Grand finale 2",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2ef4",
   "jp": "終わり",
-  "en": null,
-  "status": "untranslated"
+  "en": "The end",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2efb",
   "jp": "ＡＣＴ１射撃",
-  "en": null,
-  "status": "untranslated"
+  "en": "ACT1 shooting",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2f08",
   "jp": "本部１訓練",
-  "en": null,
-  "status": "untranslated"
+  "en": "HQ 1 training",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2f13",
   "jp": "工場射撃",
-  "en": null,
-  "status": "untranslated"
+  "en": "Factory shooting",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2f1c",
   "jp": "本部２訓練",
-  "en": null,
-  "status": "untranslated"
+  "en": "HQ 2 training",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2f27",
   "jp": "イワン",
-  "en": null,
-  "status": "untranslated"
+  "en": "Ivan",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2f2e",
   "jp": "射撃後",
-  "en": null,
-  "status": "untranslated"
+  "en": "After shooting",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2f3a",
   "jp": "フレディ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Freddy",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2f43",
   "jp": "ＡＣＴ２射撃",
-  "en": null,
-  "status": "untranslated"
+  "en": "ACT2 shooting",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2f50",
   "jp": "本部訓練",
-  "en": null,
-  "status": "untranslated"
+  "en": "HQ training",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2f59",
   "jp": "クイーン病院",
-  "en": null,
-  "status": "untranslated"
+  "en": "Queen Hospital",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2f66",
   "jp": "クイーン手術室１",
-  "en": null,
-  "status": "untranslated"
+  "en": "Queen operating room 1",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2f77",
   "jp": "クイーン手術室２",
-  "en": null,
-  "status": "untranslated"
+  "en": "Queen operating room 2",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2f88",
   "jp": "迷路虫弱",
-  "en": null,
-  "status": "untranslated"
+  "en": "Maze insect weak",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2f91",
   "jp": "迷路虫強",
-  "en": null,
-  "status": "untranslated"
+  "en": "Maze insect strong",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2f9a",
   "jp": "タクシー屋陳ちん",
-  "en": null,
-  "status": "untranslated"
+  "en": "Cabbie Chin",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2fab",
   "jp": "ＡＣＴ３射撃",
-  "en": null,
-  "status": "untranslated"
+  "en": "ACT3 shooting",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2fb8",
   "jp": "教会虫",
-  "en": null,
-  "status": "untranslated"
+  "en": "Church insect",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2fbf",
   "jp": "教会スナ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Church Snatcher",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2fc8",
   "jp": "ＡＣＴ１用",
-  "en": null,
-  "status": "untranslated"
+  "en": "For ACT1",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2fd3",
   "jp": "ＡＣＴ２用",
-  "en": null,
-  "status": "untranslated"
+  "en": "For ACT2",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2fde",
   "jp": "エロジェミ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Sexy Jamie",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2fe9",
   "jp": "でかけるジェミー",
-  "en": null,
-  "status": "untranslated"
+  "en": "Jamie going out",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x2ffa",
   "jp": "ＶＲＡＭアニメ",
-  "en": null,
-  "status": "untranslated"
+  "en": "VRAM animation",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x3009",
   "jp": "工場行き",
-  "en": null,
-  "status": "untranslated"
+  "en": "To factory",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x3012",
   "jp": "ノーマル",
-  "en": null,
-  "status": "untranslated"
+  "en": "Normal",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x301b",
   "jp": "ギリアンの家の前に連れてったるから、<br>そこで車に乗るを選択しやがれ！",
-  "en": null,
-  "status": "untranslated"
+  "en": "I'll take you to the front of Gillian's house,<br>so pick \"get in the car\" there, got it!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x3060",
   "jp": "ミカから",
-  "en": null,
-  "status": "untranslated"
+  "en": "From Mika",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x3069",
   "jp": "電話から",
-  "en": null,
-  "status": "untranslated"
+  "en": "From phone call",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x3072",
   "jp": "電話後",
-  "en": null,
-  "status": "untranslated"
+  "en": "After phone call",
+  "status": "translated"
  },
  {
   "chunk": "chunk_021",
   "offset": "0x3079",
   "jp": "モンタージュ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Montage",
+  "status": "translated"
  },
  {
   "chunk": "chunk_022",
