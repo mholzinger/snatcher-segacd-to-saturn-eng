@@ -130,3 +130,20 @@ State 2 (Gillian/Mika dialogue at JunkerHQ reception). Extraction: WorkRAML sect
 1. Ghidra 68000 project on SDDRVS6.TSK (+ A.BIN embedded driver): identify ADPCM decode loop → derive encoder.
 2. Trace text-bank writer (FUN_060e4a7c first) → crack text encoding in bytecode chunks.
 3. Then Phase 3 exit criteria: script extraction tool + voice clip map.
+
+## Phase 3 progress (2026-07-26, session 7) — **SATURN TEXT ENCODING CRACKED**
+
+- **Encoding: stored_u16 = 0x10100 − SJIS** (engine decodes with negate+add — why plain scans failed).
+  Cracked via ＪＵＮＫＥＲ token arithmetic in chunk_022 (`7e97..` ↔ `8269..`, constant sum 0x10100).
+- Text lives interleaved in the scene bytecode chunks (21–98), u16 BE tokens; in-text controls: ￥=line break, ＠色=color (＠白/＠赤/＠水…).
+- `tools/extract_saturn_script.py` → **12,259 strings from 36 scene chunks** (`extracted/script/saturn_script.json`). Chunks 63+ carry no text (u16 index tables/other data).
+- Corpus sizes: Saturn 12,259 JP vs SegaCD 10,728 EN — consistent with Saturn's added scenes.
+- MX0/MX1/LOGO.TRM identified: RIFF AVI, Duck TrueMotion video + '01wb' 16-bit PCM audio = FMV cutscenes (dub swap for FMVs = replace AVI audio stream! Standard tooling applies).
+
+### Phase 3 remaining
+1. Voice ADPCM in ACT*.CAT: RE the 68K sound driver (SDDRVS6.TSK) → decoder + encoder.
+2. Text record fine-structure (speaker/voice-ref association per line) — needed for dub line mapping, not for translation start.
+3. Re-insertion: token re-encode (trivial: 0x10100−SJIS) + chunk rebuild + DATA.BIN repack — sizes must be managed.
+
+### PHASE 4 CAN BEGIN (alignment)
+Both scripts extracted → start JP↔EN alignment per plan (MT-assisted matching vs SegaCD dump).
