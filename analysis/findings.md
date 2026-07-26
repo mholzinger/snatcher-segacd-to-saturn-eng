@@ -115,3 +115,18 @@ State 2 (Gillian/Mika dialogue at JunkerHQ reception). Extraction: WorkRAML sect
 1. Find decompressor #2: trace who fills 0x002F8000 (search literals for 0x002F8000/0x202F8000 in MAIN_L; follow the scene-load path); or diff a raw chunk against the RAM script block.
 2. Confirm the 4-byte per-line refs = voice clips (correlate with ADPCM_*.CAT / ACT stream offsets).
 3. Extract full script per scene once codec #2 is cracked.
+
+## Phase 3 progress (2026-07-26, session 6) — scene bytecode + voice routing
+
+- **DATA.BIN chunks 21–98 = per-scene VM bytecode, stored RAW** (not LZ). Proof: chunk_022 matches the live JunkerHQ script in RAM (168/191 24-byte slices; diffs = runtime patching). One chunk per scene/area.
+- **Area text bank** (RAM ~0x0024798C, both states): full JunkerHQ script as SJIS records. Control codes: `￥`(0x818F)=line break, `＠赤`/`＠白`=color tags. Per-line 4-byte refs (`1c 0b 04 58`, increasing) = voice cue refs.
+- Text bank does NOT exist on disc in SJIS, in LZ form (deep-scanned DATA.BIN, ACT*.CAT, MX*.TRM, LOGO.TRM, raw tracks), and kanji like 俺/事/教/許 do NOT appear in MAIN_L.BIN → no static charmap. Hypothesis: text is encoded inside the bytecode chunks (12-bit VM tokens?) and expanded at scene load. NEXT: find the writer of the 0x247xxx bank (candidates: FUN_060e4a7c — has 0x240000/0x250000/0x260000 literals; also FUN_060b10cc/FUN_060b6f20/FUN_060b918c touch staging 0x20248000).
+- **Voice routing solved at the format level**:
+  - `ADPCM_*.CAT` = raw 8-bit PCM 22050 (system/short voices) — trivial to replace.
+  - **Dialogue voice = Konami-custom ADPCM inside ACT1/2/3.CAT** (track 2, Mode2 Form2 DATA sectors — submode 0x28, NOT CD-XA audio, coding=0). Sound driver (68K: SDDRVS6.TSK + driver embedded in A.BIN, 'Ver1.31 95/06/20 SATURN(S)') decodes to PCM in sound RAM (mid-playback state proved no byte-identity with disc). → Dub patch requires REing the 68K driver's ADPCM decode, then writing an encoder for the English audio.
+- Save-state recipe addition: SCSP SoundRAM section = name `RAM` (len 3), size 0x80000, swap16.
+
+### Next (session 7)
+1. Ghidra 68000 project on SDDRVS6.TSK (+ A.BIN embedded driver): identify ADPCM decode loop → derive encoder.
+2. Trace text-bank writer (FUN_060e4a7c first) → crack text encoding in bytecode chunks.
+3. Then Phase 3 exit criteria: script extraction tool + voice clip map.
