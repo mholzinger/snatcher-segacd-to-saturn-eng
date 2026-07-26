@@ -147,3 +147,6 @@ State 2 (Gillian/Mika dialogue at JunkerHQ reception). Extraction: WorkRAML sect
 
 ### PHASE 4 CAN BEGIN (alignment)
 Both scripts extracted → start JP↔EN alignment per plan (MT-assisted matching vs SegaCD dump).
+
+## Session 7 addendum — sound driver confirmed
+- SDDRVS6.TSK verified resident+running at sound RAM 0x0000 in mid-playback state (70/80 blocks byte-identical; vector table SP=0xA000 PC=0x1000). Ghidra 68000 import done (`analysis/ghidra_out/SDDRVS6_all.c`, sparse — needs entry-point-guided re-analysis at 0x1000 next session).
