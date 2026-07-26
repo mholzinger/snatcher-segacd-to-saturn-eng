@@ -1,0 +1,19 @@
+# Copyrighted game data — never commit
+iso/
+extracted/
+audio/
+*.bin
+*.BIN
+*.iso
+*.chd
+*.wav
+
+# Ghidra
+*.rep/
+*.lock
+*.lock~
+
+# macOS
+.DS_Store
+scratch/
+extracted/
