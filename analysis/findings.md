@@ -100,3 +100,18 @@ Save state: `~/.mednafen/mcs/Snatcher (Japan).c9ea599588701cffc7848c24b027de78.m
 1. Dump VDP2 VRAM + pattern-name tables from the state; find the tilemap showing the menu text; tiles → glyph indexes → correlate with WRAM script codes (search WRAMH for plausible u16 code arrays near 0x060F2xxx).
 2. Alternative static path: enumerate literals 0x25C00000-0x25C7FFFF in MAIN_L to find the big font upload routine and its source pointer chain.
 3. Once code→glyph order known: check if order is JIS/SJIS-derived (would give char mapping for free).
+
+## Phase 3 progress (2026-07-26, session 5) — TEXT PIPELINE CRACKED (dialogue state)
+
+State 2 (Gillian/Mika dialogue at JunkerHQ reception). Extraction: WorkRAML section also present (`len_byte "WorkRAML" size_u32LE data`; swap16 like WRAMH).
+
+- **Text line buffer 0x060F28AA = live SJIS!** Cell = 4 bytes: [SJIS hi][SJIS lo][color][00]. Read directly: speaker 「キリアン」(color 4), dialogue 「じゃあ、俺の事教えれば許してくれる？」(color 7). Padding char 0x889E.
+- **Scene script block found in WorkRAML @ 0x002F8000** (VM sees it via cache-through 0x202F8000): plain SJIS strings, null-terminated, each preceded by 8-byte header (two u32s: id?, len?) and followed by 4-byte refs like `1c 0b 04 58` (monotonically increasing → likely voice-clip/stream offsets). Full Mika reception conversation readable.
+- **VM cursor vars: IP holder @0x060FC8B0, script base holder @0x060FB460** (resolved via FUN_060c0c78 literals DAT_060c0de0/de4). Bytecode uses u16 script-relative offsets; `c0 01 a0 05 XXXX` patterns = command+text-offset refs.
+- **The script block does NOT exist verbatim anywhere on disc** (searched raw track BINs, all files, all decompressed chunks). → There is a **second decompressor** (likely Huffman; the 78 non-LZ DATA.BIN chunks have entropy ~6.1-7.4 b/B and are prime suspects). NOT yet located in code (FUN_060cb1a8 turned out to be unrelated game logic).
+- Bonus for Phase 4: the font includes full-width Latin (ＪＵＮＫＥＲ renders in dialogue), so an early English proof-of-concept could encode English as full-width SJIS letters *before* any renderer hack.
+
+### Next (session 6)
+1. Find decompressor #2: trace who fills 0x002F8000 (search literals for 0x002F8000/0x202F8000 in MAIN_L; follow the scene-load path); or diff a raw chunk against the RAM script block.
+2. Confirm the 4-byte per-line refs = voice clips (correlate with ADPCM_*.CAT / ACT stream offsets).
+3. Extract full script per scene once codec #2 is cracked.
