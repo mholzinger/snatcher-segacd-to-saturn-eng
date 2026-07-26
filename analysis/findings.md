@@ -205,3 +205,19 @@ User has a save state on the patched build (new disc hash) for renderer work.
 4. **Voice**: 68K ADPCM decode loop (dialogue in ACT*.CAT) → encoder; system PCM + FMV-AVI + CD-DA
    are already trivial swaps.
 5. **Packaging**: EDC/ECC regen for real hardware; xdelta/SSP patch distribution.
+
+## Session 10 — dialogue capacity measured on-screen; half-width path scoped
+
+- **Measured real glyph layout from save-state VDP1 command list**: dialogue box = fixed
+  **monospace, 14px pitch, ~20 glyphs/line, 4 visible lines** (advance run = 14,14,14…; rows at
+  y=158/173/188/204). So usable capacity ≈ 20×4 = 80 chars/page at full-width — this is THE
+  translation fit constraint (matches the corpus analysis: full-width English overflows).
+- **Renderer = FUN_060b4970** (80-iter loop, DAT_060b4a70=width table @0x060D6A70, glyph source
+  VRAM 0x15000). Coordinate math line 3064: `(width>>2)*0xe(14)+base`. Second text renderer at
+  decompile line 4770 (same shape) = the status/scroll layer.
+- **Half-width lead**: FUN_060b4970 has a *proportional* code branch already
+  (`sVar5 = (uVar1&3)*4 + sVar2`) alongside the monospace one. Two routes to ~40 chars/line:
+  (a) supply 8px Latin glyphs + halve the 14px pitch in the VDP1 command builder, or
+  (b) drive Latin through the existing proportional branch. Route (b) may be data-mostly.
+- NEXT: pin the pitch/size write in the command builder (trace psVar7/psVar9 arrays →VDP1 cmd),
+  craft a half-width test build, screenshot.
