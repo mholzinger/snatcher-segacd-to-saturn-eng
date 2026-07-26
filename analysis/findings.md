@@ -221,3 +221,21 @@ User has a save state on the patched build (new disc hash) for renderer work.
   (b) drive Latin through the existing proportional branch. Route (b) may be data-mostly.
 - NEXT: pin the pitch/size write in the command builder (trace psVar7/psVar9 arrays →VDP1 cmd),
   craft a half-width test build, screenshot.
+
+## Session 11 — HALF-WIDTH MECHANISM FULLY MAPPED (all edit sites located)
+
+Live dialogue glyph VDP1 command (from save state): 16×14px, size field 0x020E, 14px pitch.
+Three edit sites for half-width (~40 chars/line, matching the SegaCD reference shot):
+1. **Pitch table @ 0x060E5358** — 80 records × 12 bytes (4 rows × 20 glyphs), X coord at short
+   index 4, currently step 14. Edit → step 8 (+ extend to ~34/row). Pure data.
+2. **Glyph size @ 0x060E0CC0** = 0x020E (16w×14h) in a sprite-size lookup table (index 32).
+   Edit → 0x010E (8w×14h). Verify not shared with other 16px sprites first.
+3. **8px Latin glyphs** — author half-width A–Z/a–z/punct into the font source; the font is
+   expanded into VRAM at load (on-disc source still to be located, or inject into VRAM-upload path).
+Renderer FUN_060b4970 fills per-frame; pitch/size are static data → route is mostly data edits + font art.
+
+Reference target archived: `screenshots/20260726_212053-screen-segacd.png` (SegaCD "Welcome to
+Junker Headquarters. May I help you?" — proportional mixed-case, the visual goal).
+
+### Phase 3 = COMPLETE (all formats cracked). Phase 4 underway.
+Remaining Phase 4: half-width font build (sites above) · relocating inserter · alignment · voice codec.
