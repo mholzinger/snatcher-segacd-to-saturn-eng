@@ -34,3 +34,17 @@ File naming is completely different between versions — no shared `SP*.BIN` on 
 1. SegaCD: write `tools/extract_script.py` for SP*.BIN → structured English script dump.
 2. Saturn: Ghidra project on `MAIN_L.BIN` (SH-2 BE); trace DATA.BIN load + decompression; find script decoder and ADPCM clip table.
 3. Confirm voice PCM by listening to `scratch/adpcm00_as_pcm8_*.wav` (pick rate).
+
+## Phase 3 progress (2026-07-26, session 1)
+
+- Saturn disc header: product `T-9508G`, mastered 1995-02-13. Boot file `A.BIN` loads at 0x06010000 (IP dumped to `extracted/saturn/ip.bin`).
+- **`MAIN_L.BIN` load base = 0x060B0000** (verified: direct literal refs to "DATA.BIN" @+0x22A8 and "save old scene" @+0x20BC; 4,340 self-consistent pointers).
+- Ghidra project `ghidra/snatcher-saturn` (SuperH:BE:32:SH-2, BinaryLoader @0x060b0000): 961 functions. Full decompilation: `analysis/ghidra_out/MAIN_L_all.c`.
+- **DATA.BIN archive format cracked**: index table at 0x060E62F4 (639 entries of u16 pairs: start sector ×2048, size in 16-bit words). Chunks extracted to `extracted/saturn/data_bin/`. Loader fn FUN_060b22b4 (opens "DATA.BIN"), scene loader FUN_060b2624.
+- Chunks are **compressed** (entropy 7.1–7.5 b/B). Most start with u32 BE (decompressed size?). Standard LZSS variants brute-forced: no match — custom codec. Decompressor not yet located.
+- **Script VM found**: FUN_060c0c78 is the bytecode operand fetcher (opcode class tests on 0x80/0xE0/0xF0 bits, 12-bit operands). This is the interpreter that will render text — key patch target later.
+
+### Next (Phase 3, session 2)
+1. Find decompressor: trace what code consumes a freshly-loaded DATA.BIN chunk (follow FUN_060b2624's read-completion path / PTR_FUN_060b2784).
+2. Decompress chunk → confirm SJIS script inside.
+3. ADPCM clip index: find table mapping voice IDs → offsets in ADPCM_*.CAT.
