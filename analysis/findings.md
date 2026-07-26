@@ -70,3 +70,16 @@ Once glyph indices → JP text is solved, alignment of JP↔EN lines is automate
 2. Machine-translate each JP line (API: Google/DeepL/Claude) — used ONLY as an alignment key, never shipped.
 3. Fuzzy-match rough EN vs the 10,728-string SegaCD dump + structural signals (scene order, speaker ID, menu structure).
 4. Human review of low-confidence matches. Saturn-exclusive lines: MT draft + human polish → subtitles.
+
+## Phase 3 progress (2026-07-26, session 3) — text renderer located
+
+- **Text renderer: FUN_060b4970** (MAIN_L.BIN). Per-frame line layout, up to 0x50 (80) chars.
+  - Text buffer: 0x060F28AA (BSS), 4 bytes per char cell.
+  - Per-char u16 attribute/width table (proportional font): **0x060D6A70** (static, file off 0x26A70). Layout: bits0-1 sub-cell, upper bits width class ((attr>>2)*14 used in advance calc).
+  - Glyphs: **16x16 4bpp, 128 bytes each**, addressed `(attr&3)*0x20 + slot*0x80 + 0x15000` in VDP1 VRAM = dynamic glyph cache at **0x25C15000** (uploaded on demand; slot byte lives in the text cell).
+- Font *bitmap source* not yet located (static candidates at 0x35be6 and MAIN_L tail rendered as noise; likely another indirection or stored compressed).
+- **Shortcut chosen: emulator save state.** Mednafen boots the game (Hi-Saturn BIOS, persisted in ~/.mednafen/mednafen.cfg). A save state taken at any text screen contains VDP1 VRAM (arranged glyphs) + work RAM (decompressed script + live text buffer w/ codes) → code→glyph→char mapping falls out by correlation.
+- Mednafen state files: ~/.mednafen/mcs/*.mcs (F5 saves).
+
+### Waiting on user
+Run `mednafen "iso/Snatcher (Japan) [Saturn]/Snatcher (Japan).cue"`, play to any Japanese text, press F5.
