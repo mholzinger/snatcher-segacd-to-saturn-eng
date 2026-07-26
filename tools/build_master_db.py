@@ -25,9 +25,7 @@ OUT = os.path.join(TR_DIR, "master.json")
 def load_overrides():
     """Merge every translation/*.json (except master) into {chunk: {offset: en}}."""
     merged = {}
-    for p in sorted(glob.glob(os.path.join(TR_DIR, "*.json"))):
-        if os.path.basename(p) == "master.json":
-            continue
+    for p in sorted(glob.glob(os.path.join(TR_DIR, "chunk_*.json"))):
         data = json.load(open(p, encoding="utf-8"))
         for chunk, lines in data.items():
             merged.setdefault(chunk, {}).update(lines)
