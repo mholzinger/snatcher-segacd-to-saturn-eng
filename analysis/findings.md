@@ -157,3 +157,24 @@ unmodified engine (Mednafen, fresh boot of patched build/poc_en disc), JunkerHQ
 reception. Screenshot: `screenshots/2026-07-26_first_english_text_junkerhq.png`.
 Data path proven end-to-end: token re-encode → chunk patch → sector patch → boot.
 User has a save state on the patched build (new disc hash) for renderer work.
+
+## Session 8 — VM internals + speaker table
+
+- **Operand encoding classes** (from fetcher FUN_060c0c78 constants): byte <0x80 → two-byte
+  index form via FUN_060c08b0 (u16 ×2 into a flag-adjusted table); 0x80–0x9F class; 0xA0/0xB0
+  = 12-bit immediate ((b&0xF)<<8|next); 0xC0 = 12-bit + indirect call (PTR_060c14a4);
+  0xD0 = 4-bit immediate; 0xE0+ switch: E0=byte, E1=byte+byte, E2/E4=u32 build, E3=u16, E5=call(-1)...
+  This is the spec base for the bytecode disassembler (needed for offset-safe English insertion).
+- **SPEAKER TABLE FOUND: 0x060C1F14, 80 entries** (pointer table → SJIS names with ＠color
+  prefixes): 02 Metal Gear/blue, 03 Harry/cyan, 04 Receptionist/purple, 05 Gillian/green,
+  06 Mika/purple, 07 Chief/yellow, 0C Katrina, 1C Ivan/red, 1D Lisa/red, etc. Includes
+  Saturn-exclusive cameo speakers: Goemon, Dracula, Simon, Pastel, Power Pro-kun, and the
+  Tokimeki Memorial cast (藤崎/如月/紐緒/…), plus Konami staff names.
+  Saved: `extracted/script/saturn_speakers.json`. Names are pointer-referenced → English
+  speaker names = simple string relocation patch in MAIN_L.BIN.
+  Speaker IDs also strengthen JP↔EN line alignment (SegaCD SUBCODE.BIN has speaker data too).
+
+### Next
+1. Finish bytecode disassembler: map handler semantics for print-text opcode + branch opcodes
+   (which operands are code offsets) → relocating inserter.
+2. Then: batch English insertion pipeline (alignment → re-encode → rebuild chunks/DATA.BIN index).
