@@ -178,3 +178,30 @@ User has a save state on the patched build (new disc hash) for renderer work.
 1. Finish bytecode disassembler: map handler semantics for print-text opcode + branch opcodes
    (which operands are code offsets) → relocating inserter.
 2. Then: batch English insertion pipeline (alignment → re-encode → rebuild chunks/DATA.BIN index).
+
+## Session 9 — inserter built + CRITICAL sizing finding
+
+- `tools/build_translation_patch.py`: batch length-preserving English insertion (full-width SJIS,
+  0x10100-token, pad/truncate to exact JP byte length → chunk size unchanged → inline offsets safe).
+  Demoed 5 JunkerHQ lines into chunk_022.
+- **Text is stored INLINE in the scene bytecode** (verified: `a0 05`-class opcodes precede inline
+  token runs; chunk holds offset operands = jump/call targets into the chunk). So variable-length
+  insertion requires recomputing those offsets.
+- **SIZING REALITY (measured across full corpus):** Saturn JP median line budget = 34 bytes;
+  SegaCD EN median line = 43 chars. Capacity per piece at median budget: full-width 8 chars,
+  half-width 17 chars. English lines that fit the JP byte budget: **full-width 10%, half-width 22%.**
+  → Length-preserving insertion is a PoC only. A real English patch REQUIRES a **relocating
+  inserter** (grow strings, rebuild chunk, fix all inline offset operands) PLUS the half-width font.
+  Both are now mandatory, not optional.
+
+## ROADMAP (data-backed, ordered)
+1. **Half-width 8x16 font hack** — doubles line capacity; renderer FUN_060b4970 uses a width table
+   at 0x060D6A70 (proportional already!) — may need only font glyphs + width entries, not code.
+2. **Relocating bytecode inserter** — the real text tool. Needs the offset-operand map per opcode
+   (session 8 operand classes are the base); grow chunks, recompute inline jump/call targets,
+   rebuild DATA.BIN index (639-entry table at MAIN_L 0x362F4) + repack track 1.
+3. **JP↔EN alignment** — 12,259 JP ↔ 10,728 EN via MT-assisted matching + speaker-ID + scene order
+   (speaker table done, session 8). Produces the translation.json the inserter consumes.
+4. **Voice**: 68K ADPCM decode loop (dialogue in ACT*.CAT) → encoder; system PCM + FMV-AVI + CD-DA
+   are already trivial swaps.
+5. **Packaging**: EDC/ECC regen for real hardware; xdelta/SSP patch distribution.
