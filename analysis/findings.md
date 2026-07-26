@@ -277,3 +277,13 @@ Remaining Phase 4: half-width font build (sites above) · relocating inserter ·
   May I help you?"). Low/mid scores stay as the faithful Saturn translation.
 - Remaining: translate the other 35 scenes (faithful JP→EN), run matcher to flag official-wording
   candidates, human-confirm the high-score adoptions.
+
+## Boot-sequence disclaimer screen (2026-07-27, user-flagged)
+The post-title "この物語はフィクション…" fiction disclaimer is NOT in the translatable script:
+searched every binary (MAIN_L, A.BIN, LOGO/MX TRMs, all DATA.BIN chunks raw+decompressed, disc
+tracks) and the live save-state WRAM in both SJIS and 0x10100-token forms — zero hits. The only
+フィクション match is unrelated chunk_042 dialogue. → The disclaimer is a **pre-rendered bitmap/
+graphic** (boot sequence), not string-rendered text. Same likely true of title/warning screens.
+Translation impact: NONE on the 12,259-line dialogue/menu script (our source of truth). To
+localize it later = a graphics-replacement task (edit/replace the boot image), not script work.
+Standard fan-patch practice is to leave the legal disclaimer in Japanese; optional to graphic-swap.
