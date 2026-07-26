@@ -83,3 +83,20 @@ Once glyph indices → JP text is solved, alignment of JP↔EN lines is automate
 
 ### Waiting on user
 Run `mednafen "iso/Snatcher (Japan) [Saturn]/Snatcher (Japan).cue"`, play to any Japanese text, press F5.
+
+## Phase 3 progress (2026-07-26, session 4) — save-state mining
+
+Save state: `~/.mednafen/mcs/Snatcher (Japan).c9ea599588701cffc7848c24b027de78.mc0`
+(gzip; captured at JunkerHQ menu with text on screen). Extraction recipe:
+- gunzip → sections are `len_byte name size_u32LE data`.
+- `WorkRAMH` @0x43447b (data @0x434488, 1MB, 16-bit LE byteswapped vs SH-2 BE view → swap16 to normalize). Verified MAIN_L.BIN image intact at +0xB0000. Saved: `analysis/wramh.bin` (normalized).
+- VDP1 `VRAM` @0xb0a61 (data @0xb0a6a, 512KB). u16 fields little-endian in native state order. Saved: `analysis/vdp1_vram.bin` (swap16'd — NOTE glyph pixels read correctly from NATIVE order, so un-swap when rendering).
+- **FULL KANJI FONT found resident in VDP1 VRAM ~0x8000+** (16x16 4bpp, 128B/glyph, hundreds+ of glyphs; renders as clean readable kanji from native byte order). See `scratch/font_hunt/vram_band_noswap.png`.
+- Font bytes do NOT appear verbatim in any disc file/chunk (4bpp, 1bpp-threshold, byteswap variants all searched) → generated/expanded at upload time; on-disc source still unidentified.
+- VDP1 command list parse (LE): 1044 cmds, menu text NOT drawn as per-glyph VDP1 sprites → **text is composed on a VDP2 layer** (or pre-rendered to a bitmap). 
+- Earlier-identified FUN_060b4970 (slot*0x80+0x15000 glyph cache) serves some other text mode (scroller?); menu path differs.
+
+### Next (session 5)
+1. Dump VDP2 VRAM + pattern-name tables from the state; find the tilemap showing the menu text; tiles → glyph indexes → correlate with WRAM script codes (search WRAMH for plausible u16 code arrays near 0x060F2xxx).
+2. Alternative static path: enumerate literals 0x25C00000-0x25C7FFFF in MAIN_L to find the big font upload routine and its source pointer chain.
+3. Once code→glyph order known: check if order is JIS/SJIS-derived (would give char mapping for free).
