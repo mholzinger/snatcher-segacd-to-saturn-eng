@@ -48,3 +48,18 @@ File naming is completely different between versions — no shared `SP*.BIN` on 
 1. Find decompressor: trace what code consumes a freshly-loaded DATA.BIN chunk (follow FUN_060b2624's read-completion path / PTR_FUN_060b2784).
 2. Decompress chunk → confirm SJIS script inside.
 3. ADPCM clip index: find table mapping voice IDs → offsets in ADPCM_*.CAT.
+
+## Phase 3 progress (2026-07-26, session 2)
+
+- **Voice format CONFIRMED by ear (user)**: ADPCM_*.CAT = raw signed 8-bit PCM @ ~22050 Hz mono. English dub insertion = resample/quantize, no codec work.
+- **DATA.BIN compression CRACKED**: custom three-stream LZ. Decompressor at FUN_060cb548, header parser FUN_060cb6fc. Format + working decoder in `tools/decompress_chunk.py`:
+  header {u32 out_size; u16 bitstream_u32s; u16 tokenstream_u16s}, streams: bit flags (BE u32, LSB-first), u16 match tokens, literal bytes.
+  Flags: 0=literal; 1,1=short match (dist=byte+1, len=2bits+2); 1,0=token (t==0 end; t&0xF: len=(t&0xF)+2 dist=(t>>4)+1; else len=byte, dist=t>>4).
+- 561/639 chunks decompress cleanly (`extracted/saturn/data_bin_dec/`); 78 appear to be raw/other-format (no size header).
+- **Text is NOT SJIS** even after decompression — custom encoding, almost certainly font-glyph indices. Next: locate font glyphs + the script VM's text-draw opcode handler (start from FUN_060c0c78 dispatch), derive the index→glyph mapping.
+- Decompressor state block at 0x060FEAEC..0x060FEB10 (BSS); orchestrator FUN_060cb1a8; init FUN_060cb6fc(src, dst).
+
+### Next (session 3)
+1. Trace text-draw opcode in script VM → find font base + index encoding.
+2. Look for font bitmap in decompressed chunks / MAIN_L.BIN tail / chunk 0.
+3. Then: ADPCM clip boundary table (voice IDs → offsets), CD-DA↔scene map (Phase 2 leftover).
