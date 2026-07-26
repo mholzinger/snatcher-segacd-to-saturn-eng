@@ -19,3 +19,4 @@ scratch/
 extracted/
 bios/
 build/
+assets/*.bin
