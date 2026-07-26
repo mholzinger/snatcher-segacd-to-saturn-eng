@@ -239,3 +239,23 @@ Junker Headquarters. May I help you?" — proportional mixed-case, the visual go
 
 ### Phase 3 = COMPLETE (all formats cracked). Phase 4 underway.
 Remaining Phase 4: half-width font build (sites above) · relocating inserter · alignment · voice codec.
+
+## Session 12 — both threads advanced
+
+### Alignment (Thread 1)
+- **First full scene translated & aligned**: `translation/chunk_022.json` — 43 JunkerHQ lines,
+  English matched to Saturn token offsets, phrased to the SegaCD localization. This is the
+  translation-data format the inserter consumes. Scaling = repeat for 36 scenes (MT-assisted bulk
+  + review). Note: chunk_022 exposes the Saturn JUNKER backronym text at 0x3418
+  (Judgement/Uninfected/Naked/Kind & Execute Ranger) — matches SegaCD.
+
+### Half-width (Thread 2)
+- **Font asset authored**: `assets/halfwidth_ascii_8x16_4bpp.bin` — 95 glyphs (ASCII 0x20-0x7E),
+  8x16 VDP1 4bpp, legible (preview PNG in assets/).
+- **Font upload routine located: FUN_060b4530**; resident kanji font DMA'd to VDP1 VRAM
+  **0x25C08000** (dest const @0x060b4590), plus the 0x25C15000 on-demand glyph cache. Font disc
+  source is NOT staged in WRAM and NOT a plain 1bpp/verbatim chunk → uploaded/expanded from a
+  DATA.BIN region via this routine (exact source ptr/len is the last trace).
+- Half-width build recipe (all sites known): inject 95 ASCII glyphs into a free VRAM font region
+  via an added transfer in FUN_060b4530's path → map English codes to those slots → set pitch
+  table 0x060E5358 to step 8 (34/row) → set size 0x060E0CC0 to 0x010E. Multi-step but fully scoped.
