@@ -150,3 +150,10 @@ Both scripts extracted → start JP↔EN alignment per plan (MT-assisted matchin
 
 ## Session 7 addendum — sound driver confirmed
 - SDDRVS6.TSK verified resident+running at sound RAM 0x0000 in mid-playback state (70/80 blocks byte-identical; vector table SP=0xA000 PC=0x1000). Ghidra 68000 import done (`analysis/ghidra_out/SDDRVS6_all.c`, sparse — needs entry-point-guided re-analysis at 0x1000 next session).
+
+## 2026-07-26 — PROOF OF CONCEPT VERIFIED ON SCREEN
+English text ("ＷＥＬＣＯＭＥ ＴＯ ＪＵＮＫＥＲ ＨＱ．") rendered in-game by the
+unmodified engine (Mednafen, fresh boot of patched build/poc_en disc), JunkerHQ
+reception. Screenshot: `screenshots/2026-07-26_first_english_text_junkerhq.png`.
+Data path proven end-to-end: token re-encode → chunk patch → sector patch → boot.
+User has a save state on the patched build (new disc hash) for renderer work.
