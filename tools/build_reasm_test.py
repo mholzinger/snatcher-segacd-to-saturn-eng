@@ -32,6 +32,7 @@ INDEX_OFF = 0x362F4
 
 CHUNK = 22
 RECORD = 0x2A34
+GREET_REF = 0x112   # u16 token position inside "c0 01 a0 03 <tok>" say-line call
 NEW_TEXT = "WELCOME TO JUNKER<br>HEADQUARTERS."
 
 
@@ -60,7 +61,10 @@ def main():
 
     chunk = open(os.path.join(ROOT, f"extracted/saturn/data_bin/chunk_{CHUNK:03d}.bin"), "rb").read()
     new_bytes = reassemble.encode_text(NEW_TEXT)
-    rebuilt = reassemble.rebuild_chunk(chunk, {RECORD: new_bytes})
+    # v2 strategy: append the grown record at the section end and repoint the
+    # say-line native call (c0 01 a0 03 [00 0f] @0x112).  The original record
+    # stays in place so every other text-offset token remains valid.
+    rebuilt = reassemble.append_records(chunk, [(new_bytes, [GREET_REF])])
     delta = len(rebuilt) - len(chunk)
     budget = (next_sec - sec) * 2048
     assert len(rebuilt) <= budget, f"grown chunk {len(rebuilt)} > sector budget {budget}"

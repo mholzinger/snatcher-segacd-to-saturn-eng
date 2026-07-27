@@ -436,11 +436,39 @@ function pairs. The headline discovery makes the planned growth-fixup machinery 
   Growth = new record bytes + h1 += delta + chunk size (+ DATA.BIN index size_words).
   No bytecode fixups. Round-trip invariant verified 39/39 chunks byte-identical.
 
-### BOOT TEST BUILD (tools/build_reasm_test.py -> build/reasm_test)
-  chunk_022 greeting record @0x2a34 grown 44 -> 62 bytes (delta +18, slack 1482):
-  "WELCOME TO JUNKER<br>HEADQUARTERS." h1 0x781b->0x782d, size_words 0x511b->0x5124
-  (index @MAIN_L 0x362F4+22*4, MAIN_L LBA 5451, DATA.BIN LBA 96, chunk sector 58).
-  Patched-disc bytes verified by direct sector readback (header, record, next record
-  intact, trailer preserved). PASS = full greeting shows AND scene flows (menu, later
-  dialogue) with no garble => full-length English everywhere needs only per-line
-  record replacement + slack management (repack sectors when a chunk outgrows its gap).
+### BOOT TEST v1 (in-place growth): grown greeting RENDERED FULLY, but downstream
+  dialogue/menus garbled — h1 was NOT the missing piece. Savestate forensics found it:
+
+### TEXT REFERENCING MECHANISM (solved via savestate + 08b0 semantics)
+  - Scene load SPLITS the chunk: bytecode -> WRAM 0x202F8000 (from file offset 4),
+    TEXT SECTION -> its own region 0x202E8000 (base corresponds to file h0+4);
+    a decoded SJIS staging bank lives at ~0x247xxx (per-line copies + voice refs).
+  - *0x060FD164 (FUN_060c08b0's "charprop table") = 0x202E8000 = TEXT BASE.
+    **The bytecode's <0x80 2-byte tokens ARE text-section offsets/2**: token T ->
+    byte offset 2T if text[2T-1]==0 (record follows a separator) else 2T-1 (odd
+    starts). So text IS referenced by absolute section offset — via tokens, not
+    operands. In-place growth shifts records => every token past the growth point
+    mis-resolves mid-record => misaligned token decode => the observed half-garbled
+    glyphs. (v1's arithmetic was right; this reference layer was the real breaker.)
+  - *0x060FD150 = chunk trailer u16 (0x1CB for ch022) = the chunk's FIRST GLOBAL
+    TEXT ID; FUN_060c096c maps u16 args: <=0x9fff literal, 0xa000-0xdfff ->
+    global id (v-0xa000)+trailer_base, >=0xe000 -> relative to current id
+    (*0x060FD158). Those args are growth-immune.
+  - Say-line native call = c0 01 [mode][text-offset token]; greeting @ch022 code
+    0x10e: c0 01 a0 03 00 0f (token 0x0f -> B=0x1e -> file 0x2a34 ✓).
+
+### REASSEMBLER v2 — APPEND + REPOINT (reassemble.append_records)
+  Append grown record at section end (h1 grows), leave the original record in
+  place, and repoint ONLY the explicit reference tokens. Consequences:
+  - No other record moves => no mass token relocation, tracer accuracy not
+    load-bearing for correctness.
+  - A missed/unpatched reference still shows the ORIGINAL JP text — graceful
+    degradation, never garble. Ideal for incremental full-corpus insertion.
+  - Old record slots become reusable free space for short strings later.
+  BOOT TEST v2 (build/reasm_test): greeting appended (+63 bytes incl. separator,
+  h1 0x781b->0x785a), say-line token @0x112 repointed 0x000f->0x3c0e, all other
+  section bytes byte-identical to original (verified by sector readback).
+  PASS = full greeting + clean downstream scene. Scaling plan: per translated
+  line, find its reference token(s) (say-line calls + menu label tokens; the
+  tracer locates them by context), append + repoint; repack DATA.BIN sectors
+  when a chunk outgrows its slack.
