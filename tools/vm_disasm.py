@@ -118,3 +118,30 @@ def validate(verbose=False):
 if __name__ == '__main__':
     import sys
     validate(verbose='-v' in sys.argv)
+
+
+# ---- jump/block varint (verified from FUN_060c0908 / FUN_060c3650 / FUN_060c3758) ----
+# Relative-distance varint used by the scene VM's jump/skip primitive and by
+# length-prefixed blocks. Constants confirmed: threshold DAT_060c0950 = 0x00BF,
+# bias DAT_060c0952 = 0xFF40 (= -0xC0 signed).
+#   b <= 0xBF          -> distance = b            (1 byte)
+#   b >  0xBF          -> distance = (b-0xC0)*256 + next   (2 bytes)
+# After reading the varint the VM does: cursor += distance  (relative FORWARD skip);
+# blocks run their body while cursor < body_start + length.
+VARINT_THRESHOLD = 0xBF
+def parse_varint(d, i):
+    """Return (value, nbytes) for the jump/block varint at offset i."""
+    b = d[i]
+    if b <= VARINT_THRESHOLD:
+        return b, 1
+    return (b - 0xC0) * 256 + d[i + 1], 2
+
+# NOTE (reassembler blocker, verified negative result 2026-07-27):
+# The varint does NOT sit at a fixed position after the opcode byte or after the
+# opcode's tokenized length. Empirical scan over chunks 21-98 under both placement
+# hypotheses found ZERO opcodes whose computed jump target lands on a token boundary
+# (>=90% rate). => jump/block varints are consumed at handler-specific points reached
+# through the scene VM's MULTI-LEVEL dispatch (secondary handler tables at 0x060c29f0,
+# 0x060c34d0, 0x060c3efc, 0x060c3fbc). Reliably locating spanning jumps therefore
+# requires EMULATING the dispatch + operand fetcher (i.e. a scene-VM control-flow
+# tracer), not a linear scan. That is the remaining work before growth-fixup is safe.
