@@ -363,3 +363,26 @@ DONE THIS SESSION: speaker names -> English (relocation, works). QA consistency 
 NEXT (dedicated session): (a) verify full opcode length table -> round-trip a chunk
 byte-identical; (b) tag offset operands; (c) relocating reassembler + DATA.BIN repack;
 (d) then half-width font. Each gated by emulator boot-test.
+
+## 2026-07-27 — Reassembler: mechanism fully cracked, blocked on VM control-flow tracer
+
+TWO tests proved: (1) grown text RENDERS in-game ✓; (2) naive growth garbles downstream
+because the scene VM uses RELATIVE varint distances that break when a span crosses the growth.
+
+VM MECHANISM (verified, tools/vm_disasm.py, commit 764a757):
+- Jump/skip primitive FUN_060c0908: varint distance, cursor += distance. Varint: b≤0xBF → 1 byte;
+  else 2 bytes = (b-0xC0)*256+next (bias 0xFF40). Blocks FUN_060c3650/3758: varint = body length.
+- 0x060FD164 is a CHARACTER-PROPERTY table (text reader), NOT a jump table.
+- Tokenizer: 100% real-text alignment, 78/78 round-trip.
+
+GROWTH RECIPE (design confirmed): grow text at X by δ → bump index size_words; add δ to every
+jump/block varint whose span crosses X; handle varint 1→2 byte cascade to fixpoint; stay in slack.
+
+BLOCKER: identifying WHICH opcode bytes carry a jump/block varint. Linear scan = 0% target
+alignment under all tried placements → varints consumed behind multi-level dispatch (secondary
+handler tables 0x060c29f0/34d0/3efc/3fbc). REQUIRES a scene-VM control-flow tracer (step opcodes
+through dispatch, record varints read by jump/block primitives). Bounded but a real build.
+
+STATUS: translation 100% + QA'd + public; speaker names EN; grown text renders; reassembler
+mechanism understood; remaining = VM tracer (dedicated multi-session build) OR half-width
+single-byte encoding path (needs engine single-byte-text support confirmation + font).
