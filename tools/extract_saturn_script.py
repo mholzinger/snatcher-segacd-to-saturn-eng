@@ -16,7 +16,7 @@ import struct
 import sys
 
 
-def decode_chunk(d, min_chars=3):
+def decode_chunk(d, min_chars=2):
     """Yield (offset, decoded_string) for every token run decoding to SJIS."""
     out = bytearray()
     start = None

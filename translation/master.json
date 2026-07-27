@@ -1,6 +1,62 @@
 [
  {
   "chunk": "chunk_021",
+  "offset": "0x084c",
+  "jp": "褸瓏",
+  "en": "褸瓏",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
+  "offset": "0x0ca2",
+  "jp": "咸鵝",
+  "en": "咸鵝",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
+  "offset": "0x0cc2",
+  "jp": "桜紂",
+  "en": "桜紂",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
+  "offset": "0x1033",
+  "jp": "銹艇",
+  "en": "銹艇",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
+  "offset": "0x1093",
+  "jp": "漿隋",
+  "en": "漿隋",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
+  "offset": "0x16a0",
+  "jp": "鐸糯",
+  "en": "鐸糯",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
+  "offset": "0x175c",
+  "jp": "檍顋",
+  "en": "檍顋",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
+  "offset": "0x1778",
+  "jp": "漣顋",
+  "en": "漣顋",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
   "offset": "0x1a64",
   "jp": "＠赤本体ＲＡＭのバックアップの準備がまだ<br>できていません。<br>（初期化されていません）",
   "en": "＠赤System RAM is not yet ready for<br>backup.<br>(It has not been initialized.)",
@@ -18,6 +74,13 @@
   "offset": "0x1b24",
   "jp": "本体ＲＡＭの全ての記録を消してもよろしいですか？",
   "en": "Erase all data in System RAM?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
+  "offset": "0x1b55",
+  "jp": "はい",
+  "en": "Yes",
   "status": "translated"
  },
  {
@@ -547,6 +610,13 @@
  },
  {
   "chunk": "chunk_021",
+  "offset": "0x26cf",
+  "jp": "電話",
+  "en": "Phone",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
   "offset": "0x26d4",
   "jp": "アウター中",
   "en": "Inside Outer Heaven",
@@ -624,6 +694,13 @@
  },
  {
   "chunk": "chunk_021",
+  "offset": "0x2751",
+  "jp": "暴走",
+  "en": "Runaway",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
   "offset": "0x2756",
   "jp": "暴走後",
   "en": "After rampage",
@@ -634,6 +711,13 @@
   "offset": "0x275d",
   "jp": "モルグ",
   "en": "Morgue",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
+  "offset": "0x2764",
+  "jp": "陳話",
+  "en": "陳話",
   "status": "translated"
  },
  {
@@ -666,9 +750,23 @@
  },
  {
   "chunk": "chunk_021",
+  "offset": "0x2791",
+  "jp": "空港",
+  "en": "Airport",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
   "offset": "0x2796",
   "jp": "荒木くしゃみ",
   "en": "Araki sneezes",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
+  "offset": "0x27a3",
+  "jp": "工場",
+  "en": "Factory",
   "status": "translated"
  },
  {
@@ -736,6 +834,13 @@
  },
  {
   "chunk": "chunk_021",
+  "offset": "0x27f7",
+  "jp": "戻る",
+  "en": "Back",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
   "offset": "0x27fc",
   "jp": "ＡＣＴ１終わる",
   "en": "ACT1 ends",
@@ -753,6 +858,13 @@
   "offset": "0x281a",
   "jp": "ＡＣＴ１前半",
   "en": "ACT1 first half",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
+  "offset": "0x2827",
+  "jp": "本部",
+  "en": "HQ",
   "status": "translated"
  },
  {
@@ -921,6 +1033,13 @@
   "offset": "0x2923",
   "jp": "わんわん",
   "en": "Woof woof",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
+  "offset": "0x292c",
+  "jp": "カー",
+  "en": "Car",
   "status": "translated"
  },
  {
@@ -1198,6 +1317,13 @@
  },
  {
   "chunk": "chunk_021",
+  "offset": "0x2b0e",
+  "jp": "到着",
+  "en": "Arrive",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
   "offset": "0x2b13",
   "jp": "台詞前",
   "en": "Before dialogue",
@@ -1222,6 +1348,13 @@
   "offset": "0x2b34",
   "jp": "おら、夢先案内人ペトロビッチ！！<br>仲良くしてくれよな！",
   "en": "Hey there, I'm Petrovich, your guide to dreams!!<br>Let's get along, yeah!",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
+  "offset": "0x2b6b",
+  "jp": "自宅",
+  "en": "Home",
   "status": "translated"
  },
  {
@@ -1285,6 +1418,13 @@
   "offset": "0x2bd6",
   "jp": "アウターヘブン２",
   "en": "Outer Heaven 2",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
+  "offset": "0x2be7",
+  "jp": "店前",
+  "en": "Storefront",
   "status": "translated"
  },
  {
@@ -1387,6 +1527,13 @@
  },
  {
   "chunk": "chunk_021",
+  "offset": "0x2caa",
+  "jp": "迷路",
+  "en": "Maze",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
   "offset": "0x2caf",
   "jp": "地下鉄",
   "en": "Subway",
@@ -1481,6 +1628,13 @@
   "offset": "0x2d48",
   "jp": "謎が解けた",
   "en": "Mystery solved",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
+  "offset": "0x2d53",
+  "jp": "教会",
+  "en": "Church",
   "status": "translated"
  },
  {
@@ -1772,6 +1926,13 @@
  },
  {
   "chunk": "chunk_021",
+  "offset": "0x2f35",
+  "jp": "リサ",
+  "en": "Lisa",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_021",
   "offset": "0x2f3a",
   "jp": "フレディ",
   "en": "Freddy",
@@ -1940,6 +2101,41 @@
  },
  {
   "chunk": "chunk_022",
+  "offset": "0x0738",
+  "jp": "庠隋",
+  "en": "庠隋",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x075d",
+  "jp": "鵁濁",
+  "en": "鵁濁",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x0bd4",
+  "jp": "顆總",
+  "en": "顆總",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x16a7",
+  "jp": "稻麾",
+  "en": "稻麾",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x25ad",
+  "jp": "榔⊆",
+  "en": "榔⊆",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_022",
   "offset": "0x2a17",
   "jp": "わしのことは気にせんでくれ。",
   "en": "Don't mind me.",
@@ -1992,6 +2188,13 @@
   "offset": "0x2b26",
   "jp": "どのようなご用件でしょうか？",
   "en": "What is your business here?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2b43",
+  "jp": "見る",
+  "en": "Look",
   "status": "translated"
  },
  {
@@ -2097,6 +2300,13 @@
   "offset": "0x2d33",
   "jp": "やっぱり、このおねえさんに中から開けて<br>もらわないとダメらしい。",
   "en": "This lady will have to open it<br>from the inside after all.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x2d74",
+  "jp": "話す",
+  "en": "Talk",
   "status": "translated"
  },
  {
@@ -2318,6 +2528,13 @@
  },
  {
   "chunk": "chunk_022",
+  "offset": "0x32aa",
+  "jp": "ミカ",
+  "en": "Mika",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_022",
   "offset": "0x32af",
   "jp": "君みたいな美人がいるなんて運がいい。",
   "en": "Lucky me, a beauty like you here.",
@@ -2447,6 +2664,13 @@
   "offset": "0x3625",
   "jp": "わたし、物覚えはいい方よ。<br>シードさん、特にあなたの<br>ような素敵な方の場合はね。",
   "en": "I have a good memory.<br>Especially for wonderful men<br>like you, Mr. Seed.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x3676",
+  "jp": "聞く",
+  "en": "Ask",
   "status": "translated"
  },
  {
@@ -2825,6 +3049,13 @@
   "offset": "0x3dd6",
   "jp": "局長に任務の概要を聞いてみたら？",
   "en": "Why not ask the Chief for an overview of the mission?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x3df7",
+  "jp": "局長",
+  "en": "Chief",
   "status": "translated"
  },
  {
@@ -3368,6 +3599,13 @@
  },
  {
   "chunk": "chunk_022",
+  "offset": "0x4b55",
+  "jp": "持物",
+  "en": "Items",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_022",
   "offset": "0x4b5a",
   "jp": "見るω",
   "en": "Lookω",
@@ -3889,6 +4127,13 @@
   "offset": "0x5b2b",
   "jp": "おっ！<br>おまえさん、彼女を知っとるのか？<br>若いのになかなか趣味がいいの。",
   "en": "Oh!<br>You know her, do you?<br>Fine taste, for such a young one.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x5b74",
+  "jp": "写真",
+  "en": "Photo",
   "status": "translated"
  },
  {
@@ -4827,6 +5072,13 @@
   "offset": "0x7482",
   "jp": "まるでシャトルのコックピットみたいだな。",
   "en": "It's just like the cockpit of a shuttle.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_022",
+  "offset": "0x74ab",
+  "jp": "機能",
+  "en": "Function",
   "status": "translated"
  },
  {
@@ -6294,6 +6546,13 @@
  },
  {
   "chunk": "chunk_022",
+  "offset": "0x9d4d",
+  "jp": "車体",
+  "en": "Car Body",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_022",
   "offset": "0x9d52",
   "jp": "ギリアン用にチューンナップされた全くの<br>新車です。<br>４２年型『インターセプター』です。",
   "en": "A brand-new vehicle, tuned up just for<br>Gillian.<br>A '42 model 'Interceptor.'",
@@ -6532,6 +6791,20 @@
  },
  {
   "chunk": "chunk_023",
+  "offset": "0x1a6d",
+  "jp": "尖脛",
+  "en": "尖脛",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_023",
+  "offset": "0x1b34",
+  "jp": "尖脛",
+  "en": "尖脛",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_023",
   "offset": "0x1e38",
   "jp": "調べるメモリーしてください",
   "en": "Please examine the memory.",
@@ -6700,6 +6973,20 @@
  },
  {
   "chunk": "chunk_023",
+  "offset": "0x21d8",
+  "jp": "見る",
+  "en": "Look",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_023",
+  "offset": "0x21dd",
+  "jp": "建物",
+  "en": "Building",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_023",
   "offset": "0x21e2",
   "jp": "古ぼけた工場です。<br>建物の構造からして有人工場時代の物です。今では使われていないようです。",
   "en": "An old, decrepit factory.<br>By its structure, it's from the era of manned factories. It seems abandoned now.",
@@ -6826,6 +7113,13 @@
  },
  {
   "chunk": "chunk_023",
+  "offset": "0x248f",
+  "jp": "持物",
+  "en": "Items",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_023",
   "offset": "0x2494",
   "jp": "見るω",
   "en": "Lookω",
@@ -6882,6 +7176,13 @@
  },
  {
   "chunk": "chunk_023",
+  "offset": "0x253c",
+  "jp": "移動",
+  "en": "Move",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_023",
   "offset": "0x2541",
   "jp": "前進する",
   "en": "Move forward",
@@ -6917,6 +7218,13 @@
  },
  {
   "chunk": "chunk_023",
+  "offset": "0x25bc",
+  "jp": "足元",
+  "en": "Feet",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_023",
   "offset": "0x25c1",
   "jp": "いろんな物が散乱しています。<br>足元に注意して下さい。",
   "en": "All sorts of debris is scattered about.<br>Watch your step.",
@@ -6927,6 +7235,13 @@
   "offset": "0x25f9",
   "jp": "何かのパイプが幾つも走っています。",
   "en": "Several pipes of some kind run along here.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_023",
+  "offset": "0x261c",
+  "jp": "天井",
+  "en": "Ceiling",
   "status": "translated"
  },
  {
@@ -7116,6 +7431,13 @@
   "offset": "0x29ab",
   "jp": "・・・わかりました。<br>ただのハエです。",
   "en": "...I see now.<br>It's just a fly.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_023",
+  "offset": "0x29d2",
+  "jp": "聴く",
+  "en": "Listen",
   "status": "translated"
  },
  {
@@ -7834,6 +8156,13 @@
  },
  {
   "chunk": "chunk_023",
+  "offset": "0x3a19",
+  "jp": "遺体",
+  "en": "Body",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_023",
   "offset": "0x3a1e",
   "jp": "ギブスン・・・<br>皆が凄腕と認めた男をこうも簡単に・・・",
   "en": "Gibson...<br>A man everyone hailed as an ace, taken down this easily...",
@@ -7876,6 +8205,13 @@
  },
  {
   "chunk": "chunk_023",
+  "offset": "0x3b1d",
+  "jp": "地面",
+  "en": "Ground",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_023",
   "offset": "0x3b22",
   "jp": "おやっ！<br>ブラスターが落ちています。",
   "en": "Hm!<br>There's a blaster on the ground.",
@@ -7914,6 +8250,13 @@
   "offset": "0x3bcf",
   "jp": "ブラスターが飴のように曲げられています。",
   "en": "The blaster's been bent like taffy.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_023",
+  "offset": "0x3bf8",
+  "jp": "カギ",
+  "en": "Key",
   "status": "translated"
  },
  {
@@ -7981,6 +8324,13 @@
  },
  {
   "chunk": "chunk_023",
+  "offset": "0x3d3c",
+  "jp": "衣服",
+  "en": "Clothes",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_023",
   "offset": "0x3d41",
   "jp": "おや？<br>ポケットから飴玉が出てきました。<br>何でしょう？",
   "en": "Hm?<br>A candy fell out of his pocket.<br>What's this?",
@@ -8030,6 +8380,13 @@
  },
  {
   "chunk": "chunk_023",
+  "offset": "0x3e62",
+  "jp": "右手",
+  "en": "Right Hand",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_023",
   "offset": "0x3e67",
   "jp": "＠赤毛髪＠白です。<br>毛髪が数本、握られています。",
   "en": "＠赤Hair＠白.<br>Several strands are clutched in his hand.",
@@ -8040,6 +8397,13 @@
   "offset": "0x3e98",
   "jp": "・・・それから爪の間に犯人のものと<br>おぼしき＠赤皮膚組織＠白があります。",
   "en": "...And under his nails there's ＠赤skin tissue＠白<br>that likely belongs to the killer.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_023",
+  "offset": "0x3ee1",
+  "jp": "毛髪",
+  "en": "Hair",
   "status": "translated"
  },
  {
@@ -8191,9 +8555,23 @@
  },
  {
   "chunk": "chunk_023",
+  "offset": "0x4217",
+  "jp": "前方",
+  "en": "Ahead",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_023",
   "offset": "0x421c",
   "jp": "土砂で塞がれています。<br>これ以上進めません。",
   "en": "It's blocked by earth and rubble.<br>We can't go any further.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_023",
+  "offset": "0x4249",
+  "jp": "土砂",
+  "en": "Debris",
   "status": "translated"
  },
  {
@@ -8243,6 +8621,13 @@
   "offset": "0x431c",
   "jp": "確かにここへ逃げ込みましたよね？",
   "en": "It fled in here, didn't it?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_023",
+  "offset": "0x433d",
+  "jp": "出口",
+  "en": "Exit",
   "status": "translated"
  },
  {
@@ -8495,6 +8880,13 @@
   "offset": "0x4825",
   "jp": "ＪＵＮＫＥＲで支給されたお金です。",
   "en": "Money issued to you by JUNKER.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_023",
+  "offset": "0x4848",
+  "jp": "飴玉",
+  "en": "Candy",
   "status": "translated"
  },
  {
@@ -8891,6 +9283,55 @@
  },
  {
   "chunk": "chunk_024",
+  "offset": "0x0061",
+  "jp": "肉臍",
+  "en": "肉臍",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
+  "offset": "0x0446",
+  "jp": "髻驪",
+  "en": "髻驪",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
+  "offset": "0x049f",
+  "jp": "跌豺",
+  "en": "跌豺",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
+  "offset": "0x050f",
+  "jp": "纒繆",
+  "en": "纒繆",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
+  "offset": "0x052d",
+  "jp": "箍竍",
+  "en": "箍竍",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
+  "offset": "0x079c",
+  "jp": "机襦",
+  "en": "机襦",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
+  "offset": "0x07ba",
+  "jp": "檐襦",
+  "en": "檐襦",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
   "offset": "0x130d",
   "jp": "＠緑私はＪＵＮＫＥＲ本部、<br>マザー・コンピュータ、<br>人工知能システム　＠黄ガウディ＠緑。",
   "en": "＠緑I am the JUNKER HQ<br>mother computer,<br>artificial intelligence system　＠黄Gaudi＠緑.",
@@ -9069,6 +9510,13 @@
   "offset": "0x1706",
   "jp": "＠緑　・・・またのご利用を・・・",
   "en": "＠緑　...Please come again...",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
+  "offset": "0x1727",
+  "jp": "歴史",
+  "en": "History",
   "status": "translated"
  },
  {
@@ -9419,6 +9867,13 @@
   "offset": "0x2407",
   "jp": "＠緑▽２０４２年８月<br>警視庁チームとラグ・ハントが合併、政府直属機関として正式にＪＵＮＫＥＲが設立。",
   "en": "＠緑▽August 2042<br>The Metropolitan Police team and Rug Hunt merge, and JUNKER is officially founded as a government agency.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
+  "offset": "0x246c",
+  "jp": "構成",
+  "en": "Structure",
   "status": "translated"
  },
  {
@@ -10298,6 +10753,13 @@
  },
  {
   "chunk": "chunk_024",
+  "offset": "0x44c6",
+  "jp": "年譜",
+  "en": "Chronology",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
   "offset": "0x44cb",
   "jp": "　＠緑『スナッチャーの年譜』",
   "en": "　＠緑'SNATCHER Chronology'",
@@ -10788,6 +11250,13 @@
  },
  {
   "chunk": "chunk_024",
+  "offset": "0x5889",
+  "jp": "闇市",
+  "en": "Black Market",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
   "offset": "0x588e",
   "jp": "　　　　　＠緑『闇市』",
   "en": "　　　　　＠緑'The Black Market'",
@@ -10840,6 +11309,13 @@
   "offset": "0x5a95",
   "jp": "＠緑ネオ・コウベで最も大きな規模を誇る闇市エリアが、『ＪＯＹ　ＤＩＶＩＳＩＯＮ』である。",
   "en": "＠緑The largest black-market area in Neo Kobe is 'JOY DIVISION'.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
+  "offset": "0x5aee",
+  "jp": "交通",
+  "en": "Transit",
   "status": "translated"
  },
  {
@@ -11008,6 +11484,13 @@
   "offset": "0x6190",
   "jp": "文化科学",
   "en": "Culture & Science",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
+  "offset": "0x6199",
+  "jp": "科学",
+  "en": "Science",
   "status": "translated"
  },
  {
@@ -11628,6 +12111,13 @@
  },
  {
   "chunk": "chunk_024",
+  "offset": "0x77ac",
+  "jp": "政治",
+  "en": "Politics",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
   "offset": "0x77b1",
   "jp": "シティ隔離政策",
   "en": "City Quarantine Policy",
@@ -12244,6 +12734,13 @@
  },
  {
   "chunk": "chunk_024",
+  "offset": "0x8b09",
+  "jp": "輪郭",
+  "en": "Outline",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
   "offset": "0x8b0e",
   "jp": "イザベラは・・・＠赤骨ばった感じかなぁ？＠白と<br>いってましたが？",
   "en": "Isabella said...＠赤kind of bony, maybe?＠白<br>didn't she?",
@@ -12363,9 +12860,23 @@
  },
  {
   "chunk": "chunk_024",
+  "offset": "0x8c70",
+  "jp": "眼１",
+  "en": "Eye 1",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
   "offset": "0x8c75",
   "jp": "眼１です。",
   "en": "Eyes 1.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
+  "offset": "0x8c80",
+  "jp": "眼２",
+  "en": "Eye 2",
   "status": "translated"
  },
  {
@@ -12377,9 +12888,23 @@
  },
  {
   "chunk": "chunk_024",
+  "offset": "0x8c90",
+  "jp": "眼３",
+  "en": "Eye 3",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
   "offset": "0x8c95",
   "jp": "眼３です。",
   "en": "Eyes 3.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
+  "offset": "0x8ca0",
+  "jp": "眼４",
+  "en": "Eye 4",
   "status": "translated"
  },
  {
@@ -12391,9 +12916,23 @@
  },
  {
   "chunk": "chunk_024",
+  "offset": "0x8cb0",
+  "jp": "眼５",
+  "en": "Eye 5",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
   "offset": "0x8cb5",
   "jp": "眼５です。",
   "en": "Eyes 5.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
+  "offset": "0x8cc0",
+  "jp": "眼６",
+  "en": "Eye 6",
   "status": "translated"
  },
  {
@@ -12419,6 +12958,13 @@
  },
  {
   "chunk": "chunk_024",
+  "offset": "0x8d33",
+  "jp": "鼻１",
+  "en": "Nose 1",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
   "offset": "0x8d38",
   "jp": "鼻１です。",
   "en": "Nose 1.",
@@ -12426,9 +12972,23 @@
  },
  {
   "chunk": "chunk_024",
+  "offset": "0x8d43",
+  "jp": "鼻２",
+  "en": "Nose 2",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
   "offset": "0x8d48",
   "jp": "鼻２です。",
   "en": "Nose 2.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
+  "offset": "0x8d53",
+  "jp": "鼻３",
+  "en": "Nose 3",
   "status": "translated"
  },
  {
@@ -12447,6 +13007,13 @@
  },
  {
   "chunk": "chunk_024",
+  "offset": "0x8d7e",
+  "jp": "鼻４",
+  "en": "Nose 4",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
   "offset": "0x8d83",
   "jp": "鼻４です。",
   "en": "Nose 4.",
@@ -12454,9 +13021,23 @@
  },
  {
   "chunk": "chunk_024",
+  "offset": "0x8d8e",
+  "jp": "鼻５",
+  "en": "Nose 5",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
   "offset": "0x8d93",
   "jp": "鼻５です。",
   "en": "Nose 5.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
+  "offset": "0x8d9e",
+  "jp": "鼻６",
+  "en": "Nose 6",
   "status": "translated"
  },
  {
@@ -12482,9 +13063,23 @@
  },
  {
   "chunk": "chunk_024",
+  "offset": "0x8e1d",
+  "jp": "口１",
+  "en": "Mouth 1",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
   "offset": "0x8e22",
   "jp": "口１です。",
   "en": "Mouth 1.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
+  "offset": "0x8e2d",
+  "jp": "口２",
+  "en": "Mouth 2",
   "status": "translated"
  },
  {
@@ -12496,9 +13091,23 @@
  },
  {
   "chunk": "chunk_024",
+  "offset": "0x8e3d",
+  "jp": "口３",
+  "en": "Mouth 3",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
   "offset": "0x8e42",
   "jp": "口３です。",
   "en": "Mouth 3.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
+  "offset": "0x8e4d",
+  "jp": "口４",
+  "en": "Mouth 4",
   "status": "translated"
  },
  {
@@ -12510,6 +13119,13 @@
  },
  {
   "chunk": "chunk_024",
+  "offset": "0x8e5d",
+  "jp": "口５",
+  "en": "Mouth 5",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
   "offset": "0x8e62",
   "jp": "口５です。",
   "en": "Mouth 5.",
@@ -12517,9 +13133,23 @@
  },
  {
   "chunk": "chunk_024",
+  "offset": "0x8e6d",
+  "jp": "口６",
+  "en": "Mouth 6",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
   "offset": "0x8e72",
   "jp": "口６です。",
   "en": "Mouth 6.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_024",
+  "offset": "0x8e7d",
+  "jp": "髪型",
+  "en": "Hairstyle",
   "status": "translated"
  },
  {
@@ -12618,6 +13248,20 @@
   "offset": "0x8f61",
   "jp": "髪型６です。",
   "en": "Hair 6.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_025",
+  "offset": "0x057e",
+  "jp": "改戉",
+  "en": "改戉",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_025",
+  "offset": "0x0589",
+  "jp": "美薮",
+  "en": "美薮",
   "status": "translated"
  },
  {
@@ -12954,6 +13598,13 @@
   "offset": "0x11c1",
   "jp": "キヨハラヨウヘイ",
   "en": "Kiyohara Yohei",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_025",
+  "offset": "0x11d2",
+  "jp": "キダ",
+  "en": "キダ",
   "status": "translated"
  },
  {
@@ -13490,6 +14141,13 @@
  },
  {
   "chunk": "chunk_025",
+  "offset": "0x15a5",
+  "jp": "チン",
+  "en": "チン",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_025",
   "offset": "0x15aa",
   "jp": "トミナガ",
   "en": "Tominaga",
@@ -13549,6 +14207,13 @@
   "offset": "0x1618",
   "jp": "ツナピヨン",
   "en": "Tsunapyon",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_025",
+  "offset": "0x1623",
+  "jp": "ツナ",
+  "en": "ツナ",
   "status": "translated"
  },
  {
@@ -13626,6 +14291,13 @@
   "offset": "0x1690",
   "jp": "ナポレオンボナパルト",
   "en": "Napoleon Bonaparte",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_025",
+  "offset": "0x16a5",
+  "jp": "ナヤ",
+  "en": "ナヤ",
   "status": "translated"
  },
  {
@@ -13833,6 +14505,13 @@
  },
  {
   "chunk": "chunk_025",
+  "offset": "0x17f3",
+  "jp": "ボボ",
+  "en": "ボボ",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_025",
   "offset": "0x17f8",
   "jp": "ベルベツト",
   "en": "Velvet",
@@ -13871,6 +14550,13 @@
   "offset": "0x1837",
   "jp": "ミカスレイトン",
   "en": "Mika Slayton",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_025",
+  "offset": "0x1846",
+  "jp": "ミカ",
+  "en": "Mika",
   "status": "translated"
  },
  {
@@ -13959,6 +14645,20 @@
  },
  {
   "chunk": "chunk_025",
+  "offset": "0x18d6",
+  "jp": "リサ",
+  "en": "Lisa",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_025",
+  "offset": "0x18db",
+  "jp": "リカ",
+  "en": "Rika",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_025",
   "offset": "0x18e0",
   "jp": "ランダムハジル",
   "en": "Random Hajile",
@@ -14015,6 +14715,13 @@
  },
  {
   "chunk": "chunk_025",
+  "offset": "0x193c",
+  "jp": "ヤバ",
+  "en": "ヤバ",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_025",
   "offset": "0x1941",
   "jp": "ヤバギシ",
   "en": "Yabagishi",
@@ -14025,6 +14732,13 @@
   "offset": "0x194a",
   "jp": "ヤバギシタカオ",
   "en": "Yabagishi Takao",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_025",
+  "offset": "0x1959",
+  "jp": "ヤラ",
+  "en": "ヤラ",
   "status": "translated"
  },
  {
@@ -16157,6 +16871,13 @@
  },
  {
   "chunk": "chunk_026",
+  "offset": "0x0aad",
+  "jp": "糯襦",
+  "en": "糯襦",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_026",
   "offset": "0x0af9",
   "jp": "バックアップＲＡＭにデータをセーブする<br>ための十分な空き容量がありません。",
   "en": "There isn't enough free space on the backup RAM to<br>save the data.",
@@ -16472,9 +17193,93 @@
  },
  {
   "chunk": "chunk_027",
+  "offset": "0x01b3",
+  "jp": "庠隋",
+  "en": "庠隋",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x01d3",
+  "jp": "微隋",
+  "en": "微隋",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x01f8",
+  "jp": "功隋",
+  "en": "功隋",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x047b",
+  "jp": "褶隋",
+  "en": "褶隋",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x05b7",
+  "jp": "漿漾",
+  "en": "漿漾",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x05e0",
+  "jp": "偸漾",
+  "en": "偸漾",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x0609",
+  "jp": "煎隋",
+  "en": "煎隋",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x062e",
+  "jp": "悔隋",
+  "en": "悔隋",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x0bfe",
+  "jp": "餘¶",
+  "en": "餘¶",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x0d77",
+  "jp": "糯訌",
+  "en": "糯訌",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x0fec",
+  "jp": "攫麾",
+  "en": "攫麾",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
   "offset": "0x156f",
   "jp": "逸樹掘",
   "en": "逸樹掘",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x1e5f",
+  "jp": "瞼皎",
+  "en": "瞼皎",
   "status": "translated"
  },
  {
@@ -16496,6 +17301,13 @@
   "offset": "0x1f73",
   "jp": "何番にかけますか？",
   "en": "What number should we call?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x1f86",
+  "jp": "数０",
+  "en": "No.0",
   "status": "translated"
  },
  {
@@ -16524,6 +17336,13 @@
   "offset": "0x1fae",
   "jp": "数０３２１２８",
   "en": "数０３２１２８",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x1fbd",
+  "jp": "数１",
+  "en": "No.1",
   "status": "translated"
  },
  {
@@ -16566,6 +17385,13 @@
   "offset": "0x1ffb",
   "jp": "数１３５９５３",
   "en": "数１３５９５３",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x200a",
+  "jp": "数２",
+  "en": "No.2",
   "status": "translated"
  },
  {
@@ -16633,6 +17459,13 @@
  },
  {
   "chunk": "chunk_027",
+  "offset": "0x2096",
+  "jp": "数３",
+  "en": "No.3",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
   "offset": "0x209b",
   "jp": "数３９５６４４",
   "en": "数３９５６４４",
@@ -16696,6 +17529,13 @@
  },
  {
   "chunk": "chunk_027",
+  "offset": "0x2144",
+  "jp": "数４",
+  "en": "No.4",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
   "offset": "0x2149",
   "jp": "数４４３６６７",
   "en": "数４４３６６７",
@@ -16713,6 +17553,13 @@
   "offset": "0x2167",
   "jp": "数４７０３１４",
   "en": "数４７０３１４",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x2176",
+  "jp": "数５",
+  "en": "No.5",
   "status": "translated"
  },
  {
@@ -16741,6 +17588,13 @@
   "offset": "0x21a8",
   "jp": "数５３６０４４",
   "en": "数５３６０４４",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x21b7",
+  "jp": "数６",
+  "en": "No.6",
   "status": "translated"
  },
  {
@@ -16808,6 +17662,13 @@
  },
  {
   "chunk": "chunk_027",
+  "offset": "0x2243",
+  "jp": "数７",
+  "en": "No.7",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
   "offset": "0x2248",
   "jp": "数７８３４６５",
   "en": "数７８３４６５",
@@ -16825,6 +17686,13 @@
   "offset": "0x2266",
   "jp": "数７２９７０９",
   "en": "数７２９７０９",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x2275",
+  "jp": "数８",
+  "en": "No.8",
   "status": "translated"
  },
  {
@@ -16857,6 +17725,13 @@
  },
  {
   "chunk": "chunk_027",
+  "offset": "0x22b6",
+  "jp": "数９",
+  "en": "No.9",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
   "offset": "0x22bb",
   "jp": "数９８７５４３",
   "en": "数９８７５４３",
@@ -16874,6 +17749,20 @@
   "offset": "0x22d9",
   "jp": "数９９７４１２",
   "en": "数９９７４１２",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x22e8",
+  "jp": "数Ａ",
+  "en": "No.A",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x22ed",
+  "jp": "数Ｂ",
+  "en": "No.B",
   "status": "translated"
  },
  {
@@ -17063,6 +17952,13 @@
   "offset": "0x2688",
   "jp": "ですが・・・何度かけてもダメですよ。",
   "en": "But... no matter how many times you call, it's no use.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x26ad",
+  "jp": "Ｑ２",
+  "en": "Q2",
   "status": "translated"
  },
  {
@@ -17403,6 +18299,13 @@
  },
  {
   "chunk": "chunk_027",
+  "offset": "0x2c78",
+  "jp": "数☆",
+  "en": "No.☆",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
   "offset": "0x2c7d",
   "jp": "何も入力してないじゃないですか！",
   "en": "You didn't enter anything!",
@@ -17564,9 +18467,23 @@
  },
  {
   "chunk": "chunk_027",
+  "offset": "0x2dcc",
+  "jp": "ゼキ",
+  "en": "ゼキ",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
   "offset": "0x2dd1",
   "jp": "病気には気をつけろよ。",
   "en": "Mind you don't catch anything.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x2de8",
+  "jp": "ソウ",
+  "en": "ソウ",
   "status": "translated"
  },
  {
@@ -17907,6 +18824,13 @@
  },
  {
   "chunk": "chunk_027",
+  "offset": "0x340c",
+  "jp": "ん？",
+  "en": "Hm?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
   "offset": "0x3411",
   "jp": "ギリアンを試してみたの。",
   "en": "I was testing you, Gillian.",
@@ -17987,6 +18911,13 @@
   "offset": "0x35c2",
   "jp": "なんにも言わずにきっちゃうのね・・・<br>ギリアン。",
   "en": "Hanging up without a word...<br>Gillian.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x35f3",
+  "jp": "話す",
+  "en": "Talk",
   "status": "translated"
  },
  {
@@ -18418,6 +19349,13 @@
  },
  {
   "chunk": "chunk_027",
+  "offset": "0x3fe9",
+  "jp": "聞く",
+  "en": "Ask",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
   "offset": "0x3fee",
   "jp": "近況報告",
   "en": "Catching up",
@@ -18467,6 +19405,13 @@
  },
  {
   "chunk": "chunk_027",
+  "offset": "0x413f",
+  "jp": "仕事",
+  "en": "Work",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
   "offset": "0x4144",
   "jp": "ジェミー、仕事のほうはどう？<br>まだ『コウベ薬研』に勤めているの？",
   "en": "Jamie, how's work?<br>Are you still at 'Kobe Pharmaceuticals'?",
@@ -18505,6 +19450,13 @@
   "offset": "0x4257",
   "jp": "この仕事してると・・・<br>記憶が戻るんじゃないかって<br>思ってるんだけど。",
   "en": "I keep thinking that doing this work...<br>might just bring my memory<br>back.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x429e",
+  "jp": "記憶",
+  "en": "Memory",
   "status": "translated"
  },
  {
@@ -19209,6 +20161,13 @@
  },
  {
   "chunk": "chunk_027",
+  "offset": "0x4f50",
+  "jp": "食事",
+  "en": "Meal",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
   "offset": "0x4f55",
   "jp": "ジェミー・・・ちょっと話さないか？<br>久しぶりに食事でもしながら・・・",
   "en": "Jamie... want to talk for a bit?<br>Over a meal, for old times' sake...",
@@ -19503,6 +20462,13 @@
  },
  {
   "chunk": "chunk_027",
+  "offset": "0x56ae",
+  "jp": "飴玉",
+  "en": "Candy",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
   "offset": "0x56b3",
   "jp": "何、その飴玉？",
   "en": "What's that candy?",
@@ -19576,6 +20542,13 @@
   "offset": "0x5793",
   "jp": "「家を捜せ！」って・・・<br>なんでしょうね？",
   "en": "'Search the house!'...<br>What could it mean?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x57be",
+  "jp": "カギ",
+  "en": "Key",
   "status": "translated"
  },
  {
@@ -19723,6 +20696,13 @@
   "offset": "0x5a90",
   "jp": "ギリアン、<br>あなた、まだそういうので遊んでるの？",
   "en": "Gillian,<br>are you still playing around with things like that?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_027",
+  "offset": "0x5ac1",
+  "jp": "写真",
+  "en": "Photo",
   "status": "translated"
  },
  {
@@ -19972,9 +20952,107 @@
  },
  {
   "chunk": "chunk_028",
+  "offset": "0x01c4",
+  "jp": "偸隋",
+  "en": "偸隋",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x01e4",
+  "jp": "煎隋",
+  "en": "煎隋",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x0209",
+  "jp": "悔隋",
+  "en": "悔隋",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x0229",
+  "jp": "¶隋",
+  "en": "¶隋",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x0422",
+  "jp": "蔔隋",
+  "en": "蔔隋",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x056b",
+  "jp": "戈祓",
+  "en": "戈祓",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x082a",
+  "jp": "顰戈",
+  "en": "顰戈",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x09ae",
+  "jp": "餘¶",
+  "en": "餘¶",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x0b0c",
+  "jp": "蔔顱",
+  "en": "蔔顱",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
   "offset": "0x0c4a",
   "jp": "戒奘顱",
   "en": "戒奘顱",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x0c67",
+  "jp": "隅顱",
+  "en": "隅顱",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x0ca1",
+  "jp": "璞隋",
+  "en": "璞隋",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x1513",
+  "jp": "鶤襦",
+  "en": "鶤襦",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x1683",
+  "jp": "賤貊",
+  "en": "賤貊",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x1899",
+  "jp": "耄訌",
+  "en": "耄訌",
   "status": "translated"
  },
  {
@@ -19996,6 +21074,13 @@
   "offset": "0x1a51",
   "jp": "何番にかけますか？",
   "en": "What number are you calling?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x1a64",
+  "jp": "数０",
+  "en": "No.0",
   "status": "translated"
  },
  {
@@ -20031,6 +21116,13 @@
   "offset": "0x1a93",
   "jp": "数０３２１２８",
   "en": "数０３２１２８",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x1aa2",
+  "jp": "数１",
+  "en": "No.1",
   "status": "translated"
  },
  {
@@ -20077,6 +21169,13 @@
  },
  {
   "chunk": "chunk_028",
+  "offset": "0x1aef",
+  "jp": "数２",
+  "en": "No.2",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
   "offset": "0x1af4",
   "jp": "数２５６１２８",
   "en": "数２５６１２８",
@@ -20101,6 +21200,13 @@
   "offset": "0x1b21",
   "jp": "数２８６６８２",
   "en": "数２８６６８２",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x1b30",
+  "jp": "数３",
+  "en": "No.3",
   "status": "translated"
  },
  {
@@ -20196,6 +21302,13 @@
  },
  {
   "chunk": "chunk_028",
+  "offset": "0x1c56",
+  "jp": "数４",
+  "en": "No.4",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
   "offset": "0x1c5b",
   "jp": "数４４３６６７",
   "en": "数４４３６６７",
@@ -20213,6 +21326,13 @@
   "offset": "0x1c79",
   "jp": "数４７０３１４",
   "en": "数４７０３１４",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x1c88",
+  "jp": "数５",
+  "en": "No.5",
   "status": "translated"
  },
  {
@@ -20245,6 +21365,13 @@
  },
  {
   "chunk": "chunk_028",
+  "offset": "0x1cc9",
+  "jp": "数６",
+  "en": "No.6",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
   "offset": "0x1cce",
   "jp": "数６６２２８６",
   "en": "数６６２２８６",
@@ -20273,6 +21400,13 @@
  },
  {
   "chunk": "chunk_028",
+  "offset": "0x1d32",
+  "jp": "数７",
+  "en": "No.7",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
   "offset": "0x1d37",
   "jp": "数７８３４６５",
   "en": "数７８３４６５",
@@ -20290,6 +21424,13 @@
   "offset": "0x1d55",
   "jp": "数７２９７０９",
   "en": "数７２９７０９",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x1d64",
+  "jp": "数８",
+  "en": "No.8",
   "status": "translated"
  },
  {
@@ -20315,6 +21456,13 @@
  },
  {
   "chunk": "chunk_028",
+  "offset": "0x1d96",
+  "jp": "数９",
+  "en": "No.9",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
   "offset": "0x1d9b",
   "jp": "数９８７５４３",
   "en": "数９８７５４３",
@@ -20332,6 +21480,27 @@
   "offset": "0x1db9",
   "jp": "数９９７４１２",
   "en": "数９９７４１２",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x1dc8",
+  "jp": "数Ａ",
+  "en": "No.A",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x1dcd",
+  "jp": "数Ｂ",
+  "en": "No.B",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x1dd2",
+  "jp": "数Ｃ",
+  "en": "No.C",
   "status": "translated"
  },
  {
@@ -20507,6 +21676,13 @@
   "offset": "0x2227",
   "jp": "ナポレオンの番号を短縮番号＠赤０５＠白に<br>登録しました。<br>忘れないでくださいね。",
   "en": "I've registered Napoleon's number to speed-dial ＠赤０５＠白.<br>Don't forget it now.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x2278",
+  "jp": "Ｑ２",
+  "en": "Q2",
   "status": "translated"
  },
  {
@@ -20700,6 +21876,13 @@
  },
  {
   "chunk": "chunk_028",
+  "offset": "0x2568",
+  "jp": "数☆",
+  "en": "No.☆",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
   "offset": "0x256d",
   "jp": "何も入力してないじゃないですか？",
   "en": "You haven't entered anything, have you?",
@@ -20861,9 +22044,23 @@
  },
  {
   "chunk": "chunk_028",
+  "offset": "0x26bc",
+  "jp": "ゼキ",
+  "en": "ゼキ",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
   "offset": "0x26c1",
   "jp": "病気には気をつけろよ。",
   "en": "Watch out you don't get sick.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x26d8",
+  "jp": "ソウ",
+  "en": "ソウ",
   "status": "translated"
  },
  {
@@ -21092,6 +22289,13 @@
  },
  {
   "chunk": "chunk_028",
+  "offset": "0x2c19",
+  "jp": "！！",
+  "en": "!!",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
   "offset": "0x2c1e",
   "jp": "やはり研究所か・・・・",
   "en": "The lab, after all....",
@@ -21267,6 +22471,13 @@
  },
  {
   "chunk": "chunk_028",
+  "offset": "0x3033",
+  "jp": "見る",
+  "en": "Look",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
   "offset": "0x3038",
   "jp": "ジェミー。<br>ここからだとよく君を見れないよ！",
   "en": "Jamie.<br>I can't see you well from here!",
@@ -21368,6 +22579,13 @@
   "offset": "0x3272",
   "jp": "えぇ・・・なんとか。",
   "en": "Yes... I'm managing.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x3287",
+  "jp": "話す",
+  "en": "Talk",
   "status": "translated"
  },
  {
@@ -21890,6 +23108,13 @@
  },
  {
   "chunk": "chunk_028",
+  "offset": "0x3daa",
+  "jp": "え？",
+  "en": "Eh?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
   "offset": "0x3daf",
   "jp": "人違いよ・・・きっと。",
   "en": "You mistook me for someone else... surely.",
@@ -22082,6 +23307,20 @@
   "offset": "0x4112",
   "jp": "これからの事を考えましょう。",
   "en": "Let's think about the future.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x412f",
+  "jp": "聞く",
+  "en": "Ask",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
+  "offset": "0x4134",
+  "jp": "記憶",
+  "en": "Memory",
   "status": "translated"
  },
  {
@@ -22737,6 +23976,13 @@
  },
  {
   "chunk": "chunk_028",
+  "offset": "0x501f",
+  "jp": "飴玉",
+  "en": "Candy",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
   "offset": "0x5024",
   "jp": "何、その飴玉？",
   "en": "What's that candy?",
@@ -22968,6 +24214,13 @@
  },
  {
   "chunk": "chunk_028",
+  "offset": "0x5565",
+  "jp": "寺院",
+  "en": "Cathedral",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_028",
   "offset": "0x556a",
   "jp": "宮殿ね・・・どこかしら？",
   "en": "A palace, huh... where could it be?",
@@ -22996,6 +24249,20 @@
  },
  {
   "chunk": "chunk_029",
+  "offset": "0x0170",
+  "jp": "舅麾",
+  "en": "舅麾",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
+  "offset": "0x0fba",
+  "jp": "鱧鰔",
+  "en": "鱧鰔",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
   "offset": "0x105b",
   "jp": "碑譲論",
   "en": "碑譲論",
@@ -23003,9 +24270,79 @@
  },
  {
   "chunk": "chunk_029",
+  "offset": "0x10df",
+  "jp": "忌隅",
+  "en": "忌隅",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
+  "offset": "0x13f6",
+  "jp": "蓙衂",
+  "en": "蓙衂",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
+  "offset": "0x1406",
+  "jp": "萠蝎",
+  "en": "萠蝎",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
+  "offset": "0x1686",
+  "jp": "鮭斐",
+  "en": "鮭斐",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
+  "offset": "0x1712",
+  "jp": "睥烝",
+  "en": "睥烝",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
+  "offset": "0x17e3",
+  "jp": "嶂狷",
+  "en": "嶂狷",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
+  "offset": "0x18cd",
+  "jp": "屶狷",
+  "en": "屶狷",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
   "offset": "0x1d4e",
   "jp": "烈褶奸",
   "en": "烈褶奸",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
+  "offset": "0x20d0",
+  "jp": "勒奘",
+  "en": "勒奘",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
+  "offset": "0x23f0",
+  "jp": "瑣曁",
+  "en": "瑣曁",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
+  "offset": "0x25df",
+  "jp": "厮姻",
+  "en": "厮姻",
   "status": "translated"
  },
  {
@@ -23171,6 +24508,13 @@
  },
  {
   "chunk": "chunk_029",
+  "offset": "0x31c1",
+  "jp": "移動",
+  "en": "Move",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
   "offset": "0x31c6",
   "jp": "フロント",
   "en": "Front Desk",
@@ -23202,6 +24546,20 @@
   "offset": "0x31f4",
   "jp": "射撃室",
   "en": "Firing Range",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
+  "offset": "0x31fb",
+  "jp": "見る",
+  "en": "Look",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
+  "offset": "0x3200",
+  "jp": "局長",
+  "en": "Chief",
   "status": "translated"
  },
  {
@@ -23405,6 +24763,13 @@
   "offset": "0x36cd",
   "jp": "エア・クッション式の最新ソファです。",
   "en": "The latest air-cushion sofa.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
+  "offset": "0x36f2",
+  "jp": "聞く",
+  "en": "Ask",
   "status": "translated"
  },
  {
@@ -23990,6 +25355,13 @@
  },
  {
   "chunk": "chunk_029",
+  "offset": "0x45aa",
+  "jp": "持物",
+  "en": "Items",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
   "offset": "0x45af",
   "jp": "見るω",
   "en": "Look ω",
@@ -24074,6 +25446,13 @@
  },
  {
   "chunk": "chunk_029",
+  "offset": "0x471f",
+  "jp": "飴玉",
+  "en": "Candy",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
   "offset": "0x4724",
   "jp": "何だねその飴玉は？",
   "en": "What's that candy?",
@@ -24119,6 +25498,13 @@
   "offset": "0x4800",
   "jp": "ギブスンが伝えたかった意味は何だろう？",
   "en": "What was the meaning Gibson wanted to convey?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
+  "offset": "0x4827",
+  "jp": "カギ",
+  "en": "Key",
   "status": "translated"
  },
  {
@@ -24217,6 +25603,13 @@
   "offset": "0x4a7e",
   "jp": "おい！ωそんなもので遊んでおらずに捜査を続けんか！！ωシード！",
   "en": "Hey!ωStop playing with that thing and get on with the investigation!!ωSeed!",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
+  "offset": "0x4abd",
+  "jp": "写真",
+  "en": "Photo",
   "status": "translated"
  },
  {
@@ -24560,6 +25953,13 @@
   "offset": "0x5360",
   "jp": "今のうちに・・・<br>ジャンの遺留品を調べてみませんか？",
   "en": "While we're at it...<br>shall we examine Jean's personal effects?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
+  "offset": "0x5395",
+  "jp": "ミカ",
+  "en": "Mika",
   "status": "translated"
  },
  {
@@ -27105,6 +28505,13 @@
  },
  {
   "chunk": "chunk_029",
+  "offset": "0x8cc3",
+  "jp": "使う",
+  "en": "Use",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_029",
   "offset": "0x8cc8",
   "jp": "引き出しはもう開いていますが・・・",
   "en": "The drawer is already open, though...",
@@ -28309,6 +29716,20 @@
  },
  {
   "chunk": "chunk_032",
+  "offset": "0x035f",
+  "jp": "庠濮",
+  "en": "庠濮",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_032",
+  "offset": "0x096f",
+  "jp": "奘濮",
+  "en": "奘濮",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_032",
   "offset": "0x0cbc",
   "jp": "蒡褶錙",
   "en": "蒡褶錙",
@@ -28400,6 +29821,13 @@
  },
  {
   "chunk": "chunk_032",
+  "offset": "0x1521",
+  "jp": "移動",
+  "en": "Move",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_032",
   "offset": "0x1526",
   "jp": "車に乗る",
   "en": "Get in the car",
@@ -28445,6 +29873,13 @@
   "offset": "0x15e6",
   "jp": "・・・局長にまた、怒られるからな。",
   "en": "...Or the Chief'll chew us out again.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_032",
+  "offset": "0x1609",
+  "jp": "見る",
+  "en": "Look",
   "status": "translated"
  },
  {
@@ -28522,6 +29957,13 @@
   "offset": "0x1794",
   "jp": "治安が悪いから店が早く閉まるんだ。<br>不便でしょうがない・・・",
   "en": "Crime's bad, so the shops close early.<br>It's a real pain...",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_032",
+  "offset": "0x17d1",
+  "jp": "持物",
+  "en": "Items",
   "status": "translated"
  },
  {
@@ -28680,6 +30122,13 @@
  },
  {
   "chunk": "chunk_032",
+  "offset": "0x1a7e",
+  "jp": "室内",
+  "en": "Room",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_032",
   "offset": "0x1a83",
   "jp": "おかしなところはありません。<br>異常なしです。",
   "en": "Nothing out of place.<br>All clear.",
@@ -28774,6 +30223,13 @@
   "offset": "0x1c8f",
   "jp": "一人、一人って強調するなよ。",
   "en": "Quit harping on 'alone, alone.'",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_032",
+  "offset": "0x1cac",
+  "jp": "写真",
+  "en": "Photo",
   "status": "translated"
  },
  {
@@ -29222,6 +30678,13 @@
   "offset": "0x27c6",
   "jp": "へえ・・・今の今まで知らなかった。<br>まだじっくりと住んでないからな。",
   "en": "Huh... never knew that till now.<br>Haven't really settled in yet.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_032",
+  "offset": "0x280b",
+  "jp": "香水",
+  "en": "Perfume",
   "status": "translated"
  },
  {
@@ -29870,6 +31333,13 @@
  },
  {
   "chunk": "chunk_032",
+  "offset": "0x3560",
+  "jp": "飴玉",
+  "en": "Candy",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_032",
   "offset": "0x3565",
   "jp": "ジャンのポケットにあった飴玉です。",
   "en": "Candy that was in Jean's pocket.",
@@ -29901,6 +31371,13 @@
   "offset": "0x35eb",
   "jp": "『家を捜せ！』とは、<br>どういう意味なんでしょう？",
   "en": "'Search the house!' —<br>what could that mean?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_032",
+  "offset": "0x361c",
+  "jp": "カギ",
+  "en": "Key",
   "status": "translated"
  },
  {
@@ -30353,6 +31830,13 @@
  },
  {
   "chunk": "chunk_032",
+  "offset": "0x406e",
+  "jp": "寺院",
+  "en": "Cathedral",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_032",
   "offset": "0x4073",
   "jp": "クィーン病院の部屋に掛かっていた<br>寺院の絵です。",
   "en": "A painting of a cathedral that hung<br>in a room at Queen Hospital.",
@@ -30426,6 +31910,48 @@
   "offset": "0x430b",
   "jp": "ワシリー寺院です。<br>大惨事以前のモスクワにあった、<br>有名な寺院です。",
   "en": "St. Basil's Cathedral.<br>A famous cathedral that stood in Moscow<br>before the Catastrophe.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
+  "offset": "0x06f8",
+  "jp": "踵糯",
+  "en": "踵糯",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
+  "offset": "0x17d8",
+  "jp": "偸権",
+  "en": "偸権",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
+  "offset": "0x1c82",
+  "jp": "靂霓",
+  "en": "靂霓",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
+  "offset": "0x1d97",
+  "jp": "巻詁",
+  "en": "巻詁",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
+  "offset": "0x1f94",
+  "jp": "絮♪",
+  "en": "絮♪",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
+  "offset": "0x2094",
+  "jp": "酖瑟",
+  "en": "酖瑟",
   "status": "translated"
  },
  {
@@ -30661,6 +32187,20 @@
  },
  {
   "chunk": "chunk_033",
+  "offset": "0x2e84",
+  "jp": "見る",
+  "en": "Look",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
+  "offset": "0x2e89",
+  "jp": "建物",
+  "en": "Building",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
   "offset": "0x2e8e",
   "jp": "アーリー・アメリカン・タイプの<br>シャレた家です。",
   "en": "A stylish house in the<br>Early American style.",
@@ -30773,6 +32313,13 @@
  },
  {
   "chunk": "chunk_033",
+  "offset": "0x30df",
+  "jp": "話す",
+  "en": "Talk",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
   "offset": "0x30e4",
   "jp": "カトリーヌだね？<br>私はＪＵＮＫＥＲだ。",
   "en": "You're Katrina, right?<br>I'm a JUNKER.",
@@ -30853,6 +32400,13 @@
   "offset": "0x32cb",
   "jp": "質問に答える",
   "en": "Answer the question",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
+  "offset": "0x32d8",
+  "jp": "持物",
+  "en": "Items",
   "status": "translated"
  },
  {
@@ -31035,6 +32589,13 @@
   "offset": "0x35f0",
   "jp": "数００",
   "en": "Num 00",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
+  "offset": "0x35f7",
+  "jp": "数☆",
+  "en": "No.☆",
   "status": "translated"
  },
  {
@@ -31224,6 +32785,13 @@
   "offset": "0x3898",
   "jp": "３桁でしょ？<br>頭のゼロを取ってよ。",
   "en": "It's three digits, right?<br>Drop the leading zero.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
+  "offset": "0x38bb",
+  "jp": "数★",
+  "en": "No.★",
   "status": "translated"
  },
  {
@@ -31760,6 +33328,13 @@
  },
  {
   "chunk": "chunk_033",
+  "offset": "0x415e",
+  "jp": "移動",
+  "en": "Move",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
   "offset": "0x4163",
   "jp": "外に出る",
   "en": "Go outside",
@@ -31770,6 +33345,13 @@
   "offset": "0x416c",
   "jp": "もう帰っちゃうの？<br>・・・また来てくださるわね？<br>待ってるわよ、ギリアン。",
   "en": "Are you leaving already?<br>・・・You'll come again, won't you?<br>I'll be waiting, Gillian.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
+  "offset": "0x41b7",
+  "jp": "書斎",
+  "en": "Study",
   "status": "translated"
  },
  {
@@ -31802,6 +33384,13 @@
  },
  {
   "chunk": "chunk_033",
+  "offset": "0x4224",
+  "jp": "室内",
+  "en": "Room",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
   "offset": "0x4229",
   "jp": "アンティークなものでいっぱいです。",
   "en": "It's full of antiques.",
@@ -31812,6 +33401,13 @@
   "offset": "0x424c",
   "jp": "ジャンは家具に凝ってたようですね。",
   "en": "Jean seems to have been particular about furniture.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
+  "offset": "0x426f",
+  "jp": "家具",
+  "en": "Furniture",
   "status": "translated"
  },
  {
@@ -31854,6 +33450,13 @@
   "offset": "0x435d",
   "jp": "高級な物じゃないわ。<br>どれも中古品だって・・・",
   "en": "They're not expensive, though.<br>He said they're all secondhand・・・",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
+  "offset": "0x438c",
+  "jp": "聞く",
+  "en": "Ask",
   "status": "translated"
  },
  {
@@ -32005,6 +33608,13 @@
  },
  {
   "chunk": "chunk_033",
+  "offset": "0x46c2",
+  "jp": "裏庭",
+  "en": "Backyard",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
   "offset": "0x46c7",
   "jp": "裏庭・・・見せてもらえるかな？",
   "en": "The backyard・・・mind if I take a look?",
@@ -32043,6 +33653,13 @@
   "offset": "0x4738",
   "jp": "わかった。",
   "en": "Got it.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
+  "offset": "0x4743",
+  "jp": "居間",
+  "en": "Living Room",
   "status": "translated"
  },
  {
@@ -32106,6 +33723,13 @@
   "offset": "0x48b2",
   "jp": "まだ、いっぱい入ってます。<br>新品の様ですね。",
   "en": "There's still plenty inside.<br>Looks brand new.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
+  "offset": "0x48df",
+  "jp": "写真",
+  "en": "Photo",
   "status": "translated"
  },
  {
@@ -32274,6 +33898,13 @@
   "offset": "0x4d2b",
   "jp": "実はこの飴、君のお父さんが持っていたものなんだ。",
   "en": "Actually, this candy belonged to your father.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
+  "offset": "0x4d5c",
+  "jp": "使う",
+  "en": "Use",
   "status": "translated"
  },
  {
@@ -32589,6 +34220,13 @@
   "offset": "0x53cb",
   "jp": "・・・手入れが行き届いているな。",
   "en": "・・・It's very well kept.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
+  "offset": "0x53ec",
+  "jp": "暗闇",
+  "en": "Darkness",
   "status": "translated"
  },
  {
@@ -33608,6 +35246,13 @@
  },
  {
   "chunk": "chunk_033",
+  "offset": "0x69b4",
+  "jp": "触る",
+  "en": "Touch",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
   "offset": "0x69b9",
   "jp": "カトリーヌ、こんなところに蚊が。",
   "en": "Katrina, there's a mosquito right here.",
@@ -33846,6 +35491,13 @@
  },
  {
   "chunk": "chunk_033",
+  "offset": "0x6dc5",
+  "jp": "飴玉",
+  "en": "Candy",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
   "offset": "0x6dca",
   "jp": "父の飴玉ね。",
   "en": "My father's candy.",
@@ -33905,6 +35557,13 @@
   "offset": "0x6eb0",
   "jp": "父の筆跡ですけど・・・<br>何のことだか・・・",
   "en": "It's my father's handwriting, but・・・<br>what it's about, I don't know・・・",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_033",
+  "offset": "0x6edb",
+  "jp": "カギ",
+  "en": "Key",
   "status": "translated"
  },
  {
@@ -34490,6 +36149,13 @@
  },
  {
   "chunk": "chunk_034",
+  "offset": "0x0a33",
+  "jp": "薮漫",
+  "en": "薮漫",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_034",
   "offset": "0x18a4",
   "jp": "アルタミラ前です。",
   "en": "We're in front of Altamira.",
@@ -34640,6 +36306,13 @@
   "offset": "0x1c6d",
   "jp": "車に乗る",
   "en": "Get in the car",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_034",
+  "offset": "0x1c76",
+  "jp": "見る",
+  "en": "Look",
   "status": "translated"
  },
  {
@@ -35186,6 +36859,13 @@
   "offset": "0x289f",
   "jp": "占いする",
   "en": "Get a reading",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_034",
+  "offset": "0x28a8",
+  "jp": "持物",
+  "en": "Items",
   "status": "translated"
  },
  {
@@ -35939,6 +37619,13 @@
  },
  {
   "chunk": "chunk_034",
+  "offset": "0x3602",
+  "jp": "話す",
+  "en": "Talk",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_034",
   "offset": "0x3607",
   "jp": "自己紹介",
   "en": "Introduce yourself",
@@ -36026,6 +37713,13 @@
   "offset": "0x3849",
   "jp": "怪しい奴だ。<br>しょっぴこうか？！",
   "en": "He's a shady one.<br>Should we haul him in?!",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_034",
+  "offset": "0x386a",
+  "jp": "聞く",
+  "en": "Ask",
   "status": "translated"
  },
  {
@@ -36506,6 +38200,13 @@
  },
  {
   "chunk": "chunk_034",
+  "offset": "0x4507",
+  "jp": "飴玉",
+  "en": "Candy",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_034",
   "offset": "0x450c",
   "jp": "ギブスンの旦那の飴玉だな。",
   "en": "Old Gibson's candy, huh.",
@@ -36572,6 +38273,13 @@
   "offset": "0x4633",
   "jp": "『家を捜せ！』・・・誰の家をだ？",
   "en": "'Search the house!'... whose house?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_034",
+  "offset": "0x4654",
+  "jp": "カギ",
+  "en": "Key",
   "status": "translated"
  },
  {
@@ -36709,6 +38417,13 @@
  },
  {
   "chunk": "chunk_034",
+  "offset": "0x488d",
+  "jp": "写真",
+  "en": "Photo",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_034",
   "offset": "0x4892",
   "jp": "ギブスンの写真",
   "en": "Gibson's photo",
@@ -36768,6 +38483,13 @@
   "offset": "0x4952",
   "jp": "なんだ、そんなモン持って？",
   "en": "What are you doing with a thing like that?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_034",
+  "offset": "0x496d",
+  "jp": "使う",
+  "en": "Use",
   "status": "translated"
  },
  {
@@ -37444,6 +39166,20 @@
  },
  {
   "chunk": "chunk_035",
+  "offset": "0x149b",
+  "jp": "畷璧",
+  "en": "畷璧",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_035",
+  "offset": "0x16da",
+  "jp": "畷璧",
+  "en": "畷璧",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_035",
   "offset": "0x180b",
   "jp": "・・・店の外に出ました。",
   "en": "...We're outside the shop now.",
@@ -37633,6 +39369,13 @@
  },
  {
   "chunk": "chunk_035",
+  "offset": "0x1bda",
+  "jp": "移動",
+  "en": "Move",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_035",
   "offset": "0x1bdf",
   "jp": "車に乗る",
   "en": "Get in the car",
@@ -37657,6 +39400,13 @@
   "offset": "0x1c0e",
   "jp": "わっ、待って・・・！！",
   "en": "W-wait...!!",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_035",
+  "offset": "0x1c25",
+  "jp": "見る",
+  "en": "Look",
   "status": "translated"
  },
  {
@@ -37874,6 +39624,13 @@
   "offset": "0x20e8",
   "jp": "店から、はみ出してるんだな。",
   "en": "They're spilling right out of the shops.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_035",
+  "offset": "0x2105",
+  "jp": "屋台",
+  "en": "Stall",
   "status": "translated"
  },
  {
@@ -38256,6 +40013,13 @@
  },
  {
   "chunk": "chunk_035",
+  "offset": "0x2908",
+  "jp": "持物",
+  "en": "Items",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_035",
   "offset": "0x290d",
   "jp": "見るω",
   "en": "Look ω",
@@ -38375,6 +40139,13 @@
  },
  {
   "chunk": "chunk_035",
+  "offset": "0x2b64",
+  "jp": "店内",
+  "en": "Shop",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_035",
   "offset": "0x2b69",
   "jp": "うわぁ〜！！<br>本当に、いろんな物がありますね。<br>これなら、何でもそろいそうですよ。",
   "en": "Wow!!<br>They really have all sorts of things.<br>Looks like you could find anything here.",
@@ -38385,6 +40156,13 @@
   "offset": "0x2bbc",
   "jp": "『消費社会の城』って感じですね。<br>へたをすると、正規のショップより<br>品数が揃っているかも知れませんよ。",
   "en": "It's like a 'castle of consumer society.'<br>They might even have a wider selection<br>than a legit shop.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_035",
+  "offset": "0x2c23",
+  "jp": "店員",
+  "en": "Clerk",
   "status": "translated"
  },
  {
@@ -38434,6 +40212,13 @@
   "offset": "0x2d6a",
   "jp": "いろんな言語が聴こえてきます。<br>まさにネオ・コウベです。",
   "en": "You can hear all kinds of languages.<br>This is Neo Kobe, all right.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_035",
+  "offset": "0x2da3",
+  "jp": "商品",
+  "en": "Goods",
   "status": "translated"
  },
  {
@@ -38679,6 +40464,13 @@
   "offset": "0x34c7",
   "jp": "これが・・・エロビデオか？<br>２０世紀末に大ヒットしたという・・・",
   "en": "So this is... a porno?<br>They say it was a huge hit at the end of the 20th century...",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_035",
+  "offset": "0x3508",
+  "jp": "聞く",
+  "en": "Ask",
   "status": "translated"
  },
  {
@@ -39145,6 +40937,13 @@
  },
  {
   "chunk": "chunk_035",
+  "offset": "0x40ec",
+  "jp": "飴玉",
+  "en": "Candy",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_035",
   "offset": "0x40f1",
   "jp": "飴玉なら、もっといいのがあるよ。",
   "en": "If it's candy you want, I've got better.",
@@ -39169,6 +40968,13 @@
   "offset": "0x4120",
   "jp": "何だぁ、それ？<br>住宅ニュースかいな？",
   "en": "What's that?<br>A housing listing?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_035",
+  "offset": "0x4145",
+  "jp": "カギ",
+  "en": "Key",
   "status": "translated"
  },
  {
@@ -39204,6 +41010,13 @@
   "offset": "0x4229",
   "jp": "ああ、それ・・・うちの商品だよ。",
   "en": "Ah, that... that's our merchandise.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_035",
+  "offset": "0x424a",
+  "jp": "写真",
+  "en": "Photo",
   "status": "translated"
  },
  {
@@ -39292,9 +41105,23 @@
  },
  {
   "chunk": "chunk_035",
+  "offset": "0x43d1",
+  "jp": "使う",
+  "en": "Use",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_035",
   "offset": "0x43d6",
   "jp": "もうかぶってるでしょ？<br>・・・脱ぎますか？",
   "en": "You've already got it on, right?<br>...Take it off?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_035",
+  "offset": "0x4401",
+  "jp": "脱ぐ",
+  "en": "Undress",
   "status": "translated"
  },
  {
@@ -39985,6 +41812,13 @@
  },
  {
   "chunk": "chunk_036",
+  "offset": "0x1382",
+  "jp": "移動",
+  "en": "Move",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_036",
   "offset": "0x1387",
   "jp": "車に乗る",
   "en": "Get in the car",
@@ -40128,6 +41962,13 @@
   "offset": "0x174b",
   "jp": "ダメです！<br>ご面倒でもジョイ・ディビジョン製の<br>マスクをかぶって下さい！",
   "en": "No good!<br>Sorry, but please put on a<br>Joy Division mask!",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_036",
+  "offset": "0x1794",
+  "jp": "見る",
+  "en": "Look",
   "status": "translated"
  },
  {
@@ -40394,6 +42235,13 @@
   "offset": "0x1dbe",
   "jp": "それが違法なんだ。",
   "en": "That's exactly what makes it illegal.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_036",
+  "offset": "0x1dd1",
+  "jp": "聞く",
+  "en": "Ask",
   "status": "translated"
  },
  {
@@ -40825,6 +42673,13 @@
  },
  {
   "chunk": "chunk_036",
+  "offset": "0x28a5",
+  "jp": "持物",
+  "en": "Items",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_036",
   "offset": "0x28aa",
   "jp": "見るω",
   "en": "Lookω",
@@ -40902,6 +42757,13 @@
  },
  {
   "chunk": "chunk_036",
+  "offset": "0x29d5",
+  "jp": "飴玉",
+  "en": "Candy",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_036",
   "offset": "0x29da",
   "jp": "結構です、甘いものは苦手なんですよ。",
   "en": "No thanks, I'm not one for sweets.",
@@ -40919,6 +42781,13 @@
   "offset": "0x2a06",
   "jp": "紙切れ",
   "en": "Scrap of paper",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_036",
+  "offset": "0x2a0d",
+  "jp": "カギ",
+  "en": "Key",
   "status": "translated"
  },
  {
@@ -40961,6 +42830,13 @@
   "offset": "0x2a9e",
   "jp": "かぶってからお入り下さい。",
   "en": "Put it on before you go in.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_036",
+  "offset": "0x2ab9",
+  "jp": "写真",
+  "en": "Photo",
   "status": "translated"
  },
  {
@@ -41010,6 +42886,13 @@
   "offset": "0x2b26",
   "jp": "見たことないですねぇ。",
   "en": "Never seen him.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_036",
+  "offset": "0x2b3d",
+  "jp": "使う",
+  "en": "Use",
   "status": "translated"
  },
  {
@@ -41269,6 +43152,13 @@
   "offset": "0x3126",
   "jp": "・・・中でまたマスクを取られたんじゃ<br>他のお客さんに迷惑ですからね。<br>わかってくださいよ。",
   "en": "...If you take your mask off inside again<br>it bothers the other guests.<br>Please understand.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_036",
+  "offset": "0x3181",
+  "jp": "謝る",
+  "en": "Apologize",
   "status": "translated"
  },
  {
@@ -41819,6 +43709,104 @@
  },
  {
   "chunk": "chunk_037",
+  "offset": "0x03d9",
+  "jp": "庖濮",
+  "en": "庖濮",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
+  "offset": "0x080c",
+  "jp": "銷傅",
+  "en": "銷傅",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
+  "offset": "0x0f48",
+  "jp": "銓蕁",
+  "en": "銓蕁",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
+  "offset": "0x0f60",
+  "jp": "銓后",
+  "en": "銓后",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
+  "offset": "0x0fc2",
+  "jp": "銖后",
+  "en": "銖后",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
+  "offset": "0x108e",
+  "jp": "銜如",
+  "en": "銜如",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
+  "offset": "0x1247",
+  "jp": "鈿諭",
+  "en": "鈿諭",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
+  "offset": "0x13b4",
+  "jp": "鉉瑟",
+  "en": "鉉瑟",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
+  "offset": "0x162f",
+  "jp": "鉗蓮",
+  "en": "鉗蓮",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
+  "offset": "0x1639",
+  "jp": "鉗宗",
+  "en": "鉗宗",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
+  "offset": "0x1728",
+  "jp": "鉞魁",
+  "en": "鉞魁",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
+  "offset": "0x1f0c",
+  "jp": "哇蹂",
+  "en": "哇蹂",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
+  "offset": "0x20ff",
+  "jp": "光蹂",
+  "en": "光蹂",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
+  "offset": "0x2a0d",
+  "jp": "奎跖",
+  "en": "奎跖",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
   "offset": "0x32b2",
   "jp": "アウター・ヘブンの店内です。",
   "en": "Inside the Outer Heaven bar.",
@@ -42151,6 +44139,20 @@
   "offset": "0x38cb",
   "jp": "まだ何も手がかりを得ていませんよ。",
   "en": "We haven't turned up a single lead yet.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
+  "offset": "0x38ee",
+  "jp": "見る",
+  "en": "Look",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
+  "offset": "0x38f3",
+  "jp": "店内",
+  "en": "Shop",
   "status": "translated"
  },
  {
@@ -42652,6 +44654,13 @@
  },
  {
   "chunk": "chunk_037",
+  "offset": "0x444e",
+  "jp": "呼ぶ",
+  "en": "Call",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
   "offset": "0x4453",
   "jp": "マスター",
   "en": "Master",
@@ -42935,6 +44944,13 @@
   "offset": "0x48b2",
   "jp": "もう、やめてくださいよ・・・",
   "en": "Please, stop it already...",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
+  "offset": "0x48cf",
+  "jp": "持物",
+  "en": "Items",
   "status": "translated"
  },
  {
@@ -43439,6 +45455,13 @@
   "offset": "0x5295",
   "jp": "もっと器用に生きたらどう？",
   "en": "Why don't you live a little more shrewdly?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
+  "offset": "0x52b0",
+  "jp": "聞く",
+  "en": "Ask",
   "status": "translated"
  },
  {
@@ -44297,6 +46320,13 @@
  },
  {
   "chunk": "chunk_037",
+  "offset": "0x63ad",
+  "jp": "飴玉",
+  "en": "Candy",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
   "offset": "0x63b2",
   "jp": "飴玉？<br>そんなものじゃ私の気は引けないわね。",
   "en": "Candy?<br>Something like that won't win me over.",
@@ -44314,6 +46344,13 @@
   "offset": "0x63e6",
   "jp": "紙切れ",
   "en": "Scrap of paper",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
+  "offset": "0x63ed",
+  "jp": "カギ",
+  "en": "Key",
   "status": "translated"
  },
  {
@@ -44342,6 +46379,13 @@
   "offset": "0x644c",
   "jp": "嫌でしょ？<br>夏の紫外線は・・・",
   "en": "It's awful, isn't it?<br>The summer UV rays...",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_037",
+  "offset": "0x646b",
+  "jp": "写真",
+  "en": "Photo",
   "status": "translated"
  },
  {
@@ -45872,9 +47916,72 @@
  },
  {
   "chunk": "chunk_038",
+  "offset": "0x0328",
+  "jp": "蹊拭",
+  "en": "蹊拭",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
+  "offset": "0x049c",
+  "jp": "蹂瓠",
+  "en": "蹂瓠",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
+  "offset": "0x0857",
+  "jp": "踝僊",
+  "en": "踝僊",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
+  "offset": "0x08cf",
+  "jp": "絮∬",
+  "en": "絮∬",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
   "offset": "0x0fb3",
   "jp": "蓆机鐐",
   "en": "蓆机鐐",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
+  "offset": "0x107b",
+  "jp": "褄歙",
+  "en": "褄歙",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
+  "offset": "0x11dc",
+  "jp": "晝齠",
+  "en": "晝齠",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
+  "offset": "0x1227",
+  "jp": "壽鵁",
+  "en": "壽鵁",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
+  "offset": "0x128c",
+  "jp": "收齠",
+  "en": "收齠",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
+  "offset": "0x136d",
+  "jp": "樔遘",
+  "en": "樔遘",
   "status": "translated"
  },
  {
@@ -45935,6 +48042,13 @@
  },
  {
   "chunk": "chunk_038",
+  "offset": "0x1c0d",
+  "jp": "移動",
+  "en": "Move",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
   "offset": "0x1c12",
   "jp": "車に乗る",
   "en": "Get in the car",
@@ -45959,6 +48073,20 @@
   "offset": "0x1c49",
   "jp": "３階か・・・窓から逃げられんな。",
   "en": "Third floor, huh... No escaping out a window.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
+  "offset": "0x1c6a",
+  "jp": "見る",
+  "en": "Look",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
+  "offset": "0x1c6f",
+  "jp": "建物",
+  "en": "Building",
   "status": "translated"
  },
  {
@@ -46253,6 +48381,13 @@
   "offset": "0x22cb",
   "jp": "おそらく一日中、燃やしてるんでしょう。",
   "en": "They're probably burning it all day long.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
+  "offset": "0x22f2",
+  "jp": "聞く",
+  "en": "Ask",
   "status": "translated"
  },
  {
@@ -46789,6 +48924,13 @@
  },
  {
   "chunk": "chunk_038",
+  "offset": "0x2efd",
+  "jp": "麻薬",
+  "en": "Drugs",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
   "offset": "0x2f02",
   "jp": "・・・ここらでヤクは手に入るのか？",
   "en": "...Can you get drugs around here?",
@@ -46848,6 +48990,13 @@
   "offset": "0x3024",
   "jp": "その辺の連中に聞いてみよう。<br>・・・誰かいないか？",
   "en": "Let's ask the guys over there.<br>...Anyone around?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
+  "offset": "0x3057",
+  "jp": "持物",
+  "en": "Items",
   "status": "translated"
  },
  {
@@ -46915,6 +49064,13 @@
  },
  {
   "chunk": "chunk_038",
+  "offset": "0x3131",
+  "jp": "飴玉",
+  "en": "Candy",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
   "offset": "0x3136",
   "jp": "そんなもんじゃ腹はふくれんのぅ。",
   "en": "That won't fill anyone's belly.",
@@ -46957,6 +49113,13 @@
  },
  {
   "chunk": "chunk_038",
+  "offset": "0x31c2",
+  "jp": "カギ",
+  "en": "Key",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
   "offset": "0x31ca",
   "jp": "ディスク",
   "en": "Disk",
@@ -46995,6 +49158,13 @@
   "offset": "0x321d",
   "jp": "今日はハロウィンだったっけな？",
   "en": "Is today Halloween or something?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
+  "offset": "0x323c",
+  "jp": "写真",
+  "en": "Photo",
   "status": "translated"
  },
  {
@@ -47093,6 +49263,13 @@
   "offset": "0x3370",
   "jp": "話が聞きたいんだが・・・",
   "en": "I'd like to ask you something...",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
+  "offset": "0x3389",
+  "jp": "あ？",
+  "en": "Ah?",
   "status": "translated"
  },
  {
@@ -47272,6 +49449,13 @@
  },
  {
   "chunk": "chunk_038",
+  "offset": "0x3681",
+  "jp": "ドア",
+  "en": "Door",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
   "offset": "0x3686",
   "jp": "のぞき窓がついている旧式のドアです。",
   "en": "An old-fashioned door with a peephole.",
@@ -47419,6 +49603,13 @@
  },
  {
   "chunk": "chunk_038",
+  "offset": "0x3a24",
+  "jp": "話す",
+  "en": "Talk",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
   "offset": "0x3a29",
   "jp": "この大事な時に・・・後にしましょう。",
   "en": "At a crucial moment like this... let's save it for later.",
@@ -47527,6 +49718,13 @@
   "offset": "0x3c76",
   "jp": "こんなに日焼けしていて<br>本当にスナッチャーなんでしょうか？",
   "en": "Tanned this deeply,<br>is he really a SNATCHER?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
+  "offset": "0x3cb1",
+  "jp": "室内",
+  "en": "Room",
   "status": "translated"
  },
  {
@@ -47804,6 +50002,13 @@
  },
  {
   "chunk": "chunk_038",
+  "offset": "0x43ac",
+  "jp": "ゴミ",
+  "en": "Trash",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
   "offset": "0x43b1",
   "jp": "生体老廃物・・・生体分泌物を確認することができます。ゴミからはスナッチャーの証拠はつかめません。",
   "en": "I can detect biological waste... bodily secretions. There's no SNATCHER evidence to be gotten from the trash.",
@@ -47982,6 +50187,13 @@
   "offset": "0x46e0",
   "jp": "泥だらけですね。<br>風呂場で道具も洗ってるようです。",
   "en": "It's covered in mud.<br>Looks like he washes his gear in the bath, too.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
+  "offset": "0x4713",
+  "jp": "浴槽",
+  "en": "Bathtub",
   "status": "translated"
  },
  {
@@ -48206,6 +50418,13 @@
   "offset": "0x4d43",
   "jp": "『リキッド・スカイ』の粉末バージョン<br>ですね。",
   "en": "The powdered version of<br>'Liquid Sky.'",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_038",
+  "offset": "0x4d72",
+  "jp": "水垢",
+  "en": "Grime",
   "status": "translated"
  },
  {
@@ -48644,6 +50863,69 @@
  },
  {
   "chunk": "chunk_039",
+  "offset": "0x0137",
+  "jp": "¶鵝",
+  "en": "¶鵝",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
+  "offset": "0x06bc",
+  "jp": "廐煎",
+  "en": "廐煎",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
+  "offset": "0x0af6",
+  "jp": "蔟諭",
+  "en": "蔟諭",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
+  "offset": "0x0b9b",
+  "jp": "蔬法",
+  "en": "蔬法",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
+  "offset": "0x0c38",
+  "jp": "蔗諭",
+  "en": "蔗諭",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
+  "offset": "0x0ceb",
+  "jp": "蓴奸",
+  "en": "蓴奸",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
+  "offset": "0x0fa4",
+  "jp": "蔡釋",
+  "en": "蔡釋",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
+  "offset": "0x134e",
+  "jp": "碆褶",
+  "en": "碆褶",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
+  "offset": "0x145b",
+  "jp": "珠褶",
+  "en": "珠褶",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
   "offset": "0x1c5b",
   "jp": "コマンド３回よろしく",
   "en": "Enter the command three times.",
@@ -48686,6 +50968,13 @@
  },
  {
   "chunk": "chunk_039",
+  "offset": "0x1d53",
+  "jp": "移動",
+  "en": "Move",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
   "offset": "0x1d58",
   "jp": "車に乗る",
   "en": "Get in the car",
@@ -48710,6 +50999,20 @@
   "offset": "0x1d89",
   "jp": "２階だな・・・上がってみよう。",
   "en": "The second floor... Let's head up.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
+  "offset": "0x1da8",
+  "jp": "見る",
+  "en": "Look",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
+  "offset": "0x1dad",
+  "jp": "建物",
+  "en": "Building",
   "status": "translated"
  },
  {
@@ -48871,6 +51174,13 @@
   "offset": "0x226c",
   "jp": "他のエリアと同じく今では信号の役目は<br>果たしていません。",
   "en": "Like the ones in other areas, it no longer<br>serves its purpose as a signal.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
+  "offset": "0x22a5",
+  "jp": "持物",
+  "en": "Items",
   "status": "translated"
  },
  {
@@ -49141,6 +51451,13 @@
  },
  {
   "chunk": "chunk_039",
+  "offset": "0x273a",
+  "jp": "ドア",
+  "en": "Door",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
   "offset": "0x273f",
   "jp": "のぞき窓がついていますよ。",
   "en": "There's a peephole.",
@@ -49179,6 +51496,13 @@
   "offset": "0x27f8",
   "jp": "おそらく、電子ロックでしょう。<br>防犯装置も付いています。",
   "en": "Probably an electronic lock.<br>There's a security device fitted, too.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
+  "offset": "0x2831",
+  "jp": "話す",
+  "en": "Talk",
   "status": "translated"
  },
  {
@@ -49365,6 +51689,13 @@
  },
  {
   "chunk": "chunk_039",
+  "offset": "0x2bf6",
+  "jp": "叫ぶ",
+  "en": "Shout",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
   "offset": "0x2bfb",
   "jp": "ここを開けろっ！！",
   "en": "Open up, now!!",
@@ -49463,6 +51794,13 @@
  },
  {
   "chunk": "chunk_039",
+  "offset": "0x2d8f",
+  "jp": "リサ",
+  "en": "Lisa",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
   "offset": "0x2d94",
   "jp": "うーん、なかなかの美人だ・・・",
   "en": "Hmm, quite a beauty...",
@@ -49480,6 +51818,13 @@
   "offset": "0x2dd8",
   "jp": "その目つきは、<br>私のこと疑ってるんでしょう？",
   "en": "That look in your eye —<br>you suspect me, don't you?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
+  "offset": "0x2e05",
+  "jp": "室内",
+  "en": "Room",
   "status": "translated"
  },
  {
@@ -49515,6 +51860,13 @@
   "offset": "0x2ebd",
   "jp": "なぜか不似合いだな・・・<br>このインテリアにこの地図は・・・",
   "en": "Somehow it doesn't fit...<br>this map, with this interior...",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
+  "offset": "0x2ef8",
+  "jp": "地図",
+  "en": "Map",
   "status": "translated"
  },
  {
@@ -49701,6 +52053,13 @@
  },
  {
   "chunk": "chunk_039",
+  "offset": "0x334d",
+  "jp": "聞く",
+  "en": "Ask",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
   "offset": "0x3352",
   "jp": "ギブスンの事",
   "en": "About Gibson",
@@ -49781,6 +52140,13 @@
   "offset": "0x34a9",
   "jp": "去年、病気したんだけど・・・<br>今はすごく調子いいみたいよ。",
   "en": "He was sick last year, but...<br>he seems to be doing great now.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
+  "offset": "0x34e4",
+  "jp": "職種",
+  "en": "Occupation",
   "status": "translated"
  },
  {
@@ -50093,6 +52459,13 @@
  },
  {
   "chunk": "chunk_039",
+  "offset": "0x3c6f",
+  "jp": "飴玉",
+  "en": "Candy",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
   "offset": "0x3c74",
   "jp": "何よそれ？",
   "en": "What's that?",
@@ -50114,6 +52487,13 @@
  },
  {
   "chunk": "chunk_039",
+  "offset": "0x3c8d",
+  "jp": "カギ",
+  "en": "Key",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
   "offset": "0x3c92",
   "jp": "日焼け止め",
   "en": "Sunscreen",
@@ -50124,6 +52504,13 @@
   "offset": "0x3ca0",
   "jp": "ディスク",
   "en": "Disk",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
+  "offset": "0x3ca9",
+  "jp": "写真",
+  "en": "Photo",
   "status": "translated"
  },
  {
@@ -50481,6 +52868,13 @@
   "offset": "0x43a2",
   "jp": "イワンの浴室とは、比べものになりません。",
   "en": "No comparison to Ivan's bathroom.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_039",
+  "offset": "0x43cb",
+  "jp": "浴槽",
+  "en": "Bathtub",
   "status": "translated"
  },
  {
@@ -51122,6 +53516,13 @@
  },
  {
   "chunk": "chunk_040",
+  "offset": "0x0212",
+  "jp": "庠顱",
+  "en": "庠顱",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_040",
   "offset": "0x0252",
   "jp": "ギリアン！<br>鏡の反射を使ってフレディを撃って下さい！＠Ｃ",
   "en": "Gillian!<br>Use the mirror's reflection to shoot Freddy!＠Ｃ",
@@ -51199,6 +53600,13 @@
  },
  {
   "chunk": "chunk_042",
+  "offset": "0x016e",
+  "jp": "餘♪",
+  "en": "餘♪",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
   "offset": "0x0787",
   "jp": "糒踟訌",
   "en": "糒踟訌",
@@ -51209,6 +53617,97 @@
   "offset": "0x0be8",
   "jp": "咒檐菎",
   "en": "咒檐菎",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x0c18",
+  "jp": "咒煎",
+  "en": "咒煎",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x0c87",
+  "jp": "絮♪",
+  "en": "絮♪",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x0d8c",
+  "jp": "椦凜",
+  "en": "椦凜",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x0f71",
+  "jp": "貶貊",
+  "en": "貶貊",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x1035",
+  "jp": "手虍",
+  "en": "手虍",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x10f6",
+  "jp": "餘♪",
+  "en": "餘♪",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x1272",
+  "jp": "竡訌",
+  "en": "竡訌",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x1592",
+  "jp": "瀰澤",
+  "en": "瀰澤",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x16c4",
+  "jp": "絮♪",
+  "en": "絮♪",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x21f7",
+  "jp": "訓鋩",
+  "en": "訓鋩",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x2266",
+  "jp": "訓蹂",
+  "en": "訓蹂",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x2293",
+  "jp": "訓鰄",
+  "en": "訓鰄",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x22f5",
+  "jp": "訓靼",
+  "en": "訓靼",
   "status": "translated"
  },
  {
@@ -51265,6 +53764,27 @@
   "offset": "0x342c",
   "jp": "カトリーヌの事を頼んだぞ。",
   "en": "I'm counting on you to find Katrina.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x3447",
+  "jp": "移動",
+  "en": "Move",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x344c",
+  "jp": "見る",
+  "en": "Look",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x3451",
+  "jp": "局長",
+  "en": "Chief",
   "status": "translated"
  },
  {
@@ -51426,6 +53946,13 @@
   "offset": "0x3814",
   "jp": "そうだな。<br>わけありだな・・・きっと。",
   "en": "Yeah.<br>There's a story there... for sure.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x383b",
+  "jp": "聞く",
+  "en": "Ask",
   "status": "translated"
  },
  {
@@ -52270,6 +54797,13 @@
  },
  {
   "chunk": "chunk_042",
+  "offset": "0x4b0a",
+  "jp": "持物",
+  "en": "Items",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
   "offset": "0x4b0f",
   "jp": "見るω",
   "en": "Look ω",
@@ -52392,6 +54926,13 @@
   "offset": "0x4d58",
   "jp": "捜査に必要な経費だ。<br>君の判断で使うがいい。",
   "en": "It's expense money for the investigation.<br>Spend it at your own discretion.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x4d85",
+  "jp": "飴玉",
+  "en": "Candy",
   "status": "translated"
  },
  {
@@ -52574,6 +55115,13 @@
   "offset": "0x51ef",
   "jp": "ＯＬＥＩＮじゃないのか？<br>『オレイン酸』の・・。",
   "en": "Isn't it OLEIN?<br>As in 'oleic acid'...",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x5220",
+  "jp": "寺院",
+  "en": "Cathedral",
   "status": "translated"
  },
  {
@@ -52872,6 +55420,13 @@
  },
  {
   "chunk": "chunk_042",
+  "offset": "0x5841",
+  "jp": "ミカ",
+  "en": "Mika",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
   "offset": "0x5846",
   "jp": "わかってたわ・・・あなたの気持ち。<br>でも私、まだ心の整理ができてないの。<br>もう少し、待って。",
   "en": "I knew... how you feel.<br>But I haven't sorted out my own heart yet.<br>Give me a little more time.",
@@ -53015,6 +55570,13 @@
   "offset": "0x5c3c",
   "jp": "何・・・誰か探しているの？",
   "en": "What... are you looking for someone?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x5c57",
+  "jp": "話す",
+  "en": "Talk",
   "status": "translated"
  },
  {
@@ -54023,6 +56585,13 @@
   "offset": "0x7473",
   "jp": "どうしたんじゃ？<br>言いたいことがあれば言ってみぃ。",
   "en": "What is it?<br>If you've got something to say, say it.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_042",
+  "offset": "0x74a6",
+  "jp": "写真",
+  "en": "Photo",
   "status": "translated"
  },
  {
@@ -56876,6 +59445,13 @@
  },
  {
   "chunk": "chunk_043",
+  "offset": "0x0b8e",
+  "jp": "移動",
+  "en": "Move",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_043",
   "offset": "0x0b93",
   "jp": "その前に、赤の広場の写真を<br>元に戻しておきます。",
   "en": "But first, I'll put the photo of<br>Red Square back where it was.",
@@ -56914,6 +59490,20 @@
   "offset": "0x0c72",
   "jp": "写真を元に戻します。",
   "en": "I'll put the photo back.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_043",
+  "offset": "0x0c87",
+  "jp": "見る",
+  "en": "Look",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_043",
+  "offset": "0x0c8c",
+  "jp": "椅子",
+  "en": "Chair",
   "status": "translated"
  },
  {
@@ -56984,6 +59574,13 @@
   "offset": "0x0dc3",
   "jp": "よくわかりませんが、<br>ただの花瓶の絵のようです。",
   "en": "I don't really see it. It just<br>looks like a painting of a vase.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_043",
+  "offset": "0x0df4",
+  "jp": "写真",
+  "en": "Photo",
   "status": "translated"
  },
  {
@@ -57166,6 +59763,13 @@
   "offset": "0x1244",
   "jp": "プリント画素状態などから判断して、<br>この写真は半世紀前のものです。",
   "en": "Judging from the print's pixel state and such,<br>this photo is half a century old.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_043",
+  "offset": "0x1287",
+  "jp": "持物",
+  "en": "Items",
   "status": "translated"
  },
  {
@@ -57681,6 +60285,13 @@
  },
  {
   "chunk": "chunk_043",
+  "offset": "0x1d89",
+  "jp": "飴玉",
+  "en": "Candy",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_043",
   "offset": "0x1d8e",
   "jp": "ジャンのポケットにあった飴玉です。",
   "en": "Candy that was in Jean's pocket.",
@@ -57782,6 +60393,13 @@
   "offset": "0x1f41",
   "jp": "局長室に隠されていた、スチール写真です。",
   "en": "A still photo that was hidden in the Chief's office.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_043",
+  "offset": "0x1f6a",
+  "jp": "寺院",
+  "en": "Cathedral",
   "status": "translated"
  },
  {
@@ -57915,6 +60533,20 @@
   "offset": "0x23b1",
   "jp": "そういうことになります。",
   "en": "That's what it comes down to.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_044",
+  "offset": "0x0312",
+  "jp": "銹抵",
+  "en": "銹抵",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_044",
+  "offset": "0x0496",
+  "jp": "銹逓",
+  "en": "銹逓",
   "status": "translated"
  },
  {
@@ -58279,6 +60911,48 @@
   "offset": "0x0f47",
   "jp": "逃げるんですか、ギリアン！",
   "en": "Running away, Gillian?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_045",
+  "offset": "0x03e9",
+  "jp": "糶¶",
+  "en": "糶¶",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_045",
+  "offset": "0x0531",
+  "jp": "艇功",
+  "en": "艇功",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_045",
+  "offset": "0x054f",
+  "jp": "褸¶",
+  "en": "褸¶",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_045",
+  "offset": "0x05f4",
+  "jp": "机褶",
+  "en": "机褶",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_045",
+  "offset": "0x08f2",
+  "jp": "餘¶",
+  "en": "餘¶",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_045",
+  "offset": "0x0a40",
+  "jp": "碣雲",
+  "en": "碣雲",
   "status": "translated"
  },
  {
@@ -58990,6 +61664,13 @@
  },
  {
   "chunk": "chunk_045",
+  "offset": "0x35fb",
+  "jp": "野球",
+  "en": "Baseball",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_045",
   "offset": "0x3600",
   "jp": "カーレース",
   "en": "Car racing",
@@ -59200,6 +61881,34 @@
  },
  {
   "chunk": "chunk_045",
+  "offset": "0x39c4",
+  "jp": "７回",
+  "en": "7 Times",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_045",
+  "offset": "0x39c9",
+  "jp": "５回",
+  "en": "5 Times",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_045",
+  "offset": "0x39ce",
+  "jp": "３回",
+  "en": "3 Times",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_045",
+  "offset": "0x39d3",
+  "jp": "２回",
+  "en": "2 Times",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_045",
   "offset": "0x39d8",
   "jp": "世の中に言語はたくさん存在しますが、<br>プログラマーの高木氏の好きな言語は<br>なんでしょうか？",
   "en": "There are many languages in the world—<br>what is the programmer Mr. Takagi's<br>favorite language?",
@@ -59259,6 +61968,13 @@
   "offset": "0x3aee",
   "jp": "日本語",
   "en": "Japanese",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_045",
+  "offset": "0x3af5",
+  "jp": "英語",
+  "en": "English",
   "status": "translated"
  },
  {
@@ -59382,9 +62098,65 @@
  },
  {
   "chunk": "chunk_045",
+  "offset": "0x3c7b",
+  "jp": "閣下",
+  "en": "Excellency",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_045",
+  "offset": "0x3c80",
+  "jp": "ユキ",
+  "en": "Yuki",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_045",
+  "offset": "0x3c85",
+  "jp": "ポチ",
+  "en": "Pochi",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_045",
   "offset": "0x3c8a",
   "jp": "コナミ",
   "en": "Konami",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_045",
+  "offset": "0x3c91",
+  "jp": "タマ",
+  "en": "Tama",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_045",
+  "offset": "0x3c96",
+  "jp": "１羽",
+  "en": "1 Bird",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_045",
+  "offset": "0x3c9b",
+  "jp": "３羽",
+  "en": "3 Birds",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_045",
+  "offset": "0x3ca0",
+  "jp": "５羽",
+  "en": "5 Birds",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_045",
+  "offset": "0x3ca5",
+  "jp": "７羽",
+  "en": "7 Birds",
   "status": "translated"
  },
  {
@@ -63960,6 +66732,13 @@
  },
  {
   "chunk": "chunk_046",
+  "offset": "0x142e",
+  "jp": "見る",
+  "en": "Look",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_046",
   "offset": "0x1436",
   "jp": "街はクリスマス一色ですね。",
   "en": "The whole city's decked out for Christmas.",
@@ -64324,6 +67103,13 @@
  },
  {
   "chunk": "chunk_046",
+  "offset": "0x1c0c",
+  "jp": "持物",
+  "en": "Items",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_046",
   "offset": "0x1c11",
   "jp": "見るω",
   "en": "Lookω",
@@ -64429,6 +67215,13 @@
  },
  {
   "chunk": "chunk_046",
+  "offset": "0x1df6",
+  "jp": "服装",
+  "en": "Clothing",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_046",
   "offset": "0x1dfb",
   "jp": "典型的なサンタクロースの衣装です。",
   "en": "A textbook Santa Claus costume.",
@@ -64502,6 +67295,13 @@
   "offset": "0x1fa1",
   "jp": "ああ、ジョイ・ディビジョンの店員が<br>すすめてたヤツか？",
   "en": "Ah, the one that clerk at Joy Division<br>was recommending?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_046",
+  "offset": "0x1fd8",
+  "jp": "聞く",
+  "en": "Ask",
   "status": "translated"
  },
  {
@@ -64779,6 +67579,13 @@
  },
  {
   "chunk": "chunk_046",
+  "offset": "0x274c",
+  "jp": "飴玉",
+  "en": "Candy",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_046",
   "offset": "0x2751",
   "jp": "ギブスンのだんなの飴玉だな。",
   "en": "That's Mr. Gibson's candy drop.",
@@ -64838,6 +67645,13 @@
   "offset": "0x2831",
   "jp": "どこだろうな？<br>見たことがない。",
   "en": "Beats me.<br>Never seen it before.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_046",
+  "offset": "0x2852",
+  "jp": "使う",
+  "en": "Use",
   "status": "translated"
  },
  {
@@ -65444,6 +68258,13 @@
  },
  {
   "chunk": "chunk_046",
+  "offset": "0x3532",
+  "jp": "寺院",
+  "en": "Cathedral",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_046",
   "offset": "0x3537",
   "jp": "クィーン病院の部屋に掛かっていた<br>寺院の絵です。",
   "en": "A painting of a temple that was hanging<br>in the room at Queen Hospital.",
@@ -65577,6 +68398,34 @@
  },
  {
   "chunk": "chunk_047",
+  "offset": "0x10fd",
+  "jp": "檐饒",
+  "en": "檐饒",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_047",
+  "offset": "0x120a",
+  "jp": "奘訌",
+  "en": "奘訌",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_047",
+  "offset": "0x14c1",
+  "jp": "絮♪",
+  "en": "絮♪",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_047",
+  "offset": "0x16fe",
+  "jp": "莠襁",
+  "en": "莠襁",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_047",
   "offset": "0x18aa",
   "jp": "ギリアン、あなたのマンション前です。",
   "en": "Gillian, we're in front of your apartment.",
@@ -65594,6 +68443,13 @@
   "offset": "0x1900",
   "jp": "そうあればいいがな。",
   "en": "Let's hope she's right.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_047",
+  "offset": "0x1915",
+  "jp": "移動",
+  "en": "Move",
   "status": "translated"
  },
  {
@@ -65636,6 +68492,13 @@
   "offset": "0x19a9",
   "jp": "いいぞ！<br>・・・開けてくれ！",
   "en": "Right!<br>...Open it up!",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_047",
+  "offset": "0x19c6",
+  "jp": "見る",
+  "en": "Look",
   "status": "translated"
  },
  {
@@ -65815,6 +68678,13 @@
  },
  {
   "chunk": "chunk_047",
+  "offset": "0x1dbf",
+  "jp": "持物",
+  "en": "Items",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_047",
   "offset": "0x1dc4",
   "jp": "見るω",
   "en": "Lookω",
@@ -65892,6 +68762,13 @@
  },
  {
   "chunk": "chunk_047",
+  "offset": "0x1ef7",
+  "jp": "室内",
+  "en": "Room",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_047",
   "offset": "0x1efc",
   "jp": "この部屋には誰もいないようです。",
   "en": "There doesn't seem to be anyone in this room.",
@@ -65958,6 +68835,13 @@
   "offset": "0x2096",
   "jp": "室内には動体反応ありません。",
   "en": "No motion detected in the room.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_047",
+  "offset": "0x20b3",
+  "jp": "足跡",
+  "en": "Footprints",
   "status": "translated"
  },
  {
@@ -66165,6 +69049,13 @@
  },
  {
   "chunk": "chunk_047",
+  "offset": "0x247f",
+  "jp": "下着",
+  "en": "Underwear",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_047",
   "offset": "0x2484",
   "jp": "フーム・・・かわいい下着だ。",
   "en": "Hmm... cute underwear.",
@@ -66312,6 +69203,13 @@
  },
  {
   "chunk": "chunk_047",
+  "offset": "0x27df",
+  "jp": "取る",
+  "en": "Take",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_047",
   "offset": "0x27e4",
   "jp": "自分の服",
   "en": "Your own clothes",
@@ -66455,6 +69353,13 @@
   "offset": "0x2a42",
   "jp": "やっぱり！<br>メタル、わかったぞ！<br>この匂いだ！",
   "en": "I knew it!<br>Metal, I've got it!<br>This smell!",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_047",
+  "offset": "0x2a71",
+  "jp": "自分",
+  "en": "Self",
   "status": "translated"
  },
  {
@@ -66830,6 +69735,13 @@
  },
  {
   "chunk": "chunk_047",
+  "offset": "0x31f3",
+  "jp": "話す",
+  "en": "Talk",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_047",
   "offset": "0x31f8",
   "jp": "カトリーヌ",
   "en": "Katrina",
@@ -67040,6 +69952,13 @@
  },
  {
   "chunk": "chunk_047",
+  "offset": "0x35a2",
+  "jp": "聞く",
+  "en": "Ask",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_047",
   "offset": "0x35a7",
   "jp": "電話のこと",
   "en": "About the phone call",
@@ -67194,6 +70113,13 @@
  },
  {
   "chunk": "chunk_047",
+  "offset": "0x3a8b",
+  "jp": "年齢",
+  "en": "Age",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_047",
   "offset": "0x3a90",
   "jp": "カトリーヌはいくつだったっけ？",
   "en": "How old were you again, Katrina?",
@@ -67323,6 +70249,13 @@
   "offset": "0x3d62",
   "jp": "クイーン以外",
   "en": "Anything but Queen",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_047",
+  "offset": "0x3d6f",
+  "jp": "数☆",
+  "en": "No.☆",
   "status": "translated"
  },
  {
@@ -68174,6 +71107,13 @@
  },
  {
   "chunk": "chunk_047",
+  "offset": "0x4e99",
+  "jp": "飴玉",
+  "en": "Candy",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_047",
   "offset": "0x4e9e",
   "jp": "ジャンのポケットにあった飴玉です。",
   "en": "The candy that was in Jean's pocket.",
@@ -68293,6 +71233,13 @@
  },
  {
   "chunk": "chunk_047",
+  "offset": "0x5088",
+  "jp": "寺院",
+  "en": "Cathedral",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_047",
   "offset": "0x508d",
   "jp": "クィーン病院の部屋に掛かっていた<br>寺院の絵です。",
   "en": "A painting of a temple that hung in<br>a room at Queen Hospital.",
@@ -68391,6 +71338,20 @@
  },
  {
   "chunk": "chunk_048",
+  "offset": "0x04f7",
+  "jp": "璞訌",
+  "en": "璞訌",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_048",
+  "offset": "0x05a2",
+  "jp": "悔鐐",
+  "en": "悔鐐",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_048",
   "offset": "0x0b54",
   "jp": "ここが・・・ナポレオンから聞いた＠黄オウリン病院＠白です。",
   "en": "So this is... the ＠黄Oulin Hospital＠白 Napoleon told us about.",
@@ -68408,6 +71369,13 @@
   "offset": "0x0bb0",
   "jp": "果たしてこの病院が、ギブスンの言う<br>『スナッチャーのメンテナンス病院』<br>なのでしょうか？",
   "en": "Is this really the hospital Gibson meant<br>when he said<br>'the SNATCHER maintenance hospital'?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_048",
+  "offset": "0x0c09",
+  "jp": "移動",
+  "en": "Move",
   "status": "translated"
  },
  {
@@ -68440,6 +71408,20 @@
  },
  {
   "chunk": "chunk_048",
+  "offset": "0x0c66",
+  "jp": "見る",
+  "en": "Look",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_048",
+  "offset": "0x0c6b",
+  "jp": "建物",
+  "en": "Building",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_048",
   "offset": "0x0c70",
   "jp": "建物の屋上にネオンサインがあります。<br>入口は正面のようです。",
   "en": "There's a neon sign on the roof of the building.<br>The entrance seems to be around front.",
@@ -68450,6 +71432,13 @@
   "offset": "0x0cad",
   "jp": "いかにも、闇の病院らしい造りですね。",
   "en": "Looks exactly like a back-alley clinic.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_048",
+  "offset": "0x0cd2",
+  "jp": "看板",
+  "en": "Sign",
   "status": "translated"
  },
  {
@@ -68706,6 +71695,13 @@
  },
  {
   "chunk": "chunk_048",
+  "offset": "0x12b9",
+  "jp": "持物",
+  "en": "Items",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_048",
   "offset": "0x12be",
   "jp": "見るω",
   "en": "Lookω",
@@ -68811,6 +71807,13 @@
  },
  {
   "chunk": "chunk_048",
+  "offset": "0x1441",
+  "jp": "室内",
+  "en": "Room",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_048",
   "offset": "0x1446",
   "jp": "このスペースは待合室のようですね。",
   "en": "This space appears to be a waiting room.",
@@ -68842,6 +71845,13 @@
   "offset": "0x14ba",
   "jp": "みんな小動物を連れています。<br>かなり裕福な人たちに見えます。",
   "en": "They're all carrying small animals.<br>They look quite well-to-do.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_048",
+  "offset": "0x14f7",
+  "jp": "受付",
+  "en": "Reception",
   "status": "translated"
  },
  {
@@ -69119,6 +72129,13 @@
  },
  {
   "chunk": "chunk_048",
+  "offset": "0x1ca5",
+  "jp": "聞く",
+  "en": "Ask",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_048",
   "offset": "0x1caa",
   "jp": "スナッチャー",
   "en": "SNATCHER",
@@ -69357,6 +72374,13 @@
  },
  {
   "chunk": "chunk_048",
+  "offset": "0x2232",
+  "jp": "飴玉",
+  "en": "Candy",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_048",
   "offset": "0x2237",
   "jp": "ペット用の飴ですか？",
   "en": "Is that pet candy?",
@@ -69532,6 +72556,13 @@
  },
  {
   "chunk": "chunk_048",
+  "offset": "0x2593",
+  "jp": "寺院",
+  "en": "Cathedral",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_048",
   "offset": "0x2598",
   "jp": "クィーン病院の部屋に掛かっていた<br>寺院の絵です。",
   "en": "A painting of a temple that hung in<br>a room of Queen Hospital.",
@@ -69602,6 +72633,27 @@
  },
  {
   "chunk": "chunk_049",
+  "offset": "0x00db",
+  "jp": "悔躇",
+  "en": "悔躇",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_049",
+  "offset": "0x0879",
+  "jp": "譲鐐",
+  "en": "譲鐐",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_049",
+  "offset": "0x08d6",
+  "jp": "餘♪",
+  "en": "餘♪",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_049",
   "offset": "0x0da8",
   "jp": "一回書斎から出てもう一回入ってね。",
   "en": "Step out of the study once, then go back in.",
@@ -69626,6 +72678,13 @@
   "offset": "0x0e1d",
   "jp": "・・・家の外に出ました。",
   "en": "...We stepped outside the house.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_049",
+  "offset": "0x0e36",
+  "jp": "移動",
+  "en": "Move",
   "status": "translated"
  },
  {
@@ -69728,6 +72787,20 @@
  },
  {
   "chunk": "chunk_049",
+  "offset": "0x0ff5",
+  "jp": "見る",
+  "en": "Look",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_049",
+  "offset": "0x0ffa",
+  "jp": "建物",
+  "en": "Building",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_049",
   "offset": "0x0fff",
   "jp": "電気を付けたままでもぬけの空という事は、やはり何かあったんでしょう？",
   "en": "The lights are still on but the place is deserted—something must have happened, don't you think?",
@@ -69780,6 +72853,13 @@
   "offset": "0x112b",
   "jp": "一見、変わったところは無いようには<br>見えるんですが・・・",
   "en": "At a glance, nothing seems out of the<br>ordinary, but...",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_049",
+  "offset": "0x1164",
+  "jp": "ドア",
+  "en": "Door",
   "status": "translated"
  },
  {
@@ -69868,6 +72948,13 @@
  },
  {
   "chunk": "chunk_049",
+  "offset": "0x1337",
+  "jp": "足跡",
+  "en": "Footprints",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_049",
   "offset": "0x133c",
   "jp": "小さいですね。<br>２２．５ｃｍ・・・<br>女性の足跡だと思われます。",
   "en": "They're small.<br>22.5 cm...<br>Looks like a woman's footprints.",
@@ -69889,6 +72976,13 @@
  },
  {
   "chunk": "chunk_049",
+  "offset": "0x13e3",
+  "jp": "呼ぶ",
+  "en": "Call",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_049",
   "offset": "0x13e8",
   "jp": "カトリーヌ",
   "en": "Katrina",
@@ -69899,6 +72993,13 @@
   "offset": "0x13f3",
   "jp": "アリス",
   "en": "Alice",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_049",
+  "offset": "0x13fa",
+  "jp": "持物",
+  "en": "Items",
   "status": "translated"
  },
  {
@@ -69980,9 +73081,23 @@
  },
  {
   "chunk": "chunk_049",
+  "offset": "0x14ec",
+  "jp": "書斎",
+  "en": "Study",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_049",
   "offset": "0x14f1",
   "jp": "書斎を見てみよう。",
   "en": "Let's take a look at the study.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_049",
+  "offset": "0x1504",
+  "jp": "室内",
+  "en": "Room",
   "status": "translated"
  },
  {
@@ -70018,6 +73133,13 @@
   "offset": "0x1597",
   "jp": "衛星放送や情報チャンネルが流れたままに<br>なっています。",
   "en": "Satellite broadcasts and info channels<br>are still streaming.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_049",
+  "offset": "0x15ce",
+  "jp": "模型",
+  "en": "Model",
   "status": "translated"
  },
  {
@@ -70260,9 +73382,23 @@
  },
  {
   "chunk": "chunk_049",
+  "offset": "0x1c6a",
+  "jp": "裏庭",
+  "en": "Backyard",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_049",
   "offset": "0x1c6f",
   "jp": "裏庭に出てみよう。<br>アリスがいるはずだ。",
   "en": "Let's head out to the backyard.<br>Alice should be there.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_049",
+  "offset": "0x1c98",
+  "jp": "居間",
+  "en": "Living Room",
   "status": "translated"
  },
  {
@@ -70435,6 +73571,13 @@
  },
  {
   "chunk": "chunk_049",
+  "offset": "0x201f",
+  "jp": "暗闇",
+  "en": "Darkness",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_049",
   "offset": "0x2024",
   "jp": "変わった所はありません・・・<br>何もいません。",
   "en": "Nothing out of the ordinary...<br>Nothing here.",
@@ -70449,6 +73592,13 @@
  },
  {
   "chunk": "chunk_049",
+  "offset": "0x2088",
+  "jp": "地面",
+  "en": "Ground",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_049",
   "offset": "0x208d",
   "jp": "あっ！<br>首輪が落ちています。",
   "en": "Ah!<br>A collar's lying here.",
@@ -70459,6 +73609,13 @@
   "offset": "0x20aa",
   "jp": "なにか引きずったような痕もあります。",
   "en": "There are drag marks, too.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_049",
+  "offset": "0x20cf",
+  "jp": "首輪",
+  "en": "Collar",
   "status": "translated"
  },
  {
@@ -70666,6 +73823,13 @@
  },
  {
   "chunk": "chunk_049",
+  "offset": "0x2629",
+  "jp": "飴玉",
+  "en": "Candy",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_049",
   "offset": "0x262e",
   "jp": "ジャンのポケットにあった飴玉です。",
   "en": "A piece of candy that was in Jean's pocket.",
@@ -70785,6 +73949,13 @@
  },
  {
   "chunk": "chunk_049",
+  "offset": "0x2816",
+  "jp": "寺院",
+  "en": "Cathedral",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_049",
   "offset": "0x281b",
   "jp": "クィーン病院の部屋に掛かっていた<br>寺院の絵です。",
   "en": "A painting of a temple that hung in a<br>room at Queen Hospital.",
@@ -70890,9 +74061,37 @@
  },
  {
   "chunk": "chunk_050",
+  "offset": "0x02da",
+  "jp": "濁藾",
+  "en": "濁藾",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_050",
+  "offset": "0x09da",
+  "jp": "寿桜",
+  "en": "寿桜",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_050",
+  "offset": "0x0cfb",
+  "jp": "橇効",
+  "en": "橇効",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_050",
   "offset": "0x10c4",
   "jp": "アウター・ヘブン前です。",
   "en": "In front of Outer Heaven.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_050",
+  "offset": "0x10dd",
+  "jp": "見る",
+  "en": "Look",
   "status": "translated"
  },
  {
@@ -71121,6 +74320,13 @@
  },
  {
   "chunk": "chunk_050",
+  "offset": "0x1598",
+  "jp": "話す",
+  "en": "Talk",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_050",
   "offset": "0x159d",
   "jp": "お前、俺の知っている奴に良く似ているな<br>・・・まさか・・・",
   "en": "You look a lot like someone I know<br>...no way...",
@@ -71261,6 +74467,13 @@
  },
  {
   "chunk": "chunk_050",
+  "offset": "0x18bd",
+  "jp": "声質",
+  "en": "Voice",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_050",
   "offset": "0x18c2",
   "jp": "そうだ、声質が似ている。<br>・・・確かに似ているな。",
   "en": "That's it, the voice is similar.<br>...Yeah, it really is alike.",
@@ -71317,6 +74530,13 @@
  },
  {
   "chunk": "chunk_050",
+  "offset": "0x19e8",
+  "jp": "性格",
+  "en": "Personality",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_050",
   "offset": "0x19ed",
   "jp": "そうだ、その・・・疑り深い性格。<br>そっくりだ。",
   "en": "That's it, that... suspicious streak.<br>It's identical.",
@@ -71327,6 +74547,13 @@
   "offset": "0x1a1c",
   "jp": "その性格・・・そのものじゃないか。",
   "en": "That personality... it's the very same.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_050",
+  "offset": "0x1a3f",
+  "jp": "臭い",
+  "en": "Smell",
   "status": "translated"
  },
  {
@@ -71562,6 +74789,13 @@
  },
  {
   "chunk": "chunk_050",
+  "offset": "0x1f75",
+  "jp": "聞く",
+  "en": "Ask",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_050",
   "offset": "0x1f7a",
   "jp": "ナポレオンの国籍",
   "en": "Napoleon's Nationality",
@@ -71793,6 +75027,13 @@
  },
  {
   "chunk": "chunk_050",
+  "offset": "0x26c5",
+  "jp": "数☆",
+  "en": "No.☆",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_050",
   "offset": "0x26ca",
   "jp": "ベンソン",
   "en": "Benson",
@@ -71915,6 +75156,13 @@
   "offset": "0x27c3",
   "jp": "ベツソン",
   "en": "Betsuson",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_050",
+  "offset": "0x27cc",
+  "jp": "持物",
+  "en": "Items",
   "status": "translated"
  },
  {
@@ -72346,6 +75594,13 @@
  },
  {
   "chunk": "chunk_050",
+  "offset": "0x3182",
+  "jp": "飴玉",
+  "en": "Candy",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_050",
   "offset": "0x3187",
   "jp": "ジャンのポケットにあった飴玉です。",
   "en": "A hard candy that was in Jean's pocket.",
@@ -72440,6 +75695,13 @@
   "offset": "0x3339",
   "jp": "局長室に隠されていた<br>「スチール写真」です。",
   "en": "A 'still photo' that was hidden in<br>the Chief's office.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_050",
+  "offset": "0x3366",
+  "jp": "寺院",
+  "en": "Cathedral",
   "status": "translated"
  },
  {
@@ -72584,6 +75846,62 @@
  },
  {
   "chunk": "chunk_051",
+  "offset": "0x0232",
+  "jp": "庖磧",
+  "en": "庖磧",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
+  "offset": "0x061e",
+  "jp": "磔鐐",
+  "en": "磔鐐",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
+  "offset": "0x0676",
+  "jp": "奘蹇",
+  "en": "奘蹇",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
+  "offset": "0x0869",
+  "jp": "銷咫",
+  "en": "銷咫",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
+  "offset": "0x093d",
+  "jp": "濁咫",
+  "en": "濁咫",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
+  "offset": "0x15c5",
+  "jp": "鵄畫",
+  "en": "鵄畫",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
+  "offset": "0x1753",
+  "jp": "軛蹐",
+  "en": "軛蹐",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
+  "offset": "0x1b2a",
+  "jp": "膺膈",
+  "en": "膺膈",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
   "offset": "0x1e9d",
   "jp": "＠赤『ＱＵＥＥＮ』病院＠白前です。",
   "en": "＠赤'QUEEN' Hospital＠白 is just ahead.",
@@ -72608,6 +75926,13 @@
   "offset": "0x1f02",
   "jp": "『リトル・ジョン』のメモリーに<br>残っていたものと同じだ！",
   "en": "It's the same one that was left in<br>'Little John's' memory!",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
+  "offset": "0x1f3b",
+  "jp": "移動",
+  "en": "Move",
   "status": "translated"
  },
  {
@@ -72650,6 +75975,20 @@
   "offset": "0x1f97",
   "jp": "その前に、ドアのロック形式を調べないと<br>対処できません。",
   "en": "Before that, I need to check the door's lock<br>type, or I can't do anything with it.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
+  "offset": "0x1fd0",
+  "jp": "見る",
+  "en": "Look",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
+  "offset": "0x1fd5",
+  "jp": "建物",
+  "en": "Building",
   "status": "translated"
  },
  {
@@ -72857,6 +76196,13 @@
  },
  {
   "chunk": "chunk_051",
+  "offset": "0x2506",
+  "jp": "話す",
+  "en": "Talk",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
   "offset": "0x250b",
   "jp": "ランダム、どう思う？",
   "en": "Random, what do you think?",
@@ -72895,6 +76241,13 @@
   "offset": "0x25a4",
   "jp": "ここで考えててもしょうがねぇ。<br>早く、お邪魔しようぜ。",
   "en": "No use standing here thinking.<br>Let's go pay them a visit.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
+  "offset": "0x25db",
+  "jp": "持物",
+  "en": "Items",
   "status": "translated"
  },
  {
@@ -73060,6 +76413,27 @@
  },
  {
   "chunk": "chunk_051",
+  "offset": "0x2831",
+  "jp": "扉１",
+  "en": "Door 1",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
+  "offset": "0x2836",
+  "jp": "扉２",
+  "en": "Door 2",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
+  "offset": "0x283b",
+  "jp": "扉３",
+  "en": "Door 3",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
   "offset": "0x2840",
   "jp": "受付のブースが中央にあります。<br>それから、奥に扉が３つあります。",
   "en": "There's a reception booth in the center.<br>And three doors at the back.",
@@ -73105,6 +76479,13 @@
   "offset": "0x2959",
   "jp": "・・・・・・・",
   "en": ".......",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
+  "offset": "0x2968",
+  "jp": "受付",
+  "en": "Reception",
   "status": "translated"
  },
  {
@@ -73480,6 +76861,13 @@
  },
  {
   "chunk": "chunk_051",
+  "offset": "0x30e4",
+  "jp": "室内",
+  "en": "Room",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
   "offset": "0x30e9",
   "jp": "手術台があります。<br>どうやらここは手術室か診察室のようです。",
   "en": "There's an operating table.<br>Looks like this is an operating or exam room.",
@@ -73490,6 +76878,13 @@
   "offset": "0x3126",
   "jp": "かなり設備の整ったオペルームだったと<br>思われます。",
   "en": "It must have been a well-equipped<br>operating room.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
+  "offset": "0x3159",
+  "jp": "天井",
+  "en": "Ceiling",
   "status": "translated"
  },
  {
@@ -73798,6 +77193,13 @@
   "offset": "0x37c4",
   "jp": "もとは高級品です。<br>医療用の特殊なモニターですから。",
   "en": "They were high-end once.<br>Specialized medical monitors, after all.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
+  "offset": "0x37f9",
+  "jp": "容器",
+  "en": "Container",
   "status": "translated"
  },
  {
@@ -74852,6 +78254,13 @@
  },
  {
   "chunk": "chunk_051",
+  "offset": "0x50fe",
+  "jp": "覗く",
+  "en": "Peek",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
   "offset": "0x5103",
   "jp": "真っ直ぐ下へ降りているようです。",
   "en": "It seems to lead straight down.",
@@ -74862,6 +78271,13 @@
   "offset": "0x5124",
   "jp": "下に扉が見えます。",
   "en": "I can see a door at the bottom.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
+  "offset": "0x5137",
+  "jp": "階段",
+  "en": "Stairs",
   "status": "translated"
  },
  {
@@ -75209,6 +78625,13 @@
  },
  {
   "chunk": "chunk_051",
+  "offset": "0x57db",
+  "jp": "飴玉",
+  "en": "Candy",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
   "offset": "0x57e0",
   "jp": "ジャンのポケットにあった飴玉です。",
   "en": "A candy drop that was in Jean's pocket.",
@@ -75328,6 +78751,13 @@
  },
  {
   "chunk": "chunk_051",
+  "offset": "0x59c8",
+  "jp": "寺院",
+  "en": "Cathedral",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_051",
   "offset": "0x59cd",
   "jp": "クィーン病院の部屋に掛かっていた<br>寺院の絵です。",
   "en": "A picture of a cathedral that hung<br>in a room at Queen Hospital.",
@@ -75429,6 +78859,20 @@
   "offset": "0x5d3f",
   "jp": "ワシリー寺院です。<br>大惨事以前のモスクワにあった、<br>有名な寺院です。",
   "en": "St. Basil's Cathedral.<br>A famous cathedral that stood in<br>Moscow before the Catastrophe.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_052",
+  "offset": "0x0001",
+  "jp": "偶磔",
+  "en": "偶磔",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_052",
+  "offset": "0x0610",
+  "jp": "褶Ａ",
+  "en": "褶Ａ",
   "status": "translated"
  },
  {
@@ -76007,6 +79451,20 @@
  },
  {
   "chunk": "chunk_053",
+  "offset": "0x037d",
+  "jp": "庖藾",
+  "en": "庖藾",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_053",
+  "offset": "0x0496",
+  "jp": "偸咫",
+  "en": "偸咫",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_053",
   "offset": "0x1186",
   "jp": "器咸餐",
   "en": "器咸餐",
@@ -76035,6 +79493,20 @@
  },
  {
   "chunk": "chunk_053",
+  "offset": "0x1398",
+  "jp": "移動",
+  "en": "Move",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_053",
+  "offset": "0x139d",
+  "jp": "扉１",
+  "en": "Door 1",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_053",
   "offset": "0x13a2",
   "jp": "よし、１番の部屋に入ってみよう。",
   "en": "All right, let's try going into Room 1.",
@@ -76042,9 +79514,23 @@
  },
  {
   "chunk": "chunk_053",
+  "offset": "0x13c3",
+  "jp": "扉２",
+  "en": "Door 2",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_053",
   "offset": "0x13c8",
   "jp": "じゃあ、２番の部屋に入ってみよう。",
   "en": "Okay, let's try going into Room 2.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_053",
+  "offset": "0x13eb",
+  "jp": "扉３",
+  "en": "Door 3",
   "status": "translated"
  },
  {
@@ -76066,6 +79552,13 @@
   "offset": "0x1444",
   "jp": "ギリアン、他の部屋へ入ろう。",
   "en": "Gillian, let's head into one of the other rooms.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_053",
+  "offset": "0x1461",
+  "jp": "見る",
+  "en": "Look",
   "status": "translated"
  },
  {
@@ -76108,6 +79601,13 @@
   "offset": "0x1534",
   "jp": "なるほど、リノリウムの床だったのか・・・",
   "en": "So it was a linoleum floor all along...",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_053",
+  "offset": "0x155d",
+  "jp": "受付",
+  "en": "Reception",
   "status": "translated"
  },
  {
@@ -76276,6 +79776,13 @@
   "offset": "0x18e6",
   "jp": "重い扉です。<br>力まかせでは開きそうもありません。",
   "en": "A heavy door.<br>Doesn't look like brute force will open it.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_053",
+  "offset": "0x1917",
+  "jp": "話す",
+  "en": "Talk",
   "status": "translated"
  },
  {
@@ -76511,6 +80018,13 @@
  },
  {
   "chunk": "chunk_053",
+  "offset": "0x1d55",
+  "jp": "室内",
+  "en": "Room",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_053",
   "offset": "0x1d5a",
   "jp": "手術台が中央にあります。<br>ここが本物の診察室のようですね。",
   "en": "There's an operating table in the center.<br>This looks like the real examination room.",
@@ -76521,6 +80035,13 @@
   "offset": "0x1d95",
   "jp": "照明があると病院らしくみえるな。",
   "en": "With the lights on, it actually looks like a hospital.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_053",
+  "offset": "0x1db6",
+  "jp": "天井",
+  "en": "Ceiling",
   "status": "translated"
  },
  {
@@ -76549,6 +80070,13 @@
   "offset": "0x1e14",
   "jp": "ごく普通の手術台です。<br>いろんなケーブルが周りの機器に接続されています。",
   "en": "An ordinary operating table.<br>All sorts of cables connect it to the surrounding equipment.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_053",
+  "offset": "0x1e5d",
+  "jp": "骸骨",
+  "en": "Skeleton",
   "status": "translated"
  },
  {
@@ -77162,6 +80690,13 @@
  },
  {
   "chunk": "chunk_053",
+  "offset": "0x2bc6",
+  "jp": "容器",
+  "en": "Container",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_053",
   "offset": "0x2bcb",
   "jp": "・・・皮膚組織の培養をしているので<br>しょうか？",
   "en": "...Are they culturing skin tissue<br>here?",
@@ -77498,6 +81033,13 @@
  },
  {
   "chunk": "chunk_053",
+  "offset": "0x361a",
+  "jp": "死骸",
+  "en": "Corpse",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_053",
   "offset": "0x361f",
   "jp": "一体は腐乱状態、他３体はほとんど白骨化しています。",
   "en": "One body is in a state of decay; the other three are almost entirely skeletonized.",
@@ -77610,6 +81152,13 @@
  },
  {
   "chunk": "chunk_053",
+  "offset": "0x39c1",
+  "jp": "死因",
+  "en": "Cause of Death",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_053",
   "offset": "0x39c6",
   "jp": "死因は何かわかるか？",
   "en": "Can you tell the cause of death?",
@@ -77620,6 +81169,13 @@
   "offset": "0x39db",
   "jp": "死体の損傷が著しく、ここでの判定は不可能です。",
   "en": "The damage to the bodies is severe; a determination is impossible here.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_053",
+  "offset": "0x3a0a",
+  "jp": "身元",
+  "en": "Identity",
   "status": "translated"
  },
  {
@@ -77855,6 +81411,41 @@
  },
  {
   "chunk": "chunk_055",
+  "offset": "0x0daf",
+  "jp": "煎微",
+  "en": "煎微",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_055",
+  "offset": "0x1269",
+  "jp": "鋺錙",
+  "en": "鋺錙",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_055",
+  "offset": "0x194e",
+  "jp": "違荳",
+  "en": "違荳",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_055",
+  "offset": "0x1a4b",
+  "jp": "筺竕",
+  "en": "筺竕",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_055",
+  "offset": "0x23bc",
+  "jp": "褝咸",
+  "en": "褝咸",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_055",
   "offset": "0x2a1c",
   "jp": "＠水ライト、つけましょうか？＠白",
   "en": "＠水Shall I turn on the light?＠白",
@@ -77865,6 +81456,13 @@
   "offset": "0x2a3d",
   "jp": "＠水私のライトで照らしてみましょうか？＠白",
   "en": "＠水Want me to light the way with my lamp?＠白",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_055",
+  "offset": "0x2a68",
+  "jp": "見る",
+  "en": "Look",
   "status": "translated"
  },
  {
@@ -78212,6 +81810,13 @@
  },
  {
   "chunk": "chunk_055",
+  "offset": "0x31fc",
+  "jp": "移動",
+  "en": "Move",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_055",
   "offset": "0x3201",
   "jp": "もう後ろへは行けません。<br>ガレキで塞がれています。",
   "en": "We can't go back anymore.<br>It's blocked by rubble.",
@@ -78303,6 +81908,13 @@
  },
  {
   "chunk": "chunk_055",
+  "offset": "0x3435",
+  "jp": "前方",
+  "en": "Ahead",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_055",
   "offset": "0x343a",
   "jp": "私のライトでは光量が足りません。<br>まだ先があるようです。",
   "en": "My light isn't bright enough.<br>The passage seems to go on further.",
@@ -78313,6 +81925,13 @@
   "offset": "0x3473",
   "jp": "まだ当分、続きそうですね。",
   "en": "Looks like it goes on for a while yet.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_055",
+  "offset": "0x348e",
+  "jp": "天井",
+  "en": "Ceiling",
   "status": "translated"
  },
  {
@@ -78502,6 +82121,13 @@
   "offset": "0x3988",
   "jp": "ここにこの砂があるのは不思議ですね。<br>何者かがここを通ったに間違いありません。",
   "en": "It's strange for this sand to be here.<br>No question, someone passed through this way.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_055",
+  "offset": "0x39d7",
+  "jp": "花粉",
+  "en": "Pollen",
   "status": "translated"
  },
  {
@@ -78712,6 +82338,13 @@
   "offset": "0x3d93",
   "jp": "えっ、戻るんですか？",
   "en": "Huh, we're going back?",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_055",
+  "offset": "0x3da8",
+  "jp": "戻る",
+  "en": "Back",
   "status": "translated"
  },
  {
@@ -80193,6 +83826,13 @@
  },
  {
   "chunk": "chunk_055",
+  "offset": "0x59e6",
+  "jp": "クモ",
+  "en": "Spider",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_055",
   "offset": "0x59eb",
   "jp": "大きいですね。<br>ネズミぐらい平気で食べそうです。",
   "en": "It's big.<br>Looks like it could eat a rat with no trouble.",
@@ -81495,6 +85135,13 @@
  },
  {
   "chunk": "chunk_055",
+  "offset": "0x7763",
+  "jp": "後方",
+  "en": "Behind",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_055",
   "offset": "0x7768",
   "jp": "さっき歩いたところです。<br>何も変化はありません。",
   "en": "This is where we walked before.<br>Nothing's changed.",
@@ -81530,6 +85177,13 @@
  },
  {
   "chunk": "chunk_055",
+  "offset": "0x7853",
+  "jp": "聴く",
+  "en": "Listen",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_055",
   "offset": "0x7858",
   "jp": "聞こえるのは私達の足音だけです。",
   "en": "All I hear is our own footsteps.",
@@ -81561,6 +85215,13 @@
   "offset": "0x792a",
   "jp": "特に変わった音は聞こえません。",
   "en": "I don't hear any unusual sounds.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_055",
+  "offset": "0x7949",
+  "jp": "話す",
+  "en": "Talk",
   "status": "translated"
  },
  {
@@ -81649,6 +85310,13 @@
  },
  {
   "chunk": "chunk_055",
+  "offset": "0x7ace",
+  "jp": "室内",
+  "en": "Room",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_055",
   "offset": "0x7ad3",
   "jp": "フレディの残骸は『ＪＵＮＫ』班に処理されているようです。",
   "en": "Freddy's remains appear to have been handled by the JUNK team.",
@@ -81659,6 +85327,13 @@
   "offset": "0x7b0c",
   "jp": "浴室はきれいに片づけられていて、現場保存のテーピングがされたままです。",
   "en": "The bathroom has been cleaned up, with the crime-scene tape still in place.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_055",
+  "offset": "0x7b53",
+  "jp": "浴槽",
+  "en": "Bathtub",
   "status": "translated"
  },
  {
@@ -81827,6 +85502,13 @@
   "offset": "0x7f46",
   "jp": "ここも現場保存テーピングがされています。",
   "en": "The crime-scene tape is in place here too.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_055",
+  "offset": "0x7f6f",
+  "jp": "地図",
+  "en": "Map",
   "status": "translated"
  },
  {
@@ -82009,6 +85691,13 @@
   "offset": "0x8439",
   "jp": "中に戻る",
   "en": "Go back inside",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_055",
+  "offset": "0x8442",
+  "jp": "建物",
+  "en": "Building",
   "status": "translated"
  },
  {
@@ -82202,6 +85891,13 @@
  },
  {
   "chunk": "chunk_055",
+  "offset": "0x890c",
+  "jp": "車内",
+  "en": "Car Interior",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_055",
   "offset": "0x8911",
   "jp": "車はマニュアル操作のみに改造されてます。",
   "en": "The car's been modified for manual operation only.",
@@ -82314,6 +86010,13 @@
  },
  {
   "chunk": "chunk_056",
+  "offset": "0x0eec",
+  "jp": "庖鬆",
+  "en": "庖鬆",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_056",
   "offset": "0x1636",
   "jp": "天井見てね。",
   "en": "Look at the ceiling.",
@@ -82415,6 +86118,13 @@
   "offset": "0x1866",
   "jp": "ブースからの操作でなければ<br>扉は開きません。",
   "en": "The door won't open except by operating it<br>from the booth.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_056",
+  "offset": "0x1893",
+  "jp": "見る",
+  "en": "Look",
   "status": "translated"
  },
  {
@@ -82797,6 +86507,13 @@
  },
  {
   "chunk": "chunk_056",
+  "offset": "0x1ff4",
+  "jp": "廊下",
+  "en": "Hallway",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_056",
   "offset": "0x1ff9",
   "jp": "本部の廊下です。",
   "en": "It's the HQ corridor.",
@@ -82874,6 +86591,13 @@
  },
  {
   "chunk": "chunk_056",
+  "offset": "0x216a",
+  "jp": "移動",
+  "en": "Move",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_056",
   "offset": "0x216f",
   "jp": "・・・ハリーが倒れています。",
   "en": "...Harry's lying there.",
@@ -82905,6 +86629,13 @@
   "offset": "0x2233",
   "jp": "現場は以前の状態のままです。",
   "en": "The scene is just as it was before.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_056",
+  "offset": "0x2250",
+  "jp": "探す",
+  "en": "Search",
   "status": "translated"
  },
  {
@@ -82989,6 +86720,13 @@
   "offset": "0x23d8",
   "jp": "机の下",
   "en": "Under the desk",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_056",
+  "offset": "0x23df",
+  "jp": "血痕",
+  "en": "Bloodstain",
   "status": "translated"
  },
  {
@@ -83269,6 +87007,13 @@
   "offset": "0x27d2",
   "jp": "血液が机の上に溜まっています。",
   "en": "Blood is pooling on the desk.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_056",
+  "offset": "0x27f1",
+  "jp": "天井",
+  "en": "Ceiling",
   "status": "translated"
  },
  {
@@ -83623,6 +87368,13 @@
  },
  {
   "chunk": "chunk_057",
+  "offset": "0x0aca",
+  "jp": "庠隋",
+  "en": "庠隋",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_057",
   "offset": "0x10ac",
   "jp": "赤外線",
   "en": "Infrared",
@@ -83668,6 +87420,13 @@
   "offset": "0x11a0",
   "jp": "紫外線",
   "en": "Ultraviolet",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_057",
+  "offset": "0x11a7",
+  "jp": "Ｘ線",
+  "en": "X-ray",
   "status": "translated"
  },
  {
@@ -83987,6 +87746,13 @@
  },
  {
   "chunk": "chunk_057",
+  "offset": "0x1899",
+  "jp": "せき",
+  "en": "Cough",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_057",
   "offset": "0x189e",
   "jp": "あくび",
   "en": "Yawning",
@@ -84057,6 +87823,13 @@
  },
  {
   "chunk": "chunk_057",
+  "offset": "0x1942",
+  "jp": "下痢",
+  "en": "Diarrhea",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_057",
   "offset": "0x1947",
   "jp": "それじゃ・・・ため息ついでに、こいつは？",
   "en": "Then... while we're on sighs, how about this one?",
@@ -84113,9 +87886,30 @@
  },
  {
   "chunk": "chunk_057",
+  "offset": "0x1a13",
+  "jp": "風邪",
+  "en": "Cold",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_057",
+  "offset": "0x1a18",
+  "jp": "貧血",
+  "en": "Anemia",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_057",
   "offset": "0x1a1d",
   "jp": "人の噂",
   "en": "Idle gossip",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_057",
+  "offset": "0x1a24",
+  "jp": "花粉",
+  "en": "Pollen",
   "status": "translated"
  },
  {
@@ -84137,6 +87931,13 @@
   "offset": "0x1a8b",
   "jp": "料理は苦手なんだが・・・",
   "en": "I'm no good at cooking, but...",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_057",
+  "offset": "0x1aa4",
+  "jp": "生理",
+  "en": "Period",
   "status": "translated"
  },
  {
@@ -84302,6 +88103,20 @@
  },
  {
   "chunk": "chunk_057",
+  "offset": "0x1f22",
+  "jp": "北京",
+  "en": "Beijing",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_057",
+  "offset": "0x1f27",
+  "jp": "香港",
+  "en": "Hong Kong",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_057",
   "offset": "0x1f2c",
   "jp": "モスクワ",
   "en": "Moscow",
@@ -84365,9 +88180,30 @@
  },
  {
   "chunk": "chunk_057",
+  "offset": "0x2111",
+  "jp": "東京",
+  "en": "Tokyo",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_057",
+  "offset": "0x2116",
+  "jp": "パリ",
+  "en": "Paris",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_057",
   "offset": "0x211b",
   "jp": "ロンドン",
   "en": "London",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_057",
+  "offset": "0x2124",
+  "jp": "西神",
+  "en": "Seishin",
   "status": "translated"
  },
  {
@@ -84582,6 +88418,20 @@
  },
  {
   "chunk": "chunk_058",
+  "offset": "0x13b0",
+  "jp": "見る",
+  "en": "Look",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_058",
+  "offset": "0x13b5",
+  "jp": "車体",
+  "en": "Car Body",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_058",
   "offset": "0x13ba",
   "jp": "予備のトライサイクルなので、<br>塗装がされていませんが、<br>走行には支障ありません。",
   "en": "It's a spare Tricycle, so<br>it hasn't been painted,<br>but it runs just fine.",
@@ -84701,6 +88551,13 @@
  },
  {
   "chunk": "chunk_058",
+  "offset": "0x15e9",
+  "jp": "教会",
+  "en": "Church",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_058",
   "offset": "0x15ee",
   "jp": "車を降りる",
   "en": "Get out of the car",
@@ -84739,6 +88596,13 @@
   "offset": "0x1661",
   "jp": "中に入る",
   "en": "Go inside",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_058",
+  "offset": "0x166a",
+  "jp": "建物",
+  "en": "Building",
   "status": "translated"
  },
  {
@@ -84872,6 +88736,13 @@
   "offset": "0x1996",
   "jp": "動体反応",
   "en": "Motion Sensor",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_058",
+  "offset": "0x199f",
+  "jp": "聴く",
+  "en": "Listen",
   "status": "translated"
  },
  {
@@ -85082,6 +88953,13 @@
   "offset": "0x1d79",
   "jp": "そういえば・・・<br>ランダム・ハジルに似ていますね。",
   "en": "Come to think of it...<br>it does resemble Random Hajile.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_058",
+  "offset": "0x1dac",
+  "jp": "椅子",
+  "en": "Chair",
   "status": "translated"
  },
  {
@@ -85583,6 +89461,13 @@
  },
  {
   "chunk": "chunk_058",
+  "offset": "0x2a73",
+  "jp": "端末",
+  "en": "Terminal",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_058",
   "offset": "0x2a78",
   "jp": "ホスト・コンピュータに接続されている端末でしょう。シリンダー内の管理も、行っているようです。",
   "en": "A terminal connected to the host computer, no doubt. It seems to manage the cylinders' interiors as well.",
@@ -85607,6 +89492,13 @@
   "offset": "0x2b69",
   "jp": "分厚い強化ガラスで作られています。<br>ちょっとやそっとでは割れません。",
   "en": "Made of thick reinforced glass.<br>It won't break easily.",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_058",
+  "offset": "0x2bae",
+  "jp": "天井",
+  "en": "Ceiling",
   "status": "translated"
  },
  {
@@ -85810,6 +89702,153 @@
   "offset": "0x3043",
   "jp": "捜査をやめる",
   "en": "Stop investigating",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_079",
+  "offset": "0x0990",
+  "jp": "鈩銖",
+  "en": "鈩銖",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_079",
+  "offset": "0x09b4",
+  "jp": "趾蠹",
+  "en": "趾蠹",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_079",
+  "offset": "0x09d8",
+  "jp": "籥窩",
+  "en": "籥窩",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_080",
+  "offset": "0x0ebe",
+  "jp": "踵藾",
+  "en": "踵藾",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_080",
+  "offset": "0x0ee2",
+  "jp": "纃碪",
+  "en": "纃碪",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_080",
+  "offset": "0x0ef4",
+  "jp": "碪煥",
+  "en": "碪煥",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_080",
+  "offset": "0x1728",
+  "jp": "諂籠",
+  "en": "諂籠",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_080",
+  "offset": "0x173a",
+  "jp": "秣睛",
+  "en": "秣睛",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_080",
+  "offset": "0x174c",
+  "jp": "痣濛",
+  "en": "痣濛",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_091",
+  "offset": "0x0436",
+  "jp": "豸覊",
+  "en": "豸覊",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_091",
+  "offset": "0x045a",
+  "jp": "衒萪",
+  "en": "衒萪",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_093",
+  "offset": "0x13fc",
+  "jp": "鰒薜",
+  "en": "鰒薜",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_095",
+  "offset": "0x116a",
+  "jp": "釿釀",
+  "en": "釿釀",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_095",
+  "offset": "0x117c",
+  "jp": "逶譛",
+  "en": "逶譛",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_095",
+  "offset": "0x118e",
+  "jp": "詒袰",
+  "en": "詒袰",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_095",
+  "offset": "0x11a0",
+  "jp": "衞艪",
+  "en": "衞艪",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_095",
+  "offset": "0x11d6",
+  "jp": "筐笨",
+  "en": "筐笨",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_095",
+  "offset": "0x120c",
+  "jp": "獎瀏",
+  "en": "獎瀏",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_095",
+  "offset": "0x2a9e",
+  "jp": "髏駲",
+  "en": "髏駲",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_095",
+  "offset": "0x2ad4",
+  "jp": "醵軻",
+  "en": "醵軻",
+  "status": "translated"
+ },
+ {
+  "chunk": "chunk_098",
+  "offset": "0x542e",
+  "jp": "蠑蟒",
+  "en": "蠑蟒",
   "status": "translated"
  }
 ]
