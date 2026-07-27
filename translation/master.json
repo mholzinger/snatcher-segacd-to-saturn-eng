@@ -1124,7 +1124,7 @@
  {
   "chunk": "chunk_021",
   "offset": "0x2b01",
-  "en": "Oulin Hospital",
+  "en": "Oleen Hospital",
   "status": "translated"
  },
  {
@@ -3554,7 +3554,7 @@
  {
   "chunk": "chunk_022",
   "offset": "0x5b8a",
-  "en": "A photo of me as a child.<br>From before the Great Catastrophe.",
+  "en": "A photo of me as a child.<br>From before the Catastrophe.",
   "status": "translated"
  },
  {
@@ -4070,7 +4070,7 @@
  {
   "chunk": "chunk_022",
   "offset": "0x6cda",
-  "en": "They passed away in the 'Great Catastrophe,' didn't they.",
+  "en": "They passed away in the 'Catastrophe,' didn't they.",
   "status": "translated"
  },
  {
@@ -4082,13 +4082,13 @@
  {
   "chunk": "chunk_022",
   "offset": "0x6d48",
-  "en": "In the chaos of the 'Great Catastrophe,' I was lucky to have even a photo like this left in my hands.",
+  "en": "In the chaos of the 'Catastrophe,' I was lucky to have even a photo like this left in my hands.",
   "status": "translated"
  },
  {
   "chunk": "chunk_022",
   "offset": "0x6d8f",
-  "en": "Your parents, in the 'Great Catastrophe'?",
+  "en": "Your parents, in the 'Catastrophe'?",
   "status": "translated"
  },
  {
@@ -5228,7 +5228,7 @@
  {
   "chunk": "chunk_022",
   "offset": "0x90a5",
-  "en": "Harry's a man of great luck.<br>He was in Moscow during the Great Catastrophe,<br>but was miraculously rescued, they say.",
+  "en": "Harry's a man of great luck.<br>He was in Moscow during the Catastrophe,<br>but was miraculously rescued, they say.",
   "status": "translated"
  },
  {
@@ -5240,7 +5240,7 @@
  {
   "chunk": "chunk_022",
   "offset": "0x9125",
-  "en": "A Great Catastrophe orphan, huh...",
+  "en": "A Catastrophe orphan, huh...",
   "status": "translated"
  },
  {
@@ -13712,7 +13712,7 @@
  {
   "chunk": "chunk_025",
   "offset": "0x44e3",
-  "en": "＠緑▽Lost both parents in a catastrophe and was taken in by the government as a child.<br>Earned his doctorate at just 14.",
+  "en": "＠緑▽Lost both parents in the Catastrophe and was taken in by the government as a child.<br>Earned his doctorate at just 14.",
   "status": "translated"
  },
  {
@@ -20120,13 +20120,13 @@
  {
   "chunk": "chunk_028",
   "offset": "0x44ce",
-  "en": "Ohrin Hospital",
+  "en": "Oleen Hospital",
   "status": "translated"
  },
  {
   "chunk": "chunk_028",
   "offset": "0x44db",
-  "en": "Ohrin Hospital?<br>Oh, that cat-and-dog clinic, right?",
+  "en": "Oleen Hospital?<br>Oh, that cat-and-dog clinic, right?",
   "status": "translated"
  },
  {
@@ -20138,7 +20138,7 @@
  {
   "chunk": "chunk_028",
   "offset": "0x4539",
-  "en": "I don't think Ohrin Hospital has anything<br>to do with the SNATCHERs.",
+  "en": "I don't think Oleen Hospital has anything<br>to do with the SNATCHERs.",
   "status": "translated"
  },
  {
@@ -23810,7 +23810,7 @@
  {
   "chunk": "chunk_029",
   "offset": "0x7c1d",
-  "en": "Hm?<br>I've never thought about it...<br>About the price of three tricycles, maybe?",
+  "en": "Hm?<br>I've never thought about it...<br>About the price of three Tricycles, maybe?",
   "status": "translated"
  },
  {
@@ -42716,7 +42716,7 @@
  {
   "chunk": "chunk_038",
   "offset": "0x3fce",
-  "en": "No Snow-Cedar reaction either.<br>There's no SNATCHER-like evidence<br>to be found in the room.",
+  "en": "No Snow Cedar reaction either.<br>There's no SNATCHER-like evidence<br>to be found in the room.",
   "status": "translated"
  },
  {
@@ -43250,7 +43250,7 @@
  {
   "chunk": "chunk_038",
   "offset": "0x4e27",
-  "en": "Judging by Gillian's reaction, there's no<br>Snow-Cedar pollen here either.",
+  "en": "Judging by Gillian's reaction, there's no<br>Snow Cedar pollen here either.",
   "status": "translated"
  },
  {
@@ -43826,7 +43826,7 @@
  {
   "chunk": "chunk_039",
   "offset": "0x20f4",
-  "en": "Lots of foot traffic and tricycles<br>coming and going here.",
+  "en": "Lots of foot traffic and Tricycles<br>coming and going here.",
   "status": "translated"
  },
  {
@@ -51938,7 +51938,7 @@
  {
   "chunk": "chunk_044",
   "offset": "0x07b2",
-  "en": "Ohrin Hospital",
+  "en": "Oleen Hospital",
   "status": "translated"
  },
  {
@@ -52046,7 +52046,7 @@
  {
   "chunk": "chunk_044",
   "offset": "0x0aa0",
-  "en": "We've arrived at 'Ohrin'<br>Hospital.<br>What now?",
+  "en": "We've arrived at 'Oleen'<br>Hospital.<br>What now?",
   "status": "translated"
  },
  {
@@ -52148,7 +52148,7 @@
  {
   "chunk": "chunk_044",
   "offset": "0x0d9f",
-  "en": "All right, heading for 'Ohrin' Hospital.",
+  "en": "All right, heading for 'Oleen' Hospital.",
   "status": "translated"
  },
  {
@@ -53696,7 +53696,7 @@
  {
   "chunk": "chunk_045",
   "offset": "0x49b9",
-  "en": "Also, a warning for snow-cedar pollen has been<br>issued in some areas.<br>Please take care...",
+  "en": "Also, a warning for Snow Cedar pollen has been<br>issued in some areas.<br>Please take care...",
   "status": "translated"
  },
  {
@@ -57158,13 +57158,13 @@
  {
   "chunk": "chunk_046",
   "offset": "0x12ab",
-  "en": "There's nothing left for us here.<br>Let's hurry to the 'Oleen' hospital.",
+  "en": "There's nothing left for us here.<br>Let's hurry to the 'Oleen' Hospital.",
   "status": "translated"
  },
  {
   "chunk": "chunk_046",
   "offset": "0x12e6",
-  "en": "There's no point staying here.<br>Let's head to the 'Oleen' hospital<br>Napoleon told us about.",
+  "en": "There's no point staying here.<br>Let's head to the 'Oleen' Hospital<br>Napoleon told us about.",
   "status": "translated"
  },
  {
@@ -59078,7 +59078,7 @@
  {
   "chunk": "chunk_047",
   "offset": "0x21d7",
-  "en": "Snow cedar?",
+  "en": "Snow Cedar?",
   "status": "translated"
  },
  {
@@ -61160,13 +61160,13 @@
  {
   "chunk": "chunk_048",
   "offset": "0x0b54",
-  "en": "So this is... the ＠黄Oulin Hospital＠白 Napoleon told us about.",
+  "en": "So this is... the ＠黄Oleen Hospital＠白 Napoleon told us about.",
   "status": "translated"
  },
  {
   "chunk": "chunk_048",
   "offset": "0x0b8f",
-  "en": "...the ＠黄Oulin Hospital＠白.",
+  "en": "...the ＠黄Oleen Hospital＠白.",
   "status": "translated"
  },
  {
@@ -61310,13 +61310,13 @@
  {
   "chunk": "chunk_048",
   "offset": "0x0ece",
-  "en": "'Oulin Hospital'...<br>It reads<br>'HOSPITAL Oulin.'",
+  "en": "'Oleen Hospital'...<br>It reads<br>'HOSPITAL OLEEN.'",
   "status": "translated"
  },
  {
   "chunk": "chunk_048",
   "offset": "0x0f19",
-  "en": "What's this?<br>The ＠黄Oulin＠白 Hospital, huh...",
+  "en": "What's this?<br>The ＠黄Oleen＠白 Hospital, huh...",
   "status": "translated"
  },
  {
@@ -61892,7 +61892,7 @@
  {
   "chunk": "chunk_048",
   "offset": "0x1e90",
-  "en": "'OLEEN'?<br>This is Oulin Hospital...<br>Isn't that it?",
+  "en": "'OLEEN'?<br>This is Oleen Hospital...<br>Isn't that it?",
   "status": "translated"
  },
  {
@@ -62846,7 +62846,7 @@
  {
   "chunk": "chunk_049",
   "offset": "0x1ae7",
-  "en": "Snow Sugi?",
+  "en": "Snow Cedar?",
   "status": "translated"
  },
  {
@@ -65960,7 +65960,7 @@
  {
   "chunk": "chunk_051",
   "offset": "0x328d",
-  "en": "No Snow-Sugi reaction, either.",
+  "en": "No Snow Cedar reaction, either.",
   "status": "translated"
  },
  {
@@ -73322,7 +73322,7 @@
  {
   "chunk": "chunk_055",
   "offset": "0x802a",
-  "en": "Moscow... the \"St. Basil's Cathedral\" that Chin Shu Ho at Queen's Hospital<br>had on display, the photo of \"Red Square\"<br>the chief had hidden.",
+  "en": "Moscow... the \"St. Basil's Cathedral\" that Chin Shu Ho at Queen Hospital<br>had on display, the photo of \"Red Square\"<br>the chief had hidden.",
   "status": "translated"
  },
  {
@@ -73412,7 +73412,7 @@
  {
   "chunk": "chunk_055",
   "offset": "0x8357",
-  "en": "How are we supposed to get back?<br>We don't have a tricycle.<br>Are we walking?",
+  "en": "How are we supposed to get back?<br>We don't have a Tricycle.<br>Are we walking?",
   "status": "translated"
  },
  {
@@ -73520,7 +73520,7 @@
  {
   "chunk": "chunk_055",
   "offset": "0x8631",
-  "en": "It's quite far from Queen's Hospital.<br>Very quiet.",
+  "en": "It's quite far from Queen Hospital.<br>Very quiet.",
   "status": "translated"
  },
  {
@@ -75968,7 +75968,7 @@
  {
   "chunk": "chunk_058",
   "offset": "0x1709",
-  "en": "It looks like snow, but it's Snow-Cedar.<br>Whatever you do, don't breathe it in.",
+  "en": "It looks like snow, but it's Snow Cedar.<br>Whatever you do, don't breathe it in.",
   "status": "translated"
  },
  {
@@ -76028,7 +76028,7 @@
  {
   "chunk": "chunk_058",
   "offset": "0x1899",
-  "en": "This is...<br>Snow-Cedar, no doubt about it.",
+  "en": "This is...<br>Snow Cedar, no doubt about it.",
   "status": "translated"
  },
  {
@@ -76082,7 +76082,7 @@
  {
   "chunk": "chunk_058",
   "offset": "0x19ca",
-  "en": "Gillian, the Snow-Cedar concentration is too high here—I can't save.",
+  "en": "Gillian, the Snow Cedar concentration is too high here—I can't save.",
   "status": "translated"
  },
  {
@@ -76100,7 +76100,7 @@
  {
   "chunk": "chunk_058",
   "offset": "0x1a33",
-  "en": "The Snow-Cedar concentration is too high.",
+  "en": "The Snow Cedar concentration is too high.",
   "status": "translated"
  },
  {
@@ -76724,7 +76724,7 @@
  {
   "chunk": "chunk_058",
   "offset": "0x2bdc",
-  "en": "The real deal...<br>A whole different class from Queen's Hospital.",
+  "en": "The real deal...<br>A whole different class from Queen Hospital.",
   "status": "translated"
  },
  {
@@ -76802,13 +76802,13 @@
  {
   "chunk": "chunk_058",
   "offset": "0x2e99",
-  "en": "The Snow-Cedar?",
+  "en": "The Snow Cedar?",
   "status": "translated"
  },
  {
   "chunk": "chunk_058",
   "offset": "0x2eaa",
-  "en": "The Snow-Cedar concentration is extremely high.",
+  "en": "The Snow Cedar concentration is extremely high.",
   "status": "translated"
  },
  {
@@ -76844,7 +76844,7 @@
  {
   "chunk": "chunk_058",
   "offset": "0x2f8c",
-  "en": "The videophone's unusable due to the high Snow-Cedar concentration.",
+  "en": "The videophone's unusable due to the high Snow Cedar concentration.",
   "status": "translated"
  },
  {
