@@ -44,7 +44,7 @@ Romanizations follow the official Sega CD localization where one exists.
 
 ## Control codes (NEVER translate; preserve exactly, in position)
 - `<br>` — line break (engine 0x818F)
-- `＠赤 ＠白 ＠青 ＠緑 ＠黄 ＠水 ＠紫` — color changes (red/white/blue/green/yellow/cyan/purple)
+- `＠赤 ＠白 ＠青 ＠緑 ＠黄 ＠水 ＠紫 ＠桃` — color changes (red/white/blue/green/yellow/cyan/purple/pink)
 - `＠Ｃ` — battle/action cue marker (seen with trailing full-width spaces); preserve as-is
 - Trailing full-width spaces (　) after a line are layout padding — keep them.
 
