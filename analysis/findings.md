@@ -304,3 +304,35 @@ All 36 text scenes (12,259 lines) of Saturn Snatcher translated JP→EN, validat
 3. Relocating inserter (for lines that overflow even half-width).
 4. Voice: 68K ADPCM decode (ACT*.CAT) + system PCM/FMV/CD-DA swaps.
 5. Packaging: EDC/ECC regen, xdelta/SSP patch distribution.
+
+## 2026-07-27 — In-game test findings + font architecture (the hard frontier)
+
+Booted full English disc. Results:
+- SCRIPT renders in English end-to-end. ✓
+- Two rendering problems, both full-width-encoding artifacts (NOT space chars — proven byte-level):
+  1. TRUNCATION ("Go inside"->"Go i"): length-preserving build cuts English to JP byte budget.
+  2. WIDTH: every glyph is full-width (16px cell, 14px pitch) -> text looks spread out.
+- Speaker names were untranslated: they live in a POINTER TABLE at 0x060C1F14 (raw SJIS), not
+  the scene chunks. FIXED via relocation: `tools/patch_speakers.py` writes English names into the
+  verified-free zero region 0x060E71F0 (0 code refs) and repoints. Proves growing-text-past-budget.
+- Extractor bug: min_chars=3 dropped 577 two-char menu verbs (見る/話す/移動...). Fixed (min_chars=2),
+  re-extracted 12,259->12,836, translated. `tools/patch_halfwidth.py` size/pitch edit CONFIRMED
+  spacing tightens (user) but VDP1 CROPS to left-8px so scaled 16px glyphs garble -> need true 8px art.
+
+### FONT ARCHITECTURE (mapped)
+- Font upload routine: FUN_060b4530. Main font DMA'd to VRAM 0x25C08000 (len 0xD000 = 416 glyphs);
+  small cache preload from MAIN_L 0x060E5BE6 (0x440 bytes) to 0x25C15000.
+- Dialogue renderer FUN_060b4970 reads glyphs from cache region (0x25C15000+, slot*0x80).
+- Menu = a SECOND renderer (decompile line 4770) with its own path.
+- Font NOT stored verbatim on disc (expanded/transformed at load) — so no simple data patch.
+
+### HALF-WIDTH = ASM-HOOK ROMHACK (multi-session; the real remaining frontier)
+Path: inject 8px 4bpp Latin glyphs + a small SH-2 routine into MAIN_L free space; hook the glyph
+fetch/cache-fill so Latin codes draw the 8px glyphs; set pitch/size per renderer. Then half-width
+ENCODING (1 byte/char) to also fix truncation. Do dialogue first, then menu.
+
+### RESOURCES (from ~/src/32x-builder — SH-2 reference, user-pointed)
+- `reference/32x_font_8px_4bpp.s` (copied) = ready 8x8 4bpp font, VDP1 format, ASCII 0x20+.
+- `~/src/32x-builder/srcref/d32xr/sh2_draw4b.s` = SH-2 4bpp draw patterns.
+- SH-2 toolchain (sh-elf-gcc/as) via MARSDEV — builds in Docker in that project.
+- `assets/halfwidth_ascii_8x16_4bpp.bin` = our authored 8x16 font (alternative to font.s).
