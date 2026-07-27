@@ -72,6 +72,7 @@ class Tracer:
         self.max_depth = 200
         self.trail = []        # active parse stack [(pos, what)]
         self.soft = {}         # construct -> count of opaque-skip fallbacks
+        self.text_tokens = set()   # positions of <0x80 tokens (text refs)
 
     # -- primitives ---------------------------------------------------------
     def u8(self, i):
@@ -119,6 +120,7 @@ class Tracer:
             raise ParseError('expr depth', i, list(self.trail))
         b = self.u8(i)
         if b < 0x80:
+            self.text_tokens.add(i)
             return i + 2
         if b < 0xA0:
             return i + 3
@@ -348,6 +350,7 @@ class Tracer:
 
     def _disp_item(self, i, b, depth):
         if b < 0x80:                                   # token + one statement
+            self.text_tokens.add(i)
             i += 2
             return self.statement(i, depth + 1)
         if b < 0xC0:                                   # special 2-byte token
