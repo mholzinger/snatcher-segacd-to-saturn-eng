@@ -287,3 +287,20 @@ graphic** (boot sequence), not string-rendered text. Same likely true of title/w
 Translation impact: NONE on the 12,259-line dialogue/menu script (our source of truth). To
 localize it later = a graphics-replacement task (edit/replace the boot image), not script work.
 Standard fan-patch practice is to leave the legal disclaimer in Japanese; optional to graphic-swap.
+
+## 2026-07-27 — FULL SCRIPT TRANSLATED (100%)
+All 36 text scenes (12,259 lines) of Saturn Snatcher translated JP→EN, validated, committed.
+- Source of truth: `translation/master.json` (12,259/12,259 translated).
+- Pipeline: per-scene subagent translation (glossary-guided) → `validate_translation.py` gate
+  → `build_master_db.py` merge → commit. Survived 2 crashes + 1 usage-limit reset, zero loss.
+- Full patched disc builds from master.json via `build_full_patch.py` (`build/full_en`).
+  11,889/12,259 lines truncate at full-width → confirms half-width font is required for release
+  quality (short lines already display correctly; the pipeline & data are complete).
+- QA sweep pending: `translation/QA_NOTES.md` (name spellings, input-matching puzzles, ＠桃 tag).
+
+### Next milestones
+1. Boot-test build/full_en in Mednafen (spot-check translated scenes render).
+2. Half-width font (assets/ font authored; edit sites mapped in session 11).
+3. Relocating inserter (for lines that overflow even half-width).
+4. Voice: 68K ADPCM decode (ACT*.CAT) + system PCM/FMV/CD-DA swaps.
+5. Packaging: EDC/ECC regen, xdelta/SSP patch distribution.
