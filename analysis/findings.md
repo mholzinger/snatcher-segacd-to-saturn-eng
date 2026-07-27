@@ -336,3 +336,30 @@ ENCODING (1 byte/char) to also fix truncation. Do dialogue first, then menu.
 - `~/src/32x-builder/srcref/d32xr/sh2_draw4b.s` = SH-2 4bpp draw patterns.
 - SH-2 toolchain (sh-elf-gcc/as) via MARSDEV — builds in Docker in that project.
 - `assets/halfwidth_ascii_8x16_4bpp.bin` = our authored 8x16 font (alternative to font.s).
+
+## 2026-07-27 — Presentation layer: precise state (the real frontier)
+
+TRUNCATION ROOT CAUSE: build_full_patch is length-preserving — English is cut to the
+Japanese byte budget. Complete text is safe in master.json; the BUILDER truncates.
+Scene text is INLINE bytecode (verified: no pointer refs to text offsets; VM executes
+into it after a print-opcode + 0x00). So growing it needs a RELOCATING REASSEMBLER.
+
+REASSEMBLER FEASIBILITY (confirmed) + BLOCKER:
+- Token length is class-determined by the leading byte (FUN_060c0c78 operand fetcher):
+  <0x80 = 2-byte text token (value = 0x10100-SJIS); 0xA0/0xB0/0xC0 = 2B; 0xD0 = 1B;
+  0x80-0x9F and 0xE0+ = still-unverified lengths.
+- Prototype tokenizer with guessed lengths aligns only 24% of known text offsets ->
+  desyncs on unverified opcodes. Need exact lengths (decode FUN_060c0dec + 0xE0 switch
+  fully) AND per-opcode identification of which operands are chunk-offset jump targets
+  (to adjust when text grows). This is multi-session, crash-prone romhacking.
+
+FONT (half-width): master KANJI font = chunk_000 (data-patchable). Latin/kana font block
+still not located on disc. VDP1 size field CROPS to left-8px (not scale) -> true 8px
+left-aligned glyphs would render clean; scaled 16px glyphs garble (confirmed on-screen).
+
+DONE THIS SESSION: speaker names -> English (relocation, works). QA consistency sweep
+(43 fixes). Repo published (no copyrighted content). Translation 100% + QA'd.
+
+NEXT (dedicated session): (a) verify full opcode length table -> round-trip a chunk
+byte-identical; (b) tag offset operands; (c) relocating reassembler + DATA.BIN repack;
+(d) then half-width font. Each gated by emulator boot-test.
