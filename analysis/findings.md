@@ -510,3 +510,26 @@ full build (slot-reuse destroyed originals) -> hang at the same line.
 - NEXT: model the 47 complex sync ops -> full companion-stream parser with
   self-check (links land on entry boundaries) -> remap record tokens inside
   companions + native2/3 imm args -> voiced dialogue EN. Then half-width font.
+
+## 2026-07-27 — REPACK was the final infrastructure bug; v4 gap-placement build
+
+Differential discs settled it: test_H (original disc + 303 dead sectors inserted
+after DATA.BIN, fs extents shifted, MSF restamped, NOTHING else changed) plays
+voiced dialogue fine -> the layout SHIFT machinery is fully exonerated. The
+hangs on A/G/v3 came from the tight REPACK of all 639 chunks: some engine path
+reaches chunk data by absolute/original position, bypassing the MAIN_L index
+(exact consumer unidentified; repack is simply forbidden from now on).
+CDC forensics along the way: voiced narration voice = SDAIF AIFF streamed from
+track 1 via CDC filter armed from the (patched) fs extent — that path was
+always fine.
+
+### v4 = build/full_en3 (tools/: gap-placement, one-off script in session log)
+- Track 1 byte-verbatim through the original DATA.BIN region (original chunk
+  positions AND EDC preserved); 666-sector GAP inserted before MAIN_L holding
+  the 35 rebuilt scene chunks (v3 text rules: in-place + unvoiced appends,
+  no slot reuse, structural guard); index entries for those chunks point into
+  the gap (DATA.BIN-relative sectors 5355+); original scene chunk copies remain
+  in place unused. MAIN_L (index+speakers) at shifted position; fs extents
+  +666; track-2 MSF restamped. chunk_030 rebuild failed (tracer 'disp' KeyError,
+  2-line chunk) -> left original, JP.
+- User savestates on test_H (slots 0/1) = working voiced-dialogue baselines.
