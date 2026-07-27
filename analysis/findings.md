@@ -533,3 +533,36 @@ always fine.
   +666; track-2 MSF restamped. chunk_030 rebuild failed (tracer 'disp' KeyError,
   2-line chunk) -> left original, JP.
 - User savestates on test_H (slots 0/1) = working voiced-dialogue baselines.
+
+## 2026-07-27 — STABLE HANG-FREE BUILD; root cause = speaker-name patch
+
+After ~15 boot-test differentials, the hang that plagued every full build was
+isolated to a SINGLE cause via the cleanest possible control:
+  * build/noshift_en   (no disc shift, in-place text, + speaker-name patch): HANGS
+  * build/noshift_nospk(no disc shift, in-place text, NO speaker patch):     WORKS
+Identical except the speaker patch => tools/patch_speakers.py is the bug. Writing
+English names into the "verified-free" region 0x060E71F0 and repointing the table
+at 0x060C1F14 deterministically hangs the receptionist interaction (music keeps
+playing, input dead). The region is statically zero with 0 code refs, yet the
+game depends on it at runtime (used as scratch, or the repoint violates a
+name-table adjacency assumption). Speaker names in English need a different
+method (write into the ORIGINAL name area if the EN fits, or find the runtime
+consumer of 0x060E71F0) — DEFERRED. The disc shift and text edits were red
+herrings; earlier "shift" and "voiced-line" theories were coincidence (working
+tests happened to omit the speaker patch; hanging ones included it).
+
+STABLE RECIPE (tools/build_stable_en.py -> build/stable_en):
+  * NO disc shift (track 1 verbatim base + in-place sector overwrites; tracks
+    2/3 untouched) -> voice streaming byte-identical to original, repeat-safe.
+  * NO speaker patch (MAIN_L original) -> speaker names stay JP.
+  * Text IN PLACE into each record's original slot; longer EN TRUNCATED; voiced
+    (say mode 4/5) records untouched.
+  * Verified in-emulator: LOOK receptionist repeatedly = no hang; Mika+Junker
+    voiced dialogue plays clean; menus/system/dialogue in English (truncated).
+
+REMAINING QUALITY WORK (not stability):
+  1. Half-width 8px font -> ~2x chars per original slot, fixes menu/line
+     truncation (edit sites mapped session 11; the real next project).
+  2. Safe English speaker names (redo without the 0x060E71F0 relocation).
+  3. Untruncated long lines need either the half-width encoding or a disc-growth
+     method that survives repeat voice streaming (track-2 XA safe).
