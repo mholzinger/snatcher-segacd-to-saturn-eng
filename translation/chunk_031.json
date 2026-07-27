@@ -1,0 +1,32 @@
+{
+ "chunk_031": {
+  "0x04ce": "You got in the Tricycle.<br>Where to?",
+  "0x0501": "JUNKER HQ",
+  "0x0512": "Gillian's Place",
+  "0x051d": "Gibson's Place",
+  "0x0528": "Outside Altamira",
+  "0x0535": "Outer Heaven",
+  "0x0544": "J Division",
+  "0x0555": "Ivan's Place",
+  "0x055e": "Freddy's Place",
+  "0x0569": "Get out of the car",
+  "0x0574": "Ivan's clean.<br>You've no more business with him.",
+  "0x059f": "Let's hurry to Freddy's place.",
+  "0x05ba": "You've reached JUNKER HQ.<br>What now?",
+  "0x05e7": "You've reached Gillian's place.<br>What now?",
+  "0x0610": "You've reached Jean-Jack Gibson's<br>place.<br>What now?",
+  "0x064d": "You've reached Altamira.<br>What now?",
+  "0x0676": "You've reached Outer Heaven.<br>What now?",
+  "0x06a3": "You've reached Joy Division.<br>What now?",
+  "0x06d6": "You've reached Ivan Rodriguez's place.<br>What now?",
+  "0x0709": "You've reached Freddy Nielsen's place. What now?",
+  "0x073e": "All right, heading to JUNKER HQ.",
+  "0x0767": "All right, heading to Gillian's place.",
+  "0x078a": "All right, heading to Jean-Jack Gibson's place.",
+  "0x07bf": "All right, heading to Altamira.",
+  "0x07e2": "All right, heading to Outer Heaven.",
+  "0x0807": "All right, heading to Joy Division.",
+  "0x0830": "All right, heading to Ivan<br>Rodriguez's place.",
+  "0x085f": "All right, heading to Freddy<br>Nielsen's place."
+ }
+}
