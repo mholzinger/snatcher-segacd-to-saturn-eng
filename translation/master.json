@@ -65579,2815 +65579,2815 @@
   "chunk": "chunk_047",
   "offset": "0x18aa",
   "jp": "ギリアン、あなたのマンション前です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian, we're in front of your apartment.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x18cf",
   "jp": "あるいは・・・<br>あの占いのオバさんが言うように？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Or maybe...<br>like that fortune-teller lady said?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1900",
   "jp": "そうあればいいがな。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Let's hope she's right.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x191a",
   "jp": "車に乗る",
-  "en": null,
-  "status": "untranslated"
+  "en": "Get in the car",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1923",
   "jp": "このまま立ち去るつもりですか？<br>ギリアン！",
-  "en": null,
-  "status": "untranslated"
+  "en": "You mean to just walk away?<br>Gillian!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x194e",
   "jp": "あなたの部屋に忍び込んでいる奴を<br>捕まえましょう。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Let's catch whoever's sneaking around<br>in your room.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1981",
   "jp": "中に入る",
-  "en": null,
-  "status": "untranslated"
+  "en": "Go inside",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x198a",
   "jp": "ドアを開けます。<br>いいですか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "I'll open the door.<br>Ready?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x19a9",
   "jp": "いいぞ！<br>・・・開けてくれ！",
-  "en": null,
-  "status": "untranslated"
+  "en": "Right!<br>...Open it up!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x19cb",
   "jp": "マンション",
-  "en": null,
-  "status": "untranslated"
+  "en": "Apartment",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x19d6",
   "jp": "間違いなくギリアンのマンションです。<br>ギリアンの部屋の窓がこちら側から見え<br>ます。",
-  "en": null,
-  "status": "untranslated"
+  "en": "No mistaking it, this is Gillian's<br>apartment. You can see the window of<br>Gillian's room from this side.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1a29",
   "jp": "政府がギリアンに用意したマンションです。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The apartment the government set up for Gillian.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1a52",
   "jp": "あたり",
-  "en": null,
-  "status": "untranslated"
+  "en": "Surroundings",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1a59",
   "jp": "さすがにこの時間になると人通りは<br>少ないです。",
-  "en": null,
-  "status": "untranslated"
+  "en": "As you'd expect at this hour, there<br>are few people about.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1a88",
   "jp": "路上に不審な車もありません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "No suspicious cars on the street either.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1aa5",
   "jp": "ギリアンの部屋",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian's room",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1ab4",
   "jp": "ここからではよく見えませんが、<br>確かに灯りがついています。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hard to make out from here, but<br>the lights are definitely on.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1aef",
   "jp": "・・・カトリーヌだろうか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "...Could it be Katrina?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1b0a",
   "jp": "油断しないでください。<br>私達がスナッチャーに尾けられて<br>いるんだとしたら・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Don't let your guard down.<br>If a SNATCHER has been tailing<br>us...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1b59",
   "jp": "誰か部屋にいるようです。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Someone seems to be in the room.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1b72",
   "jp": "調べる",
-  "en": null,
-  "status": "untranslated"
+  "en": "Investigate",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1b79",
   "jp": "警備システムもオンになっています。<br>特に異常はありません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The security system is on too.<br>Nothing out of the ordinary.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1bb4",
   "jp": "警備システムに引っかからないとは？",
-  "en": null,
-  "status": "untranslated"
+  "en": "It didn't trip the security system?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1bd7",
   "jp": "特に変わった痕跡は見あたりません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "I don't see any unusual traces.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1bfa",
   "jp": "あたりに不審な人物、動体反応は<br>見受けられません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "No suspicious persons or motion<br>detected in the vicinity.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1c2d",
   "jp": "動体センサーの検査範囲をギリアンの部屋に限定することはできません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "I can't limit the motion sensor's scan range to just Gillian's room.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1c70",
   "jp": "赤外線センサーならどうだ？",
-  "en": null,
-  "status": "untranslated"
+  "en": "What about the infrared sensor?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1c8b",
   "jp": "・・・反応ありません。<br>窓際には誰もいないようです。",
-  "en": null,
-  "status": "untranslated"
+  "en": "...No response.<br>Nobody by the window, it seems.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1cc0",
   "jp": "ここからでは調べることはできません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "I can't investigate that from here.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1ce8",
   "jp": "メタル、ここから俺の部屋の扉を調べてみてくれ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Metal, check out the door to my room from here.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1d17",
   "jp": "わかりました。<br>マンションのセキュリティに、侵入します。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Understood.<br>Hacking into the apartment's security.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1d50",
   "jp": "ギリアン、鍵はかかっていません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian, it isn't locked.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1d71",
   "jp": "こじ開けた様子もありません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "No sign it was forced open, either.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1d8e",
   "jp": "何だって！？<br>間違いなく鍵はかけたはずだが・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "What!?<br>I'm certain I locked it...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1dc4",
   "jp": "見るω",
-  "en": null,
-  "status": "untranslated"
+  "en": "Lookω",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1dcb",
   "jp": "調べるω",
-  "en": null,
-  "status": "untranslated"
+  "en": "Investigateω",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1dd4",
   "jp": "メタルギア使う",
-  "en": null,
-  "status": "untranslated"
+  "en": "Use Metal Gear",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1de3",
   "jp": "セーブする",
-  "en": null,
-  "status": "untranslated"
+  "en": "Save",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1dee",
   "jp": "では、これまでの内容をセーブします。",
-  "en": null,
-  "status": "untranslated"
+  "en": "All right, saving your progress so far.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1e13",
   "jp": "ギリアンの居間です。＠Ｃ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian's living room.＠Ｃ",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1e2c",
   "jp": "浴室に入る",
-  "en": null,
-  "status": "untranslated"
+  "en": "Enter the bathroom",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1e37",
   "jp": "まずはこの部屋から調べましょう。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Let's search this room first.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1e58",
   "jp": "焦らないで下さい、ギリアン。<br>この部屋を調べてからです。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Don't rush, Gillian.<br>After we search this room.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1e91",
   "jp": "この部屋に侵入したのが敵であれば、<br>トラップが仕掛けられている可能性も<br>ありますからね・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "If it was an enemy who broke into<br>this room, there could be a trap<br>set somewhere...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1eee",
   "jp": "外に出る",
-  "en": null,
-  "status": "untranslated"
+  "en": "Go outside",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1efc",
   "jp": "この部屋には誰もいないようです。",
-  "en": null,
-  "status": "untranslated"
+  "en": "There doesn't seem to be anyone in this room.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1f1d",
   "jp": "室内には誰も見あたりません。<br>隠れるような場所もありません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "No one to be seen indoors.<br>No place to hide, either.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1f5a",
   "jp": "おかしい・・・<br>椅子や小物の位置が少し違っている。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Strange...<br>The chairs and knickknacks are slightly out of place.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1f8d",
   "jp": "椅子や小物の位置を動かした跡がある・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "There are signs the chairs and knickknacks were moved...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1fb9",
   "jp": "うっすらと足跡がカーペットについてます。",
-  "en": null,
-  "status": "untranslated"
+  "en": "There are faint footprints on the carpet.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x1fe2",
   "jp": "ギリアンの靴跡とは明らかに違います。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Clearly different from Gillian's shoe prints.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2007",
   "jp": "室内を荒らされた様子はありません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "No sign the room was ransacked.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x202a",
   "jp": "ソファの温度がまだ高いです。<br>ついさっきまで誰かが座っていたようです。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The sofa is still warm.<br>Someone was sitting here until just moments ago.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2071",
   "jp": "とりあえず取られた物はなさそうだが？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Nothing seems to have been taken, at least?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2096",
   "jp": "室内には動体反応ありません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "No motion detected in the room.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x20b8",
   "jp": "相当鋭利な跡です。<br>体重が一点に集中するような・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "A fairly sharp mark.<br>As if all the weight is on a single point...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x20ed",
   "jp": "鋭利？<br>スナッチャーか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Sharp?<br>A SNATCHER?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2106",
   "jp": "やはり、カトリーヌじゃなかったのか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "So it wasn't Katrina after all?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x212b",
   "jp": "・・・・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "......",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2138",
   "jp": "可能性はあります。",
-  "en": null,
-  "status": "untranslated"
+  "en": "It's possible.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x214b",
   "jp": "足跡は浴室へ向かっています。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The footprints lead to the bathroom.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2168",
   "jp": "耳を澄ます",
-  "en": null,
-  "status": "untranslated"
+  "en": "Listen closely",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2173",
   "jp": "音は浴室の方から聴こえてきます。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The sound is coming from the bathroom.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2194",
   "jp": "やはり音は浴室の方からです・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "The sound really is coming from the bathroom...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x21b5",
   "jp": "匂いをかぐ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Sniff",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x21c0",
   "jp": "ん？<br>何か匂うな・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hm?<br>Something smells...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x21d7",
   "jp": "スノースギですか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Snow cedar?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x21ea",
   "jp": "わからん・・・どこかでかいだ匂いだ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "I don't know... but I've smelled it somewhere before.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x220f",
   "jp": "クンクン・・・やっぱり、何か匂う。<br>何かいるぞ？！",
-  "en": null,
-  "status": "untranslated"
+  "en": "Sniff, sniff... yeah, something smells.<br>Something's in there!?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2242",
   "jp": "この物音の真相を解明しないんですか？<br>ギリアン！",
-  "en": null,
-  "status": "untranslated"
+  "en": "You're not going to get to the bottom of that noise?<br>Gillian!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2273",
   "jp": "ギリアン！<br>いつも逃げてばかりいてはダメです。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian!<br>You can't keep running away.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x22a2",
   "jp": "敵は逃げられません！<br>・・・・勇気をだして！！",
-  "en": null,
-  "status": "untranslated"
+  "en": "The enemy can't escape!<br>...Work up your courage!!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x22d1",
   "jp": "ギリアンの浴室です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian's bathroom.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x22e6",
   "jp": "ん？<br>・・・ムッとするな。<br>部屋の温度が高い・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hm?<br>...It's stuffy.<br>The room's warm...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2319",
   "jp": "シャワー・ブースに何かいます！",
-  "en": null,
-  "status": "untranslated"
+  "en": "There's something in the shower stall!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2338",
   "jp": "誰も見あたりません。<br>シャワー・ブースしか考えられません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "No one to be seen.<br>It can only be the shower stall.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2373",
   "jp": "床に下着が落ちています。<br>誰のでしょう？",
-  "en": null,
-  "status": "untranslated"
+  "en": "There's underwear on the floor.<br>Whose could it be?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x239c",
   "jp": "ギリアンの趣味ですか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Is this a hobby of yours, Gillian?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x23b3",
   "jp": "馬鹿言え！<br>俺は知らん！",
-  "en": null,
-  "status": "untranslated"
+  "en": "Don't be ridiculous!<br>I don't know a thing about it!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x23cc",
   "jp": "おやっ、床に何か落ちています。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Oh? Something's on the floor.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x23eb",
   "jp": "床に何かが落ちています。",
-  "en": null,
-  "status": "untranslated"
+  "en": "There's something on the floor.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2404",
   "jp": "シャワーブース",
-  "en": null,
-  "status": "untranslated"
+  "en": "Shower stall",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2413",
   "jp": "ブラインド・ガラスが降りていて、<br>何がいるのか判りません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The frosted glass is down, so I<br>can't tell what's inside.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x244e",
   "jp": "ウィンドウに使用中のサインが<br>表示されています。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The 'occupied' sign is<br>lit on the window.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2484",
   "jp": "フーム・・・かわいい下着だ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hmm... cute underwear.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x24a1",
   "jp": "・・・なんで俺の部屋に、<br>こんな下着があるんだ？",
-  "en": null,
-  "status": "untranslated"
+  "en": "...Why is there underwear like this<br>in my apartment?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x24d2",
   "jp": "とぼけちゃって・・・ギリアンったら？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Playing dumb... oh, Gillian, really?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x24f7",
   "jp": "動体反応があります。<br>やはりこの部屋に反応があります。",
-  "en": null,
-  "status": "untranslated"
+  "en": "There's a motion reading.<br>Something in this room is moving after all.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x252e",
   "jp": "室内の温度と湿度が異常に上昇中です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The room's temperature and humidity are rising abnormally.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2553",
   "jp": "さっきの下着以外には何もありません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Nothing here besides that underwear from before.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2578",
   "jp": "これは・・・＠赤スキャンティ？<br>ブッ、ブラジャー？＠白",
-  "en": null,
-  "status": "untranslated"
+  "en": "Is this... ＠赤panties?<br>A-a bra?＠白",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x25af",
   "jp": "エッ？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Huh?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x25b6",
   "jp": "しっ、下着ですよ！<br>それも女性物の・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "U-underwear, that's what!<br>Women's underwear, at that...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x25df",
   "jp": "女物の下着！",
-  "en": null,
-  "status": "untranslated"
+  "en": "Women's underwear!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x25ec",
   "jp": "女性の下着が落ちています。",
-  "en": null,
-  "status": "untranslated"
+  "en": "There's women's underwear on the floor.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2607",
   "jp": "サーモ・センサーで見ると、<br>熱を帯びています。<br>お湯が使用されていると思われます。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Reading it with the thermo-sensor,<br>it's giving off heat.<br>Hot water seems to have been used.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x265a",
   "jp": "中に動体反応あり！<br>動いています。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Motion reading inside!<br>It's moving.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x267d",
   "jp": "シルクの下着です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Silk underwear.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2690",
   "jp": "持主はかなり服装に気を使って<br>いる人物と予想できます。<br>下着は女の最終兵器ですから。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The owner can be presumed to be someone<br>who's quite particular about their attire.<br>Underwear is a woman's ultimate weapon.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x26e5",
   "jp": "こういう下着の着用者に多いのは、<br>上流階級の婦人、あるいはモデルの<br>ような職業の女性ですね。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The sort who wear underwear like this<br>tend to be upper-class ladies, or<br>women in professions like modeling.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2742",
   "jp": "モデル？<br>・・・カトリーヌ？",
-  "en": null,
-  "status": "untranslated"
+  "en": "A model?<br>...Katrina?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x275f",
   "jp": "こ、これが・・・彼女の？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Th-this is... hers?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2778",
   "jp": "それじゃあ・・・カトリーヌは裸？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Then... Katrina is naked?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2799",
   "jp": "ギリアン、気を抜かないで下さい。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian, don't let your guard down.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x27ba",
   "jp": "スナッチャーだったらどうするんです？",
-  "en": null,
-  "status": "untranslated"
+  "en": "What if it's a SNATCHER?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x27e4",
   "jp": "自分の服",
-  "en": null,
-  "status": "untranslated"
+  "en": "Your own clothes",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x27ed",
   "jp": "服を脱いでどうするつもりですか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "What are you planning to do, taking your clothes off?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x280e",
   "jp": "この下着を身に付けるんだよ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "I'm going to put this underwear on.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x282b",
   "jp": "風呂に入るんだよ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "I'm going to take a bath.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x283e",
   "jp": "冗談でしょ？",
-  "en": null,
-  "status": "untranslated"
+  "en": "You're joking, right?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x284b",
   "jp": "ああ・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Yeah...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2856",
   "jp": "貰っておこうかなぁ・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Maybe I'll just keep it...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x286f",
   "jp": "局長にいいつけますよ！",
-  "en": null,
-  "status": "untranslated"
+  "en": "I'll tell the Chief on you!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2886",
   "jp": "メタル！<br>捜査の為にも下着を調べねばならん。<br>下着を取ってくれ！！",
-  "en": null,
-  "status": "untranslated"
+  "en": "Metal!<br>For the investigation, we have to examine the underwear.<br>Grab the underwear!!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x28c9",
   "jp": "仕方ありませんね・・・<br>でも、ちゃんと返すんですよ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "I suppose there's no helping it...<br>But you're putting it back properly.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x28fe",
   "jp": "その手にもう持っているじゃないですか。",
-  "en": null,
-  "status": "untranslated"
+  "en": "You're already holding it in your hand, aren't you.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2925",
   "jp": "取った下着",
-  "en": null,
-  "status": "untranslated"
+  "en": "Underwear you took",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2930",
   "jp": "よし！　かいでみよう。<br>クン、クン・・・<br>ウーン！　いい香りだ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "All right! Let's have a sniff.<br>Sniff, sniff...<br>Mmm! What a lovely scent.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2971",
   "jp": "ん？<br>・・・この匂い？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hm?<br>...This smell?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2988",
   "jp": "そういう趣味があったんですか・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "So you had that sort of hobby...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x29ab",
   "jp": "誰にも言うなよ・・・<br>こらっ！　違うって・・・<br>この匂いは、もしかして？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Don't tell anyone...<br>Hey! That's not it...<br>This smell, could it be?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x29f4",
   "jp": "どうしたんです？",
-  "en": null,
-  "status": "untranslated"
+  "en": "What's wrong?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2a05",
   "jp": "そうだ、この匂いだ！",
-  "en": null,
-  "status": "untranslated"
+  "en": "That's it, this smell!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2a1a",
   "jp": "カトリーヌですか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Katrina?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2a2d",
   "jp": "・・・そう思いたい。",
-  "en": null,
-  "status": "untranslated"
+  "en": "...I want to believe so.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2a42",
   "jp": "やっぱり！<br>メタル、わかったぞ！<br>この匂いだ！",
-  "en": null,
-  "status": "untranslated"
+  "en": "I knew it!<br>Metal, I've got it!<br>This smell!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2a76",
   "jp": "クン、クン、・・・汗くさいな。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Sniff, sniff... smells of sweat.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2a95",
   "jp": "捜査に明け暮れて、<br>お風呂に入ってなかったでしょ？",
-  "en": null,
-  "status": "untranslated"
+  "en": "You've been so buried in the investigation,<br>you haven't taken a bath, have you?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2ac8",
   "jp": "そういえば入ってなかったな・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Come to think of it, I haven't...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2ae9",
   "jp": "臭うかな？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Do I stink?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2af4",
   "jp": "私は平気ですけど・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "It doesn't bother me, but...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2b0b",
   "jp": "洗濯もしてなかったなぁ。<br>これじゃあ、女の子に嫌われるな。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Haven't done laundry either.<br>At this rate the girls will hate me.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2b46",
   "jp": "ブース開ける",
-  "en": null,
-  "status": "untranslated"
+  "en": "Open the stall",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2b53",
   "jp": "カトリーヌの顔",
-  "en": null,
-  "status": "untranslated"
+  "en": "Katrina's face",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2b62",
   "jp": "（こうやって見ると、<br>　なかなかコケティッシュな・・・）",
-  "en": null,
-  "status": "untranslated"
+  "en": "(Looking at her like this,<br>　she's rather coquettish...)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2b9b",
   "jp": "（・・・・・・）",
-  "en": null,
-  "status": "untranslated"
+  "en": "(......)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2bac",
   "jp": "（な〜んか、変な感じ・・・）",
-  "en": null,
-  "status": "untranslated"
+  "en": "(Somehow... this feels strange...)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2bc9",
   "jp": "私の顔に何かついてる？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Is there something on my face?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2be0",
   "jp": "やだっ？！<br>ギリアン、怒ってるの？",
-  "en": null,
-  "status": "untranslated"
+  "en": "No!?<br>Gillian, are you angry?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2c03",
   "jp": "カトリーヌの胸",
-  "en": null,
-  "status": "untranslated"
+  "en": "Katrina's chest",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2c12",
   "jp": "（う〜む。なかなかグラマラス！）",
-  "en": null,
-  "status": "untranslated"
+  "en": "(Hmm. Quite glamorous!)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2c33",
   "jp": "（独り身には目の毒だ・・・・）",
-  "en": null,
-  "status": "untranslated"
+  "en": "(Poison to the eyes of a single man...)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2c52",
   "jp": "うなじ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Nape of her neck",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2c59",
   "jp": "（色っぽいなぁ・・・）",
-  "en": null,
-  "status": "untranslated"
+  "en": "(How alluring...)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2c70",
   "jp": "（・・・女は魔物だ。）",
-  "en": null,
-  "status": "untranslated"
+  "en": "(...Women are demons.)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2c87",
   "jp": "バスタオル",
-  "en": null,
-  "status": "untranslated"
+  "en": "Bath towel",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2c92",
   "jp": "ちょっと、タオルを調べさせてくれないか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hey, mind letting me examine that towel?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2cbb",
   "jp": "もーぅ！！<br>そんなことばかり言って！<br>私の裸が見たいんでしょう！",
-  "en": null,
-  "status": "untranslated"
+  "en": "Honestly!!<br>Always going on like that!<br>You just want to see me naked!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2cfc",
   "jp": "ギリアンって・・・い・じ・わ・る。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian, you're... such a m-e-a-n-i-e.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2d1f",
   "jp": "病院リスト",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hospital list",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2d2a",
   "jp": "その病院リスト、いいかな？",
-  "en": null,
-  "status": "untranslated"
+  "en": "That hospital list, may I?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2d45",
   "jp": "ああ、どうぞ・・・調べてみて？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Yeah, go ahead... take a look?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2d64",
   "jp": "それじゃあ、俺もひと風呂浴びようか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Well then, shall I have a bath myself?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2d89",
   "jp": "ギリアン！<br>そんな時じゃないでしょ？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian!<br>This is no time for that, is it?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2dae",
   "jp": "メタルギアｍｋ＿２、頼みがある。<br>バスタオルを取ってくれ！",
-  "en": null,
-  "status": "untranslated"
+  "en": "Metal Gear mk_2, I have a request.<br>Grab the bath towel!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2de9",
   "jp": "フルネームで頼んでも駄目ですよ。<br>なぜ私が、そんなことをしなければ<br>いけないんですか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Using my full name won't work.<br>Why should I have to do<br>something like that?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2e40",
   "jp": "二人とも、何を言っているの？",
-  "en": null,
-  "status": "untranslated"
+  "en": "What are you two talking about?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2e5d",
   "jp": "ギリアン！<br>いいかげんにしてよ！！",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian!<br>Give it a rest already!!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2e80",
   "jp": "飴をあげる",
-  "en": null,
-  "status": "untranslated"
+  "en": "Give her candy",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2e8b",
   "jp": "カトリーヌ。<br>ショックだったろうに・・・<br>この飴をなめて元気を出すんだ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Katrina.<br>This must have been a shock...<br>Suck on this candy and cheer up.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2ed4",
   "jp": "ありがとう・・・<br>あっ、この飴、私が小さい時に<br>大好きだった飴よ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Thank you...<br>Oh, this candy, it's the one I loved<br>when I was little.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2f17",
   "jp": "どうして知ってたの？",
-  "en": null,
-  "status": "untranslated"
+  "en": "How did you know?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2f2c",
   "jp": "いや・・・<br>そうか、君の好きな飴だったのか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "No...<br>So, it was your favorite candy?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2f59",
   "jp": "カトリーヌ。<br>この飴をなめて元気を出すんだ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Katrina.<br>Suck on this candy and cheer up.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2f86",
   "jp": "父の飴ね。<br>・・・なめるなんてできないわ。<br>いつもそばに置いておこうと思うの。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Father's candy.<br>...I couldn't bring myself to eat it.<br>I think I'll keep it with me always.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2fd5",
   "jp": "そうか、それがいいな。",
-  "en": null,
-  "status": "untranslated"
+  "en": "I see, that's a good idea.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x2fec",
   "jp": "この前の飴ね。<br>私これだーい好き。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The candy from before.<br>I just love this.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x300f",
   "jp": "そうか、君の好きな飴だったな。",
-  "en": null,
-  "status": "untranslated"
+  "en": "I see, it was your favorite candy.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x302e",
   "jp": "この飴まだいるかい？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Do you still want this candy?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3043",
   "jp": "うん、ありがとう。不思議ね。<br>この飴、持ってるだけで元気が<br>出てくる気がするの。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Yes, thank you. It's strange.<br>Just having this candy, I feel like<br>my spirits are lifting.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3094",
   "jp": "そうかもしれないな・・・<br>全部君にあげるよ、カトリーヌ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Maybe so...<br>You can have all of it, Katrina.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x30cd",
   "jp": "寂しくなってどうしようもない時<br>この飴をなめるといい。",
-  "en": null,
-  "status": "untranslated"
+  "en": "When you feel so lonely you can't stand it,<br>suck on this candy.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3104",
   "jp": "飴の話をする",
-  "en": null,
-  "status": "untranslated"
+  "en": "Talk about the candy",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3111",
   "jp": "実はこの飴、君のお父さんが<br>持っていたものなんだ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Actually, this candy belonged to<br>your father.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3144",
   "jp": "父が？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Father's?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x314b",
   "jp": "君のお父さんは、孤児院の子供達に<br>この飴を配っていたらしい。",
-  "en": null,
-  "status": "untranslated"
+  "en": "It seems your father used to hand out<br>this candy to the children at the orphanage.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3188",
   "jp": "父がそんなことを・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Father did that...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x319f",
   "jp": "これはお父さんが亡くなったとき、<br>そのコートの中に入っていたものなんだ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "This is what was inside his coat<br>when your father died.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x31e8",
   "jp": "パパ・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Papa...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x31f8",
   "jp": "カトリーヌ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Katrina",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3203",
   "jp": "何か羽織ってくれないか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Would you put something on?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x321c",
   "jp": "ええ？<br>今、わたしシャワー浴びたから暑いの。<br>このままでいいでしょう？",
-  "en": null,
-  "status": "untranslated"
+  "en": "What?<br>I just took a shower, so I'm hot.<br>I'm fine like this, aren't I?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3263",
   "jp": "カトリーヌ、俺の服ならあるけど・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Katrina, I've got clothes you could wear...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3288",
   "jp": "ええ・・・もう少ししたら。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Yeah... in a little while.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x32a3",
   "jp": "（いや・・・そのままでいいんだよ。）",
-  "en": null,
-  "status": "untranslated"
+  "en": "(No... you're fine just as you are.)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x32c8",
   "jp": "カトリーヌ、風邪ひくよ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Katrina, you'll catch a cold.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x32e1",
   "jp": "じゃあ、ギリアン・・・服借りるね？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Then, Gillian... may I borrow some clothes?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3304",
   "jp": "いや、ちょっと・・・待って。<br>その前に話を聞こう。",
-  "en": null,
-  "status": "untranslated"
+  "en": "No, wait... just a moment.<br>Before that, let's hear what you have to say.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3337",
   "jp": "アリスの件",
-  "en": null,
-  "status": "untranslated"
+  "en": "About Alice",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3342",
   "jp": "実はアリスの事なんだが・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Actually, it's about Alice...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x335f",
   "jp": "アリスがどうかした？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Did something happen with Alice?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3374",
   "jp": "アリスが・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Alice is...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3383",
   "jp": "ギリアン？！",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian?!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3390",
   "jp": "どうしたの？",
-  "en": null,
-  "status": "untranslated"
+  "en": "What's wrong?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x339d",
   "jp": "いや・・・また後で話すよ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "No... I'll tell you later.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x33b8",
   "jp": "変なの・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "That's odd...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x33c5",
   "jp": "アリスは・・・<br>アリスはとてもいい犬だ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Alice is...<br>Alice is a very good dog.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x33ee",
   "jp": "ええ、賢くて・・・<br>今となっては私の唯一の家族だものね。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Yes, she's clever...<br>She's my only family now.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3427",
   "jp": "（アリスが死んだなんて、<br>　俺には言えない・・・）",
-  "en": null,
-  "status": "untranslated"
+  "en": "(I can't tell her that Alice<br>　is dead...)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x345a",
   "jp": "網膜占い",
-  "en": null,
-  "status": "untranslated"
+  "en": "Retinal fortune-telling",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3463",
   "jp": "実は君に会えたのも、占いのおかげなんだ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Truth is, it's thanks to the fortune-teller that I got to see you.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x348c",
   "jp": "占い？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Fortune-telling?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3493",
   "jp": "網膜占いだよ・・・アルタミラ前の。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Retinal fortune-telling... the one in front of Altamira.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x34b6",
   "jp": "ああ、あのインチキ占いね。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Oh, that phony fortune-teller.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x34d1",
   "jp": "なんだ、知ってたのか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "What, you knew?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x34e8",
   "jp": "アルタミラの占いおばさんは有名よ。<br>マスコミでインチキが報道されてからは<br>誰も立ち寄らないわ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The fortune-teller lady at Altamira is famous.<br>Ever since the media reported she was a fraud,<br>nobody goes near her.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3547",
   "jp": "・・・・なんだって？",
-  "en": null,
-  "status": "untranslated"
+  "en": "...What did you say?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x355c",
   "jp": "ギリアンは時代遅れなのよ。<br>あんなのにお金払うなんて・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "You're behind the times, Gillian.<br>Paying money for something like that...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3597",
   "jp": "・・・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": ".....",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x35a7",
   "jp": "電話のこと",
-  "en": null,
-  "status": "untranslated"
+  "en": "About the phone call",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x35b2",
   "jp": "電話の件だけど、詳しく教えてくれないか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "About the phone call, mind telling me the details?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x35db",
   "jp": "そうだわ！<br>居間を整理してたら・・・<br>家の模型の中からこんな物が出てきたの。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Oh, right!<br>When I was tidying the living room...<br>this came out of the model of the house.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3628",
   "jp": "そういえば、居間の棚の上にギブスン家の<br>ミニチュア模型がありましたね。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Come to think of it, there was a miniature<br>model of the Gibson house on the living room shelf.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x366f",
   "jp": "これは・・・病院リスト！",
-  "en": null,
-  "status": "untranslated"
+  "en": "This is... a hospital list!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3688",
   "jp": "それも闇ルートの・・・<br>病院リストのようです。",
-  "en": null,
-  "status": "untranslated"
+  "en": "And a black-market one, at that...<br>It looks like a hospital list.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x36b7",
   "jp": "病院名、院長名、住所、分野が<br>書かれています。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hospital names, directors' names, addresses,<br>and specialties are written on it.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x36e6",
   "jp": "すると、この中にスナッチャー達の<br>病院があるというわけか。<br>ギブスンの見つけた病院が・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "So, this means the SNATCHERs' hospital<br>is somewhere in here.<br>The hospital Gibson found...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3741",
   "jp": "ギブスンのメモにあった『家を捜せ！』というのは、このことも意味していたんですね。",
-  "en": null,
-  "status": "untranslated"
+  "en": "So the 'Search the house!' in Gibson's memo meant this as well.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3792",
   "jp": "出来すぎだな・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Almost too perfect...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x37a5",
   "jp": "このリスト、お役にたつかしら？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Will this list be of any use?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x37c4",
   "jp": "でも、リストは３０００軒を越えています。ローラー作戦は不可能です。<br>何か手がかりがないと・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "But the list has over 3,000 entries. A roller-tactic sweep is impossible.<br>We need some kind of lead...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3823",
   "jp": "あのリトル・ジョンのメモリーに残っていた映像が鍵だと思うんだが・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "I think the image left in that Little John's memory is the key...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3868",
   "jp": "ギリアンが病院名を打ち込んでくれるん<br>でしたら私がリストを検索します。",
-  "en": null,
-  "status": "untranslated"
+  "en": "If you type in the hospital names, Gillian,<br>I'll search the list.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x38af",
   "jp": "・・・それで私、誰かにつけられてたの。",
-  "en": null,
-  "status": "untranslated"
+  "en": "...So that's why I was being followed.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x38d6",
   "jp": "きっと、このパパの病院リストを<br>狙ってたんだと思うわ。<br>ギリアン、捕まらないんだもの。",
-  "en": null,
-  "status": "untranslated"
+  "en": "They must have been after this hospital<br>list of Papa's.<br>Gillian, you were nowhere to be found.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x392d",
   "jp": "悪かった。<br>メタルギアのナンバーを、<br>教えておけばよかった。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Sorry about that.<br>I should have given you<br>Metal Gear's number.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x396a",
   "jp": "家に入る前に電話したんだけど、<br>ギリアンが捕まらなかったから。",
-  "en": null,
-  "status": "untranslated"
+  "en": "I called before I went into the house,<br>but I couldn't reach you, Gillian.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x39a9",
   "jp": "この病院リストに心当たりは？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Any idea about this hospital list?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x39c6",
   "jp": "見たことないわ。<br>でもあの模型の中に入ってたということは<br>父が大事にしてたものよ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "I've never seen it before.<br>But if it was inside that model,<br>it must be something Father treasured.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3a19",
   "jp": "きっとこの中に父が見つけた病院が<br>あるんだわ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The hospital Father found is surely<br>somewhere in here.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3a48",
   "jp": "印をつけてないということは、他に何か<br>伝えるものを残してるはずよ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The fact that he didn't mark it means<br>he must have left something else to tell us.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3a90",
   "jp": "カトリーヌはいくつだったっけ？",
-  "en": null,
-  "status": "untranslated"
+  "en": "How old were you again, Katrina?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3aaf",
   "jp": "今年で１４よ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "I turn 14 this year.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3abe",
   "jp": "ほんと？<br>（この頃の娘はなかなか・・・）",
-  "en": null,
-  "status": "untranslated"
+  "en": "Really?<br>(Girls this age are quite something...)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3ae7",
   "jp": "モデルの世界ではこれでも高齢なの。",
-  "en": null,
-  "status": "untranslated"
+  "en": "In the modeling world that's already old.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3b0a",
   "jp": "（参ったね・・・<br>　だとしたらジェミーはどうなる？）",
-  "en": null,
-  "status": "untranslated"
+  "en": "(This is a bind...<br>　if that's the case, what about Jamie?)",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3b3f",
   "jp": "ギリアン！<br>年齢よりも聞かなければならない<br>ことがあるでしょう？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian!<br>There are things you should be asking<br>more than her age, aren't there?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3b80",
   "jp": "ギリアン、またほどほどにしないと、<br>カトリーヌに怒られますよ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian, if you don't keep it in moderation again,<br>Katrina's going to get mad at you.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3bbf",
   "jp": "ああ、そうだったな。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Ah, right you are.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3bd4",
   "jp": "ギリアンは前科者ですから。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Because Gillian has a criminal record.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3bef",
   "jp": "人を犯罪者のように言うな。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Don't talk about people like they're criminals.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3c0a",
   "jp": "リストを調べる",
-  "en": null,
-  "status": "untranslated"
+  "en": "Examine the list",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3c19",
   "jp": "病院の住所",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hospital address",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3c24",
   "jp": "それでは、ギリアン。<br>この中からスナッチャーの病院を<br>探し出しましょう。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Now then, Gillian.<br>Let's find the SNATCHER's hospital<br>from among these.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3c6d",
   "jp": "この中にあのリトルジョンのメモリーに<br>あった病院が？",
-  "en": null,
-  "status": "untranslated"
+  "en": "The hospital from that Little John's memory<br>is somewhere in here?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3ca2",
   "jp": "ギリアン、それらしい病院名を<br>言ってみて下さい。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian, try saying a hospital name<br>that seems likely.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3cd3",
   "jp": "あのネオン・サインから思いつくような<br>名前を・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "A name that comes to mind from<br>that neon sign...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3d06",
   "jp": "サインは＠赤『ＯＬＥＥＮ』＠白だったな・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "The sign was ＠赤'OLEEN'＠白, wasn't it...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3d33",
   "jp": "それでは、調べる病院名をカナ入力して<br>下さい。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Now then, please enter the hospital<br>name to search in kana.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3d62",
   "jp": "クイーン以外",
-  "en": null,
-  "status": "untranslated"
+  "en": "Anything but Queen",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3d74",
   "jp": "クイーン",
-  "en": null,
-  "status": "untranslated"
+  "en": "Queen",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3d7d",
   "jp": "＠赤『クィーン』＠白ですね？<br>わかりました。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠赤'QUEEN'＠白, right?<br>Understood.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3daa",
   "jp": "チェスの駒の種類をほとんど試したわね？",
-  "en": null,
-  "status": "untranslated"
+  "en": "You've tried almost every kind of chess piece, haven't you?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3dd1",
   "jp": "それでは、探してみます。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Now then, I'll search.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3dea",
   "jp": "ありました！<br>＠赤ＱＵＥＥＮ病院！＠白",
-  "en": null,
-  "status": "untranslated"
+  "en": "There it is!<br>＠赤QUEEN Hospital!＠白",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3e11",
   "jp": "やったわ！<br>ギリアン！",
-  "en": null,
-  "status": "untranslated"
+  "en": "We did it!<br>Gillian!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3e28",
   "jp": "カトリーヌの言う通りでしたね。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Katrina was right, wasn't she.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3e47",
   "jp": "よかった・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Thank goodness...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3e56",
   "jp": "そうか・・・<br>やはり、ネオンが壊れていたんだ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "I see...<br>So the neon really was broken.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3e85",
   "jp": "＠黄『ＱＵＥＥＮ』＠白が＠黄『ＯＬＥＥＮ』＠白に<br>見えたんだ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠黄'QUEEN'＠白 looked like ＠黄'OLEEN'＠白.<br>That was it.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3ec4",
   "jp": "チェスの駒はそれが言いたかったんだ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "That's what the chess piece was trying to say.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3ee9",
   "jp": "クレーン",
-  "en": null,
-  "status": "untranslated"
+  "en": "Crane",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3ef2",
   "jp": "＠赤『クレーン』＠白ですね？<br>探してみます。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠赤'Crane'＠白, right?<br>I'll search.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3f1f",
   "jp": "うーん、いいところまでいってると<br>思うのですが？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Hmm, I think we're getting close,<br>but?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3f50",
   "jp": "クレーン・ゲームは好きなんだが・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "I do like the crane game, but...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3f75",
   "jp": "そう、じゃあ今度・・・私にも取って？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Then next time... win one for me too?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3f9a",
   "jp": "・・・カトリーヌ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "...Katrina.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3fad",
   "jp": "あら、ゴメンナサイ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Oh, I'm sorry.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3fc2",
   "jp": "オーエン",
-  "en": null,
-  "status": "untranslated"
+  "en": "Owen",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3fcb",
   "jp": "＠赤『オーエン』＠白ですね？<br>探してみます。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠赤'Owen'＠白, right?<br>I'll search.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x3ff8",
   "jp": "オーリン",
-  "en": null,
-  "status": "untranslated"
+  "en": "Orin",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4001",
   "jp": "＠赤『オーリン』＠白ですね？<br>探してみます。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠赤'Orin'＠白, right?<br>I'll search.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x402e",
   "jp": "オウリン",
-  "en": null,
-  "status": "untranslated"
+  "en": "Ourin",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4037",
   "jp": "＠赤『オウリン』＠白ですね？<br>探してみます。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠赤'Ourin'＠白, right?<br>I'll search.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4064",
   "jp": "言うまでもなく、あの動物病院です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Needless to say, that's the animal hospital.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4087",
   "jp": "オリーン",
-  "en": null,
-  "status": "untranslated"
+  "en": "Oleen",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4090",
   "jp": "＠赤『オリーン』＠白ですね？<br>探してみます。",
-  "en": null,
-  "status": "untranslated"
+  "en": "＠赤'Oleen'＠白, right?<br>I'll search.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x40bd",
   "jp": "素直に読むとそう読めるんですが・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "That's how it reads if you take it at face value, but...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x40e2",
   "jp": "・・・そういえば昔、こんな歌があったな？",
-  "en": null,
-  "status": "untranslated"
+  "en": "...Come to think of it, there used to be a song like that?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x410b",
   "jp": "オリーン、オリーン、オリィ・・・<br>オリイイン・・・？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Oleen, Oleen, Oly...<br>Oleeeen...?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4140",
   "jp": "それはジョリーンでしょ？",
-  "en": null,
-  "status": "untranslated"
+  "en": "That's Jolene, isn't it?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4159",
   "jp": "そうだったか・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Was it now...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x416c",
   "jp": "オリイン",
-  "en": null,
-  "status": "untranslated"
+  "en": "Olin",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4175",
   "jp": "仮名にすると、<br>そうなるかもしれませんが・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "In kana, it might come out<br>that way, but...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x41a4",
   "jp": "オリーナ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Olina",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x41ad",
   "jp": "それでは、<br>カトリーヌの言うように・・・<br>オリーナと・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Well then,<br>as Katrina says...<br>Olina, and...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x41e8",
   "jp": "オリーノ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Olino",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x41f1",
   "jp": "それでは、<br>カトリーヌの言うように・・・<br>オリーノと・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Well then,<br>as Katrina says...<br>Olino, and...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x422c",
   "jp": "オリーヌ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Oleene",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4235",
   "jp": "オリーヌか・・・？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Oleene...?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4248",
   "jp": "なんだか、カトリーヌのようだな？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Somehow, it's like Katrina, isn't it?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4269",
   "jp": "似てないわよ・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "It's not similar at all...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x427c",
   "jp": "そうか、オリーヌ？",
-  "en": null,
-  "status": "untranslated"
+  "en": "So, Oleene?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x428f",
   "jp": "カトリーヌよ！",
-  "en": null,
-  "status": "untranslated"
+  "en": "It's Katrina!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x429e",
   "jp": "オリン",
-  "en": null,
-  "status": "untranslated"
+  "en": "Orin",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x42a5",
   "jp": "・・・オリン？<br>・・・おりん？",
-  "en": null,
-  "status": "untranslated"
+  "en": "...Orin?<br>...Orin?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x42c4",
   "jp": "どうしたの？<br>ギリアン？",
-  "en": null,
-  "status": "untranslated"
+  "en": "What's wrong?<br>Gillian?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x42dd",
   "jp": "そういう名前を聞いた事がある。<br>確か、鬼頭・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "I've heard a name like that before.<br>I'm sure it was Kito...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x430e",
   "jp": "・・・何かの小説でしょ？",
-  "en": null,
-  "status": "untranslated"
+  "en": "...From some novel, right?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4327",
   "jp": "もう、真面目にやってよ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Come on, be serious.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4340",
   "jp": "キング",
-  "en": null,
-  "status": "untranslated"
+  "en": "King",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4347",
   "jp": "キングですね・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "King, right...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x435a",
   "jp": "ルーク",
-  "en": null,
-  "status": "untranslated"
+  "en": "Rook",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4361",
   "jp": "ルークですね・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Rook, right...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4374",
   "jp": "ナイト",
-  "en": null,
-  "status": "untranslated"
+  "en": "Knight",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x437b",
   "jp": "ナイトですね・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Knight, right...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x438e",
   "jp": "手がかり聞く",
-  "en": null,
-  "status": "untranslated"
+  "en": "Ask for a hint",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x439b",
   "jp": "リトルのメモリー",
-  "en": null,
-  "status": "untranslated"
+  "en": "Little's memory",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x43ac",
   "jp": "『ＯＬＥＥＮ』というネオンから<br>考えられる名前？",
-  "en": null,
-  "status": "untranslated"
+  "en": "A name suggested by the 'OLEEN'<br>neon sign?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x43dd",
   "jp": "そのサインは間違いなく、<br>その病院のものなんでしょう？",
-  "en": null,
-  "status": "untranslated"
+  "en": "That sign definitely belongs to<br>that hospital, doesn't it?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4414",
   "jp": "『ＯＬＥＥＮ』という視覚情報は<br>ほぼ間違いない。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The visual information 'OLEEN' is<br>almost certainly correct.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4445",
   "jp": "・・・『ＯＬＥＥＮ』が基本よね。<br>読み方の問題なのかしら？",
-  "en": null,
-  "status": "untranslated"
+  "en": "...'OLEEN' is the basis, isn't it.<br>Could it be a matter of how you read it?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4480",
   "jp": "もしネオン管が切れているんなら・・・<br>アルファベットも変わるな？",
-  "en": null,
-  "status": "untranslated"
+  "en": "If the neon tubes are burnt out...<br>the letters would change too, wouldn't they?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x44c1",
   "jp": "『ＯＬＥＥＮ』という表示も<br>怪しくなりますね。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The 'OLEEN' display becomes<br>suspect too, then.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x44f0",
   "jp": "ネオンが壊れて違う文字に見えてる<br>のかも・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Maybe the neon is broken and appears<br>as different letters...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x451f",
   "jp": "『ＯＬＥＥＮ』に何本か加えて考えて<br>みたらどう？",
-  "en": null,
-  "status": "untranslated"
+  "en": "How about adding a few strokes to<br>'OLEEN' and thinking it over?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4550",
   "jp": "しかも・・・<br>クィーンの駒を意味する名前？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Moreover...<br>a name that means the Queen piece?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x457b",
   "jp": "しかも・・・<br>チェスの駒を意味する名前？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Moreover...<br>a name that means a chess piece?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x45a4",
   "jp": "・・・『ＯＬＥＥＮ』をどのように<br>解釈するかよね？",
-  "en": null,
-  "status": "untranslated"
+  "en": "...It comes down to how you<br>interpret 'OLEEN', doesn't it?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x45d7",
   "jp": "映像の乱れじゃないんだから・・・<br>『ＯＬＥＥＮ』っていうネオンは事実よね？",
-  "en": null,
-  "status": "untranslated"
+  "en": "It's not a glitch in the image...<br>the 'OLEEN' neon is a fact, isn't it?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4622",
   "jp": "チェスの駒",
-  "en": null,
-  "status": "untranslated"
+  "en": "Chess piece",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x462d",
   "jp": "木製のチェスの駒です。<br>これはその中の『女王』の駒です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "A wooden chess piece.<br>This is the 'queen' among them.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4666",
   "jp": "・・・クィーンの駒だな。",
-  "en": null,
-  "status": "untranslated"
+  "en": "...It's the queen piece.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x467f",
   "jp": "この駒の意味に心当たりは？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Any idea what this piece means?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x469a",
   "jp": "その病院の手がかりじゃないかしら？<br>父が、大事なチェスの駒を持ち歩いてた<br>なんて、おかしいもの。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Isn't it a clue to that hospital?<br>It's odd for Father to carry around<br>an important chess piece, after all.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x46fb",
   "jp": "駒の種類に意味があるんじゃないのかしら？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Doesn't the type of piece have a meaning?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4724",
   "jp": "この駒に病院の手掛かりを託して<br>いたんじゃないのかしら？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Wasn't he entrusting a clue to the<br>hospital to this piece?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x475d",
   "jp": "駒の種類は、『クィーン』ですよね。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The type of piece is the 'queen', right.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4780",
   "jp": "カトリーヌの意見",
-  "en": null,
-  "status": "untranslated"
+  "en": "Katrina's opinion",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4791",
   "jp": "カトリーヌ、君はどう思う？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Katrina, what do you think?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x47ac",
   "jp": "『クィーン』じゃないかしら？<br>私はクィーンという病院だと思うわ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Isn't it 'Queen'?<br>I think it's a hospital called Queen.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x47ed",
   "jp": "ギリアン、<br>『クィーン』という病院を、探してみたら？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian,<br>why not search for a hospital called 'Queen'?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4822",
   "jp": "ギリアン？！<br>どこを見てるのぉ？！",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian?!<br>Where are you looking?!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4845",
   "jp": "また、変なとこ見て！！<br>エッチなこと考えてるんでしょ！！",
-  "en": null,
-  "status": "untranslated"
+  "en": "Staring at weird places again!!<br>You're thinking dirty thoughts, aren't you!!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x487e",
   "jp": "ギリアンって・・・そんなに見ないで。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Gillian... don't stare so much.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x48a3",
   "jp": "何かを入力して下さいよ！？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Please enter something!?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x48be",
   "jp": "何も入力していないじゃないですか？！",
-  "en": null,
-  "status": "untranslated"
+  "en": "You haven't entered anything, have you?!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x48e3",
   "jp": "・・・ありませんね。",
-  "en": null,
-  "status": "untranslated"
+  "en": "...There's nothing.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x48f8",
   "jp": "・・・違うようですね。",
-  "en": null,
-  "status": "untranslated"
+  "en": "...Doesn't seem right.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x490f",
   "jp": "やはり違う名前でしょう。",
-  "en": null,
-  "status": "untranslated"
+  "en": "It's probably a different name.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4928",
   "jp": "あのメモリーの映像を<br>よく思い出して下さい。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Please recall the image from that<br>memory carefully.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4955",
   "jp": "リトル・ジョンの『メモリー』を<br>再生します。<br>よく考えて下さい。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Playing back Little John's 'memory'.<br>Please think it over carefully.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4996",
   "jp": "もしかしたら、<br>『Ｎ』の続きがあるのかも知れません。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Perhaps there's a continuation<br>after the 'N'.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x49cb",
   "jp": "ＯＬＥＥＮなんとか・・・<br>オリーナ、オリーノとか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "OLEEN-something...<br>Olina, Olino, maybe?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x49fe",
   "jp": "そういえば、アルタミラのパチンコ屋の<br>ネオンが壊れて、危ない言葉になってい<br>ましたね？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Come to think of it, the neon at the<br>Altamira pachinko parlor was broken<br>and made a rude word, didn't it?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4a55",
   "jp": "アルタミラのパチンコ屋のネオンが壊れていたのがヒントになりませんか？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Couldn't the broken neon at the Altamira pachinko parlor be a hint?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4a9a",
   "jp": "そうよ！<br>ネオンが壊れているのよ。<br>どこか一部が消えているんだわ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "That's it!<br>The neon is broken.<br>Part of it has gone out.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4add",
   "jp": "ネオンが壊れると違う文字になります。",
-  "en": null,
-  "status": "untranslated"
+  "en": "When neon breaks, it becomes different letters.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4b02",
   "jp": "そうか！<br>ネオンが壊れているんだ。<br>・・・わかってきたぞ！",
-  "en": null,
-  "status": "untranslated"
+  "en": "That's it!<br>The neon is broken.<br>...I'm starting to get it!",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4b3d",
   "jp": "そうそう、ジャンはチェスの駒を<br>持っていましたね。<br>あれは、何か意味があるはずです。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Right, right, Jean was carrying a<br>chess piece, wasn't he.<br>That must mean something.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4b92",
   "jp": "あのチェスの駒は何だったかしら？",
-  "en": null,
-  "status": "untranslated"
+  "en": "What was that chess piece again?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4bb3",
   "jp": "さあ、よく考えて下さい。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Now, think it over carefully.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4bcc",
   "jp": "『ＯＬＥＥＮ』という病院は実在しない<br>こと・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "That a hospital called 'OLEEN'<br>doesn't exist...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4bfd",
   "jp": "・・そのネオン・サインは部分的に壊れているかも知れないこと・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "..that the neon sign may be partially broken...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4c3e",
   "jp": "・・・そしてあのチェスの駒は何を意味するのかを・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "...and what that chess piece means...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4c73",
   "jp": "あっ、もしかしたら？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Ah, could it be?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4c88",
   "jp": "どうした？",
-  "en": null,
-  "status": "untranslated"
+  "en": "What is it?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4c93",
   "jp": "いえ、<br>ひとつ思い浮かんだんだけど・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "No, it's just...<br>something came to mind...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4cbc",
   "jp": "カトリーヌの意見も試してみたらどうです？",
-  "en": null,
-  "status": "untranslated"
+  "en": "Why not try Katrina's idea too?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4ce5",
   "jp": "なるほどチェスの駒の名前ですね？<br>・・・ギリアン",
-  "en": null,
-  "status": "untranslated"
+  "en": "I see, the name of a chess piece?<br>...Gillian.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4d16",
   "jp": "あぁ、チェスの駒で思い付くのは<br>これぐらいだ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Ah, this is about all I can think of<br>for chess pieces.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4d45",
   "jp": "あのメモリーの映像とは、<br>ちょっと違うようですね。",
-  "en": null,
-  "status": "untranslated"
+  "en": "It seems a bit different from<br>the image in that memory.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4d78",
   "jp": "ギブスンの駒とは違うような気がしますが",
-  "en": null,
-  "status": "untranslated"
+  "en": "I feel it's different from Gibson's piece, though.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4d9f",
   "jp": "それは、さっき調べましたよ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "You already checked that just now.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4dbc",
   "jp": "念のためだよ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Just to be sure.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4dcb",
   "jp": "もう一度、これを調べてくれ。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Check this one more time.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4de8",
   "jp": "また、調べるんですか？<br>ないと思いますよ・・・",
-  "en": null,
-  "status": "untranslated"
+  "en": "Checking again?<br>I don't think there's anything...",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4e17",
   "jp": "ＪＵＮＫＥＲ証",
-  "en": null,
-  "status": "untranslated"
+  "en": "JUNKER ID",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4e26",
   "jp": "ＪＵＮＫＥＲの全ての権限を証明する<br>ＩＤカードです。<br>大切にして下さい。",
-  "en": null,
-  "status": "untranslated"
+  "en": "An ID card proving all of JUNKER's<br>authority.<br>Take good care of it.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4e6f",
   "jp": "持ち金",
-  "en": null,
-  "status": "untranslated"
+  "en": "Money on hand",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4e76",
   "jp": "ＪＵＮＫＥＲで支給されたお金です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Money issued by JUNKER.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4e9e",
   "jp": "ジャンのポケットにあった飴玉です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The candy that was in Jean's pocket.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4ec1",
   "jp": "証拠品",
-  "en": null,
-  "status": "untranslated"
+  "en": "Evidence",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4ecb",
   "jp": "クィーン病院を暗示する、<br>ギブスンが持っていたチェスの駒です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The chess piece Gibson had,<br>hinting at Queen Hospital.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4f0a",
   "jp": "ギブスンが持っていたチェスの駒です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The chess piece Gibson had.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4f2f",
   "jp": "カルテ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Medical chart",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4f36",
   "jp": "スナッチャーの名前が記されたカルテです。",
-  "en": null,
-  "status": "untranslated"
+  "en": "A medical chart bearing the SNATCHERs' names.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4f5f",
   "jp": "クィーン病院の机から発見した物です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Found in a desk at Queen Hospital.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4f84",
   "jp": "マッチ",
-  "en": null,
-  "status": "untranslated"
+  "en": "Matches",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4f8b",
   "jp": "クィーン病院にあった昔ながらの<br>マッチです。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Old-fashioned matches that were<br>at Queen Hospital.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4fb8",
   "jp": "メモ書き",
-  "en": null,
-  "status": "untranslated"
+  "en": "Memo",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4fc1",
   "jp": "ハリーが書いたらしいメモです。",
-  "en": null,
-  "status": "untranslated"
+  "en": "A memo that Harry apparently wrote.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x4fe0",
   "jp": "メカニック・ルームに置いてあった<br>メモです。",
-  "en": null,
-  "status": "untranslated"
+  "en": "A memo left in the<br>mechanic room.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x500d",
   "jp": "映像メモリー",
-  "en": null,
-  "status": "untranslated"
+  "en": "Video memory",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x501a",
   "jp": "リトルジョン",
-  "en": null,
-  "status": "untranslated"
+  "en": "Little John",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x5027",
   "jp": "リトル・ジョンのメモリーに残っていた<br>映像です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The image left in Little John's<br>memory.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x5058",
   "jp": "赤の広場",
-  "en": null,
-  "status": "untranslated"
+  "en": "Red Square",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x5061",
   "jp": "局長室に隠されていたスチール写真です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "A still photo hidden in the Chief's office.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x508d",
   "jp": "クィーン病院の部屋に掛かっていた<br>寺院の絵です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "A painting of a temple that hung in<br>a room at Queen Hospital.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x50be",
   "jp": "ＩＣが組み込まれていて、ギリアンの全てのデータが登録されています。",
-  "en": null,
-  "status": "untranslated"
+  "en": "An IC is built in, and all of Gillian's data is registered on it.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x5101",
   "jp": "捜査上の必要経費は原則的にいくらでも<br>落とせます。",
-  "en": null,
-  "status": "untranslated"
+  "en": "In principle, any necessary expenses for<br>the investigation can be written off.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x5134",
   "jp": "ジャンが孤児院の子供達に配っていた<br>飴玉です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "The candy Jean used to hand out to<br>the children at the orphanage.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x5163",
   "jp": "この駒はクィーン病院の名前を<br>伝えるものだったようですね。",
-  "en": null,
-  "status": "untranslated"
+  "en": "This piece seems to have been meant to<br>convey the name of Queen Hospital.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x519e",
   "jp": "中国の元素記号で描かれた暗号です。<br>解読するとＢＥＮＳＯＮ（ベンソン）<br>となります。",
-  "en": null,
-  "status": "untranslated"
+  "en": "A code written in Chinese element symbols.<br>Decoded, it reads BENSON.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x51f3",
   "jp": "病院のカルテの一部のようですが、<br>なんて書かれているのでしょう？",
-  "en": null,
-  "status": "untranslated"
+  "en": "It seems to be part of a hospital chart,<br>but what does it say?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x5234",
   "jp": "『アウター・ヘブン』のマッチです。<br>きっと常連客に配っている粗品ですね。",
-  "en": null,
-  "status": "untranslated"
+  "en": "Matches from 'Outer Heaven'.<br>Surely a giveaway handed to regulars.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x527d",
   "jp": "『Ｆａｃｅ　ｔｏ　Ｆａｃｅ』。<br>錯視絵の秘密を伝えるメモです。",
-  "en": null,
-  "status": "untranslated"
+  "en": "'Face to Face'.<br>A memo conveying the secret of the optical illusion.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x52bc",
   "jp": "『Ｆａｃｅ　ｔｏ　Ｆａｃｅ』。<br>ハリーの筆跡ですが、どういう<br>意味でしょう？",
-  "en": null,
-  "status": "untranslated"
+  "en": "'Face to Face'.<br>It's Harry's handwriting, but what<br>does it mean?",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x5309",
   "jp": "『ＱＵＥＥＮ』病院のネオン・サインを<br>映した映像です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "An image capturing the neon sign of<br>'QUEEN' Hospital.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x5340",
   "jp": "ホスピタル『ＯＬＥＥＮ』と読めます。<br>病院のネオン・サインでしょう。",
-  "en": null,
-  "status": "untranslated"
+  "en": "It reads Hospital 'OLEEN'.<br>Probably a hospital's neon sign.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x5385",
   "jp": "大惨事以前にモスクワにあった、<br>『赤の広場』のスチール写真です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "A still photo of 'Red Square' in<br>Moscow, from before the Catastrophe.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_047",
   "offset": "0x53c6",
   "jp": "ワシリー寺院です。<br>大惨事以前のモスクワにあった、<br>有名な寺院です。",
-  "en": null,
-  "status": "untranslated"
+  "en": "St. Basil's Cathedral.<br>A famous cathedral that was in Moscow<br>before the Catastrophe.",
+  "status": "translated"
  },
  {
   "chunk": "chunk_048",
