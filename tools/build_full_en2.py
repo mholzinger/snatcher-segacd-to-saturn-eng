@@ -83,12 +83,25 @@ def find_refs(d, code_end, h0, tracer_tokens):
 
 
 def batch_chunk(d, jobs, stats):
-    """Apply [(record_off, en)] to one chunk. Returns new chunk bytes."""
+    """Apply [(record_off, en)] to one chunk. Returns new chunk bytes.
+
+    v3 SAFE MODE: voiced lines (any say-call with mode 4/5 referencing the
+    record) are only replaced IN PLACE (positions unchanged keeps the
+    companion sync-chunk keys valid); appends are limited to unvoiced/menu
+    lines; dead slots are never reused (original records stay intact as the
+    fallback for every untouched reference)."""
     h0, h1, ts, te = reassemble.sections(d)
     recs = dict(reassemble.records(d))
     t = vm_trace.Tracer(d)
     t.trace_entry()
     refmap = find_refs(d, ts, h0, t.text_tokens)
+    voiced_toks = set()
+    for m in re.finditer(rb"\xc0\x01\xa0[\x04\x05]", d[4:ts], re.S):
+        pos = 4 + m.start() + 4
+        if pos + 2 <= ts:
+            v = struct.unpack(">H", d[pos:pos + 2])[0]
+            if v < 0x8000:
+                voiced_toks.add(v)
 
     out = bytearray(d)
     tail = bytes(out[te:])
@@ -114,6 +127,9 @@ def batch_chunk(d, jobs, stats):
         if not refmap.get(tok):
             stats["noref"] += 1
             continue
+        if tok in voiced_toks:
+            stats["voiced_jp"] += 1
+            continue
         if any(t == tok for _, __, ___, t in appends):
             stats["tokclash"] += 1
             continue
@@ -137,28 +153,8 @@ def batch_chunk(d, jobs, stats):
             out += enc + b"\x00"
             for off, jl, tok in contents[enc]:
                 free_slots.append((jl, off))
-    # phase 2: fit leftovers into freed slots, iterating as more slots free up
-    progress = True
-    while progress:
-        progress = False
-        for enc in order:
-            if enc in placed:
-                continue
-            fits = [s for s in free_slots if s[0] >= len(enc)]
-            if not fits:
-                continue
-            slot = min(fits)
-            free_slots.remove(slot)
-            jl, off = slot
-            if jl > len(enc):
-                content = enc + b"\x00" + bytes([FILLER]) * (jl - len(enc) - 1)
-            else:
-                content = enc          # exact fit: old terminator serves
-            out[off:off + jl] = content
-            placed[enc] = off
-            for o, j, tk in contents[enc]:
-                free_slots.append((j, o))
-            progress = True
+    # (v3: no dead-slot reuse — original records must stay intact because the
+    # voiced pipeline and companion sync chunks reference them by position)
     # repoint every reference of every placed line
     repoints = []                    # (pos, oldtok, newtok)
     for enc, group in contents.items():
@@ -256,7 +252,7 @@ def main():
                 (int(e["offset"], 16), e["en"]))
 
     stats = {k: 0 for k in ("inplace", "appended", "noref", "overflow",
-                            "skip_norec", "refgone", "tokclash")}
+                            "skip_norec", "refgone", "tokclash", "voiced_jp")}
     chunks = []
     for i in range(N_CHUNKS):
         p = os.path.join(ROOT, f"extracted/saturn/data_bin/chunk_{i:03d}.bin")

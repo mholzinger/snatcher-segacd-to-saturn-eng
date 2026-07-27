@@ -481,3 +481,32 @@ function pairs. The headline discovery makes the planned growth-fixup machinery 
   token(s) (say-line calls c0 01 [mode][tok] + menu label tokens; vm_trace.py
   locates them by context), append + repoint; repack DATA.BIN sector layout
   when a chunk outgrows its slack (old record slots become free space).
+
+## 2026-07-27 (late) — VOICED-LINE ARCHITECTURE CRACKED: companion sync chunks
+
+Root cause of the full-build hangs (LOOK/ask-JUNKER): voiced dialogue does NOT
+display via the say-call token. Chain of evidence (differential discs + savestate
+forensics): test_C repointed a voiced say token -> JP still displayed, no hang;
+full build (slot-reuse destroyed originals) -> hang at the same line.
+
+- **Chunks 60-98 = per-scene SUBTITLE/SYNC scripts** (scene N chunk maps to
+  companion N+39: ch021-060, ch022-061 ... ch059-098; verified by token-match).
+  Stream of [u16 op][args] pairs; 104-entry handler table at MAIN_L 0x60E4E00
+  (right before the native argc table). Entries like `00 28 [record-token]
+  00 2a [link]` key VOICED lines by their TEXT-SECTION TOKEN (857 ch022 token
+  hits in ch061). Handler arities extracted for 56 ops (sync_handlers.txt);
+  47 complex ops (pointer-followers/terminators) still to model.
+- Voiced flow: native2(text-key, cue) stores a pending pair (0x60F29FE/0x60F2A00);
+  the sync stream matches the key (walker FUN_060b7398) and drives staging,
+  subtitle display, voice, and the dismiss. So: repointing the say token does
+  nothing for voiced lines; DESTROYING the original record (slot reuse) breaks
+  the sync path -> hang. Track-2 MSF rewrite (test A pre-fix hang) was a real,
+  separate bug; the shift is believed clean post-fix.
+- **v3 SAFE BUILD** (current build/full_en2): in-place EN for every line that
+  fits (positions unchanged -> sync keys stay valid, so even voiced fits show
+  EN with voice); appended EN only for lines with exclusively unvoiced (mode-3)
+  say refs and menu tokens; NO slot reuse; structural guard (entry-parse
+  equivalence, unsafe repoints reverted). 7,440 lines EN, 3,190 voiced kept JP.
+- NEXT: model the 47 complex sync ops -> full companion-stream parser with
+  self-check (links land on entry boundaries) -> remap record tokens inside
+  companions + native2/3 imm args -> voiced dialogue EN. Then half-width font.
