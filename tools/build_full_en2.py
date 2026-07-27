@@ -87,7 +87,7 @@ def batch_chunk(d, jobs, stats):
     h0, h1, ts, te = reassemble.sections(d)
     recs = dict(reassemble.records(d))
     t = vm_trace.Tracer(d)
-    t.trace()
+    t.trace_entry()
     refmap = find_refs(d, ts, h0, t.text_tokens)
 
     out = bytearray(d)
@@ -160,6 +160,7 @@ def batch_chunk(d, jobs, stats):
                 free_slots.append((j, o))
             progress = True
     # repoint every reference of every placed line
+    repoints = []                    # (pos, oldtok, newtok)
     for enc, group in contents.items():
         if enc not in placed:
             stats["overflow"] += len(group)
@@ -172,6 +173,7 @@ def batch_chunk(d, jobs, stats):
                 cur = struct.unpack(">H", out[pos:pos + 2])[0]
                 if cur == tok:
                     struct.pack_into(">H", out, pos, newtok)
+                    repoints.append((pos, tok, newtok))
                     ok = True
             if ok:
                 stats["appended"] += 1
@@ -183,6 +185,30 @@ def batch_chunk(d, jobs, stats):
     struct.pack_into(">H", out, 2, new_h1)
     if len(out) & 1:
         out += b"\x00"
+    # structural-equivalence guard: a repoint that changed the PARSE hit bytes
+    # that were not really a text token; revert the culprit and re-check.
+    def structure(data):
+        tt = vm_trace.Tracer(bytes(data))
+        tt.trace_entry()
+        return tt.boundaries
+    ref_struct = {k: set(v) for k, v in t.boundaries.items()}
+    for _round in range(200):
+        cur = structure(out)
+        first = None
+        for ctx in ("stmt", "wait", "disp"):
+            d1 = ref_struct[ctx] ^ cur[ctx]
+            if d1:
+                m = min(d1)
+                first = m if first is None else min(first, m)
+        if first is None:
+            break
+        culprits = [r for r in repoints if r[0] <= first + 2]
+        if not culprits:
+            break
+        pos, oldtok, newtok = max(culprits, key=lambda r: r[0])
+        struct.pack_into(">H", out, pos, oldtok)
+        repoints.remove((pos, oldtok, newtok))
+        stats["reverted"] = stats.get("reverted", 0) + 1
     return bytes(out)
 
 

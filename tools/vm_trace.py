@@ -539,6 +539,15 @@ class Tracer:
                 break
         return i
 
+    def trace_entry(self):
+        """Parse only from the scene entry point (no address-target streams).
+        Slower coverage but no pollution from desynced parses — use this for
+        reference discovery and structural comparison."""
+        try:
+            self.statement_stream(BASE)
+        except ParseError as e:
+            self.errors.append((e.pos, 'entry', str(e)))
+
     def trace(self):
         # entry: like FUN_060c063c at offset 0 (file offset 4)
         try:
