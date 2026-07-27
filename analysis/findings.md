@@ -386,3 +386,61 @@ through dispatch, record varints read by jump/block primitives). Bounded but a r
 STATUS: translation 100% + QA'd + public; speaker names EN; grown text renders; reassembler
 mechanism understood; remaining = VM tracer (dedicated multi-session build) OR half-width
 single-byte encoding path (needs engine single-byte-text support confirmation + font).
+
+## 2026-07-27 — VM TRACER BUILT; "SPANNING VARINTS" DIAGNOSIS OVERTURNED — TEXT GROWTH IS TRIVIAL
+
+Built the scene-VM tracer (tools/vm_trace.py) from a full RE of the interpreter's exec/skip
+function pairs. The headline discovery makes the planned growth-fixup machinery unnecessary:
+
+### CHUNK LAYOUT (verified arithmetically on ALL 39 scene chunks 21-59)
+  [u16 h0][u16 h1][bytecode from offset 4][TEXT SECTION][3-4 byte trailer]
+  - Text section = [h0+5, h0+5+h1). h1 = section byte length (h1==1 for textless scenes).
+  - Section = 0x00-separated records of 2-byte tokens (0x10100-SJIS), consumed
+    SEQUENTIALLY by the engine — no stored text offsets exist in bytecode (verified:
+    record-start offsets do not correlate with any operand encoding).
+  - Trailer = 00 + u16 globally-ascending counter (+pad). Chunks 60+ = non-scene data.
+  - ALL text lives AFTER all bytecode => growing text moves ZERO code. The old
+    "relative varints break when spanning growth" model is DEAD: nothing spans.
+    The earlier in-emulator garble was (in hindsight) caused by not updating h1 —
+    the engine reads h1 at scene load; text-cursor sync breaks => wrong records shown.
+
+### VM GRAMMAR (for the tracer; exec/skip pairs cross-validated in MAIN_L.BIN)
+  - THREE bytecode contexts + expressions, one shared stream (IP 0x060FC8B0, base 0x060FB460):
+    STATEMENT exec FUN_060c2858/skip 2ac4/operands 2b28; WAIT-item exec 3dd0/skip 3fec;
+    DISPLAY-item exec 3358 (text blocks via 32dc); EXPRESSION exec 0c78/skip 1350.
+  - Statement: 0x0A=end; 0x09=varint wait-block; flag 0x20=varint wait-block (3bec);
+    flag 0x10=trailing varint choice-block; nibble 0-3=CALL (07c0 addr operand),
+    8=menu (varint display-block), c/d/e/f=varint blocks (if/switch/threshold lists).
+  - Native calls: 0xC0-class, 12-bit id -> 20-entry table at 0x060E4FA8 {fn,ret,argc};
+    args are argc in-stream expressions; natives NEVER read the stream themselves
+    (all 20 decompiled via headless Ghidra — pure side-effect fns, e.g. native 1 =
+    voice/wait: the c0 01 a0 05 XXXX before each line = play voice cue XXXX).
+  - Address operands (FUN_060c07c0): 2-byte form = signed16, target = operand_pos + i16;
+    3-byte form [bank][u16]: bank 0xFF = relative, else external/tagged (bank<<15|off).
+  - Expression lengths as vm_disasm.py PLUS corrections: E8-EF carry 2/3-byte ADDRESS
+    operands (3/4/3/4/3/4/4/5 bytes total), F0=4 bytes, F7/FE/FF = varint expr blocks.
+    0x00 is 2 bytes in expression context (the 1-byte-0x00 rule is text-section only).
+  - Varint everywhere: b<=0xBF ? b : (b-0xC0)*256+next (thresholds verified uniform).
+  - Wait-item classes: 0x00-0x5F=(n&0x1f+1)x3-byte flag refs; 0x60-0x7F=cond chain
+    (n+1 x [expr][varint blk] + else-blk); 0x80-0x9F=switch; 0xA0=3-byte sel + (n+2)
+    pairs; 0xB0=(n+2) pairs; 0xC0=native; 0xD0=(n+1)x3 + expr; 0xE0-E7=call/goto addr;
+    E9/EB=varint blk; ED=+2; EE=count refs+expr; FB-FF=varint constructs.
+  - Menus (stmt nibble 8): display items = [2-byte label-table token][attached
+    statement] pairs; nested submenus are common.
+  - tools/vm_trace.py: recursive parse, 39/39 chunks, 80.7% of intra-chunk address
+    targets land on parsed boundaries, remaining gaps opaque-skipped exactly like the
+    engine's own skip path (varint). Open warts (don't block anything): statement
+    opcode 0x9f-style constructs, 3-byte bank semantics.
+
+### REASSEMBLER (tools/reassemble.py) — COMPLETE
+  Growth = new record bytes + h1 += delta + chunk size (+ DATA.BIN index size_words).
+  No bytecode fixups. Round-trip invariant verified 39/39 chunks byte-identical.
+
+### BOOT TEST BUILD (tools/build_reasm_test.py -> build/reasm_test)
+  chunk_022 greeting record @0x2a34 grown 44 -> 62 bytes (delta +18, slack 1482):
+  "WELCOME TO JUNKER<br>HEADQUARTERS." h1 0x781b->0x782d, size_words 0x511b->0x5124
+  (index @MAIN_L 0x362F4+22*4, MAIN_L LBA 5451, DATA.BIN LBA 96, chunk sector 58).
+  Patched-disc bytes verified by direct sector readback (header, record, next record
+  intact, trailer preserved). PASS = full greeting shows AND scene flows (menu, later
+  dialogue) with no garble => full-length English everywhere needs only per-line
+  record replacement + slack management (repack sectors when a chunk outgrows its gap).
