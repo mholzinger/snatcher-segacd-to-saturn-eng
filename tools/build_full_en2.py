@@ -334,10 +334,28 @@ def main():
     f.close()
     print(f"fs: {patched} extents shifted by {delta:+d}, volume {vol} sectors")
 
-    for n in (2, 3):
-        p = os.path.join(out_dir, f"Snatcher (Japan) (Track {n}).bin")
-        if not os.path.exists(p):
-            os.link(os.path.join(SRC, f"Snatcher (Japan) (Track {n}).bin"), p)
+    # track 2 physically shifts by delta: rewrite each sector's header MSF
+    # (Mode-2 EDC/ECC exclude the header, so no regeneration needed)
+    print("rebuilding track 2 headers...")
+    t2_src = open(os.path.join(SRC, "Snatcher (Japan) (Track 2).bin"), "rb")
+    t2_dst = open(os.path.join(out_dir, "Snatcher (Japan) (Track 2).bin"), "wb")
+    t1_new_secs = t1_secs + delta
+    lba = t1_new_secs                      # track 2 starts right after track 1
+    bcd = lambda v: ((v // 10) << 4) | (v % 10)
+    while True:
+        raw = t2_src.read(SECTOR)
+        if len(raw) < SECTOR:
+            break
+        m = lba + 150
+        mm, rem = divmod(m, 75 * 60)
+        ss, ff = divmod(rem, 75)
+        t2_dst.write(raw[:12] + bytes([bcd(mm), bcd(ss), bcd(ff)]) + raw[15:])
+        lba += 1
+    t2_src.close()
+    t2_dst.close()
+    p = os.path.join(out_dir, "Snatcher (Japan) (Track 3).bin")
+    if not os.path.exists(p):
+        os.link(os.path.join(SRC, "Snatcher (Japan) (Track 3).bin"), p)
     import shutil
     shutil.copyfile(os.path.join(SRC, "Snatcher (Japan).cue"),
                     os.path.join(out_dir, "Snatcher (Japan).cue"))
