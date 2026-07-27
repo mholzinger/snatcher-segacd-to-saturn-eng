@@ -468,7 +468,16 @@ function pairs. The headline discovery makes the planned growth-fixup machinery 
   BOOT TEST v2 (build/reasm_test): greeting appended (+63 bytes incl. separator,
   h1 0x781b->0x785a), say-line token @0x112 repointed 0x000f->0x3c0e, all other
   section bytes byte-identical to original (verified by sector readback).
-  PASS = full greeting + clean downstream scene. Scaling plan: per translated
-  line, find its reference token(s) (say-line calls + menu label tokens; the
-  tracer locates them by context), append + repoint; repack DATA.BIN sectors
-  when a chunk outgrows its slack.
+
+### BOOT TEST v2 = **PASSED IN-EMULATOR (user, 2026-07-27)**
+  Full "WELCOME TO JUNKER / HEADQUARTERS." rendered untruncated AND the scene is
+  completely clean afterward (中に入る/見る/調べる/話す menu perfect, dialogue
+  normal). THE TEXT-GROWTH PIPELINE IS PROVEN: append record + repoint reference
+  token + h1 + DATA.BIN index = complete, safe fixup set.
+  Remaining cosmetic issue: wide spacing between English glyphs = the known
+  full-width 16px-cell/14px-pitch rendering — that is the separate half-width
+  font project (edit sites mapped in session 11), not a reassembler issue.
+  Scaling plan for the full corpus: per translated line, find its reference
+  token(s) (say-line calls c0 01 [mode][tok] + menu label tokens; vm_trace.py
+  locates them by context), append + repoint; repack DATA.BIN sector layout
+  when a chunk outgrows its slack (old record slots become free space).
