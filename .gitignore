@@ -22,3 +22,5 @@ build/
 assets/*.bin
 analysis/ghidra_out/
 ghidra/
+tools/__pycache__/
+__pycache__/
