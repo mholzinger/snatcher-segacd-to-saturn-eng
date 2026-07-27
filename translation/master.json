@@ -18616,7 +18616,7 @@
   "chunk": "chunk_027",
   "offset": "0x458c",
   "jp": "サミット参加国の中にはシティごと壊滅<br>させようなんて提案している国もあるら<br>しいわね。",
-  "en": "Word is some of the summit nations are even<br>proposing to wipe out the whole city.",
+  "en": "Word is some of the summit nations are even<br>proposing to wipe out the whole city<br>entirely.",
   "status": "translated"
  },
  {
@@ -18658,7 +18658,7 @@
   "chunk": "chunk_027",
   "offset": "0x4678",
   "jp": "・・・気にならないって言ったら、<br>嘘になる。",
-  "en": "...It'd be a lie to say it doesn't bother me.",
+  "en": "...It'd be a lie to say<br>it doesn't bother me.",
   "status": "translated"
  },
  {
@@ -19267,7 +19267,7 @@
   "chunk": "chunk_027",
   "offset": "0x5087",
   "jp": "ジェミー、『バイオ・ズー』へ行って<br>みないか？<br>ユニコーンの赤ちゃんが産まれたそうだよ。",
-  "en": "Jamie, want to go to the 'Bio Zoo'?<br>They say a baby unicorn was born.",
+  "en": "Jamie, want to go to<br>the 'Bio Zoo'?<br>They say a baby unicorn was born.",
   "status": "translated"
  },
  {
@@ -19400,7 +19400,7 @@
   "chunk": "chunk_027",
   "offset": "0x540b",
   "jp": "『マインド・ウエーブ』よりもずっと<br>大きいんだ。<br>最近はカップルも多いんだよ。",
-  "en": "It's much bigger than 'Mind Wave.'<br>Lots of couples go there these days.",
+  "en": "It's much bigger<br>than 'Mind Wave.'<br>Lots of couples go there these days.",
   "status": "translated"
  },
  {
@@ -19414,7 +19414,7 @@
   "chunk": "chunk_027",
   "offset": "0x5493",
   "jp": "あそこのニッシーっていう店員と<br>知り合いなんだ。",
-  "en": "I know one of the staff there, a guy named Nisshi.",
+  "en": "I know one of the staff there,<br>a guy named Nisshi.",
   "status": "translated"
  },
  {
@@ -37831,7 +37831,7 @@
   "chunk": "chunk_035",
   "offset": "0x1fb8",
   "jp": "調べてもムダです。<br>許可証も無ければ、データ登録もしていない連中ばかりです。",
-  "en": "No use investigating them.<br>They've got no permits and no data registration—not a one of them.",
+  "en": "No use investigating them.<br>They've got no permits and no data registration--not a one of them.",
   "status": "translated"
  },
  {
@@ -38391,7 +38391,7 @@
   "chunk": "chunk_035",
   "offset": "0x2c28",
   "jp": "顔を隠してるところを見ると素性が<br>ばれるのを嫌ってるんでしょう。",
-  "en": "Hiding their faces like that—they must<br>not want their identities exposed.",
+  "en": "Hiding their faces like that--they must<br>not want their identities exposed.",
   "status": "translated"
  },
  {
@@ -38447,7 +38447,7 @@
   "chunk": "chunk_035",
   "offset": "0x2ddd",
   "jp": "電子機器や電子部品、ジャンク部品が<br>山ほどあります。",
-  "en": "Electronics, components, junk parts—<br>piled up in mountains.",
+  "en": "Electronics, components, junk parts--<br>piled up in mountains.",
   "status": "translated"
  },
  {
@@ -38671,7 +38671,7 @@
   "chunk": "chunk_035",
   "offset": "0x347a",
   "jp": "視覚だけでＳＥＸを疑似体験する、旧世代のまだおとなしかった頃のメディアです。",
-  "en": "Old-generation media for simulating sex through sight alone—from back when it was still tame.",
+  "en": "Old-generation media for simulating sex through sight alone--from back when it was still tame.",
   "status": "translated"
  },
  {
@@ -38881,7 +38881,7 @@
   "chunk": "chunk_035",
   "offset": "0x3b17",
   "jp": "完成品だから組立も塗装も必要ない。<br>原型師自ら塗装、フィニッシュした豪華<br>アイテムさ。これ、限定生産なんだぜ。",
-  "en": "It's finished, so no assembly or painting needed.<br>The sculptor painted and finished it himself—<br>a deluxe item. Limited production, this one.",
+  "en": "It's finished, so no assembly or painting needed.<br>The sculptor painted and finished it himself--<br>a deluxe item. Limited production, this one.",
   "status": "translated"
  },
  {
@@ -38895,7 +38895,7 @@
   "chunk": "chunk_035",
   "offset": "0x3bbd",
   "jp": "ギミックの入ったアニマトロニクスや<br>ダミー・ヘッドは鑑賞用で面白くない<br>からね。",
-  "en": "Gimmicky animatronics and<br>dummy heads are just for display—<br>no fun, you know.",
+  "en": "Gimmicky animatronics and<br>dummy heads are just for display--<br>no fun, you know.",
   "status": "translated"
  },
  {
@@ -39007,7 +39007,7 @@
   "chunk": "chunk_035",
   "offset": "0x3e18",
   "jp": "今時、そんなもん・・・買う奴もいなけりゃ売る奴もいねぇんだよ。",
-  "en": "These days, nobody buys that sort of thing—and nobody sells it either.",
+  "en": "These days, nobody buys that sort of thing--and nobody sells it either.",
   "status": "translated"
  },
  {
@@ -39049,7 +39049,7 @@
   "chunk": "chunk_035",
   "offset": "0x3f0c",
   "jp": "まいど、『こいつ』のマスクね。<br>青の全身タイツとセットでどうだい？",
-  "en": "Thanks—the 'This Guy' mask, eh.<br>How about it as a set with the blue full-body tights?",
+  "en": "Thanks--the 'This Guy' mask, eh.<br>How about it as a set with the blue full-body tights?",
   "status": "translated"
  },
  {
@@ -39077,7 +39077,7 @@
   "chunk": "chunk_035",
   "offset": "0x3f9e",
   "jp": "まいど、モアイのマスクね。",
-  "en": "Thanks—the Moai mask, eh.",
+  "en": "Thanks--the Moai mask, eh.",
   "status": "translated"
  },
  {
@@ -39574,7 +39574,7 @@
   "chunk": "chunk_035",
   "offset": "0x4ab7",
   "jp": "『家を捜せ！』とは、<br>どういう意味なんでしょう？",
-  "en": "'Search the house!'—<br>what could that mean?",
+  "en": "'Search the house!'--<br>what could that mean?",
   "status": "translated"
  },
  {
