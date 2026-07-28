@@ -22,8 +22,15 @@ LD = os.path.join(MARS, "sh-elf-ld")
 OBJCOPY = os.path.join(MARS, "sh-elf-objcopy")
 
 
+NM = os.path.join(MARS, "sh-elf-nm")
+
+
 def assemble(src, load_addr=0):
-    """Assemble big-endian SH-2 `src` linked at `load_addr`; return raw bytes."""
+    """Assemble big-endian SH-2 `src` linked at `load_addr`; return raw bytes.
+
+    ASSERTS `_start` lands exactly at `load_addr` — otherwise PC-relative literal
+    refs would be off (use plain `.text`, not `.section .text`; `.align 2` for a
+    4-byte literal pool — SH GAS `.align N` is 2^N)."""
     with tempfile.TemporaryDirectory() as td:
         s = os.path.join(td, "a.s")
         o = os.path.join(td, "a.o")
@@ -35,6 +42,13 @@ def assemble(src, load_addr=0):
         subprocess.run([LD, f"-Ttext={load_addr:#x}", "-e", "_start",
                         "-o", elf, o], check=True,
                        stderr=subprocess.DEVNULL)
+        nm = subprocess.run([NM, elf], capture_output=True, text=True).stdout
+        start = next(l.split()[0] for l in nm.splitlines()
+                     if l.split()[-1] == "_start")
+        if int(start, 16) != load_addr:
+            raise AssertionError(
+                f"_start at 0x{start} != load 0x{load_addr:x} "
+                "(use `.text` not `.section .text`); PC-rel refs would break")
         subprocess.run([OBJCOPY, "-O", "binary",
                         "--only-section=.text", elf, binf], check=True)
         return open(binf, "rb").read()
