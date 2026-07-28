@@ -62,6 +62,51 @@ def compile_decoder(load_addr):
         return open(binf, "rb").read()
 
 
+def encode_1byte(en, slot):
+    """Encode English into the 1-byte scheme for the ASCII-aware decoder:
+    ASCII runs -> 0x01 <raw ascii> 0x02 ; <br> and full-width chars (＠color,
+    kanji) -> per-byte-negated SJIS tokens (the original decode form). Result is
+    truncated at a safe boundary to fit `slot` bytes, then 0x00-padded (decoder
+    stops at the first 0x00)."""
+    out = bytearray()
+    run = bytearray()
+
+    def flush():
+        if run:
+            out.append(0x01); out.extend(run); out.append(0x02)
+            run.clear()
+
+    i = 0
+    while i < len(en):
+        if en[i:i+4] == "<br>":
+            flush()
+            out += bytes(((0x100 - 0x81) & 0xFF, (0x100 - 0x8F) & 0xFF))  # ¥ line break
+            i += 4
+            continue
+        c = en[i]; o = ord(c)
+        if 0x20 <= o <= 0x7E:
+            run.append(o)
+        else:
+            flush()
+            try:
+                for b in c.encode("shift_jis"):
+                    out.append((0x100 - b) & 0xFF)
+            except UnicodeEncodeError:
+                pass
+        i += 1
+    flush()
+    # fit to slot: drop trailing whole segments until it fits (segments end at 0x02
+    # or after a 2-byte token; simplest safe cut = at an 0x01/token boundary).
+    if len(out) > slot:
+        out = out[:slot]
+        # ensure we didn't cut inside an ascii run without closing it: if the last
+        # 0x01 has no 0x02 after it within the kept bytes, that's still valid (decoder
+        # reads ascii until the 0x00 pad). Trim a dangling lone 0x01 at the very end.
+        while out and out[-1] == 0x01:
+            out = out[:-1]
+    return bytes(out) + b"\x00" * (slot - len(out))
+
+
 def scene_writes(main_bin):
     master = json.load(open(os.path.join(ROOT, "translation/master.json"), encoding="utf-8"))
     by_chunk = {}
@@ -81,11 +126,7 @@ def scene_writes(main_bin):
             if off not in recs:
                 continue
             jl = recs[off] - off
-            enc = reassemble.encode_text(B.wrap(en))[:jl]
-            pad = (jl - len(enc)) // 2
-            filled = enc + reassemble.encode_text("　" * pad)
-            filled += b"\x00" * (jl - len(filled))
-            out[off:off + jl] = filled
+            out[off:off + jl] = encode_1byte(B.wrap(en), jl)
         writes.append((sec, bytes(out)))
     return writes
 

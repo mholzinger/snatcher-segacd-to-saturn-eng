@@ -18,6 +18,9 @@ static const u16 ascii_sjis[95] = {
 char *decode(char *p)
 {
     if (!p) return orig_decode(p);            /* NULL path -> original */
+    /* Encoding: 0x01 enters ASCII mode; bytes 0x20..0x7E are ASCII chars ->
+     * full-width SJIS (2 bytes); 0x02 exits ASCII mode (no output). Outside
+     * ASCII mode every byte is byte-negated (the original token->SJIS decode). */
     /* pass 1: output length */
     int len = 0, ascii = 0;
     char *q = p; u8 b;
@@ -25,9 +28,11 @@ char *decode(char *p)
         if (!ascii) {
             if (b == 0x01) { ascii = 1; continue; }
             len += 1;
-        } else if (b >= 0x20 && b <= 0x7E) {
-            len += 2;
-        } else { ascii = 0; len += 1; }
+        } else {
+            if (b == 0x02) { ascii = 0; continue; }
+            if (b >= 0x20 && b <= 0x7E) len += 2;
+            else { ascii = 0; len += 1; }     /* safety: unexpected -> exit+negate */
+        }
     }
     char *out = game_malloc(len + 1);
     char *o = out; ascii = 0; q = p;
@@ -35,11 +40,14 @@ char *decode(char *p)
         if (!ascii) {
             if (b == 0x01) { ascii = 1; continue; }
             *o++ = (char)(-(int)b);
-        } else if (b >= 0x20 && b <= 0x7E) {
-            u16 s = ascii_sjis[b - 0x20];
-            *o++ = (char)(s >> 8);
-            *o++ = (char)(s & 0xFF);
-        } else { ascii = 0; *o++ = (char)(-(int)b); }
+        } else {
+            if (b == 0x02) { ascii = 0; continue; }
+            if (b >= 0x20 && b <= 0x7E) {
+                u16 s = ascii_sjis[b - 0x20];
+                *o++ = (char)(s >> 8);
+                *o++ = (char)(s & 0xFF);
+            } else { ascii = 0; *o++ = (char)(-(int)b); }
+        }
     }
     *o = 0;
     return out;
