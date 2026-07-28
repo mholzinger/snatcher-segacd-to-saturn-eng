@@ -200,3 +200,30 @@ Now unblocked. Text reader FUN_060c08b0 is called via PTR_FUN_060c0de8 /
 PTR_FUN_060c34cc / PTR_FUN_060c4b3c. Build the replacement reader (ASCII 1-byte
 mode via 0x01 sentinel) at 0x060FF090, repoint those pointers, re-encode English.
 Discipline: hook ONE display path, boot-test on one line, before the full corpus.
+
+
+## 2026-07-28 — TEXT PIPELINE MAP (corrected; avoid the wrong hooks)
+Traced the display path to find the RIGHT 1-byte-encoding hook. Corrections:
+- **FUN_060c08b0 is NOT the char decoder** — it RESOLVES a display-item <0x80 token
+  (a RECORD REFERENCE) to a text-section byte offset (index=token*2, odd-start
+  adjust via text base at 0x060FD164). Hooking it for 1-byte encoding = WRONG,
+  would break all text. (Called via PTR_FUN_060c0de8/34cc/4b3c.)
+- **emit FUN_060c31a0** takes that resolved offset, computes record_addr =
+  text_base(*0x060FD164) + index, and QUEUES the record (into a list indexed by a
+  counter *0x060FD0C0) for rendering. Its callees FUN_060dbc80 / FUN_060dbef8 are
+  generic **strcpy / strlen** (byte copy/len of the record) — staging, not decode.
+- So the pipeline is: display token (record ref) -> reader RESOLVE -> emit QUEUE
+  -> [stage record bytes] -> renderer reads staged record -> glyphs. The
+  0x10100-SJIS -> SJIS decode + glyph mapping is DOWNSTREAM (renderer/decode), not
+  in the reader/emit.
+
+### => 1-byte hook target is the RECORD-CONTENT decoder (still to pinpoint)
+Needs a live dialogue savestate to trace which routine reads a queued record's
+2-byte tokens and produces the line-buffer SJIS (line buf 0x060F28AA, 4B cells
+[SJIS hi][SJIS lo][color][00]). Hook THAT to read 1-byte ASCII (0x01 sentinel ->
+ascii run) instead of 2-byte tokens. The injection foundation (0x060FF090 + hook)
+is ready to host it. DO NOT hook FUN_060c08b0.
+
+STATE: injection foundation PROVEN. 1-byte encoding = next dedicated RE session
+(trace the record decoder with a savestate), then the reader hook + re-encode.
+Shipping build remains build/stable_en (v0.01 patch published).
