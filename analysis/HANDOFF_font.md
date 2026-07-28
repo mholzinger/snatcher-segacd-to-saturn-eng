@@ -80,3 +80,28 @@ scene chunks are UNAFFECTED. Disc shift itself is safe (test_H/N proved).
    makes a VISIBLE change (prove injected code executes in-emulator). Needs one
    boot test.
 3. Then: 8px glyph draw (adapt sh2_draw4b.s), then the 1-byte reader mode.
+
+
+## RENDERER INTERNALS (disassembled this session, ground truth from binary)
+FUN_060b4970 (file 0x4970) builds the per-glyph layout table:
+- **PITCH constant = `mov #14,r1` at file 0x4A26 (bytes e1 0e), then mul.l r1,r2
+  at 0x4A2C** -> X advance = 14 * (charAttr>>2). Change byte at file 0x4A27
+  from 0e to 08 for 8px pitch (trivial in-place patch; alone it garbles because
+  glyphs are still 16px — needs 8px art too). This IS the pitch edit site.
+- Glyph source (0x4A08-0x4A18): addr = charSlot*0x80 + subcell*0x20 + 0x15000,
+  then >>3 (8-byte units) into the sprite "source" field. => glyphs at VRAM
+  0x25C15000 + slot*0x80 (128B = 16x16 4bpp). subcell = (attr&3), 32B each.
+- charAttr = width-table[char] at DAT_060b4a70 = 0x060D6A70 (u16 per char).
+- Y coord base DAT_060b4a58; X base DAT_060b4a58 region.
+
+NOTE: this table feeds a VDP1 command builder elsewhere. Confirm vs the DIALOGUE
+box specifically with a clean savestate (there may be a second renderer for the
+menu/scroller). The 8px art must land in the 0x25C15000 glyph cache (uploaded by
+FUN_060b4530 from MAIN_L 0x060E5BE6, len 0x440) or the main font 0x25C08000.
+
+## SESSION STOP POINT
+Foundation done: toolchain + sh2_asm.py + safe residency 0x060F006C + pitch edit
+site located. TO RESUME: (1) clean dialogue savestate for VDP1 ground truth;
+(2) build sh2_inject.py (grow-MAIN_L residency + hook); (3) inject 8px glyphs to
+the 0x25C15000 cache + set pitch/size; (4) 1-byte reader mode + re-encode.
+Canonical playable build meanwhile: build/stable_en (full English, truncated).
