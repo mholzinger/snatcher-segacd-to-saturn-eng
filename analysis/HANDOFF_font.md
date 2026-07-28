@@ -227,3 +227,23 @@ is ready to host it. DO NOT hook FUN_060c08b0.
 STATE: injection foundation PROVEN. 1-byte encoding = next dedicated RE session
 (trace the record decoder with a savestate), then the reader hook + re-encode.
 Shipping build remains build/stable_en (v0.01 patch published).
+
+
+## 2026-07-28 — TRUNCATION FIXED IN-EMULATOR (1-byte encoding + injected decoder)
+CONFIRMED on screen: the JunkerHQ greeting shows BOTH full lines
+"Welcome to JUNKER HQ." AND "May I help you?" — the second line was truncated in
+EVERY prior build. Untruncated English achieved via engine injection, zero
+disc-content corruption (no repoints/reference surgery — the thing that broke the
+append path). Pipeline:
+  * asm/decoder_hook.c: ASCII-aware replacement for the record decoder FUN_060c4d24,
+    compiled with sh-elf-gcc, injected at 0x060FF090; all 7 decoder pointers
+    repointed. 0x01 = enter ASCII (bytes 0x20-0x7E -> full-width SJIS), 0x02 =
+    exit; outside ASCII = original byte-negate. Superset of the original ->
+    transparent for un-encoded text (validated first).
+  * tools/build_decoder_hook.py encode_1byte(): ASCII runs -> 0x01<ascii>0x02;
+    <br>/＠color/kanji -> negated SJIS tokens. ~2x text per original slot.
+  * Disc = stable_en text (now 1-byte encoded) + injected decoder (MAIN_L grow
+    above BSS 0x060FF090 + shift + track-2 MSF). No repoints of scene refs.
+build/decoder_hook is the untruncated build. REMAINING: wide full-width spacing
+(the 8px half-width glyph polish — separate, needs the VRAM slot mapping). The
+CORE truncation complaint is resolved. This is the basis for v0.02.
