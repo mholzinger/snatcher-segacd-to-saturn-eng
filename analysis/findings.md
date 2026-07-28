@@ -566,3 +566,22 @@ REMAINING QUALITY WORK (not stability):
   2. Safe English speaker names (redo without the 0x060E71F0 relocation).
   3. Untruncated long lines need either the half-width encoding or a disc-growth
      method that survives repeat voice streaming (track-2 XA safe).
+
+## 2026-07-27 — FULL-COVERAGE STABLE ENGLISH BUILD (canonical: build/stable_en)
+
+Corrected the last mistake: the "voiced-line skip" was WRONG. A say-call with
+mode 4/5 does NOT mean the line has no on-screen text — the voice fires once
+(first Mika talk) but the TEXT is always displayed. Skipping mode-4/5 records
+left entire conversations Japanese. tools/build_stable_en.py now translates
+ALL 12,641 lines in place. Verified in-emulator: full English coverage
+(menus + all dialogue), no crashes/stalls, voice unaffected (plays JP).
+
+Final stable recipe (all confirmed by boot tests):
+  * NO disc shift (track 1 verbatim base + in-place scene-sector overwrites;
+    tracks 2/3 untouched) -> repeat-safe, voice byte-identical to original.
+  * NO speaker-name patch (that was the sole hang cause).
+  * In-place English into every record's original byte slot; no voiced skip;
+    long lines TRUNCATE at the slot (12,269 truncated).
+
+ONLY remaining quality item = truncation -> half-width 8px font (doubles chars
+per slot, zero disc growth). Everything else (stability, coverage, voice) done.

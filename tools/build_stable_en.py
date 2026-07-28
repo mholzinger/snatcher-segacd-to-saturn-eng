@@ -13,11 +13,13 @@ Hard-won rules from ~15 in-emulator boot tests:
     speaker patch; with it hangs, without it works). Speaker names stay JP.
   * Text is written IN PLACE into each record's original byte slot (chunk size
     unchanged -> no index/layout change). English longer than the slot is
-    TRUNCATED (the half-width font is the real fix for that). Voiced records
-    (say-call mode 4/5) are left untouched.
+    TRUNCATED (the half-width font is the real fix for that).
+  * Translate EVERY line. The old "voiced-line" skip was a mistake: say-call
+    mode 4/5 does NOT mean the line lacks displayed text (the voice fires once;
+    the text is always shown), so skipping left whole conversations Japanese.
 
-Result: fully playable English build. Voiced dialogue = JP voice + JP text;
-everything else = English (truncated where the original slot is too small).
+Result: FULL English coverage, in-emulator hang-free (all 12,641 lines).
+Only limitation: long lines truncate at the original byte slot (font work).
 
 Usage: build_stable_en.py [out_dir]   (default build/stable_en)
 """
@@ -40,23 +42,14 @@ SRC = os.path.join(ROOT, "iso/Snatcher (Japan) [Saturn]")
 
 
 def inplace_fit(d, jobs, stats):
+    # Translate EVERY line in place (no voiced skip — "voiced" say-modes still
+    # carry displayed text; skipping them left dialogue Japanese). Verified
+    # hang-free in-emulator: full English coverage, no crashes/stalls.
     h0, h1, ts, te = reassemble.sections(d)
     recs = dict(reassemble.records(d))
-    voiced = set()
-    for m in re.finditer(rb"\xc0\x01\xa0.", d[4:ts], re.S):
-        pos = 4 + m.start() + 4
-        mode = d[4 + m.start() + 3]
-        if pos + 2 <= ts:
-            v = struct.unpack(">H", d[pos:pos + 2])[0]
-            if v < 0x8000 and mode in (4, 5):
-                voiced.add(v)
     out = bytearray(d)
     for off, en in jobs:
         if off not in recs:
-            continue
-        tok = B.token_for(off - (h0 + 4))
-        if tok in voiced:
-            stats["voiced_skip"] += 1
             continue
         jl = recs[off] - off
         enc = reassemble.encode_text(B.wrap(en))
@@ -83,7 +76,7 @@ def main():
                 (int(e["offset"], 16), e["en"]))
     main_bin = open(os.path.join(ROOT, "extracted/saturn/files/MAIN_L.BIN"), "rb").read()
 
-    stats = {k: 0 for k in ("inplace", "truncated", "voiced_skip")}
+    stats = {k: 0 for k in ("inplace", "truncated")}
     writes = []
     for i in sorted(by_chunk):
         if not (21 <= i <= 59):
