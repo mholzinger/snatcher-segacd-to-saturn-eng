@@ -585,3 +585,27 @@ Final stable recipe (all confirmed by boot tests):
 
 ONLY remaining quality item = truncation -> half-width 8px font (doubles chars
 per slot, zero disc growth). Everything else (stability, coverage, voice) done.
+
+## 2026-07-27 — APPEND PATH ABANDONED (unsafe); in-place stable build is canonical
+
+The append+repoint untruncation path is CONFIRMED UNSAFE and abandoned. Two
+distinct in-emulator failures: (1) LOOK-receptionist hang; (2) untrunc_full —
+"asking a question" rendered garbled text INTO Mika's portrait window (a
+repointed reference drove a graphic/sprite, not text). Repointing tracer-derived
+tokens reliably hits non-text references (image/animation/menu draws); the
+structural guard only validates parse SHAPE, not what a token draws, so it can't
+prevent this. build/untrunc_full and the append builders are experimental/unsafe.
+
+CANONICAL SHIPPING BUILD = build/stable_en (tools/build_stable_en.py): in-place
+English into every record's original slot, NO repoints, NO speaker patch, NO disc
+shift. Full coverage, hang-free, graphics-safe. Sole limitation: long lines
+truncate at the original byte budget.
+
+=> UNTRUNCATION HAS ONE SAFE PATH: the half-width font (byte savings let English
+fit the original slots with no append/repoint/disc-growth). Font work is next.
+Font pipeline recon: streams from CD via FUN_060b2f8c DMA channels to VRAM
+0x25C08000 (408 glyphs, 16x16 4bpp); NOT stored verbatim on disc (transformed at
+load — glyph search found nothing); renderer FUN_060b4970 builds VDP1 sprites,
+14px pitch, size 0x020E (16x14). Approach: SH-2 hook to overwrite Latin glyph
+slots in VRAM post-upload + author true 8px art + size/pitch edits. Needs a clean
+dialogue savestate for ground-truth render params.
