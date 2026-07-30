@@ -40,13 +40,14 @@ RESIDENCY_FILE = RESIDENCY - BASE
 RESIDENCY_MAX = 0x06100000 - RESIDENCY   # 3952 bytes to end of HWRAM
 
 
-def build_main_l(payload, hooks=()):
-    """Return MAIN_L.BIN GROWN so `payload` loads at RESIDENCY (above BSS), with
-    `hooks` (file_offset, bytes) applied. The gap between the stock file end and
-    RESIDENCY is zero-padded. Caller handles the resulting disc-layout shift."""
+def grow_main_l(base, payload, hooks=()):
+    """Grow an ALREADY-PATCHED MAIN_L (`base`, stock-sized bytes) so `payload`
+    loads at RESIDENCY, applying `hooks` (file_offset, bytes). Use this when the
+    caller has its own patched MAIN_L (index/speaker edits); build_main_l() reads
+    the stock file instead."""
     if len(payload) > RESIDENCY_MAX:
         raise ValueError(f"payload {len(payload)} > free window {RESIDENCY_MAX}")
-    m = bytearray(open(os.path.join(ROOT, "extracted/saturn/files/MAIN_L.BIN"), "rb").read())
+    m = bytearray(base)
     assert len(m) == MAIN_L_END, f"unexpected MAIN_L size {len(m):#x}"
     m += b"\x00" * (RESIDENCY_FILE - len(m))       # zero-pad gap (BSS-cleared range)
     assert len(m) == RESIDENCY_FILE
@@ -56,6 +57,14 @@ def build_main_l(payload, hooks=()):
     for off, patch in hooks:
         m[off:off + len(patch)] = patch
     return bytes(m)
+
+
+def build_main_l(payload, hooks=()):
+    """Return MAIN_L.BIN GROWN so `payload` loads at RESIDENCY (above BSS), with
+    `hooks` (file_offset, bytes) applied. The gap between the stock file end and
+    RESIDENCY is zero-padded. Caller handles the resulting disc-layout shift."""
+    return grow_main_l(open(os.path.join(ROOT, "extracted/saturn/files/MAIN_L.BIN"), "rb").read(),
+                       payload, hooks)
 
 
 def sample_call_hook(target_addr):

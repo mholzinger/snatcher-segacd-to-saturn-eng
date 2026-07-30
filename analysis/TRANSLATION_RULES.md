@@ -156,16 +156,15 @@ Emulator of record: Mednafen (Saturn core). All addresses are for this build unl
   bytes `0x20–0x7E` follow), `0x02` = exit ASCII mode, `0x03` = line-break → `¥`
   (`0x818F`), anything else = byte-negated SJIS token. Halves the size vs. 2-byte SJIS.
 
-### [HYPOTHESIS — under test at time of writing] Where the blob must live
-- **The game appears to load a chunk by its INTERNAL header `h1` (text-section size),
-  NOT by the disc index `size_words`.** Evidence for the hypothesis: a blob appended
-  *past* `te` did not appear anywhere in RAM (searched a savestate), and the dialogue
-  rendered blank. So the blob is placed INSIDE the text section by extending `h1` to
-  cover it, keeping records at their offsets.
-- **NOT YET CONFIRMED** that extending `h1` makes the blob load and the keys resolve
-  in-emulator. Confirm before trusting. Also note `h1` is 16-bit → **text section capped
-  at 64 KB**; chunks whose records+blob exceed that currently fall back to in-place
-  truncation (open problem: harder dedup, or a second blob region).
+### [PROVEN] Where the blob must live
+- **The game loads a chunk by its INTERNAL header `h1` (text-section size), NOT by the
+  disc index `size_words`.** A blob appended *past* `te` never appeared in RAM and the
+  dialogue rendered blank; placing the blob INSIDE the text section by extending `h1`
+  made the full untruncated English render in-emulator ("I can't admit anyone whose
+  identity is unknown" — longer than the record's byte budget). Records keep their
+  offsets → no repoint.
+- `h1` is 16-bit → **text section capped at 64 KB.** Chunks whose records+blob exceed
+  that fall back to in-place truncation (open: harder dedup, or a second blob region).
 
 ---
 

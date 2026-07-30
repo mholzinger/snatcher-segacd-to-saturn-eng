@@ -26,8 +26,17 @@ static const u8 font1bpp[95 * 16] = {   /* ASCII 0x20-0x7e, 8px 1bpp, 1 byte/row
 char __attribute__((section(".text.decode"))) *decode(char *p)
 {
     if (!p) return orig_decode(p);
+    /* KEY redirect: a record of [0x04][off_hi][off_mid][off_lo] means "the real
+     * (untruncated) 1-byte-encoded text is at p + offset" — the full-English blob
+     * appended to this loaded chunk. Redirect the read pointer, then decode as
+     * normal. This is what lifts text past the record's tiny byte budget. */
+    char *start = p;
+    if ((u8)p[0] == 0x04) {
+        unsigned off = ((unsigned)(u8)p[1] << 16) | ((unsigned)(u8)p[2] << 8) | (u8)p[3];
+        start = p + off;
+    }
     int len = 0, ascii = 0;
-    char *q = p; u8 b;
+    char *q = start; u8 b;
     while ((b = (u8)*q++)) {
         if (b == 0x03) { len += 2; continue; }        /* 1-byte <br> -> ¥ */
         if (!ascii) { if (b == 0x01) { ascii = 1; continue; } len += 1; }
@@ -38,7 +47,7 @@ char __attribute__((section(".text.decode"))) *decode(char *p)
         }
     }
     char *out = game_malloc(len + 1);
-    char *o = out; ascii = 0; q = p;
+    char *o = out; ascii = 0; q = start;
     while ((b = (u8)*q++)) {
         if (b == 0x03) { *o++ = (char)0x81; *o++ = (char)0x8f; continue; }
         if (!ascii) { if (b == 0x01) { ascii = 1; continue; } *o++ = (char)(-(int)b); }
