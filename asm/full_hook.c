@@ -30,11 +30,26 @@ char __attribute__((section(".text.decode"))) *decode(char *p)
      * (untruncated) 1-byte-encoded text is at p + offset" — the full-English blob
      * appended to this loaded chunk. Redirect the read pointer, then decode as
      * normal. This is what lifts text past the record's tiny byte budget. */
+    /* KEY = [0x01][0x04][roff:2BE][boff:2BE], both offsets relative to the chunk's
+     * text-section start (ts). Dialogue calls pass a real LWRAM chunk pointer, so
+     * text_start = p - roff and we cache it. Menus pass a detached HWRAM copy of
+     * the record (buffer 0x060FAC60) — there p-relative fails, so we reuse the
+     * cached text_start. blob = text_start + boff. (Cache lives above the payload.) */
     char *start = p;
-    if ((u8)p[0] == 0x01 && (u8)p[1] == 0x04) {         /* KEY: 0x01 lets the menu's
-        * ASCII-dispatch route it here too; 0x04 = blob redirect. 3-byte offset. */
-        unsigned off = ((unsigned)(u8)p[2] << 16) | ((unsigned)(u8)p[3] << 8) | (u8)p[4];
-        start = p + off;
+    if ((u8)p[0] == 0x01 && (u8)p[1] == 0x04) {
+        unsigned roff = ((unsigned)(u8)p[2] << 8) | (u8)p[3];
+        unsigned boff = ((unsigned)(u8)p[4] << 8) | (u8)p[5];
+        volatile char **g_text = (volatile char **)0x060ffc00u;
+        unsigned up = (unsigned)p;
+        char *text;
+        if ((up >= 0x00200000u && up < 0x00400000u) ||
+            (up >= 0x20200000u && up < 0x20400000u)) {   /* LWRAM chunk pointer */
+            text = p - roff;
+            *g_text = text;
+        } else {                                          /* HWRAM copy buffer */
+            text = *g_text;
+        }
+        start = text + boff;
     }
     int len = 0, ascii = 0;
     char *q = start; u8 b;

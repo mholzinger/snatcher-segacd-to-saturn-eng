@@ -109,14 +109,13 @@ def build_chunk(d, jobs, stats):
             blob.extend(enc); blob.append(0)
         return entry[enc]
 
-    # KEY = [0x01][0x04][3-byte self-relative offset] (5 bytes). decode() redirects
-    # it to the blob. MENUS: their inline decoder handles 0x01 ASCII mode ITSELF and
-    # never calls our decode(), so a key still garbles them (PROVEN — [0x01][0x04]
-    # tested, still broke). So records jl < KEY_MIN_JL are kept in-place
-    # (readable-truncated) as a proxy for "menu-sized". Real fix: hook the menu's
-    # inline decoder. See TRANSLATION_RULES.md.
-    KEY_MIN_JL = 16
-    keys = []                                    # (off, jl, rel) to apply if we keep blob
+    # KEY = [0x01][0x04][roff:2BE][boff:2BE] (6 bytes). roff/boff are offsets from
+    # the text-section start ts (both < 64KB via the h1 cap). decode() derives the
+    # chunk text_start from a dialogue call (p - roff) and reuses it for the menu's
+    # detached copy buffer -> menus get full-length text too. Records jl<6 have no
+    # room for the key -> kept in-place (tiny labels that mostly fit).
+    KEY_MIN_JL = 6
+    keys = []                                    # (off, jl, pos) to apply if we keep blob
     for off, en in jobs:
         if off not in recs:
             stats["skip_norec"] += 1; continue
@@ -126,12 +125,13 @@ def build_chunk(d, jobs, stats):
             stats["inplace_menu"] += 1
             continue
         pos = add(encode_1byte_full(clamp_text(B.wrap(en))))
-        keys.append((off, jl, pos - off))
+        keys.append((off, jl, pos))
 
     if len(d) + len(blob) - ts <= 0xFFFF:        # blob fits the 16-bit text section
-        for off, jl, rel in keys:
-            out[off:off + jl] = bytes([0x01, 0x04, (rel >> 16) & 0xFF, (rel >> 8) & 0xFF, rel & 0xFF]) \
-                + b"\x00" * (jl - 5)
+        for off, jl, pos in keys:
+            roff, boff = off - ts, pos - ts      # both relative to ts, <64KB
+            out[off:off + jl] = bytes([0x01, 0x04, (roff >> 8) & 0xFF, roff & 0xFF,
+                                       (boff >> 8) & 0xFF, boff & 0xFF]) + b"\x00" * (jl - 6)
             stats["keyed"] += 1
         result = bytes(out) + bytes(blob)
         new_h1 = len(result) - ts
