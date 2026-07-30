@@ -164,6 +164,12 @@ def patched_index_main_l(entries, payload, frame_addr, fontblock_addr=0):
     d = bytearray(open(os.path.join(ROOT, "extracted/saturn/files/MAIN_L.BIN"), "rb").read())
     for i, (sec, words) in enumerate(entries):
         struct.pack_into(">HH", d, INDEX_OFF + i * 4, sec, words)
+    if os.environ.get("GEOM"):          # X-grid table @0x35358: tighten pitch to 8px ONLY.
+        TBL = 0x35358                    # keep sprite width 16px (matches tile stride; our glyph
+        for i in range(20, 80):          # is the left 8px + transparent right half). rows 1-3.
+            col = i % 20
+            struct.pack_into(">H", d, TBL + i * 12 + 8, 0x13 + col * 8)  # X = 0x13 + col*8
+        print("GEOM: pitch -> 8px (cells 20-79), width kept 16px")
     hooks = [(p, struct.pack(">I", sh2_inject.RESIDENCY)) for p in DECODE_PTRS]
     if os.environ.get("FONT", "1") == "1":          # FONT=0 -> game's own font (stable, wide)
         hooks.append((FRAME_PTR, struct.pack(">I", frame_addr)))
