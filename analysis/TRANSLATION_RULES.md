@@ -129,11 +129,18 @@ reach the draw (VERIFIED: post-hook savestate shows the game's srca, not ours).
   4bpp). Each char maps to a fixed-looking slot: E→13, L→15, a→18, e→19, i→20,
   m→21, n→22, x→24 (slot = (srca-0x1000)/0xe), and E/e/o gave the SAME slot across
   two different scenes → the mapping looks FIXED per char (not first-appearance).
-- OPEN: confirm fixed-vs-dynamic and get the COMPLETE char→slot map (resolve the
-  apparent n/o slot clash — likely a cell-mapping artifact). Then the plan is: hook
-  `FUN_060b4530`, and after it loads, overwrite each Latin slot at
-  `0x25c08000 + slot*0x70` with our 8px glyph; separately patch sprite width +
-  pitch to 8px (table `0x060e5358`) incl. the menu columns. One-time = no race.
+- **[PROVEN] The glyph cache is STABLE and overwriting it works.** Test: hook the
+  font upload, run it, then blast slot 13 with a solid block → every uppercase **E**
+  rendered as a block, in dialogue AND in the menu that loads later in the same
+  scene (lowercase e untouched = different slot). So the cache is loaded once per
+  scene and sprites read it directly; overwriting a slot changes that glyph
+  everywhere, persistently, with NO command-list/per-frame race. This is THE
+  correct mechanism (the per-frame `frame()` renderer is abandoned).
+- **Slot 13 = uppercase 'E'** (anchor). Cache addr of slot N = `0x25c08000 + N*0x70`
+  (16px×14, 4bpp). OPEN: the COMPLETE char→slot map (find the SJIS→slot conversion,
+  or probe slots). Then: build the 8px font indexed by slot, overwrite each Latin
+  slot in the font-upload hook, and patch sprite width + pitch to 8px (table
+  `0x060e5358`, incl. menu columns).
 
 ## 5. The font  [PROVEN — renders in-emulator]
 - Source asset: `assets/halfwidth_ascii_8x16_4bpp.bin` — 95 glyphs, ASCII `0x20–0x7E`

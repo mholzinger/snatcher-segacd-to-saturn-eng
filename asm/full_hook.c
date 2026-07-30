@@ -14,6 +14,19 @@ typedef unsigned short u16;
 static char *(*const game_malloc)(int)   = (char *(*)(int))0x060c4f3cu;
 static char *(*const orig_decode)(char*) = (char *(*)(char*))0x060c4d24u;
 static void (*const orig_frame)(void)    = (void (*)(void))0x060b55a0u;
+static void (*const orig_fontup)(void)   = (void (*)(void))0x060b4530u;
+
+/* TEST: prove the glyph cache is stable (overwrite persists to draw). Load the
+ * game font, then blast slot 13 (the 'E' glyph) with a solid block. If every 'E'
+ * on screen becomes a block, cache-overwrite is the correct race-free approach. */
+void __attribute__((section(".text.fontblock"))) fontblock(void)
+{
+    volatile u8 *d;
+    int i;
+    orig_fontup();
+    d = (volatile u8 *)(0x25c08000u + 13 * 0x70u);
+    for (i = 0; i < 0x70; i++) d[i] = 0xFF;
+}
 
 static const u16 ascii_sjis[95] = {
 #include "ascii_sjis.h"
