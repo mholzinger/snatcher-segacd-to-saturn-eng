@@ -16,24 +16,43 @@ static char *(*const orig_decode)(char*) = (char *(*)(char*))0x060c4d24u;
 static void (*const orig_frame)(void)    = (void (*)(void))0x060b55a0u;
 static void (*const orig_fontup)(void)   = (void (*)(void))0x060b4530u;
 
-/* TEST: prove the glyph cache is stable (overwrite persists to draw). Load the
- * game font, then blast slot 13 (the 'E' glyph) with a solid block. If every 'E'
- * on screen becomes a block, cache-overwrite is the correct race-free approach. */
-void __attribute__((section(".text.fontblock"))) fontblock(void)
-{
-    volatile u8 *d;
-    int i;
-    orig_fontup();
-    d = (volatile u8 *)(0x25c08000u + 13 * 0x70u);
-    for (i = 0; i < 0x70; i++) d[i] = 0xFF;
-}
-
 static const u16 ascii_sjis[95] = {
 #include "ascii_sjis.h"
 };
 static const u8 font1bpp[95 * 16] = {   /* ASCII 0x20-0x7e, 8px 1bpp, 1 byte/row */
 #include "font1bpp_ascii.h"
 };
+
+/* Half-width font substitution. The game font is bitplane-packed: 4 chars share a
+ * 4bpp tile, each char = one bit-plane (bit 0-3), isolated by a per-sprite LUT.
+ * For A..Za..z, glyph_index = 49 + rank; tile_slot = index/4; bit = index%4; tile
+ * at 0x25c08000 + slot*0x70 (16px wide, 14 rows, 8 bytes/row). We load the game
+ * font, then write our 8px glyph into each char's bit-plane (left 8px; clear the
+ * right so it reads narrow), preserving the other planes. LUTs stay untouched. */
+void __attribute__((section(".text.fontblock"))) fontblock(void)
+{
+    /* per-bit nibble masks (avoid variable shifts: SH-2 has none, freestanding) */
+    static const u8 lom[4] = {0x01, 0x02, 0x04, 0x08};
+    static const u8 him[4] = {0x10, 0x20, 0x40, 0x80};
+    int rank, r, col;
+    orig_fontup();
+    for (rank = 0; rank < 52; rank++) {
+        int c   = (rank < 26) ? ('A' + rank) : ('a' + rank - 26);
+        int gi  = 49 + rank, bit = gi & 3;
+        volatile u8 *tile = (volatile u8 *)(0x25c08000u + (gi / 4) * 0x70u);
+        const u8 *g = font1bpp + (c - 0x20) * 16;      /* our 8px glyph, 1 byte/row */
+        for (r = 0; r < 14; r++) {
+            u8 gv = g[r + 1];                          /* rows 1..14 of our 16-row glyph */
+            for (col = 0; col < 16; col++) {
+                volatile u8 *pb = &tile[r * 8 + (col >> 1)];
+                u8 mask = (col & 1) ? lom[bit] : him[bit];
+                int ink = (col < 8) && (gv & 0x80);
+                if (col < 8) gv = (u8)(gv << 1);
+                if (ink) *pb = (u8)(*pb | mask); else *pb = (u8)(*pb & ~mask);
+            }
+        }
+    }
+}
 
 /* ---- hook 1: record decoder (must be first = entry at RESIDENCY) ---- */
 char __attribute__((section(".text.decode"))) *decode(char *p)
