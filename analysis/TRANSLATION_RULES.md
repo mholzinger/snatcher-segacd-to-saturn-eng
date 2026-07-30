@@ -185,15 +185,24 @@ Emulator of record: Mednafen (Saturn core). All addresses are for this build unl
   line buffer contained **byte-negated key bytes** (`0x04`→`0xFC`, etc.), i.e. the menu
   ran the raw record through an INLINE byte-negate decoder of its own and never saw our
   `decode()`. So `0x04` keys garble menus.
-- The menu decoder is **fully self-contained**: it handles `0x01` ASCII mode ITSELF
-  (an in-place 1-byte record `[0x01]'Go inside'` decodes correctly in menus) and never
-  calls `FUN_060c4d24`. **DISPROVEN experiment:** prefixing the key with `0x01`
-  (`[0x01][0x04][offset]`) to piggyback the ASCII dispatch — still garbled, because the
-  menu's own ASCII handler hits the non-printable `0x04` and mangles it. Do not retry.
-- Mitigation (heuristic, in `build_engine.py`): records with `jl < 16` are kept in-place
-  (truncated but readable); only longer dialogue records get key+blob. **Real fix
-  (open):** locate the menu's inline decode/negate routine and patch IT to honor the key
-  (or to redirect to the blob) — a separate hook from the dialogue decoder.
+- **RESOLVED mechanism (probe-proven):** the menu DOES call our `decode()` (via 4 of
+  the 7 decode call sites, the ones whose literal pools also hold the work-buffer
+  address `0x060FAC60`: file offsets near `0x9714`, `0x97e8`, `0xa040`, `0xa67c`). But
+  those sites first **COPY the record into a fixed 40-byte work buffer at `0x060FAC60`**
+  and call `decode()` with the COPY pointer. Dialogue sites pass the real chunk pointer
+  (LWRAM, e.g. `0x2e801e`), so the self-relative `p + offset` reaches the blob; the menu
+  copy is detached, so `p + offset` lands in garbage. A decode-logger probe (ring at
+  `0x060FFC00`) captured exactly this: menu records arrive at `p = 0x060fac60`,
+  `0x060faca0`, `0x060face0` (stride `0x40`, HWRAM), first bytes `01 52`(R) `01 50`(P)
+  `01 43`(C) = Recep/Poster/Camer.
+- **DISPROVEN:** prefixing the key with `0x01` — the copy still detaches it from the
+  blob. Not a dispatch problem; a pointer problem.
+- Mitigation (in `build_engine.py`): records with `jl < 16` kept in-place (readable-
+  truncated); only longer dialogue records keyed. **Real fix (open):** give `decode()`
+  the current chunk's base so it can resolve `chunk_base + absolute_offset` when `p` is
+  the `0x060FAC60` copy buffer — capture the base by hooking the chunk loader, or store
+  the absolute chunk offset in the key. (Note: LWRAM holds several chunks at non-fixed
+  bases, so a single global is needed, not a constant.)
 
 ## 9. Open problems (honest status)
 1. **h1-load hypothesis** (§7) — confirm in-emulator.
