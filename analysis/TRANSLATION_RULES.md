@@ -136,11 +136,21 @@ reach the draw (VERIFIED: post-hook savestate shows the game's srca, not ours).
   scene and sprites read it directly; overwriting a slot changes that glyph
   everywhere, persistently, with NO command-list/per-frame race. This is THE
   correct mechanism (the per-frame `frame()` renderer is abandoned).
-- **Slot 13 = uppercase 'E'** (anchor). Cache addr of slot N = `0x25c08000 + N*0x70`
-  (16px×14, 4bpp). OPEN: the COMPLETE char→slot map (find the SJIS→slot conversion,
-  or probe slots). Then: build the 8px font indexed by slot, overwrite each Latin
-  slot in the font-upload hook, and patch sprite width + pitch to 8px (table
-  `0x060e5358`, incl. menu columns).
+- **[DECODED] Glyph storage = bitplane-packed 1bpp, 4 chars per 4bpp tile, VDP1
+  4bpp-LUT mode.** Each text sprite: `CMDPMOD=0x08c8` (4bpp LUT), `CMDSRCA` = a tile
+  SHARED by 4 characters, `CMDCOLR` = a per-char 16-entry LUT (at `CMDCOLR*8` in VDP1
+  VRAM) that maps the indices carrying that char's bit to text-colour and the rest to
+  transparent. So a tile's 4bpp pixel = OR of the bits of whichever of its 4 chars
+  have ink there; each char is one bitplane (bit 0-3). `CMDSIZE=0x020e` = 16px×14.
+- **Char→tile map (verified A–E, exact):** `glyph_index = 49 + rank(char)` where rank
+  is the position in "A..Za..z" (A=0…z=51); `tile_slot = index//4`, `bit = index%4`;
+  tile addr = `0x25c08000 + tile_slot*0x70`. (Digits/punct: other indices, probe as
+  needed via MAPPROBE in build_engine.py.) This map is stable per char across scenes.
+- **Substitution (half-width) is therefore a COMPOSITE, not a flat overwrite:** for
+  each tile, build the 4bpp texture whose bit `b` plane = our 8px glyph for the char
+  at (slot,b), write it over the game's tile in the font-upload hook, and patch
+  `CMDSIZE`+pitch to 8px. The FONTTEST 0xFF block worked because it set every bit
+  (all 4 chars opaque). This is intricate but fully specified now.
 
 ## 5. The font  [PROVEN — renders in-emulator]
 - Source asset: `assets/halfwidth_ascii_8x16_4bpp.bin` — 95 glyphs, ASCII `0x20–0x7E`

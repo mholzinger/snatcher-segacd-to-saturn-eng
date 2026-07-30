@@ -185,6 +185,13 @@ def main():
     os.makedirs(out_dir, exist_ok=True)
 
     master = json.load(open(os.path.join(ROOT, "translation/master.json"), encoding="utf-8"))
+    if os.environ.get("MAPPROBE"):     # override the greeting with a char-enumeration
+        import string
+        enum = string.ascii_uppercase + string.ascii_lowercase   # 52 chars, fits 3 rows
+        for e in master:
+            if e["chunk"] == "chunk_022" and int(e["offset"], 16) == 0x2a34:
+                e["en"] = enum
+        print(f"MAPPROBE: greeting -> {enum}")
     by_chunk = {}
     for e in master:
         if e.get("en"):
