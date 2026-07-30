@@ -185,10 +185,15 @@ Emulator of record: Mednafen (Saturn core). All addresses are for this build unl
   line buffer contained **byte-negated key bytes** (`0x04`→`0xFC`, etc.), i.e. the menu
   ran the raw record through an INLINE byte-negate decoder of its own and never saw our
   `decode()`. So `0x04` keys garble menus.
-- Mitigation (heuristic, in `build_engine.py`): records with `jl < 16` are treated as
-  menu-sized and kept in-place (truncated but readable); only longer dialogue records
-  get key+blob. **Real fix (open):** find and hook the menu's inline decoder so menus
-  can use full-length blobs too.
+- The menu decoder is **fully self-contained**: it handles `0x01` ASCII mode ITSELF
+  (an in-place 1-byte record `[0x01]'Go inside'` decodes correctly in menus) and never
+  calls `FUN_060c4d24`. **DISPROVEN experiment:** prefixing the key with `0x01`
+  (`[0x01][0x04][offset]`) to piggyback the ASCII dispatch — still garbled, because the
+  menu's own ASCII handler hits the non-printable `0x04` and mangles it. Do not retry.
+- Mitigation (heuristic, in `build_engine.py`): records with `jl < 16` are kept in-place
+  (truncated but readable); only longer dialogue records get key+blob. **Real fix
+  (open):** locate the menu's inline decode/negate routine and patch IT to honor the key
+  (or to redirect to the blob) — a separate hook from the dialogue decoder.
 
 ## 9. Open problems (honest status)
 1. **h1-load hypothesis** (§7) — confirm in-emulator.

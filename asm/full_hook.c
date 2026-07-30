@@ -31,8 +31,9 @@ char __attribute__((section(".text.decode"))) *decode(char *p)
      * appended to this loaded chunk. Redirect the read pointer, then decode as
      * normal. This is what lifts text past the record's tiny byte budget. */
     char *start = p;
-    if ((u8)p[0] == 0x04) {
-        unsigned off = ((unsigned)(u8)p[1] << 16) | ((unsigned)(u8)p[2] << 8) | (u8)p[3];
+    if ((u8)p[0] == 0x01 && (u8)p[1] == 0x04) {         /* KEY: 0x01 lets the menu's
+        * ASCII-dispatch route it here too; 0x04 = blob redirect. 3-byte offset. */
+        unsigned off = ((unsigned)(u8)p[2] << 16) | ((unsigned)(u8)p[3] << 8) | (u8)p[4];
         start = p + off;
     }
     int len = 0, ascii = 0;

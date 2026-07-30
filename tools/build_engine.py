@@ -109,10 +109,12 @@ def build_chunk(d, jobs, stats):
             blob.extend(enc); blob.append(0)
         return entry[enc]
 
-    # Records with jl < KEY_MIN_JL are treated as MENU-SIZED and kept in-place
-    # (the menu's own inline byte-negate decoder does not honor our 0x04 key and
-    # garbles it). Only longer dialogue records get key+blob. HEURISTIC — the real
-    # fix is to reverse-engineer the menu decoder. See TRANSLATION_RULES.md.
+    # KEY = [0x01][0x04][3-byte self-relative offset] (5 bytes). decode() redirects
+    # it to the blob. MENUS: their inline decoder handles 0x01 ASCII mode ITSELF and
+    # never calls our decode(), so a key still garbles them (PROVEN — [0x01][0x04]
+    # tested, still broke). So records jl < KEY_MIN_JL are kept in-place
+    # (readable-truncated) as a proxy for "menu-sized". Real fix: hook the menu's
+    # inline decoder. See TRANSLATION_RULES.md.
     KEY_MIN_JL = 16
     keys = []                                    # (off, jl, rel) to apply if we keep blob
     for off, en in jobs:
@@ -128,8 +130,8 @@ def build_chunk(d, jobs, stats):
 
     if len(d) + len(blob) - ts <= 0xFFFF:        # blob fits the 16-bit text section
         for off, jl, rel in keys:
-            out[off:off + jl] = bytes([0x04, (rel >> 16) & 0xFF, (rel >> 8) & 0xFF, rel & 0xFF]) \
-                + b"\x00" * (jl - 4)
+            out[off:off + jl] = bytes([0x01, 0x04, (rel >> 16) & 0xFF, (rel >> 8) & 0xFF, rel & 0xFF]) \
+                + b"\x00" * (jl - 5)
             stats["keyed"] += 1
         result = bytes(out) + bytes(blob)
         new_h1 = len(result) - ts
