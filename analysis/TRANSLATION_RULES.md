@@ -114,6 +114,27 @@ Emulator of record: Mednafen (Saturn core). All addresses are for this build unl
 
 ---
 
+## 4b. Half-width font effort — glyph-cache mechanism  [IN PROGRESS]
+Goal: render text half-width (like the SegaCD) so menus fit their columns. The
+per-frame `frame()` renderer is a DEAD END — it reassigns CMDSRCA every frame and
+the game rebuilds the command list after our frame-sync hook, so our changes never
+reach the draw (VERIFIED: post-hook savestate shows the game's srca, not ours).
+- **Font upload = `FUN_060b4530`** (ptr at MAIN_L file `0x1208`). Runs ONCE per
+  scene. Bulk-copies the font (DECOMPRESSED via `FUN_060b2f8c` → `FUN_060b22ec` /
+  `FUN_060b23c8` / `FUN_060cb6fc`, source indexed by `r4` from table `0x060e62f6`,
+  work buffers `0x20248000`/`0x20258000`) into the glyph cache at VDP1 VRAM
+  `0x25c08000` (0xd000 bytes) + `0x25c15000/0x25c15800/0x25c17800`.
+- **Text sprites read glyphs from `0x25c08000 + (srca-0x1000)*8`** (srca ~`0x1000`–
+  `0x1150`, i.e. the first ~0xa80 bytes = ~24 slots of `0x70` bytes each = 16px×14
+  4bpp). Each char maps to a fixed-looking slot: E→13, L→15, a→18, e→19, i→20,
+  m→21, n→22, x→24 (slot = (srca-0x1000)/0xe), and E/e/o gave the SAME slot across
+  two different scenes → the mapping looks FIXED per char (not first-appearance).
+- OPEN: confirm fixed-vs-dynamic and get the COMPLETE char→slot map (resolve the
+  apparent n/o slot clash — likely a cell-mapping artifact). Then the plan is: hook
+  `FUN_060b4530`, and after it loads, overwrite each Latin slot at
+  `0x25c08000 + slot*0x70` with our 8px glyph; separately patch sprite width +
+  pitch to 8px (table `0x060e5358`) incl. the menu columns. One-time = no race.
+
 ## 5. The font  [PROVEN — renders in-emulator]
 - Source asset: `assets/halfwidth_ascii_8x16_4bpp.bin` — 95 glyphs, ASCII `0x20–0x7E`
   order, 8×16 px, 4bpp, 64 bytes/glyph. **Order matters:** an earlier `font1bpp.h` was in
