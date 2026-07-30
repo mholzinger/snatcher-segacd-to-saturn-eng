@@ -166,10 +166,11 @@ def patched_index_main_l(entries, payload, frame_addr, fontblock_addr=0):
         struct.pack_into(">HH", d, INDEX_OFF + i * 4, sec, words)
     if os.environ.get("GEOM", "1") == "1":   # X-grid table @0x35358: tighten pitch to 8px (default).
         TBL = 0x35358                    # keep sprite width 16px (matches tile stride; our glyph
-        for i in range(20, 80):          # is the left 8px + transparent right half). rows 1-3.
-            col = i % 20
+        rng = range(80) if os.environ.get("GEOM_ROW0", "1") == "1" else range(20, 80)
+        for i in rng:                    # all 4 rows (menu row-0 items + speaker-less dialogue);
+            col = i % 20                 # speaker names use their own X (9,37), not this grid.
             struct.pack_into(">H", d, TBL + i * 12 + 8, 0x13 + col * 8)  # X = 0x13 + col*8
-        print("GEOM: pitch -> 8px (cells 20-79), width kept 16px")
+        print(f"GEOM: pitch -> 8px ({'all rows' if rng==range(80) else 'rows 1-3'}), width kept 16px")
     hooks = [(p, struct.pack(">I", sh2_inject.RESIDENCY)) for p in DECODE_PTRS]
     # Default: half-width via the glyph-cache substitution at font-upload (race-free).
     # The per-frame frame() renderer is a DEAD END (game overwrites it) — only hooked
