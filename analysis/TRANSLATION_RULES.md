@@ -179,6 +179,17 @@ Emulator of record: Mednafen (Saturn core). All addresses are for this build unl
 
 ---
 
+### [PROVEN] Menus use a SEPARATE decoder — the KEY breaks them
+- The dialogue decoder `FUN_060c4d24` has exactly **7 references in MAIN_L** (all
+  hooked). The action-menu text does NOT go through it: with a keyed record, the menu
+  line buffer contained **byte-negated key bytes** (`0x04`→`0xFC`, etc.), i.e. the menu
+  ran the raw record through an INLINE byte-negate decoder of its own and never saw our
+  `decode()`. So `0x04` keys garble menus.
+- Mitigation (heuristic, in `build_engine.py`): records with `jl < 16` are treated as
+  menu-sized and kept in-place (truncated but readable); only longer dialogue records
+  get key+blob. **Real fix (open):** find and hook the menu's inline decoder so menus
+  can use full-length blobs too.
+
 ## 9. Open problems (honest status)
 1. **h1-load hypothesis** (§7) — confirm in-emulator.
 2. **64 KB text-section cap** for big chunks under KEY+BLOB.

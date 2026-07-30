@@ -109,13 +109,20 @@ def build_chunk(d, jobs, stats):
             blob.extend(enc); blob.append(0)
         return entry[enc]
 
+    # Records with jl < KEY_MIN_JL are treated as MENU-SIZED and kept in-place
+    # (the menu's own inline byte-negate decoder does not honor our 0x04 key and
+    # garbles it). Only longer dialogue records get key+blob. HEURISTIC — the real
+    # fix is to reverse-engineer the menu decoder. See TRANSLATION_RULES.md.
+    KEY_MIN_JL = 16
     keys = []                                    # (off, jl, rel) to apply if we keep blob
     for off, en in jobs:
         if off not in recs:
             stats["skip_norec"] += 1; continue
         jl = recs[off] - off
-        if jl < 4:
-            stats["too_small"] += 1; continue
+        if jl < KEY_MIN_JL:
+            out[off:off + jl] = _encode_trunc(clamp_text(B.wrap(en)), jl)
+            stats["inplace_menu"] += 1
+            continue
         pos = add(encode_1byte_full(clamp_text(B.wrap(en))))
         keys.append((off, jl, pos - off))
 
@@ -176,7 +183,7 @@ def main():
             by_chunk.setdefault(int(e["chunk"].split("_")[1]), []).append(
                 (int(e["offset"], 16), e["en"]))
 
-    stats = {k: 0 for k in ("keyed", "skip_norec", "too_small", "inplace_trunc", "big_chunk")}
+    stats = {k: 0 for k in ("keyed", "skip_norec", "too_small", "inplace_trunc", "big_chunk", "inplace_menu")}
     chunks = []
     for i in range(N_CHUNKS):
         d = open(os.path.join(ROOT, f"extracted/saturn/data_bin/chunk_{i:03d}.bin"), "rb").read()
