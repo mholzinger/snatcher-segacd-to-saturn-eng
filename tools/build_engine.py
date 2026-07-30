@@ -164,18 +164,21 @@ def patched_index_main_l(entries, payload, frame_addr, fontblock_addr=0):
     d = bytearray(open(os.path.join(ROOT, "extracted/saturn/files/MAIN_L.BIN"), "rb").read())
     for i, (sec, words) in enumerate(entries):
         struct.pack_into(">HH", d, INDEX_OFF + i * 4, sec, words)
-    if os.environ.get("GEOM"):          # X-grid table @0x35358: tighten pitch to 8px ONLY.
+    if os.environ.get("GEOM", "1") == "1":   # X-grid table @0x35358: tighten pitch to 8px (default).
         TBL = 0x35358                    # keep sprite width 16px (matches tile stride; our glyph
         for i in range(20, 80):          # is the left 8px + transparent right half). rows 1-3.
             col = i % 20
             struct.pack_into(">H", d, TBL + i * 12 + 8, 0x13 + col * 8)  # X = 0x13 + col*8
         print("GEOM: pitch -> 8px (cells 20-79), width kept 16px")
     hooks = [(p, struct.pack(">I", sh2_inject.RESIDENCY)) for p in DECODE_PTRS]
-    if os.environ.get("FONT", "1") == "1":          # FONT=0 -> game's own font (stable, wide)
+    # Default: half-width via the glyph-cache substitution at font-upload (race-free).
+    # The per-frame frame() renderer is a DEAD END (game overwrites it) — only hooked
+    # if FONT=1 is forced, for reference. FONTSUB=0 disables the substitution.
+    if os.environ.get("FONT") == "1":
         hooks.append((FRAME_PTR, struct.pack(">I", frame_addr)))
-    if os.environ.get("FONTTEST") and fontblock_addr:   # cache-overwrite linchpin test
+    if os.environ.get("FONTSUB", "1") == "1" and fontblock_addr:
         hooks.append((FONTUP_PTR, struct.pack(">I", fontblock_addr)))
-        print(f"FONTTEST: font-upload ptr 0x{FONTUP_PTR:x} -> fontblock @ {fontblock_addr:#x}")
+        print(f"FONTSUB: half-width font @ font-upload ptr 0x{FONTUP_PTR:x} -> {fontblock_addr:#x}")
     return sh2_inject.grow_main_l(bytes(d), payload, hooks=hooks)
 
 
@@ -193,7 +196,8 @@ def main():
     master = json.load(open(os.path.join(ROOT, "translation/master.json"), encoding="utf-8"))
     if os.environ.get("MAPPROBE"):     # override the greeting with a char-enumeration
         import string
-        enum = string.ascii_uppercase + string.ascii_lowercase   # 52 chars, fits 3 rows
+        enum = (string.digits + string.punctuation) if os.environ["MAPPROBE"] == "2" \
+            else (string.ascii_uppercase + string.ascii_lowercase)   # fits 3 rows
         for e in master:
             if e["chunk"] == "chunk_022" and int(e["offset"], 16) == 0x2a34:
                 e["en"] = enum
