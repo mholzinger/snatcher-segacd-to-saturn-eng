@@ -23,6 +23,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import reassemble
 import sh2_inject
 import build_full_en2 as B
+from layout_clamp import clamp_text
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECTOR, USER = 2352, 16
@@ -34,10 +35,20 @@ MARS = os.environ.get("MARSDEV", "/Users/mikeholzinger/src/marsdev/mars") + "/sh
 DECODE_ORIG = 0x060C4D24
 DECODE_PTRS = [0x835c, 0x84a0, 0x907c, 0x9714, 0x97e8, 0xa040, 0xa67c]  # MAIN_L file offsets
 
+# SCROLL mode (experimental): patch the fill routine FUN_060b45c4 so its ¥-break
+# path scrolls for ANY row >= 4 (not just ==4) -> long text SCROLLS through the
+# window instead of clipping. Patch: 0x4660 cmp/eq #4,r0 -> tst #0xFC,r0 (T=1 iff
+# row<4); 0x4666 bf/s -> bt/s (skip scroll iff row<4). In the scroll path the write
+# goes to a fixed bottom-row base, so row growing past 4 can't overflow. Text is
+# re-wrapped to <=13 cols so the (un-patched) auto-wrap path at col 14/20 never fires.
+SCROLL = os.environ.get("SCROLL") == "1"
+SCROLL_WIDTH = int(os.environ.get("SCROLL_WIDTH", "19"))  # <=13 dodges col-14 wrap; 14-19 risks it only if flag==7
+FILL_SCROLL_HOOKS = [(0x4660, b"\xc8\xfc"), (0x4666, b"\x8d\x07")]
+
 
 def compile_decoder(load_addr):
-    """Compile asm/decoder_hook.c to a flat binary linked at load_addr; return
-    bytes. Asserts `decode` lands exactly at load_addr."""
+    """Compile asm/full_hook.c (decode()+frame()) to a flat binary linked so
+    `decode` lands exactly at load_addr. Returns (bytes, frame_addr)."""
     import tempfile
     with tempfile.TemporaryDirectory() as td:
         o = os.path.join(td, "d.o")
@@ -46,20 +57,20 @@ def compile_decoder(load_addr):
         ld = os.path.join(td, "d.ld")
         open(ld, "w").write(
             "ENTRY(_decode)\nSECTIONS { . = %#x; "
-            ".text : { *(.text.decode) *(.text*) *(.rodata*) } }\n" % load_addr)
+            ".text : { *(.text.decode) *(.text.frame) *(.text*) *(.rodata*) } }\n" % load_addr)
         subprocess.run([os.path.join(MARS, "sh-elf-gcc"), "-m2", "-O2",
                         "-ffreestanding", "-fno-builtin", "-fomit-frame-pointer",
-                        "-c", os.path.join(ROOT, "asm/decoder_hook.c"),
+                        "-c", os.path.join(ROOT, "asm/full_hook.c"),
                         "-o", o, "-I", os.path.join(ROOT, "asm")], check=True)
         subprocess.run([os.path.join(MARS, "sh-elf-ld"), "-T", ld, "-o", elf, o],
                        check=True, stderr=subprocess.DEVNULL)
         nm = subprocess.run([os.path.join(MARS, "sh-elf-nm"), elf],
                             capture_output=True, text=True).stdout
-        addr = next(l.split()[0] for l in nm.splitlines() if l.split()[-1] == "_decode")
-        assert int(addr, 16) == load_addr, f"_decode at 0x{addr} != {load_addr:#x}"
+        syms = {l.split()[-1]: int(l.split()[0], 16) for l in nm.splitlines() if len(l.split()) == 3}
+        assert syms["_decode"] == load_addr, f"_decode at {syms['_decode']:#x} != {load_addr:#x}"
         subprocess.run([os.path.join(MARS, "sh-elf-objcopy"), "-O", "binary", elf, binf],
                        check=True)
-        return open(binf, "rb").read()
+        return open(binf, "rb").read(), syms["_frame"]
 
 
 def encode_1byte(en, slot):
@@ -79,8 +90,7 @@ def encode_1byte(en, slot):
     i = 0
     while i < len(en):
         if en[i:i+4] == "<br>":
-            flush()
-            out += bytes(((0x100 - 0x81) & 0xFF, (0x100 - 0x8F) & 0xFF))  # ¥ line break
+            (run if run else out).append(0x03)  # 1-byte line break (decoder -> ¥)
             i += 4
             continue
         c = en[i]; o = ord(c)
@@ -126,7 +136,11 @@ def scene_writes(main_bin):
             if off not in recs:
                 continue
             jl = recs[off] - off
-            out[off:off + jl] = encode_1byte(B.wrap(en), jl)
+            # SCROLL: unlimited rows, <=13-col lines (dodges auto-wrap) -> scrolls.
+            # safe: <=3 rows, <=20-col -> clips, no overflow.
+            wrapped = (clamp_text(B.wrap(en), max_rows=None, row=SCROLL_WIDTH) if SCROLL
+                       else clamp_text(B.wrap(en)))
+            out[off:off + jl] = encode_1byte(wrapped, jl)
         writes.append((sec, bytes(out)))
     return writes
 
@@ -142,9 +156,16 @@ def main():
     out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "build/decoder_hook")
     os.makedirs(out, exist_ok=True)
 
-    payload = compile_decoder(sh2_inject.RESIDENCY)
+    payload, frame_addr = compile_decoder(sh2_inject.RESIDENCY)
+    FRAME_PTR = 0x472c                       # frame-sync fn-ptr literal (MAIN_L file offset)
     hooks = [(p, struct.pack(">I", sh2_inject.RESIDENCY)) for p in DECODE_PTRS]
+    hooks.append((FRAME_PTR, struct.pack(">I", frame_addr)))   # font renderer
+    if SCROLL:
+        hooks += FILL_SCROLL_HOOKS
+        print(f"SCROLL mode: fill routine patched to scroll past row 4 "
+              f"(text re-wrapped to <={SCROLL_WIDTH} cols, unlimited rows).")
     main_bin = sh2_inject.build_main_l(payload, hooks=hooks)
+    print(f"font renderer frame() @ {frame_addr:#x}; frame-sync ptr 0x{FRAME_PTR:x} repointed")
     # sanity: every decoder pointer now points at our decode()
     for p in DECODE_PTRS:
         assert struct.unpack_from(">I", main_bin, p)[0] == sh2_inject.RESIDENCY
