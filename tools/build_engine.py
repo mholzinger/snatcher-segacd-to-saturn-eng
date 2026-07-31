@@ -76,7 +76,7 @@ def compile_payload(load_addr):
         o, elf, binf, ld = (os.path.join(td, x) for x in ("d.o", "d.elf", "d.bin", "d.ld"))
         open(ld, "w").write(
             "ENTRY(_decode)\nSECTIONS { . = %#x; "
-            ".text : { *(.text.decode) *(.text.frame) *(.text.fontblock) *(.text*) *(.rodata*) } }\n" % load_addr)
+            ".text : { *(.text.decode) *(.text.frame) *(.text.fontblock) *(.text.logger) *(.text*) *(.rodata*) } }\n" % load_addr)
         subprocess.run([os.path.join(MARS, "sh-elf-gcc"), "-m2", "-O2", "-ffreestanding",
                         "-fno-builtin", "-fomit-frame-pointer", "-c",
                         os.path.join(ROOT, "asm/full_hook.c"), "-o", o,
@@ -87,7 +87,8 @@ def compile_payload(load_addr):
         syms = {l.split()[-1]: int(l.split()[0], 16) for l in nm.splitlines() if len(l.split()) == 3}
         assert syms["_decode"] == load_addr
         subprocess.run([os.path.join(MARS, "sh-elf-objcopy"), "-O", "binary", elf, binf], check=True)
-        return open(binf, "rb").read(), syms["_frame"], syms.get("_fontblock", 0)
+        return (open(binf, "rb").read(), syms["_frame"],
+                syms.get("_fontblock", 0), syms.get("_logger", 0))
 
 
 def build_chunk(d, jobs, stats):
@@ -158,7 +159,7 @@ def _encode_trunc(en, slot):
 FONTUP_PTR = 0x1208                              # font-upload call pointer (-> 0x060b4530)
 
 
-def patched_index_main_l(entries, payload, frame_addr, fontblock_addr=0):
+def patched_index_main_l(entries, payload, frame_addr, fontblock_addr=0, logger_addr=0):
     """Stock MAIN_L with new chunk index (no speaker patch), then grown with the
     payload + decode/frame hooks."""
     d = bytearray(open(os.path.join(ROOT, "extracted/saturn/files/MAIN_L.BIN"), "rb").read())
@@ -180,6 +181,9 @@ def patched_index_main_l(entries, payload, frame_addr, fontblock_addr=0):
     if os.environ.get("FONTSUB", "1") == "1" and fontblock_addr:
         hooks.append((FONTUP_PTR, struct.pack(">I", fontblock_addr)))
         print(f"FONTSUB: half-width font @ font-upload ptr 0x{FONTUP_PTR:x} -> {fontblock_addr:#x}")
+    if os.environ.get("LOGGER") and logger_addr:      # dev: accumulate char->glyph-index map
+        hooks.append((FRAME_PTR, struct.pack(">I", logger_addr)))
+        print(f"LOGGER: map logger @ frame-sync ptr 0x{FRAME_PTR:x} -> {logger_addr:#x}")
     return sh2_inject.grow_main_l(bytes(d), payload, hooks=hooks)
 
 
@@ -226,8 +230,8 @@ def main():
     new_secs = len(datab) // 2048
     delta = new_secs - (MAIN_LBA - DATA_LBA)
 
-    payload, frame_addr, fontblock_addr = compile_payload(sh2_inject.RESIDENCY)
-    main_l = patched_index_main_l(entries, payload, frame_addr, fontblock_addr)
+    payload, frame_addr, fontblock_addr, logger_addr = compile_payload(sh2_inject.RESIDENCY)
+    main_l = patched_index_main_l(entries, payload, frame_addr, fontblock_addr, logger_addr)
     orig_main_secs = (sh2_inject.MAIN_L_END + 2047) // 2048
     main_secs = (len(main_l) + 2047) // 2048
     main_delta = main_secs - orig_main_secs

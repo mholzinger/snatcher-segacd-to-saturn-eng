@@ -29,29 +29,88 @@ static const u8 font1bpp[95 * 16] = {   /* ASCII 0x20-0x7e, 8px 1bpp, 1 byte/row
  * at 0x25c08000 + slot*0x70 (16px wide, 14 rows, 8 bytes/row). We load the game
  * font, then write our 8px glyph into each char's bit-plane (left 8px; clear the
  * right so it reads narrow), preserving the other planes. LUTs stay untouched. */
-void __attribute__((section(".text.fontblock"))) fontblock(void)
+/* game glyph_index -> ASCII char whose 8px form we stamp into that slot's plane.
+ * Read DIRECTLY from the font cache (savestate render), not extrapolated: digits
+ * 39-48 sit just below A=49; punctuation is in 0..34. Letters A..Za..z = 49+rank
+ * are handled by the loop below. Extend this table as more glyphs are confirmed. */
+static const u8 subidx[] = {
+    3,   4,   5,   6,   7,   8,   9,  10,  13,  14,  16,  17,  24,  25,  27,
+    30,  31,  32,  33,  34,
+    39,  40,  41,  42,  43,  44,  45,  46,  47,  48
+};
+static const u8 subchr[] = {
+    ',', '.', '\'', ':', ';', '?', '!', '_', '/', '~', '(', ')', '+', '-', '=',
+    '%', '#', '&', '*', '@',
+    '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
+};
+
+/* stamp our 8px glyph for ASCII `c` into the plane of game glyph index `gi` */
+static void stampglyph(int gi, int c)
 {
-    /* per-bit nibble masks (avoid variable shifts: SH-2 has none, freestanding) */
     static const u8 lom[4] = {0x01, 0x02, 0x04, 0x08};
     static const u8 him[4] = {0x10, 0x20, 0x40, 0x80};
-    int rank, r, col;
+    int r, col, bit = gi & 3;
+    volatile u8 *tile = (volatile u8 *)(0x25c08000u + (gi / 4) * 0x70u);
+    const u8 *g = font1bpp + (c - 0x20) * 16;          /* our 8px glyph, 1 byte/row */
+    for (r = 0; r < 14; r++) {
+        u8 gv = g[r + 1];                              /* rows 1..14 of our 16-row glyph */
+        for (col = 0; col < 16; col++) {
+            volatile u8 *pb = &tile[r * 8 + (col >> 1)];
+            u8 mask = (col & 1) ? lom[bit] : him[bit];
+            int ink = (col < 8) && (gv & 0x80);
+            if (col < 8) gv = (u8)(gv << 1);
+            if (ink) *pb = (u8)(*pb | mask); else *pb = (u8)(*pb & ~mask);
+        }
+    }
+}
+
+void __attribute__((section(".text.fontblock"))) fontblock(void)
+{
+    int rank, i;
     orig_fontup();
-    for (rank = 0; rank < 52; rank++) {
-        int c   = (rank < 26) ? ('A' + rank) : ('a' + rank - 26);
-        int gi  = 49 + rank, bit = gi & 3;
-        volatile u8 *tile = (volatile u8 *)(0x25c08000u + (gi / 4) * 0x70u);
-        const u8 *g = font1bpp + (c - 0x20) * 16;      /* our 8px glyph, 1 byte/row */
-        for (r = 0; r < 14; r++) {
-            u8 gv = g[r + 1];                          /* rows 1..14 of our 16-row glyph */
-            for (col = 0; col < 16; col++) {
-                volatile u8 *pb = &tile[r * 8 + (col >> 1)];
-                u8 mask = (col & 1) ? lom[bit] : him[bit];
-                int ink = (col < 8) && (gv & 0x80);
-                if (col < 8) gv = (u8)(gv << 1);
-                if (ink) *pb = (u8)(*pb | mask); else *pb = (u8)(*pb & ~mask);
+    for (rank = 0; rank < 52; rank++) {                /* A..Za..z = 49+rank */
+        int c = (rank < 26) ? ('A' + rank) : ('a' + rank - 26);
+        stampglyph(49 + rank, c);
+    }
+    for (i = 0; i < (int)sizeof(subidx); i++)          /* digits + punctuation */
+        stampglyph(subidx[i], subchr[i]);
+}
+
+/* Map logger (dev tool). Hooked at frame-sync; accumulates each grid-row text
+ * sprite's (line-buffer SJIS, CMDSRCA, CMDCOLR) into a scratch table above the
+ * payload, deduped by SJIS, across all frames — so any savestate carries the map
+ * for every character that has rendered. Python turns (srca,colr) into the glyph
+ * index. Skips row 0 (mixed pitch). Table: [count:u16][sjis,srca,colr]*N at 0x060ffc10. */
+void __attribute__((section(".text.logger"))) logger(void)
+{
+    volatile u16 *cmd = (volatile u16 *)0x25c00000u;
+    volatile u16 *lb  = (volatile u16 *)0x060f28aau;
+    volatile u16 *tbl = (volatile u16 *)0x060ffc10u;
+    int i, row = -1, x0 = 0, prev_y = -1, col, cell, dx, j;
+    for (i = 0; i < 300; i++) {
+        u16 ctrl = cmd[i * 16 + 0];
+        if (ctrl == 0x8000) break;
+        u16 srca = cmd[i * 16 + 4], colr = cmd[i * 16 + 3];
+        if (!((ctrl & 0xf) == 0 && srca >= 0x1000 && srca <= 0x2100)) continue;
+        int y = cmd[i * 16 + 7], x = cmd[i * 16 + 6];
+        if (y != prev_y) { row++; prev_y = y; x0 = x; }
+        if (y <= 158) continue;                     /* skip row 0 (X=9/pitch-14 path) */
+        dx = x - x0; col = 0;
+        while (dx >= 8) { dx -= 8; col++; }          /* grid pitch = 8 (GEOM) */
+        cell = row * 20 + col;
+        if (cell < 0 || cell >= 80) continue;
+        u16 sjis = lb[cell * 2];
+        if (sjis == 0) continue;
+        {
+            int cnt = tbl[0], found = 0;
+            for (j = 0; j < cnt; j++) if (tbl[1 + j * 3] == sjis) { found = 1; break; }
+            if (!found && cnt < 128) {
+                tbl[1 + cnt * 3] = sjis; tbl[2 + cnt * 3] = srca; tbl[3 + cnt * 3] = colr;
+                tbl[0] = (u16)(cnt + 1);
             }
         }
     }
+    orig_frame();
 }
 
 /* ---- hook 1: record decoder (must be first = entry at RESIDENCY) ---- */
