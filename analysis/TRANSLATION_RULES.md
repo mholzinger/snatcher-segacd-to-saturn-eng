@@ -142,10 +142,22 @@ reach the draw (VERIFIED: post-hook savestate shows the game's srca, not ours).
   VRAM) that maps the indices carrying that char's bit to text-colour and the rest to
   transparent. So a tile's 4bpp pixel = OR of the bits of whichever of its 4 chars
   have ink there; each char is one bitplane (bit 0-3). `CMDSIZE=0x020e` = 16px×14.
-- **Char→tile map (verified A–E, exact):** `glyph_index = 49 + rank(char)` where rank
-  is the position in "A..Za..z" (A=0…z=51); `tile_slot = index//4`, `bit = index%4`;
-  tile addr = `0x25c08000 + tile_slot*0x70`. (Digits/punct: other indices, probe as
-  needed via MAPPROBE in build_engine.py.) This map is stable per char across scenes.
+- **Char→tile map (VERIFIED exact, read from the cache):** `glyph_index` → char, then
+  `tile_slot = index//4`, `bit = index%4`, tile addr `0x25c08000 + tile_slot*0x70`.
+  Letters `A..Za..z = 49+rank` (A=0…z=51). Digits `0-9 = 39-48`. Punct:
+  `,`=3 `.`=4 `・`=5 `:`=6 `;`=7 `?`=8 `!`=9 `_`=10 `/`=13 `~`=14 `(`=16 `)`=17
+  `+`=24 `-`=25 `=`=27 `%`=30 `#`=31 `&`=32 `*`=33 `@`=34. Hiragana start at 101.
+  **Do NOT extrapolate indices from the A=49 anchor — digits are 39-48, not 32-41.**
+  The game font has NO glyph for `'` `"` `$` `<` `>` (blank). Apostrophe is done by
+  remapping `ascii_sjis['] 0x8166→0x8145` (middle-dot `・`, idx 5, unused in English)
+  and stamping our apostrophe into slot 5. This map is stable per char across scenes.
+- **[TOOL] To read the map definitively: render the cache from a savestate.** In the
+  `.mc0` (gzip), VDP1 VRAM is the `VRAM` 0x80000 section right after the `VDP1` tag
+  (~offset 723555); data is 16-bit byte-swapped. Cache = VDP1-VRAM offset `0x8000`.
+  For index gi: tile `0x8000+(gi/4)*0x70`, `bit=gi&3`, 16×14 @8 bytes/row, pixel on =
+  `((byte>>4 if col even else byte&0xf)>>bit)&1`. Render indices 0..111 to a PNG and
+  read the characters off. The LOGGER (frame-sync srca/colr capture) is a DEAD END —
+  the VDP1 command list isn't populated at that hook (same reason `frame()` failed).
 - **Substitution (half-width) is therefore a COMPOSITE, not a flat overwrite:** for
   each tile, build the 4bpp texture whose bit `b` plane = our 8px glyph for the char
   at (slot,b), write it over the game's tile in the font-upload hook, and patch
