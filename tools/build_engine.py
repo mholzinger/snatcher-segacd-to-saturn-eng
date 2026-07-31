@@ -113,9 +113,15 @@ def build_chunk(d, jobs, stats):
     # KEY = [0x01][0x04][roff:2BE][boff:2BE] (6 bytes). roff/boff are offsets from
     # the text-section start ts (both < 64KB via the h1 cap). decode() derives the
     # chunk text_start from a dialogue call (p - roff) and reuses it for the menu's
-    # detached copy buffer -> menus get full-length text too. Records jl<6 have no
-    # room for the key -> kept in-place (tiny labels that mostly fit).
-    KEY_MIN_JL = 6
+    # detached copy buffer.
+    # KEY_MIN_JL = 16 (NOT 6): menu records are decoded from a DETACHED copy buffer
+    # (0x060FAC60) and resolved via ONE global cached text_start. That cache is only
+    # valid when the menu's chunk == the last dialogue chunk; cross-chunk it's stale,
+    # so keyed menu items decode to wrong/empty text -> menus render out of order and
+    # drop options (commit 556210 regression). Keeping jl<16 records in-place makes
+    # menus ORDERED + COMPLETE (truncated but correct). Full-length menus need the
+    # per-chunk base fix (task #14 / TRANSLATION_RULES "MENU LIMITATION"), not this.
+    KEY_MIN_JL = 16
     keys = []                                    # (off, jl, pos) to apply if we keep blob
     for off, en in jobs:
         if off not in recs:
