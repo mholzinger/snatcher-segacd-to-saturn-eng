@@ -118,6 +118,21 @@ void __attribute__((section(".text.logger"))) logger(void)
     orig_frame();
 }
 
+/* Dev tool: per-frame ring-buffer log of the dialogue VM state var (0x060f2c04) so a
+ * savestate taken right after pressing "advance" reveals the typing/waiting/advance
+ * state sequence — empirical state discovery for the paging effort. Ring @0x060ffc10:
+ * [head:u16][state:u8 x 256]. */
+void __attribute__((section(".text.statelog"))) statelog(void)
+{
+    volatile u16 *head  = (volatile u16 *)0x060ffc10u;
+    volatile u8  *buf   = (volatile u8  *)0x060ffc12u;
+    volatile u8  *state = (volatile u8  *)0x060f2c04u;
+    u16 h = *head;
+    buf[h & 0xff] = *state;
+    *head = (u16)(h + 1);
+    orig_frame();
+}
+
 /* ---- hook 1: record decoder (must be first = entry at RESIDENCY) ---- */
 char __attribute__((section(".text.decode"))) *decode(char *p)
 {
