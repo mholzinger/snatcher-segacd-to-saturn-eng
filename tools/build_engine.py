@@ -38,6 +38,24 @@ MARS = os.environ.get("MARSDEV", "/Users/mikeholzinger/src/marsdev/mars") + "/sh
 DECODE_PTRS = [0x835c, 0x84a0, 0x907c, 0x9714, 0x97e8, 0xa040, 0xa67c]
 FRAME_PTR = 0x472c
 
+# Dialogue box geometry. The game ships 20 cells/row x 4 rows; at half-width (8px)
+# 20 cells fill only ~55% of the box, so text wraps early ("extra carriage returns").
+# COLS=26 fills the box: 26 cells/row x 3 rows = 78 <= the renderer's 80-cell window.
+# The renderer (FUN_060b4970) walks 80 cells linearly and takes X/Y from the table,
+# so widening is: rewrite the table's per-cell X/Y for 26/row + patch the fill
+# routine's wrap column (0x14->0x1a) and row byte-stride (0x50->0x68) so a char lands
+# in buffer cell row*26+col, which maps 1:1 to renderer cell row*26+col. See
+# TRANSLATION_RULES "dialogue layout".
+COLS = int(os.environ.get("COLS", "26"))
+# Dialogue row cap (hang-safe: text must not reach buffer row that spills past cell
+# 79 -> overflow corrupts scene state and hard-hangs; PROVEN, don't exceed).
+# Speaker dialogue puts the name in buffer row 0, so the body starts at row 1. At
+# COLS=26 that means rows 1,2 are the only full-width rows (row 3 = cells 78-79 only)
+# -> cap 2. At COLS=20 the body gets 3 full rows (1,2,3 = cells 20-79) -> cap 3.
+# The game's scroll (FUN_060b4730) is NOT a safe overflow handler (it hangs), so we
+# clamp instead of scroll. Flip layouts with:  COLS=20 (narrow/3-row) or default 26.
+MAXROWS = int(os.environ.get("MAXROWS", "2" if COLS > 20 else "3"))
+
 
 def encode_1byte_full(en):
     """1-byte encoding (0x01 ascii runs / 0x03 br / negated SJIS tokens), NO byte
@@ -80,6 +98,7 @@ def compile_payload(load_addr):
         subprocess.run([os.path.join(MARS, "sh-elf-gcc"), "-m2", "-O2", "-ffreestanding",
                         "-fno-builtin", "-fomit-frame-pointer", "-c",
                         os.path.join(ROOT, "asm/full_hook.c"), "-o", o,
+                        f"-DDLG_COLS={COLS}",
                         "-I", os.path.join(ROOT, "asm")], check=True)
         subprocess.run([os.path.join(MARS, "sh-elf-ld"), "-T", ld, "-o", elf, o],
                        check=True, stderr=subprocess.DEVNULL)
@@ -131,7 +150,7 @@ def build_chunk(d, jobs, stats):
             out[off:off + jl] = _encode_trunc(clamp_text(B.wrap(en)), jl)
             stats["inplace_menu"] += 1
             continue
-        pos = add(encode_1byte_full(clamp_text(B.wrap(en))))
+        pos = add(encode_1byte_full(clamp_text(en, max_rows=MAXROWS, row=COLS)))
         keys.append((off, jl, pos))
 
     if len(d) + len(blob) - ts <= 0xFFFF:        # blob fits the 16-bit text section
@@ -171,13 +190,20 @@ def patched_index_main_l(entries, payload, frame_addr, fontblock_addr=0, logger_
     d = bytearray(open(os.path.join(ROOT, "extracted/saturn/files/MAIN_L.BIN"), "rb").read())
     for i, (sec, words) in enumerate(entries):
         struct.pack_into(">HH", d, INDEX_OFF + i * 4, sec, words)
-    if os.environ.get("GEOM", "1") == "1":   # X-grid table @0x35358: tighten pitch to 8px (default).
-        TBL = 0x35358                    # keep sprite width 16px (matches tile stride; our glyph
-        rng = range(80) if os.environ.get("GEOM_ROW0", "1") == "1" else range(20, 80)
-        for i in rng:                    # all 4 rows (menu row-0 items + speaker-less dialogue);
-            col = i % 20                 # speaker names use their own X (9,37), not this grid.
-            struct.pack_into(">H", d, TBL + i * 12 + 8, 0x13 + col * 8)  # X = 0x13 + col*8
-        print(f"GEOM: pitch -> 8px ({'all rows' if rng==range(80) else 'rows 1-3'}), width kept 16px")
+    if os.environ.get("GEOM", "1") == "1":   # X-grid table @0x35358 + fill routine.
+        TBL = 0x35358                    # ROM DEFAULT = 20 cells/row, 8px pitch (the MENU
+        for i in range(80):              # layout). decode() rewrites the table's X/Y to
+            struct.pack_into(">H", d, TBL + i * 12 + 8, 0x13 + (i % 20) * 8)  # 26/row for
+        #                                                     dialogue, 20/row for menus.
+        # fill routine FUN_060b45c4 -> COLS/row (dialogue only): wrap column 0x14->COLS,
+        # row byte-stride 0x50->COLS*4. Verified immediate offsets; the renderer is
+        # 80-cell linear so no renderer patch. The menu uses its own layout (FUN_060b95b8,
+        # 0x50 stride) which stays 20/row, matched by decode()'s per-call table swap.
+        d[0x46b1] = COLS                 # cmp/eq #0x14,r0  (wrap column)
+        for o in (0x45e7, 0x4657, 0x46b5):
+            d[o] = COLS * 4              # mov #0x50,r1     (row byte-stride)
+        print(f"GEOM: dialogue {COLS}/row (fill wrap {COLS}, stride {COLS*4:#x}); "
+              f"menu 20/row; table swapped per-call by decode()")
     hooks = [(p, struct.pack(">I", sh2_inject.RESIDENCY)) for p in DECODE_PTRS]
     # Default: half-width via the glyph-cache substitution at font-upload (race-free).
     # The per-frame frame() renderer is a DEAD END (game overwrites it) — only hooked

@@ -16,6 +16,11 @@ static char *(*const orig_decode)(char*) = (char *(*)(char*))0x060c4d24u;
 static void (*const orig_frame)(void)    = (void (*)(void))0x060b55a0u;
 static void (*const orig_fontup)(void)   = (void (*)(void))0x060b4530u;
 
+#ifndef DLG_COLS
+#define DLG_COLS 26          /* dialogue cells/row (must match build_engine COLS) */
+#endif
+static void set_table(int cols);   /* per-call dialogue/menu geometry swap (below) */
+
 static const u16 ascii_sjis[95] = {
 #include "ascii_sjis.h"
 };
@@ -117,6 +122,16 @@ void __attribute__((section(".text.logger"))) logger(void)
 char __attribute__((section(".text.decode"))) *decode(char *p)
 {
     if (!p) return orig_decode(p);
+    /* Dialogue and menus share the render table but need different geometry
+     * (dialogue 26/row fills the box; menus 20/row for their 2-col layout). The
+     * caller tells us which: dialogue passes a real LWRAM chunk pointer, menus pass
+     * an HWRAM copy of the record. Swap the table's X/Y to match before it renders. */
+    {
+        unsigned up0 = (unsigned)p;
+        int dlg = (up0 >= 0x00200000u && up0 < 0x00400000u) ||
+                  (up0 >= 0x20200000u && up0 < 0x20400000u);
+        set_table(dlg ? DLG_COLS : 20);
+    }
     /* KEY redirect: a record of [0x04][off_hi][off_mid][off_lo] means "the real
      * (untruncated) 1-byte-encoded text is at p + offset" — the full-English blob
      * appended to this loaded chunk. Redirect the read pointer, then decode as
@@ -168,6 +183,24 @@ char __attribute__((section(".text.decode"))) *decode(char *p)
     }
     *o = 0;
     return out;
+}
+
+/* Rewrite the dialogue X-grid geometry to `cols` cells/row (8px pitch, 15px rows).
+ * Only s4(X,+8) and s5(Y,+10) per 12-byte entry; the renderer fills s2/s3 each frame.
+ * No divide (SH-2): running col/row counters; shifts are fixed. Skips if unchanged. */
+static void set_table(int cols)
+{
+    static int last = 0;
+    volatile u16 *e = (volatile u16 *)0x060e5358u;
+    int i, col = 0, row = 0;
+    if (cols == last) return;
+    last = cols;
+    for (i = 0; i < 80; i++) {
+        e[i * 6 + 4] = (u16)(0x13 + (col << 3));         /* X = 0x13 + col*8  */
+        e[i * 6 + 5] = (u16)(0x9e + (row << 4) - row);   /* Y = 0x9e + row*15 */
+        col++;
+        if (col == cols) { col = 0; row++; }
+    }
 }
 
 /* ---- hook 2: font renderer at frame-sync ---- */
