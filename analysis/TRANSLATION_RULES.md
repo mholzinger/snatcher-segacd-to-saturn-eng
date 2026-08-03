@@ -211,6 +211,33 @@ reach the draw (VERIFIED: post-hook savestate shows the game's srca, not ours).
 
 ---
 
+## 6c. Dialogue VM map  [for the paging effort — task #15]
+The display is **one-record-one-screen**; ZERO original JP records exceed ~4 rows
+(measured), so there is NO native in-record paging to reuse. To show long English
+completely, paging must be BUILT. Architecture mapped so far:
+- **`FUN_060b55a0`** = per-frame frame-sync (vsync busy-wait + subsystem calls); first
+  subsystem it calls is the VM tick.
+- **`FUN_060b8148`** = per-frame VM/typewriter tick. Gated by active flag; decrements a
+  typing timer; while timer done and not at terminator, processes script TOKENS via the
+  handler table **`0x060e4df0`** (indexed by token byte 0..0x6b, ~108 entries); when the
+  waiting-flag is set it calls the wait handler instead.
+- **VM state struct base = `0x060f24b0`** (same struct the menu code uses via
+  `DAT_060b970c`). Holds: typing-timer, current text pointer, a "waiting-for-input" flag,
+  terminator value — all at small offsets (exact offsets TBD).
+- **Wait handler `FUN_060c603c`** (pointer at MAIN_L file **0x821c**, repointable like the
+  DECODE_PTRS) = a **15-state** `switch(*DAT_060c60dc)` dispatch (states 0..0xe →
+  `PTR_FUN_060c60e0..6118`). This is the text-display state machine; the "waiting→advance"
+  transition lives here.
+- **Display driver `FUN_060b8224`**: setup → fill `FUN_060b45c4(0,0,text)` → render
+  `FUN_060b55a0` → `FUN_060b4e28`. Renderer of the 80-cell grid = `FUN_060b4970`.
+- **Paging plan (not yet built):** `decode()` splits an over-long record into pages,
+  returns page 1 (ends at terminator so the VM waits), stashes page 2+ptr + a pending
+  flag in scratch RAM; repoint `0x821c` to a wrapper around `FUN_060c603c` that, on the
+  advance transition, if a page is pending, points the VM text ptr (struct@0x060f24b0) at
+  the next page, clears the box, clears the flag — else calls the original. Unknowns to
+  nail before coding: the struct field offsets, the state var `DAT_060c60dc` + which state
+  is "advance", and the box-clear routine. HANG-test every step.
+
 ## 7. Getting English PAST the record byte budget
 
 ### [TRAP] Growth + repoint (`tools/build_full_en2.py`) — DEAD END
