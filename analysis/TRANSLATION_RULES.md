@@ -181,6 +181,33 @@ reach the draw (VERIFIED: post-hook savestate shows the game's srca, not ours).
   - Evidence: asking the receptionist about JUNKER with >3 rows of English hung the game;
     clamping to ≤3 rows fixed it. See `tools/layout_clamp.py` (`clamp_text(max_rows=3)`).
 - **Always clamp dialogue to ≤3 rows** (row 0 is often the speaker name).
+- **[TESTED — scrolling DOES NOT save you]** Removing the row cap so long `<br>`-wrapped
+  text scrolls via `FUN_060b4730` was tried: it still HARD-HANGS with the scene image
+  wiped to black once text passes the visible rows. `FUN_060b4730` is NOT a safe
+  overflow handler. Clamp, never scroll.
+
+## 6b. Dialogue box geometry — WIDE layout  [PROVEN — commit f67cc2f, default build/engine]
+- **The render table `0x060e5358` is EXACTLY 80 cells** (12 bytes each: s2/s3 = glyph
+  source written per-frame by the renderer `FUN_060b4970`; **s4=X (+8), s5=Y (+10)** =
+  static geometry). Entry 80 is other UI — the table CANNOT be extended. Renderer walks
+  80 cells linearly (`iVar8 < 0x50`), row/col-agnostic → geometry is 100% the table's X/Y.
+- **Speaker name occupies buffer row 0** (verified: cells 0-3 hold the name, color 0x04);
+  so speaker dialogue body starts at **row 1**. Speaker-less/narration starts at row 0.
+- **Fill routine `FUN_060b45c4` geometry immediates (MAIN_L.BIN file offsets):** wrap
+  column `0x14` at **0x46b1**; row byte-stride `0x50` at **0x45e7, 0x4657, 0x46b5**;
+  row-overflow guard `cmp #4` at 0x4661. To widen to COLS/row: set wrap=COLS, stride=COLS*4.
+- **Menu uses its OWN layout** `FUN_060b95b8` (2-col × 4-row, row stride `0x50` at file
+  0x966a, col offset computed 0x28) — needs 20/row×4. So menu and dialogue want DIFFERENT
+  geometry but share one table.
+- **Fix = mode-aware table swap in `decode()`**: it already knows caller (LWRAM ptr =
+  dialogue → 26/row; HWRAM copy buffer = menu → 20/row) and rewrites s4/s5 per call
+  (`set_table()` in full_hook.c, running col/row counters, no divide). Self-heals because
+  both share the buffer (whatever's decoded last sets the matching geometry).
+- **Hard tradeoff (80-cell wall):** speaker body starts row 1, so 3 full rows need
+  4×COLS ≤ 80 → COLS ≤ 20. Any COLS>20 gives speaker only **2 full rows**. Thus:
+  COLS=26 → MAXROWS=2 (wide, box-filling, ~38% of lines drop a trailing line);
+  COLS=20 → MAXROWS=3 (narrow ~53% width, ~29% drop). Both env-selectable in build_engine.
+  True completeness needs tighter (SegaCD-fit) translations, not engine changes.
 
 ---
 
