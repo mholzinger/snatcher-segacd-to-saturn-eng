@@ -238,6 +238,32 @@ completely, paging must be BUILT. Architecture mapped so far:
   nail before coding: the struct field offsets, the state var `DAT_060c60dc` + which state
   is "advance", and the box-clear routine. HANG-test every step.
 
+## 6d. Input / advance mechanism  [debugger-confirmed, for paging task #15]
+Found via mednafen SS debugger (SHIFT+R read-watch on the pad global):
+- **Pad global (raw, active-LOW): `0x060f2422` (high byte), `0x060f2423` (low byte).**
+  Standard Saturn layout in the high byte: Right=0x80 Left=0x40 Down=0x20 Up=0x10
+  Start=0x08 **A=0x04** C=0x02 B=0x01 (pressed = bit CLEAR). Confirmed via cheat search
+  (Right -> 0x7F) and the debugger.
+- **Input routine `FUN_060b20d4`** (read site PC **`060B2160`** = `mov.b @r1,r1`, r1=pad):
+  reads raw, `not`s it -> **current (active-HIGH) at `0x060f2710`**; saves last frame's
+  current to `0x060f2712` (prev); computes `current & ~prev` = **newly-pressed EDGE**,
+  stored via `mov r1,@r3` with r3=`0x060f2302` (32-bit store; the A/dir/ABC edge byte
+  should land at `0x060f2304`, A-edge=0x04). The dialogue ADVANCE reads this edge and
+  accepts **A OR C** (probably Start too).
+- **Why pad-consumption failed:** `FUN_060b20d4` is called **directly (BSR) from the
+  dialogue path** (`0x060b1540 -> 0x060b20d4`; a pointer to it also exists at
+  `0x060c5fcc` but that's a different caller). The VM computes AND checks the edge
+  inside its own call chain, so a pre-frame hook at 0x472c (FUN_060b55a0) that clears
+  the edge is either too early (VM recomputes) or outside the path. Clearing raw
+  `0x060f2422` or edge byte `0x060f2304` in the frame-sync hook did NOT stop the advance.
+- **Next step to consume the advance:** trampoline `FUN_060b20d4` (hook its return, or
+  its caller `0x060b1540`) so our code runs AFTER the edge is computed and BEFORE the
+  advance-check, and there mask the A/C/Start edge bits when a page is pending. THEN the
+  still-unsolved second half: make the box re-display page 2 (redraw) — the deep VM part.
+- Emulator gotchas learned: analog triggers mapped to Saturn L/R (`abs_4/abs_5`) rest as
+  "held" -> Saturn boots to BIOS Memory Manager (unbind `ss.input.port1.gamepad.ls/rs`).
+  Corrupt Saturn backup RAM (`~/.mednafen/sav/*.bkr/.bcr/.smpc`) also loops to BIOS.
+
 ## 7. Getting English PAST the record byte budget
 
 ### [TRAP] Growth + repoint (`tools/build_full_en2.py`) — DEAD END

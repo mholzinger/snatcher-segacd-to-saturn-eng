@@ -118,18 +118,38 @@ void __attribute__((section(".text.logger"))) logger(void)
     orig_frame();
 }
 
-/* Dev tool: per-frame ring-buffer log of the dialogue VM state var (0x060f2c04) so a
- * savestate taken right after pressing "advance" reveals the typing/waiting/advance
- * state sequence — empirical state discovery for the paging effort. Ring @0x060ffc10:
- * [head:u16][state:u8 x 256]. */
+/* Dev tool: per-frame ring log of the dialogue VM's SCRIPT POINTER (low 16 bits of
+ * 0x060f2a3c) + typing timer (0x060f2a04), so a savestate after pressing "advance"
+ * shows the full trajectory: typing (timer>0) -> waiting (timer=0, ptr static) ->
+ * advance (ptr jumps). Reveals the exact advance frame + command structure for paging.
+ * Rings of 128 u16 each: head@0x060ffc10, ptr-low@0x060ffc12, timer@0x060ffd12. */
 void __attribute__((section(".text.statelog"))) statelog(void)
 {
-    volatile u16 *head  = (volatile u16 *)0x060ffc10u;
-    volatile u8  *buf   = (volatile u8  *)0x060ffc12u;
-    volatile u8  *state = (volatile u8  *)0x060f2c04u;
+    volatile u16 *head = (volatile u16 *)0x060ffc10u;
+    volatile u16 *pbuf = (volatile u16 *)0x060ffc12u;   /* script ptr low-16 */
+    volatile u16 *tbuf = (volatile u16 *)0x060ffd12u;   /* typing timer */
+    volatile u16 *sptr = (volatile u16 *)0x060f2a3eu;   /* low half of 0x060f2a3c */
+    volatile u16 *tmr  = (volatile u16 *)0x060f2a04u;
     u16 h = *head;
-    buf[h & 0xff] = *state;
+    pbuf[h & 0x7f] = *sptr;
+    tbuf[h & 0x7f] = *tmr;
     *head = (u16)(h + 1);
+    orig_frame();
+}
+
+/* Paging foundation test: frame-sync wrapper that reads the pad global (0x060f2422,
+ * active-low, A=0x04) and SWALLOWS the first 3 fresh A-presses (sets the A bit back
+ * so the VM tick — which runs inside orig_frame — never sees them). If the dialogue
+ * refuses to advance for 3 A-presses then works, the pad address + A-bit + consume
+ * mechanism are all confirmed. count@0x060ffc30, prevA@0x060ffc32. */
+void __attribute__((section(".text.pagehook"))) pagehook(void)
+{
+    /* The advance uses the NEWLY-PRESSED edge (current & ~prev), computed by the input
+     * routine FUN_060b20d4 at PC 060B2160 and stored at 0x060f2302 (32-bit; the
+     * button/dir edge byte lands at 0x060f2304, active-HIGH, A=0x04). Clearing the raw
+     * pad 0x060f2422 was futile — clear the EDGE instead. Test: swallow first 3 A-edges. */
+    volatile u8 *edge = (volatile u8 *)0x060f2304u;   /* edge byte: A=0x04 (set=just pressed) */
+    *edge = (u8)(*edge & ~0x04);   /* DIAGNOSTIC: consume every A-edge before the VM reads it */
     orig_frame();
 }
 
