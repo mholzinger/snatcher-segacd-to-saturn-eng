@@ -142,15 +142,44 @@ void __attribute__((section(".text.statelog"))) statelog(void)
  * so the VM tick — which runs inside orig_frame — never sees them). If the dialogue
  * refuses to advance for 3 A-presses then works, the pad address + A-bit + consume
  * mechanism are all confirmed. count@0x060ffc30, prevA@0x060ffc32. */
-void __attribute__((section(".text.pagehook"))) pagehook(void)
+/* Trampoline replacement for the input-edge routine FUN_060b2134 (its first instruction
+ * is patched to jmp here). Faithfully reimplements it: walks param_2 for the connected
+ * pad, then for that pad sets current/prev/edge-pressed/edge-released in param_1[0..3].
+ * THEN, for the DIALOGUE input struct (param_1 == 0x060f2710), masks the advance edge
+ * (A=0x0400 | C=0x0200 | Start=0x0800) out of edge-pressed — so the advance-check that
+ * runs right after sees no press. This is the correct injection point: after the edge is
+ * computed, before it's read. (Test build masks unconditionally; real build gates on a
+ * pending-page flag.) */
+void __attribute__((section(".text.pagehook")))
+inputcompute(unsigned short *p1, char *p2, int p3)
 {
-    /* The advance uses the NEWLY-PRESSED edge (current & ~prev), computed by the input
-     * routine FUN_060b20d4 at PC 060B2160 and stored at 0x060f2302 (32-bit; the
-     * button/dir edge byte lands at 0x060f2304, active-HIGH, A=0x04). Clearing the raw
-     * pad 0x060f2422 was futile — clear the EDGE instead. Test: swallow first 3 A-edges. */
-    volatile u8 *edge = (volatile u8 *)0x060f2304u;   /* edge byte: A=0x04 (set=just pressed) */
-    *edge = (u8)(*edge & ~0x04);   /* DIAGNOSTIC: consume every A-edge before the VM reads it */
-    orig_frame();
+    if (p3 != 0) {
+        do {
+            if (*p2 == 0) break;
+            p3--; p2 += 4;
+        } while (p3 != 0);
+        if (p3 != 0) {
+            unsigned short *pv = p1 + 1;
+            *pv = *p1;                                          /* prev = current */
+            unsigned short cur = (unsigned short)~((unsigned short)(unsigned char)p2[3]
+                                 + (unsigned short)(unsigned char)p2[2] * 0x100);
+            *p1 = cur;                                          /* current (active high) */
+            p1[2] = (unsigned short)(~*pv & cur);               /* edge-pressed */
+            p1[3] = (unsigned short)(~*p1 & *pv);               /* edge-released */
+            {   /* GATED consume: only at the dialogue struct, only while a page is
+                 * pending (flag@0x060ffc34 set by decode()), only on a real A/C/Start
+                 * press — then eat it and clear the flag so the NEXT press advances. */
+                volatile unsigned char *pend = (volatile unsigned char *)0x060ffc34u;
+                if ((unsigned)p1 == 0x060f2710u && *pend && (p1[2] & 0x0E00)) {
+                    p1[2] = (unsigned short)(p1[2] & ~0x0E00);
+                    *pend = 0;
+                }
+            }
+            return;
+        }
+    }
+    *p1 = 1;
+    p1[2] = 0;
 }
 
 /* ---- hook 1: record decoder (must be first = entry at RESIDENCY) ---- */
@@ -187,6 +216,7 @@ char __attribute__((section(".text.decode"))) *decode(char *p)
             (up >= 0x20200000u && up < 0x20400000u)) {   /* LWRAM chunk pointer */
             text = p - roff;
             *g_text = text;
+            *(volatile u8 *)0x060ffc34u = 1;   /* page pending: this is a dialogue record */
         } else {                                          /* HWRAM copy buffer */
             text = *g_text;
         }

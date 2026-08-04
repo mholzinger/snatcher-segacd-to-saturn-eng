@@ -108,7 +108,7 @@ def compile_payload(load_addr):
         subprocess.run([os.path.join(MARS, "sh-elf-objcopy"), "-O", "binary", elf, binf], check=True)
         return (open(binf, "rb").read(), syms["_frame"],
                 syms.get("_fontblock", 0), syms.get("_logger", 0),
-                syms.get("_statelog", 0), syms.get("_pagehook", 0))
+                syms.get("_statelog", 0), syms.get("_inputcompute", 0))
 
 
 def build_chunk(d, jobs, stats):
@@ -186,7 +186,7 @@ FONTUP_PTR = 0x1208                              # font-upload call pointer (-> 
 
 
 def patched_index_main_l(entries, payload, frame_addr, fontblock_addr=0, logger_addr=0,
-                         statelog_addr=0, pagehook_addr=0):
+                         statelog_addr=0, inputcompute_addr=0):
     """Stock MAIN_L with new chunk index (no speaker patch), then grown with the
     payload + decode/frame hooks."""
     d = bytearray(open(os.path.join(ROOT, "extracted/saturn/files/MAIN_L.BIN"), "rb").read())
@@ -221,9 +221,13 @@ def patched_index_main_l(entries, payload, frame_addr, fontblock_addr=0, logger_
     if os.environ.get("STATELOG") and statelog_addr:  # dev: ring-log VM state var 0x060f2c04
         hooks.append((FRAME_PTR, struct.pack(">I", statelog_addr)))
         print(f"STATELOG: VM state ring @ frame-sync ptr 0x{FRAME_PTR:x} -> {statelog_addr:#x}")
-    if os.environ.get("PAGETEST") and pagehook_addr:  # dev: swallow first 3 A-presses (pad @0x060f2422)
-        hooks.append((FRAME_PTR, struct.pack(">I", pagehook_addr)))
-        print(f"PAGETEST: A-press consumer @ frame-sync ptr 0x{FRAME_PTR:x} -> {pagehook_addr:#x}")
+    if os.environ.get("PAGETEST") and inputcompute_addr:
+        # Trampoline the input-edge routine FUN_060b2134 (file 0x2134): overwrite its first
+        # 12 bytes with  mov.l @(1,pc),r0 ; jmp @r0 ; nop ; nop ; .long <inputcompute>.
+        # The caller BSR'd here, so PR holds the real return; our reimpl RTS's back to it.
+        stub = struct.pack(">HHHHI", 0xD001, 0x402B, 0x0009, 0x0009, inputcompute_addr)
+        d[0x2134:0x2134 + len(stub)] = stub
+        print(f"PAGETEST: FUN_060b2134 trampoline -> inputcompute {inputcompute_addr:#x}")
     return sh2_inject.grow_main_l(bytes(d), payload, hooks=hooks)
 
 
@@ -270,10 +274,10 @@ def main():
     new_secs = len(datab) // 2048
     delta = new_secs - (MAIN_LBA - DATA_LBA)
 
-    payload, frame_addr, fontblock_addr, logger_addr, statelog_addr, pagehook_addr = \
+    payload, frame_addr, fontblock_addr, logger_addr, statelog_addr, inputcompute_addr = \
         compile_payload(sh2_inject.RESIDENCY)
     main_l = patched_index_main_l(entries, payload, frame_addr, fontblock_addr, logger_addr,
-                                  statelog_addr, pagehook_addr)
+                                  statelog_addr, inputcompute_addr)
     orig_main_secs = (sh2_inject.MAIN_L_END + 2047) // 2048
     main_secs = (len(main_l) + 2047) // 2048
     main_delta = main_secs - orig_main_secs
