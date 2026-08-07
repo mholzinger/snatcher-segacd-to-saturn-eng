@@ -19,6 +19,7 @@ import json
 import os
 import shutil
 import struct
+import subprocess
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -32,7 +33,29 @@ SECTOR, USER = 2352, 16
 DATA_LBA, MAIN_LBA = 96, 5451
 INDEX = 0x362F4
 SRC = os.path.join(ROOT, "iso/Snatcher (Japan) [Saturn]")
-HOOK_PTR_FILE = 0x1208
+HOOK_PTR_FILE = int(os.environ.get("PROBE_HOOK", "0x1208"), 16)
+PROBE_ASM = os.environ.get("PROBE_ASM", "asm/inject_test.s")
+
+
+def compile_c(cfile, load_addr, entry):
+    """Compile a C file to a flat binary linked so `entry` lands at load_addr."""
+    import tempfile
+    MARS = os.environ.get("MARSDEV", "/Users/mikeholzinger/src/marsdev/mars") + "/sh-elf/bin"
+    with tempfile.TemporaryDirectory() as td:
+        o, elf, binf, ld = (os.path.join(td, x) for x in ("d.o", "d.elf", "d.bin", "d.ld"))
+        open(ld, "w").write(
+            "ENTRY(_%s)\nSECTIONS { . = %#x; .text : { *(.text.%s) *(.text*) *(.rodata*) } }\n"
+            % (entry, load_addr, entry))
+        subprocess.run([os.path.join(MARS, "sh-elf-gcc"), "-m2", "-O2", "-ffreestanding",
+                        "-fno-builtin", "-fomit-frame-pointer", "-c", os.path.join(ROOT, cfile),
+                        "-o", o, "-I", os.path.join(ROOT, "asm")], check=True)
+        subprocess.run([os.path.join(MARS, "sh-elf-ld"), "-T", ld, "-o", elf, o],
+                       check=True, stderr=subprocess.DEVNULL)
+        nm = subprocess.run([os.path.join(MARS, "sh-elf-nm"), elf], capture_output=True, text=True).stdout
+        addr = next(l.split()[0] for l in nm.splitlines() if l.split()[-1] == "_" + entry)
+        assert int(addr, 16) == load_addr, f"_{entry} at 0x{addr} != {load_addr:#x}"
+        subprocess.run([os.path.join(MARS, "sh-elf-objcopy"), "-O", "binary", elf, binf], check=True)
+        return open(binf, "rb").read()
 
 
 def scene_writes(main_bin):
@@ -74,10 +97,30 @@ def main():
     out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "build/inject_test")
     os.makedirs(out, exist_ok=True)
 
-    payload = sh2_asm.assemble(open(os.path.join(ROOT, "asm/inject_test.s")).read(),
-                               sh2_inject.RESIDENCY)
+    if PROBE_ASM.endswith(".c"):
+        payload = compile_c(PROBE_ASM, sh2_inject.RESIDENCY, "frame")
+    else:
+        payload = sh2_asm.assemble(open(os.path.join(ROOT, PROBE_ASM)).read(),
+                                   sh2_inject.RESIDENCY)
     hook = (HOOK_PTR_FILE, struct.pack(">I", sh2_inject.RESIDENCY))
-    main_bin = sh2_inject.build_main_l(payload, hooks=[hook])
+    hooks = [hook]
+    if os.environ.get("EXTRA_HOOK"):        # "offset:hexbytes" in-place patch(es), ';'-separated
+        for part in os.environ["EXTRA_HOOK"].split(";"):
+            off, val = part.split(":")
+            hooks.append((int(off, 16), bytes.fromhex(val)))
+            print(f"extra patch: 0x{int(off,16):x} = {val}")
+    main_bin = sh2_inject.build_main_l(payload, hooks=hooks)
+    if os.environ.get("PITCH"):        # rewrite the static X-grid (table @0x060e5358, short[4])
+        pitch = int(os.environ["PITCH"])
+        mb = bytearray(main_bin); TBL = 0x35358
+        for i in range(20, 80):                # rows 1-3 = dialogue; row 0 = speaker (kanji, keep 16px)
+            struct.pack_into(">H", mb, TBL + i * 12 + 8, 0x13 + (i % 20) * pitch)
+            if os.environ.get("SPRITEW"):      # short[1] = width<<8 | height (pixels)
+                struct.pack_into(">H", mb, TBL + i * 12 + 2,
+                                 (int(os.environ["SPRITEW"]) << 8) | 0x0e)
+        main_bin = bytes(mb)
+        print(f"PITCH patch (cells 20-79): X = 0x13 + col*{pitch} (was col*14)"
+              + (f"; sprite width -> {os.environ['SPRITEW']}px" if os.environ.get("SPRITEW") else ""))
     main_secs = (len(main_bin) + 2047) // 2048
     orig_main_secs = (sh2_inject.MAIN_L_END + 2047) // 2048
     delta = main_secs - orig_main_secs

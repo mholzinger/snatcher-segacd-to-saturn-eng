@@ -25,6 +25,7 @@ char *decode(char *p)
     int len = 0, ascii = 0;
     char *q = p; u8 b;
     while ((b = (u8)*q++)) {
+        if (b == 0x03) { len += 2; continue; }  /* 1-byte line break -> ¥ (0x818f) */
         if (!ascii) {
             if (b == 0x01) { ascii = 1; continue; }
             len += 1;
@@ -37,6 +38,7 @@ char *decode(char *p)
     char *out = game_malloc(len + 1);
     char *o = out; ascii = 0; q = p;
     while ((b = (u8)*q++)) {
+        if (b == 0x03) { *o++ = (char)0x81; *o++ = (char)0x8f; continue; }  /* ¥ */
         if (!ascii) {
             if (b == 0x01) { ascii = 1; continue; }
             *o++ = (char)(-(int)b);

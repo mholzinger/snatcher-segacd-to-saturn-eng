@@ -247,3 +247,197 @@ append path). Pipeline:
 build/decoder_hook is the untruncated build. REMAINING: wide full-width spacing
 (the 8px half-width glyph polish — separate, needs the VRAM slot mapping). The
 CORE truncation complaint is resolved. This is the basis for v0.02.
+
+
+## 2026-07-28 (session cont.) — OVERFLOW ROOT CAUSE + THE REAL CAPACITY PROBLEM
+In-emulator, build/decoder_hook hit TWO failures on longer content:
+  * Asking Mika about JUNKER: garbled text drawn INTO her portrait window, THEN the
+    "Go Inside" scene transition HANGS the CD forever (text interactions before it
+    still worked — they read already-loaded chunk RAM; the transition CD-load uses
+    corrupted pointers).
+Both are ONE bug: **text-window buffer OVERFLOW.**
+
+### GROUND TRUTH from savestate 669281da (the JUNKER screen, decompressed + WRAMH read)
+- Line buffer 0x060F28AA, 4B cells [SJIS hi][SJIS lo][color][00], 0x889E = padding.
+- **Window = fixed 80-cell buffer; ROWS ARE 20 full-width chars wide** (verified:
+  "JUNKER is a special " is exactly cells 20-39; speaker "ミカ" occupies row 0,
+  cells 0-1). Text word-wraps at 20; <br> pads to end-of-row.
+- The JUNKER record rendered correctly THROUGH cell 83 ("...destroy the"), then
+  cell 84+ = garbage (0x0001/0x0000) = the overflow corruption, caught mid-crash.
+  So usable capacity ≈ 80-84 cells (~4 rows), speaker row included.
+- Savestate mining recipe (WORKS): .mc0 is GZIP; decompress; sections are
+  `[len:1]["Name"][size:u32LE][data]`. WorkRAMH @name 0x43447c (swap16 to normalize
+  SH-2 BE). VDP2 VRAM @0x1b18ae (512KB), VDP2 RawRegs @0x1b1561 (0x200).
+  tmp extractor left at $CLAUDE_JOB_DIR/tmp/state0.raw.
+
+### THE REAL PROBLEM (measured across full corpus, proper 20-col layout sim)
+English is ~2x more VERBOSE (cells) than Japanese. **Median translated record = 80
+laid-out cells = AT the window limit. 30-50% of records in EVERY chunk overflow**
+(not just info-dumps). 75th pct = 100 cells, 90th = 120, worst = 206. This is why
+the crash is pervasive once you reach substantive lines.
+  * There is NO in-stream page-break control code (pages = individual records; the
+    engine shows a record, waits, advances). So pagination is NOT available.
+
+### KEY CORRECTION: half-width RENDERING alone does NOT fix overflow
+The 80-cell buffer counts CHARACTERS (1 cell/char), not pixels. Rendering glyphs at
+8px (pitch edit 0x4A27 0e->08) makes text tighter/less wrap-padding but does NOT
+reduce the character count that overflows the buffer. To fix the crash you must
+reduce CELL COUNT = **PACK 2 letters into 1 cell** (1 buffer entry, 1 VDP1 sprite,
+whose cache glyph is a 2-letter COMPOSITE). Then 73 chars -> 37 cells << 80. Renderer
+FUN_060b4970 is bounded at 80 cells and draws each cell as one 16x16 sprite from
+cache slot 0x25C15000+slot*0x80 — so a composite glyph per packed cell "just works"
+in the renderer; the work is the GLYPH COMPOSER.
+
+### DECISION (user, with corrected numbers): HALF-WIDTH PACKING, prove-first
+Rejected: condensing ~4000 lines terser (guts the translation's voice across half
+the game). Chosen: pack 2 half-width 8x16 glyphs per 16x16 cell -> verbose English
+fits as-is, written once. PROVE packing renders before building the full pipeline.
+
+### NEXT (the proof, then the pipeline)
+1. GLYPH COMPOSER is the hook + the last unknown. Font source still not located on
+   disc (streams via DMA FUN_060b2f8c to VRAM, transformed at load). Use the NOW-
+   AVAILABLE savestate VRAM (vdp1_vram.bin @0x25C15000 cache; state0.raw) to map the
+   on-demand glyph SLOT assignment: which cache slot each cell's glyph uses, and the
+   routine that uploads it (hook after FUN_060b4530 / the on-demand path).
+2. Decoder emits PACKED cells (2 ascii bytes -> 1 cell code); compose-hook builds the
+   16x16 pair tile (left 8px = glyphA, right 8px = glyphB) into that cell's slot.
+   Only ~40 visible cells/screen -> compose on demand is cheap.
+3. PROOF DISC: render "JUNKERjunker" packed 2/cell in an early record; user boots,
+   confirms tight 2-per-cell packing. THEN build the full re-encoder + integrate.
+Assets ready: assets/halfwidth_ascii_16cell_4bpp.bin (95 glyphs, 8px left-aligned),
+asm/glyphblit.s. Injection harness proven (RESIDENCY 0x060FF090).
+build/decoder_hook (full-width, untruncated but OVERFLOWS long records) stays the
+current build; it is NOT crash-safe on long lines — do not ship as-is.
+
+
+## 2026-07-29 — OVERFLOW STABILITY FIX SHIPPED (option 2), CONFIRMED IN-EMULATOR
+User chose stability-over-completeness (packing shelved as intractable: the glyph
+cache/font format would not crack from crashed/static savestates — needs a live
+debugger). Root cause nailed: fill routine FUN_060b45c4 auto-wraps at col 20
+(param_1==0x14) but ONLY the ¥-break path guards row 4 (param_2==4 -> page handler
+FUN_060b4698); the AUTO-WRAP path has no row guard, so English lines >20 chars
+auto-wrap past the 80-cell buffer into scene state -> garble + Go-Inside hang.
+
+FIX (pure data, tools/layout_clamp.py -> build_decoder_hook.py):
+  clamp_text() re-wraps every record to <=20-char lines and caps at MAX_ROWS=3
+  (safe for dialogue starting at row 1 -> rows 1..3 = cells 20..79). No auto-wrap
+  can occur; nothing writes past cell 79. 0/12641 records exceed 3 rows after clamp.
+CONFIRMED on screen (savestate 0): asking Mika about JUNKER now renders 3 clean
+lines, Mika's PORTRAIT IS INTACT (no garble), and "Go Inside" TRANSITIONS (no hang).
+Also fixed asm/ascii_sjis.h: ' " - ~ were mapped to blank (0x8140); now ’(0x8166)
+”(0x8168) ―(0x815d) 〜(0x8160) so contractions/hyphens render.
+
+build/overflow_fix = the STABLE build: untruncated short/medium text, long records
+CLIP at 3 lines (accepted tradeoff), zero crashes. THIS is the v0.02 basis.
+No realistic path to full verbose English without the glyph-packing hack (shelved).
+
+
+## 2026-07-29 — SCROLLING TEXT (fill-routine patch) + GLYPH-PIXEL CONTROL PROVEN
+Two big wins this session:
+
+1. SCROLLING: patched fill routine FUN_060b45c4 so the ¥-break path scrolls for ANY
+   row>=4 (not just ==4). 2-opcode in-place patch: file 0x4660 cmp/eq #4,r0 (8804)
+   -> tst #0xFC,r0 (c8fc); 0x4666 bf/s (8f07) -> bt/s (8d07). In the scroll path the
+   write goes to a FIXED bottom-row base (DAT_060b4680) so param_2 growing can't
+   overflow. Text re-wrapped to <=19 cols (clamp_text row=19, max_rows=None) so the
+   un-patched auto-wrap (col 14/20) never fires; only the now-safe ¥ path is used.
+   The scroll routine FUN_060b4730 (=PTR_FUN_060b4698) copies 3 rows up + writes the
+   continuation. The fill routine IS the typewriter (calls frame-sync FUN_060b55a0
+   =PTR_FUN_060b472c per char), so scrolling happens live while typing -> READABLE.
+   CONFIRMED in-emulator: long passages scroll through, natural width, color+portrait
+   intact. build/scroll_test (SCROLL=1 SCROLL_WIDTH=19). Also added 1-byte line-break
+   0x03 to the decoder (asm/decoder_hook.c) + encoder -> saves ~3 bytes/line, recovers
+   byte-slot cutoffs. Remaining cutoff = each record's DISC BYTE SLOT (~9 bytes short
+   for 69% of records -> partial last word); only record-growth fully fixes that.
+
+2. GLYPH-PIXEL CONTROL PROVEN (un-shelves the font/packing work!): the de-risk probe
+   asm/vram_fill.s (hooked at frame-sync ptr 0x472c via build_inject_test.py with
+   PROBE_ASM/PROBE_HOOK env) fills VDP1 VRAM 0x25C08000..+0x4000 every frame. RESULT:
+   the DIALOGUE TEXT WINDOW garbled to stripes while the speaker name (受付嬢) and the
+   picture stayed intact. => the dialogue glyph SOURCE is at VDP1 VRAM 0x8000 (SH-2
+   view 0x25C08000) and injected code CONTROLS those pixels. This is exactly what was
+   missing before (couldn't locate/write the font). The renderer FUN_060b4970 draws
+   per-cell 16x16 glyphs; the source at 0x8000 feeds the cache at 0x15000. Speaker font
+   is elsewhere (>0xC000, unaffected by the 0x8000..0xC000 fill).
+
+### NEXT: write PROPER glyphs at 0x8000 -> half-width font + glyph packing
+Green-lit. Steps: (1) map which 0x8000 offset each Latin SJIS code uses (render the
+region from a clean savestate, find ＡＢＣ, derive SJIS->offset). (2) upload proper
+8px half-width glyphs there (asset assets/halfwidth_ascii_16cell_4bpp.bin) via an
+injected routine hooked after font upload. (3) optionally compose 2 half-width glyphs
+per 16x16 cell (packing) so verbose English fits. This is the path to fully readable
+English via the glyph route. Full free-form bitmap overlay would ALSO need sprite-
+position control (VDP1 command coords) — a further step, not needed for proper-font.
+STABLE fallback throughout: build/overflow_fix (3-row clamp, zero crashes).
+
+## 2026-07-29 — CUSTOM FONT RENDERING PROVEN ON SCREEN (the wall is broken)
+GLYPH MAPPING CONFIRMED + CUSTOM GLYPHS RENDER CLEAN. The dialogue glyph cache is a
+DYNAMIC, per-screen cache at VDP1 VRAM 0x25C08000, indexed by SJIS LOW BYTE:
+  glyph for SJIS code C  ->  VDP1 VRAM 0x25C08000 + (C & 0xFF)*0x80   (0x80 = 16x16 4bpp)
+(That's why static dumps kept showing kanji — a given scene's cache holds only that
+scene's glyphs. The renderer FUN_060b4970's 0x15000 formula is a DIFFERENT text mode.)
+Format is PLAIN 4bpp; letter pixels use palette index 0xF (renders white/visible).
+
+PROVEN in-emulator (build/font_write, asm/font_write.s): a per-frame routine (hooked
+at frame-sync ptr 0x472c) copies 26 half-width uppercase glyphs (assets/hw_upper.bin,
+A-Z) to slots 0x60-0x79 (0x25C0B000). The greeting rendered "Welcome to JUNKER HQ."
+with the UPPERCASE letters as our CLEAN half-width glyphs. => injected code writes
+proper, correct, custom text glyphs. The whole bitmap/font-renderer approach is real.
+
+### REMAINING (all engineering, no unknowns)
+1. FULL FONT: only A-Z fit the 4KB residency this pass. Store all 95 glyphs as 1bpp
+   (~3KB, font is 2-color) and expand to 4bpp on write -> full upper/lower/digits/punct.
+   Slot for ascii ch = ascii_sjis[ch-0x20] & 0xFF (table in asm/ascii_sjis.h).
+2. TIGHT SPACING: glyphs are 8px in 16px cells (crisp but gappy). Closing gaps = the
+   PACKING step (2 half-width glyphs composed into one 16x16 cell; decoder emits pair
+   codes). All pieces now exist.
+3. COLLISION REFINEMENT: slots shared by SJIS low byte -> only override Latin ranges,
+   or hook the glyph-upload path to substitute by SJIS. Fine for English-heavy screens
+   already; kanji collisions rare.
+KEY ASSETS/TOOLS: asm/font_write.s (per-frame glyph writer), assets/hw_upper.bin,
+assets/halfwidth_ascii_16cell_4bpp.bin (95 glyphs), build_inject_test.py (PROBE_ASM/
+PROBE_HOOK env). Stable fallback: build/overflow_fix. Best readable: build/scroll_test.
+
+## 2026-07-29 — HORIZONTAL KERNING (X-PITCH) CRACKED
+The dialogue X-grid is STATIC DATA: table at MAIN_L file 0x35358 (RAM 0x060e5358),
+80 entries x 12 bytes (6 shorts). short[4] (byte +8 of each entry) = the per-cell X
+coordinate = 0x13 + (col%20)*14, static (FUN_060b4970 only overwrites short[2]=glyph
+and short[3]=14*(attr>>2); it does NOT touch short[4]). 20 cells/row, X resets at
+col 20. => halve the kerning by rewriting short[4] to 0x13 + (col%20)*PITCH.
+build_inject_test.py now supports env PITCH=N (rewrites all 80 short[4]) and
+EXTRA_HOOK="off:hex;..." (in-place byte patches). CONFIRMED in-emulator (build/pitch8,
+PITCH=8 + uppercase font): text visibly TIGHTENED (JUNKER/HQ close together).
+CAVEAT — at PITCH=8 the text currently MANGLES/overlaps because (a) only uppercase is
+our 8px font; lowercase are still 16px full-width -> heavy overlap; (b) the sprite is
+likely still 16px wide so even 8px glyphs may overlap unless the right half is truly
+transparent or the sprite width (CMDSIZE) is trimmed to 8. DO NOT patch the '14' inside
+FUN_060b4970 (file 0x4A27) — that's short[3], glyph-addr related, corrupts content.
+
+### NEXT (culminating build): full 8px font + PITCH=8 (+ maybe sprite-width trim)
+Store all 95 glyphs 1bpp (~3KB), expand 1bpp->4bpp on write (nibble LUT), write each
+to slot = ascii_sjis[ch-0x20]&0xFF (base 0x25C08000). Combine with PITCH=8. If 8px
+glyphs still overlap, find CMDSIZE (VDP1 sprite width) in the command template
+(file 0x4950 region) and set X-size to 8px. That yields clean, tight, readable English.
+
+## 2026-07-29 late — FULL FONT + PITCH built; TIGHT but OVERLAPPING (need sprite width)
+DONE: asm/font_full.c (compiled C via build_inject_test compile_c(); writes all 95
+half-width glyphs, stored 1bpp in slots.h/font1bpp.h [priority order: letters last so
+they win the SJIS-low-byte collisions], expanded 1bpp->4bpp per frame to
+0x25C08000+slot*0x80). build/fulltight = full font + PITCH=8. Tools: build_inject_test
+now compiles .c payloads (compile_c) and supports env PITCH=N and EXTRA_HOOK.
+RESULT in-emulator: text is TIGHT (pitch works) but LETTERS OVERLAP ("Welcome to JUNKER
+HQ" -> "Velccrre tc .LNKEF HQ"). ROOT CAUSE: each glyph is 8px content inside a 16px-
+wide sprite; at 8px pitch the sprite's right half covers the next glyph. NO pitch value
+fixes this with 16px sprites — the SPRITE must be 8px wide (CMDSIZE) or its right half
+made transparent (CMDPMOD index-0 transparency). The sprite table @0x060e5358 (12-byte
+entries: [0]=4800,[1]=100e,[2]=glyph(dyn),[3]=Y(dyn),[4]=X(static,pitch),[5]=009e) does
+NOT parse as standard 32-byte VDP1 commands, so where CMDSIZE/CMDPMOD live is UNSOLVED.
+KNOWN COLLISIONS (letters win): apostrophe->G (0x66), "->I, (->J, )->K, etc. — fully
+clean punctuation needs unique per-char slot assignment (encoder change).
+
+### FINISH-LINE STEP (next session): trim sprite width to 8px OR enable index-0
+transparency. Options to find it: parse the VDP1 command list in VRAM (offset 0) from a
+clean savestate to read the text sprites' actual CMDSIZE/CMDPMOD and trace who writes
+them; or examine the routine that consumes table 0x060e5358 and builds VDP1 commands
+(find via how 0x060e5358 is DMA'd/read — not by symbol, it's computed). Once 8px-wide:
+clean tight readable English (the goal). Meanwhile readable-but-wide = build/scroll_test.

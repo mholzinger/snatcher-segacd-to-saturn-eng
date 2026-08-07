@@ -27,10 +27,41 @@ import re
 import struct
 import sys
 
+import subprocess
+
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import reassemble
 import vm_trace
 import patch_speakers as spk
+import sh2_inject
+import layout_clamp
+
+FONT = os.environ.get("FONT", "1") == "1"   # inject the half-width font renderer
+FRAME_PTR = 0x472c                          # frame-sync fn-ptr literal (MAIN_L file offset)
+
+
+def compile_renderer(load_addr):
+    """Compile asm/font_render.c (frame() only) linked at load_addr; return
+    (bytes, frame_addr). The 2-byte native text puts full-width SJIS in the line
+    buffer, which frame() maps to our half-width glyphs."""
+    import tempfile
+    MARS = os.environ.get("MARSDEV", "/Users/mikeholzinger/src/marsdev/mars") + "/sh-elf/bin"
+    with tempfile.TemporaryDirectory() as td:
+        o, elf, binf, ld = (os.path.join(td, x) for x in ("d.o", "d.elf", "d.bin", "d.ld"))
+        open(ld, "w").write(
+            "ENTRY(_frame)\nSECTIONS { . = %#x; "
+            ".text : { *(.text.frame) *(.text*) *(.rodata*) } }\n" % load_addr)
+        subprocess.run([os.path.join(MARS, "sh-elf-gcc"), "-m2", "-O2", "-ffreestanding",
+                        "-fno-builtin", "-fomit-frame-pointer", "-c",
+                        os.path.join(ROOT, "asm/font_render.c"), "-o", o,
+                        "-I", os.path.join(ROOT, "asm")], check=True)
+        subprocess.run([os.path.join(MARS, "sh-elf-ld"), "-T", ld, "-o", elf, o],
+                       check=True, stderr=subprocess.DEVNULL)
+        nm = subprocess.run([os.path.join(MARS, "sh-elf-nm"), elf], capture_output=True, text=True).stdout
+        addr = next(int(l.split()[0], 16) for l in nm.splitlines() if l.split()[-1] == "_frame")
+        assert addr == load_addr, f"_frame at {addr:#x} != {load_addr:#x}"
+        subprocess.run([os.path.join(MARS, "sh-elf-objcopy"), "-O", "binary", elf, binf], check=True)
+        return open(binf, "rb").read(), addr
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECTOR = 2352
@@ -46,19 +77,10 @@ SRC = os.path.join(ROOT, "iso/Snatcher (Japan) [Saturn]")
 
 
 def wrap(en):
-    if "<br>" in en or len(en) <= 20:
-        return en
-    words = en.split(" ")
-    lines, cur = [], ""
-    for w in words:
-        if cur and len(cur) + 1 + len(w) > 20:
-            lines.append(cur)
-            cur = w
-        else:
-            cur = (cur + " " + w) if cur else w
-    if cur:
-        lines.append(cur)
-    return "<br>".join(lines)
+    # Clamp to <=3 dialogue rows: the fill routine's auto-wrap doesn't guard row 4,
+    # so >3-row text overflows the line buffer and hangs (the JUNKER-explanation
+    # crash). clamp_text re-wraps to 20 cols AND caps rows (stable, proven fix).
+    return layout_clamp.clamp_text(en, max_rows=3, row=20)
 
 
 def token_for(B):
@@ -284,9 +306,22 @@ def main():
 
     main_l = patched_main_l(entries)
 
+    # inject the font renderer -> MAIN_L grows by main_delta; files after it shift
+    # by (delta + main_delta). DATA.BIN's own growth is `delta` (already computed).
+    orig_main_secs = (sh2_inject.MAIN_L_END + 2047) // 2048
+    if FONT:
+        payload, frame_addr = compile_renderer(sh2_inject.RESIDENCY)
+        main_l = sh2_inject.grow_main_l(
+            main_l, payload, hooks=[(FRAME_PTR, struct.pack(">I", frame_addr))])
+        print(f"font renderer: payload {len(payload)}B @ {sh2_inject.RESIDENCY:#x}; "
+              f"frame() @ {frame_addr:#x}; ptr 0x{FRAME_PTR:x} repointed")
+    main_secs = (len(main_l) + 2047) // 2048
+    main_delta = main_secs - orig_main_secs
+    total_delta = delta + main_delta
+
     src_t1 = os.path.join(SRC, "Snatcher (Japan) (Track 1).bin")
     dst_t1 = os.path.join(out_dir, "Snatcher (Japan) (Track 1).bin")
-    print("building track 1...")
+    print(f"building track 1... (DATA delta {delta:+d}, MAIN_L delta {main_delta:+d})")
     src = open(src_t1, "rb")
     dst = open(dst_t1, "wb")
     # sectors 0..96 unchanged
@@ -299,18 +334,17 @@ def main():
     # new DATA.BIN
     for s in range(new_secs):
         emit(DATA_LBA + s, bytes(datab[s * 2048:(s + 1) * 2048]))
-    # rest of original track 1, shifted, with MAIN_L replaced
-    src.seek(MAIN_LBA * SECTOR)
+    # grown MAIN_L at MAIN_LBA+delta
+    for rel in range(main_secs):
+        user = main_l[rel * 2048:rel * 2048 + 2048]
+        user += b"\x00" * (2048 - len(user))
+        emit(MAIN_LBA + delta + rel, user)
+    # files after the original MAIN_L, shifted by total_delta
     t1_secs = os.path.getsize(src_t1) // SECTOR
-    main_secs = (len(main_l) + 2047) // 2048
-    for old_lba in range(MAIN_LBA, t1_secs):
+    src.seek((MAIN_LBA + orig_main_secs) * SECTOR)
+    for old_lba in range(MAIN_LBA + orig_main_secs, t1_secs):
         raw = src.read(SECTOR)
-        user = raw[16:16 + 2048]
-        rel = old_lba - MAIN_LBA
-        if rel < main_secs:
-            user = main_l[rel * 2048:rel * 2048 + 2048]
-            user += b"\x00" * (2048 - len(user))
-        emit(old_lba + delta, user)
+        emit(old_lba + total_delta, raw[16:16 + 2048])
     src.close()
     dst.close()
 
@@ -342,9 +376,15 @@ def main():
                 break
             lba = struct.unpack("<I", d[i + 2:i + 6])[0]
             size = struct.unpack("<I", d[i + 10:i + 14])[0]
-            if lba >= MAIN_LBA:
+            if lba == MAIN_LBA:                       # MAIN_L: shift by delta, grew
                 d[i + 2:i + 6] = struct.pack("<I", lba + delta)
                 d[i + 6:i + 10] = struct.pack(">I", lba + delta)
+                d[i + 10:i + 14] = struct.pack("<I", len(main_l))
+                d[i + 14:i + 18] = struct.pack(">I", len(main_l))
+                patched += 1
+            elif lba > MAIN_LBA:                      # after MAIN_L: shift by total
+                d[i + 2:i + 6] = struct.pack("<I", lba + total_delta)
+                d[i + 6:i + 10] = struct.pack(">I", lba + total_delta)
                 patched += 1
             nl = d[i + 32]
             name = d[i + 33:i + 33 + nl]
@@ -361,7 +401,7 @@ def main():
     print("rebuilding track 2 headers...")
     t2_src = open(os.path.join(SRC, "Snatcher (Japan) (Track 2).bin"), "rb")
     t2_dst = open(os.path.join(out_dir, "Snatcher (Japan) (Track 2).bin"), "wb")
-    t1_new_secs = t1_secs + delta
+    t1_new_secs = t1_secs + total_delta
     lba = t1_new_secs                      # track 2 starts right after track 1
     bcd = lambda v: ((v // 10) << 4) | (v % 10)
     while True:
