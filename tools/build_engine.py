@@ -38,6 +38,32 @@ MARS = os.environ.get("MARSDEV", "/Users/mikeholzinger/src/marsdev/mars") + "/sh
 DECODE_PTRS = [0x835c, 0x84a0, 0x907c, 0x9714, 0x97e8, 0xa040, 0xa67c]
 FRAME_PTR = 0x472c
 
+# Untranslated single-token LOOK/investigate options. These jl=2 records (one 2-byte
+# token = one kanji) were skipped by the extractor, so they render as their original
+# Japanese. They're too small for a KEY (6 bytes) or spelled-out English in place, so we
+# translate them via a payload table: build_chunk marks each such record [0x06][index];
+# decode() redirects to tok_en[index]. SJIS kanji -> English (chief-office etc. targets).
+LOOK_EN = {
+    '窓': 'Window', '扉': 'Door', '壁': 'Wall', '棚': 'Shelf', '絵': 'Painting',
+    '床': 'Floor', '瓶': 'Bottle', '夢': 'Dream', '机': 'Desk', '街': 'Street',
+    '鏡': 'Mirror', '駒': 'Chess piece', '前': 'Front', '後': 'Back', '空': 'Sky',
+    '人': 'Person', '眼': 'Eye', '鼻': 'Nose', '口': 'Mouth', '海': 'Sea',
+    '女': 'Woman', '客': 'Customer', '酒': 'Liquor', '銃': 'Gun', '犬': 'Dog',
+    '猫': 'Cat', '傷': 'Scar', '砂': 'Sand', '雪': 'Snow',
+    # name-search list section headers (chunk_025) — katakana initial -> romaji
+    'ア': 'A', 'コ': 'Ko', 'タ': 'Ta', 'マ': 'Ma',
+}
+_LOOK_ITEMS = list(LOOK_EN.items())          # index order (stable)
+LOOK_TOKEN_IDX = {0x10100 - struct.unpack(">H", ch.encode("shift_jis"))[0]: i
+                  for i, (ch, en) in enumerate(_LOOK_ITEMS)}
+
+
+def write_tok_en_h():
+    """Emit asm/tok_en.h: 1-byte-encoded English (0x01=ascii-mode) in index order."""
+    lines = [f'    "\\x01{en}",' for ch, en in _LOOK_ITEMS]
+    with open(os.path.join(ROOT, "asm/tok_en.h"), "w") as fh:
+        fh.write("\n".join(lines) + "\n")
+
 # Dialogue box geometry. The game ships 20 cells/row x 4 rows; at half-width (8px)
 # 20 cells fill only ~55% of the box, so text wraps early ("extra carriage returns").
 # COLS=26 fills the box: 26 cells/row x 3 rows = 78 <= the renderer's 80-cell window.
@@ -105,7 +131,8 @@ def compile_payload(load_addr):
         open(ld, "w").write(
             "ENTRY(_decode)\nSECTIONS { . = %#x; "
             ".text : { *(.text.decode) *(.text.fontblock) *(.text.pagehook) *(.text*) *(.rodata*) } }\n" % load_addr)
-        diag = ["-DDIAG_ADVANCE"] if os.environ.get("DIAG") else []
+        diag = (["-DDIAG_ADVANCE"] if os.environ.get("DIAG") else []) + \
+               (["-DDIAG_MENU"] if os.environ.get("DIAG_MENU") else [])
         subprocess.run([os.path.join(MARS, "sh-elf-gcc"), "-m2", "-O2", "-ffreestanding",
                         "-fno-builtin", "-fomit-frame-pointer", "-c",
                         os.path.join(ROOT, "asm/full_hook.c"), "-o", o,
@@ -119,7 +146,8 @@ def compile_payload(load_addr):
         subprocess.run([os.path.join(MARS, "sh-elf-objcopy"), "-O", "binary", elf, binf], check=True)
         return (open(binf, "rb").read(), syms.get("_fontblock", 0),
                 syms.get("_inputcompute", 0), syms.get("_redraw_hook", 0),
-                syms.get("_print_hook", 0), syms.get("_row0_geom", 0))
+                syms.get("_print_hook", 0), syms.get("_row0_geom", 0),
+                syms.get("_menu_lay", 0))
 
 
 def build_chunk(d, jobs, stats):
@@ -165,6 +193,18 @@ def build_chunk(d, jobs, stats):
         pos = add(encode_1byte_full(clamp_text(en, max_rows=None, row=COLS)))
         keys.append((off, jl, pos))
 
+    # Translate extractor-missed single-token LOOK options (jl=2): mark [0x06][index] so
+    # decode() serves English from the payload table. Untranslated by the normal pipeline
+    # (not in `jobs`); too small for a key. Unmapped tokens are left as original Japanese.
+    translated = {off for off, _ in jobs}
+    for off, end in recs.items():
+        if off in translated or end - off != 2:
+            continue
+        tok = (d[off] << 8) | d[off + 1]
+        if tok in LOOK_TOKEN_IDX:
+            out[off], out[off + 1] = 0x06, LOOK_TOKEN_IDX[tok]
+            stats["look_en"] += 1
+
     if len(d) + len(blob) - ts <= 0xFFFF:        # blob fits the 16-bit text section
         for off, jl, pos in keys:
             roff, boff = off - ts, pos - ts      # both relative to ts, <64KB
@@ -197,7 +237,8 @@ FONTUP_PTR = 0x1208                              # font-upload call pointer (-> 
 
 
 def patched_index_main_l(entries, payload, fontblock_addr=0, inputcompute_addr=0,
-                         redraw_hook_addr=0, print_hook_addr=0, row0_geom_addr=0):
+                         redraw_hook_addr=0, print_hook_addr=0, row0_geom_addr=0,
+                         menu_lay_addr=0):
     """Stock MAIN_L with new chunk index (no speaker patch), then grown with the
     payload + decode/frame hooks."""
     d = bytearray(open(os.path.join(ROOT, "extracted/saturn/files/MAIN_L.BIN"), "rb").read())
@@ -243,6 +284,13 @@ def patched_index_main_l(entries, payload, fontblock_addr=0, inputcompute_addr=0
                            0x0009, 0x0009, 0x0009, 0x0009, 0x0009)   # literal, then nops
         d[0x8406:0x8406 + len(stub)] = stub
         print(f"ROW0GEOM: print_dialogue row-0 X-write -> row0_geom {row0_geom_addr:#x}")
+    # MENU 1-COLUMN (opt-in MENU1COL=1 while iterating): the 2-col topic grid render
+    # (0x060b95b8) lays each option via 0x060b47fc, loaded from the literal at file 0x9720.
+    # Repoint that literal to menu_lay() so labels get the full 20-cell row instead of a
+    # 10-cell column. (Increment 1: no scroll — options past row 3 skipped.)
+    if os.environ.get("MENU1COL") == "1" and menu_lay_addr:
+        d[0x9720:0x9724] = struct.pack(">I", menu_lay_addr)
+        print(f"MENU1COL: topic-grid lay 0x060b47fc -> menu_lay {menu_lay_addr:#x}")
     return sh2_inject.grow_main_l(bytes(d), payload, hooks=hooks)
 
 
@@ -256,6 +304,7 @@ def mode1_header(lba, bcd=lambda v: ((v // 10) << 4) | (v % 10)):
 def main():
     out_dir = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "build/engine")
     os.makedirs(out_dir, exist_ok=True)
+    write_tok_en_h()                   # payload includes tok_en.h -> emit before compile
 
     master = json.load(open(os.path.join(ROOT, "translation/master.json"), encoding="utf-8"))
     if os.environ.get("MAPPROBE"):     # override the greeting with a char-enumeration
@@ -272,7 +321,7 @@ def main():
             by_chunk.setdefault(int(e["chunk"].split("_")[1]), []).append(
                 (int(e["offset"], 16), e["en"]))
 
-    stats = {k: 0 for k in ("keyed", "skip_norec", "too_small", "inplace_trunc", "big_chunk", "inplace_menu")}
+    stats = {k: 0 for k in ("keyed", "skip_norec", "too_small", "inplace_trunc", "big_chunk", "inplace_menu", "look_en")}
     chunks = []
     for i in range(N_CHUNKS):
         d = open(os.path.join(ROOT, f"extracted/saturn/data_bin/chunk_{i:03d}.bin"), "rb").read()
@@ -290,9 +339,10 @@ def main():
     delta = new_secs - (MAIN_LBA - DATA_LBA)
 
     payload, fontblock_addr, inputcompute_addr, redraw_hook_addr, print_hook_addr, \
-        row0_geom_addr = compile_payload(sh2_inject.RESIDENCY)
+        row0_geom_addr, menu_lay_addr = compile_payload(sh2_inject.RESIDENCY)
     main_l = patched_index_main_l(entries, payload, fontblock_addr, inputcompute_addr,
-                                  redraw_hook_addr, print_hook_addr, row0_geom_addr)
+                                  redraw_hook_addr, print_hook_addr, row0_geom_addr,
+                                  menu_lay_addr)
     orig_main_secs = (sh2_inject.MAIN_L_END + 2047) // 2048
     main_secs = (len(main_l) + 2047) // 2048
     main_delta = main_secs - orig_main_secs

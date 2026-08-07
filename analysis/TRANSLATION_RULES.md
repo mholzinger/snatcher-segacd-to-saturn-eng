@@ -378,11 +378,24 @@ above the payload: g_lastrec `0x060fffd8`, pending `0x060fffe4`, pageidx `0x060f
 - **DISPROVEN:** prefixing the key with `0x01` — the copy still detaches it from the
   blob. Not a dispatch problem; a pointer problem.
 - Mitigation (in `build_engine.py`): records with `jl < 16` kept in-place (readable-
-  truncated); only longer dialogue records keyed. **Real fix (open):** give `decode()`
-  the current chunk's base so it can resolve `chunk_base + absolute_offset` when `p` is
-  the `0x060FAC60` copy buffer — capture the base by hooking the chunk loader, or store
-  the absolute chunk offset in the key. (Note: LWRAM holds several chunks at non-fixed
-  bases, so a single global is needed, not a constant.)
+  truncated); only longer dialogue records keyed.
+- **[PROVEN 2026-08-06 — REFRAME] The blob resolution is NOT the real menu problem.**
+  The live chunk base is at **`0x060fd164`** (print_dialogue computes the record ptr as
+  `r5 + *0x060fd164`). Savestate at the "About JUNKER" menu: `*0x060fd164 = 0x202e8000`,
+  cached `g_text = 0x202e8001` — essentially identical. Menu option [0] "About JUNKER"
+  arrives as a KEYED copy (`01 04 0c64 84ce`) and DOES resolve to the full English via
+  the cached base. The truncation is purely the **menu LAYOUT**: render fn `0x060b95b8`
+  lays options **2 columns × 4 rows, 10 cells per column** (line buffer shows
+  `|About JUNK|About Navi|`), so any label >10 chars is cut to 10 regardless of decode.
+- **Menu render is type-dispatched** at `0x060b9540` (jump table `0x060b9564`) to 6
+  variants: `0x060b95b8, 0x060b9ec0, 0x060ba140, 0x060ba2c8, 0x060ba418, 0x060ba69c`.
+  Option count = `*0x060fd0c0`. `0x060b95b8` position math (0x9662–0x968e):
+  `row=(i&3)`, `col=(i&4)`, offset `= 0x3fa + (i&3)*80 + ((i&4)?40:0)`.
+- **Chosen fix (task #14): WIDEN the engine to 1-column** (full ~20-char row) + scrolling
+  for >4 options — no translation edits. Diag build `build/engine_menudiag` (env
+  `DIAG_MENU=1`) logs each menu-path decode (copy-buffer p in `0x060fac60..0x060fb060`)
+  to a ring at **`0x060fff60`**: `[0]`=chunk base, `[1]`=hit count, `[2+i*2]`=copy[0:4],
+  `[3+i*2]`=copy[4:8] per option i. Keyed option → copy[0:4]=`01 04 <roff:2>`.
 
 ## 9. Open problems (honest status)
 1. **h1-load hypothesis** (§7) — confirm in-emulator.
