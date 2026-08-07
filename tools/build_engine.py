@@ -59,8 +59,11 @@ LOOK_TOKEN_IDX = {0x10100 - struct.unpack(">H", ch.encode("shift_jis"))[0]: i
 
 
 def write_tok_en_h():
-    """Emit asm/tok_en.h: 1-byte-encoded English (0x01=ascii-mode) in index order."""
-    lines = [f'    "\\x01{en}",' for ch, en in _LOOK_ITEMS]
+    """Emit asm/tok_en.h: a packed blob of 1-byte-encoded English strings in index order.
+    Adjacent string literals with an explicit \\0 terminator each; the payload walks to the
+    index-th string. OCTAL \\001 (not \\x01) — a hex escape would greedily eat a following
+    hex-digit letter (\\x01Desk -> 0x1D + 'esk')."""
+    lines = [f'    "\\001{en}\\0"' for ch, en in _LOOK_ITEMS]
     with open(os.path.join(ROOT, "asm/tok_en.h"), "w") as fh:
         fh.write("\n".join(lines) + "\n")
 
@@ -144,7 +147,16 @@ def compile_payload(load_addr):
         syms = {l.split()[-1]: int(l.split()[0], 16) for l in nm.splitlines() if len(l.split()) == 3}
         assert syms["_decode"] == load_addr
         subprocess.run([os.path.join(MARS, "sh-elf-objcopy"), "-O", "binary", elf, binf], check=True)
-        return (open(binf, "rb").read(), syms.get("_fontblock", 0),
+        payload = open(binf, "rb").read()
+        # The RESIDENCY window's TOP holds runtime scratch: paging state at 0x060fffb0+
+        # (page ptrs, g_text, pending) and the DIAG_MENU ring at 0x060fff60. The payload
+        # must end BELOW that or it clobbers the scratch at runtime (garbled dialogue).
+        SCRATCH_BASE = 0x060fff60 if os.environ.get("DIAG_MENU") else 0x060fffb0
+        end = load_addr + len(payload)
+        if end > SCRATCH_BASE:
+            raise SystemExit(f"PAYLOAD OVERFLOW: {len(payload)}B ends {end:#x} > scratch "
+                             f"{SCRATCH_BASE:#x} (over by {end - SCRATCH_BASE}B). Shrink the payload.")
+        return (payload, syms.get("_fontblock", 0),
                 syms.get("_inputcompute", 0), syms.get("_redraw_hook", 0),
                 syms.get("_print_hook", 0), syms.get("_row0_geom", 0),
                 syms.get("_menu_lay", 0))
