@@ -7,6 +7,15 @@ audio/
 *.iso
 *.chd
 *.wav
+# Screenshots / screen recordings are game frames (copyrighted) — never commit
+screenshots/
+*.mov
+*.mp4
+*.gif
+# Emulator savestates
+*.mc0
+*.mc1
+*.mcs
 
 # Ghidra
 *.rep/
