@@ -46,7 +46,13 @@ FRAME_PTR = 0x472c
 # routine's wrap column (0x14->0x1a) and row byte-stride (0x50->0x68) so a char lands
 # in buffer cell row*26+col, which maps 1:1 to renderer cell row*26+col. See
 # TRANSLATION_RULES "dialogue layout".
-COLS = int(os.environ.get("COLS", "26"))
+# DEFAULT = 20 (safe). 26/row "wide" LOOKS nicer but is a LATENT-HANG FOOTGUN: the
+# game's own text processor chokes when a row fills to a full 26 cells (it assumes the
+# stock 20/row x 4-row layout) -> the fill/frame path stalls forever. PROVEN 2026-08-06:
+# stock build/engine at COLS=26 hard-hangs on a full-26-char line (e.g. Mika "The chief
+# is watching that camera feed too, you know."); COLS=20 plays it fine. Only use 26 if
+# you ALSO patch the game's text-processor/scroll row logic. See TRANSLATION_RULES.
+COLS = int(os.environ.get("COLS", "20"))
 # Dialogue row cap (hang-safe: text must not reach buffer row that spills past cell
 # 79 -> overflow corrupts scene state and hard-hangs; PROVEN, don't exceed).
 # Speaker dialogue puts the name in buffer row 0, so the body starts at row 1. At
@@ -54,7 +60,11 @@ COLS = int(os.environ.get("COLS", "26"))
 # -> cap 2. At COLS=20 the body gets 3 full rows (1,2,3 = cells 20-79) -> cap 3.
 # The game's scroll (FUN_060b4730) is NOT a safe overflow handler (it hangs), so we
 # clamp instead of scroll. Flip layouts with:  COLS=20 (narrow/3-row) or default 26.
-MAXROWS = int(os.environ.get("MAXROWS", "2" if COLS > 20 else "3"))
+# Cap 2 body rows ALWAYS. The box is 4 rows: row 0 = speaker, rows 1-2 = body, row 3 =
+# margin/prompt. A 3-row body (rows 1-3) fills the box and the game reflows it into a
+# broken rows-0,2,3 gap layout (and drops the speaker). PROVEN 2026-08-06. Paging shows
+# the rest, so 2 is both safe and clean.
+MAXROWS = int(os.environ.get("MAXROWS", "2"))
 
 
 def encode_1byte_full(en):
@@ -94,11 +104,12 @@ def compile_payload(load_addr):
         o, elf, binf, ld = (os.path.join(td, x) for x in ("d.o", "d.elf", "d.bin", "d.ld"))
         open(ld, "w").write(
             "ENTRY(_decode)\nSECTIONS { . = %#x; "
-            ".text : { *(.text.decode) *(.text.frame) *(.text.fontblock) *(.text.logger) *(.text.statelog) *(.text.pagehook) *(.text*) *(.rodata*) } }\n" % load_addr)
+            ".text : { *(.text.decode) *(.text.fontblock) *(.text.pagehook) *(.text*) *(.rodata*) } }\n" % load_addr)
+        diag = ["-DDIAG_ADVANCE"] if os.environ.get("DIAG") else []
         subprocess.run([os.path.join(MARS, "sh-elf-gcc"), "-m2", "-O2", "-ffreestanding",
                         "-fno-builtin", "-fomit-frame-pointer", "-c",
                         os.path.join(ROOT, "asm/full_hook.c"), "-o", o,
-                        f"-DDLG_COLS={COLS}",
+                        f"-DDLG_COLS={COLS}", f"-DDLG_MAXROWS={MAXROWS}", *diag,
                         "-I", os.path.join(ROOT, "asm")], check=True)
         subprocess.run([os.path.join(MARS, "sh-elf-ld"), "-T", ld, "-o", elf, o],
                        check=True, stderr=subprocess.DEVNULL)
@@ -106,9 +117,9 @@ def compile_payload(load_addr):
         syms = {l.split()[-1]: int(l.split()[0], 16) for l in nm.splitlines() if len(l.split()) == 3}
         assert syms["_decode"] == load_addr
         subprocess.run([os.path.join(MARS, "sh-elf-objcopy"), "-O", "binary", elf, binf], check=True)
-        return (open(binf, "rb").read(), syms["_frame"],
-                syms.get("_fontblock", 0), syms.get("_logger", 0),
-                syms.get("_statelog", 0), syms.get("_inputcompute", 0))
+        return (open(binf, "rb").read(), syms.get("_fontblock", 0),
+                syms.get("_inputcompute", 0), syms.get("_redraw_hook", 0),
+                syms.get("_print_hook", 0), syms.get("_row0_geom", 0))
 
 
 def build_chunk(d, jobs, stats):
@@ -151,7 +162,7 @@ def build_chunk(d, jobs, stats):
             out[off:off + jl] = _encode_trunc(clamp_text(B.wrap(en)), jl)
             stats["inplace_menu"] += 1
             continue
-        pos = add(encode_1byte_full(clamp_text(en, max_rows=MAXROWS, row=COLS)))
+        pos = add(encode_1byte_full(clamp_text(en, max_rows=None, row=COLS)))
         keys.append((off, jl, pos))
 
     if len(d) + len(blob) - ts <= 0xFFFF:        # blob fits the 16-bit text section
@@ -185,8 +196,8 @@ def _encode_trunc(en, slot):
 FONTUP_PTR = 0x1208                              # font-upload call pointer (-> 0x060b4530)
 
 
-def patched_index_main_l(entries, payload, frame_addr, fontblock_addr=0, logger_addr=0,
-                         statelog_addr=0, inputcompute_addr=0):
+def patched_index_main_l(entries, payload, fontblock_addr=0, inputcompute_addr=0,
+                         redraw_hook_addr=0, print_hook_addr=0, row0_geom_addr=0):
     """Stock MAIN_L with new chunk index (no speaker patch), then grown with the
     payload + decode/frame hooks."""
     d = bytearray(open(os.path.join(ROOT, "extracted/saturn/files/MAIN_L.BIN"), "rb").read())
@@ -210,24 +221,28 @@ def patched_index_main_l(entries, payload, frame_addr, fontblock_addr=0, logger_
     # Default: half-width via the glyph-cache substitution at font-upload (race-free).
     # The per-frame frame() renderer is a DEAD END (game overwrites it) — only hooked
     # if FONT=1 is forced, for reference. FONTSUB=0 disables the substitution.
-    if os.environ.get("FONT") == "1":
-        hooks.append((FRAME_PTR, struct.pack(">I", frame_addr)))
     if os.environ.get("FONTSUB", "1") == "1" and fontblock_addr:
         hooks.append((FONTUP_PTR, struct.pack(">I", fontblock_addr)))
         print(f"FONTSUB: half-width font @ font-upload ptr 0x{FONTUP_PTR:x} -> {fontblock_addr:#x}")
-    if os.environ.get("LOGGER") and logger_addr:      # dev: accumulate char->glyph-index map
-        hooks.append((FRAME_PTR, struct.pack(">I", logger_addr)))
-        print(f"LOGGER: map logger @ frame-sync ptr 0x{FRAME_PTR:x} -> {logger_addr:#x}")
-    if os.environ.get("STATELOG") and statelog_addr:  # dev: ring-log VM state var 0x060f2c04
-        hooks.append((FRAME_PTR, struct.pack(">I", statelog_addr)))
-        print(f"STATELOG: VM state ring @ frame-sync ptr 0x{FRAME_PTR:x} -> {statelog_addr:#x}")
-    if os.environ.get("PAGETEST") and inputcompute_addr:
-        # Trampoline the input-edge routine FUN_060b2134 (file 0x2134): overwrite its first
-        # 12 bytes with  mov.l @(1,pc),r0 ; jmp @r0 ; nop ; nop ; .long <inputcompute>.
-        # The caller BSR'd here, so PR holds the real return; our reimpl RTS's back to it.
-        stub = struct.pack(">HHHHI", 0xD001, 0x402B, 0x0009, 0x0009, inputcompute_addr)
-        d[0x2134:0x2134 + len(stub)] = stub
-        print(f"PAGETEST: FUN_060b2134 trampoline -> inputcompute {inputcompute_addr:#x}")
+    # PAGING is ON by default (disable with NOPAGE=1). Repoint the VM's dialogue-print
+    # command handler: the command jump table entry at 0x060e4fb0 (file 0x34fb0) holds
+    # FUN_060b8390 (print_dialogue = decode+lay+typewriter+wait). Point it at print_hook,
+    # which loops the original once per page so long English pages through the game's OWN
+    # synchronized pipeline (no buffer poking, no hang). See TRANSLATION_RULES.
+    if os.environ.get("NOPAGE") != "1" and print_hook_addr:
+        hooks.append((0x34fb0, struct.pack(">I", print_hook_addr)))
+        print(f"PAGING: VM print cmd 0x060e4fb0 -> print_hook {print_hook_addr:#x}")
+    if os.environ.get("NOPAGE") != "1" and row0_geom_addr:
+        # print_dialogue's row-0 X-write loop (file 0x8406..0x841d, 24 bytes) hardcodes a
+        # 14px pitch. Replace it with a call to row0_geom(), which picks 14px (JP speaker)
+        # or 8px (EN body) from the speaker flag. Trampoline: load addr, jsr, then bra over
+        # the literal to the untouched fill setup at 0x841e. r0-r7 are dead past the loop.
+        stub = struct.pack(">HHHHHIHHHHH",
+                           0xD002, 0x400B, 0x0009, 0xA007, 0x0009,   # mov.l @(2,pc),r0; jsr @r0; nop; bra 0x841e; nop
+                           row0_geom_addr,
+                           0x0009, 0x0009, 0x0009, 0x0009, 0x0009)   # literal, then nops
+        d[0x8406:0x8406 + len(stub)] = stub
+        print(f"ROW0GEOM: print_dialogue row-0 X-write -> row0_geom {row0_geom_addr:#x}")
     return sh2_inject.grow_main_l(bytes(d), payload, hooks=hooks)
 
 
@@ -274,17 +289,17 @@ def main():
     new_secs = len(datab) // 2048
     delta = new_secs - (MAIN_LBA - DATA_LBA)
 
-    payload, frame_addr, fontblock_addr, logger_addr, statelog_addr, inputcompute_addr = \
-        compile_payload(sh2_inject.RESIDENCY)
-    main_l = patched_index_main_l(entries, payload, frame_addr, fontblock_addr, logger_addr,
-                                  statelog_addr, inputcompute_addr)
+    payload, fontblock_addr, inputcompute_addr, redraw_hook_addr, print_hook_addr, \
+        row0_geom_addr = compile_payload(sh2_inject.RESIDENCY)
+    main_l = patched_index_main_l(entries, payload, fontblock_addr, inputcompute_addr,
+                                  redraw_hook_addr, print_hook_addr, row0_geom_addr)
     orig_main_secs = (sh2_inject.MAIN_L_END + 2047) // 2048
     main_secs = (len(main_l) + 2047) // 2048
     main_delta = main_secs - orig_main_secs
     total_delta = delta + main_delta
     print(f"records keyed {stats['keyed']} (skip_norec {stats['skip_norec']}, too_small {stats['too_small']})")
     print(f"DATA.BIN {new_secs} sec (delta {delta:+d}); MAIN_L delta {main_delta:+d}; "
-          f"payload {len(payload)}B; decode@{sh2_inject.RESIDENCY:#x} frame@{frame_addr:#x}")
+          f"payload {len(payload)}B; decode@{sh2_inject.RESIDENCY:#x}")
 
     src_t1 = os.path.join(SRC, "Snatcher (Japan) (Track 1).bin")
     dst_t1 = os.path.join(out_dir, "Snatcher (Japan) (Track 1).bin")

@@ -23,7 +23,11 @@ and ports an English script to it.
 | **Full script translated** | ✅ **12,836 / 12,836 lines (100%)**, all 36 scenes |
 | Speaker-name table → English | ✅ (pointer relocation, `tools/patch_speakers.py`) |
 | Proof-of-concept English in-game | ✅ renders on hardware-accurate emulation |
-| Half-width / proportional font | 🔜 in progress (presentation layer) |
+| Half-width (SegaCD-style) font | ✅ glyph-cache substitution at font-upload (`asm/full_hook.c`) |
+| **Full untruncated English dialogue** | ✅ **in-record paging** — long lines page (press A), nothing dropped |
+| Consistent dialogue geometry | ✅ 20/row, 2-row pages, half-width row-0 for no-speaker lines |
+| Menu labels (full English) | 🔜 next — copy-buffer decode detaches the blob (truncated for now) |
+| English speaker names | 🔜 needs a hang-safe address (not `0x060E71F0`) |
 | Voice dub port (from Sega CD) | 🔜 formats identified |
 | Packaging (xdelta / SSP patch) | 🔜 |
 

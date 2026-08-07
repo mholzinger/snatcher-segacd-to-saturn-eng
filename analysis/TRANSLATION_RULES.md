@@ -186,7 +186,15 @@ reach the draw (VERIFIED: post-hook savestate shows the game's srca, not ours).
   wiped to black once text passes the visible rows. `FUN_060b4730` is NOT a safe
   overflow handler. Clamp, never scroll.
 
-## 6b. Dialogue box geometry — WIDE layout  [PROVEN — commit f67cc2f, default build/engine]
+## 6b. Dialogue box geometry — WIDE layout  [SUPERSEDED — see §6e; 26/row is a TRAP]
+> **[TRAP] COLS=26 (the "wide" layout below) HARD-HANGS the game** on any line whose
+> row fills to a full 26 cells. The game's own text processor (`FUN_060b8148`, called
+> from the frame fn `FUN_060b55a0`) assumes the stock **20/row × 4-row** layout; a full
+> 26-cell row wedges the fill/frame path forever (no music, no advance). PROVEN
+> 2026-08-06 on stock `build/engine` (print_hook NOT installed) at the Mika line "The
+> chief is watching that camera feed too, you know." **Default is now COLS=20** (§6e).
+> The historical wide-layout notes below are kept for reference only.
+
 - **The render table `0x060e5358` is EXACTLY 80 cells** (12 bytes each: s2/s3 = glyph
   source written per-frame by the renderer `FUN_060b4970`; **s4=X (+8), s5=Y (+10)** =
   static geometry). Entry 80 is other UI — the table CANNOT be extended. Renderer walks
@@ -263,6 +271,48 @@ Found via mednafen SS debugger (SHIFT+R read-watch on the pad global):
 - Emulator gotchas learned: analog triggers mapped to Saturn L/R (`abs_4/abs_5`) rest as
   "held" -> Saturn boots to BIOS Memory Manager (unbind `ss.input.port1.gamepad.ls/rs`).
   Corrupt Saturn backup RAM (`~/.mednafen/sav/*.bkr/.bcr/.smpc`) also loops to BIOS.
+
+## 6e. In-record dialogue paging — SOLVED  [PROVEN — plays through, no hang, default build/engine]
+The whole point of the KEY+BLOB engine: show the FULL untruncated English, paging when
+a line overflows the box. Working since 2026-08-06. Three pieces, all in `asm/full_hook.c`
++ `tools/build_engine.py` (paging is ON by default; disable with `NOPAGE=1`).
+
+**1. `print_hook` — page through the game's OWN pipeline (no buffer poking).**
+- The VM's dialogue-print command is a jump-table entry at **`0x060e4fb0`** (file `0x34fb0`)
+  holding **`FUN_060b8390` = print_dialogue** (decode → lay text → typewriter → wait-for-A →
+  return; there is no separate "wait" opcode). Repoint that entry to `print_hook`.
+- `print_hook` just calls the original, then **loops it while decode reports pages pending**:
+  `orig_print(); while(*pend && --guard>0) orig_print();`. Each call is a full, *synchronized*
+  cycle in the VM's own context — so paging never touches the line buffer directly and never
+  races VDP1. (Snatcher is SINGLE-CPU — the slave SH-2 is held in reset, so this is not a
+  dual-CPU problem.)
+- **[TRAP] Everything that pokes the line buffer async DEADLOCKS.** Writing `0x060f28aa`
+  from the input hook, or copying page-2 over decode's out buffer, hangs the master spinning
+  at `0x06000952` (a deliberate `mask-IRQ; bf self` panic stub reached via CPU-exception
+  vectors). VDP1 is master-driven; async writes desync the frame-sync. Only the print
+  pipeline is safe. Cost: ~2 days. Don't repeat.
+
+**2. `decode()` is stateful — one page per call.** FRESH record: convert full text once,
+split into `DLG_MAXROWS`-row pages *in place* (¥ = `0x81 0x8f`), cache each page-start ptr;
+serve page 0. CONTINUING (same record ptr while pending): return the next cached page. Scratch
+above the payload: g_lastrec `0x060fffd8`, pending `0x060fffe4`, pageidx `0x060fffe8`, npages
+`0x060fffb0`, page ptrs[8] `0x060fffb4`.
+
+**3. Safe geometry — COLS=20, MAXROWS=2, row0_geom.**
+- **COLS=20** (not 26 — 26 hangs, §6b). **MAXROWS=2** always: the box is 4 rows (row 0 =
+  speaker, rows 1-2 = body, row 3 = margin). A 3-row body fills the box and the game reflows
+  it into a broken rows-{0,2,3}-with-a-gap layout AND drops the speaker. 2 is safe+clean;
+  paging shows the rest.
+- **`row0_geom` — row-0 pitch by speaker presence.** print_dialogue's own row-0 X loop
+  (file `0x8406..0x841d`, 24 bytes) hardcodes a **14px** pitch (right for FULL-WIDTH Japanese
+  speaker names, but it stretches HALF-WIDTH English badly when a no-speaker line's body lands
+  in row 0). Patch replaces that loop with a trampoline `jsr row0_geom; bra 0x841e`, and
+  `row0_geom()` picks pitch from the speaker flag **`0x060f2aae`**: set → 14px (X start 9),
+  clear → 8px (X start `0x13`, matching body rows). Menus use a DIFFERENT render path and are
+  NOT covered by this (see §8 menu note / open problems).
+- Residual cosmetic: 20/row + 2-row pages = shorter lines / more page-turns ("airy"). Legible;
+  tightening would need a safe COLS between 21-25 (untested vs the 26 hang) or SegaCD-fit
+  translations.
 
 ## 7. Getting English PAST the record byte budget
 
