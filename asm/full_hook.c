@@ -245,8 +245,14 @@ char __attribute__((section(".text.decode"))) *decode(char *p)
             text = p - roff;
             *g_text = text;
             is_dlg = 1;                          /* dialogue (not a menu copy) -> pageable */
-        } else {                                          /* HWRAM copy buffer */
-            text = *g_text;
+        } else {                                          /* HWRAM copy buffer (menu) */
+            /* Menus decode a DETACHED copy — no self-address. Use the LIVE chunk text
+             * base: *0x060fd164 is (text_base - 1) by the VM's convention (verified: the
+             * delta to the working g_text is a fixed 1, independent of the chunk's ts), so
+             * base = *0x060fd164 + 1. This is never stale, so keyed menu options resolve
+             * correctly even cross-chunk (fixes the old KEY_MIN_JL=6 regression). */
+            text = *(char **)0x060fd164u + 1;
+            (void)g_text;
         }
         start = text + boff;
     }

@@ -162,7 +162,7 @@ def compile_payload(load_addr):
                 syms.get("_menu_lay", 0))
 
 
-def build_chunk(d, jobs, stats):
+def build_chunk(d, jobs, stats, key_min_jl=None):
     """Overwrite translated records with keys; append dedup'd full-English blob
     inside the extended text section (the game loads by header h1, not the disc
     index). Records keep their offsets (no repoint). If the blob would push the
@@ -192,7 +192,11 @@ def build_chunk(d, jobs, stats):
     # drop options (commit 556210 regression). Keeping jl<16 records in-place makes
     # menus ORDERED + COMPLETE (truncated but correct). Full-length menus need the
     # per-chunk base fix (task #14 / TRANSLATION_RULES "MENU LIMITATION"), not this.
-    KEY_MIN_JL = 16
+    # Default 16 keeps short menu records in-place. Step B: KEY_MIN_JL=6 keys menu labels
+    # too — now safe because the menu decode path uses the LIVE chunk base (full_hook.c),
+    # not the stale cache that caused the old regression. A key is 6 bytes, so 6 is the
+    # floor; smaller records (single kanji jl=2) go through the [0x06] token table.
+    KEY_MIN_JL = key_min_jl if key_min_jl is not None else int(os.environ.get("KEY_MIN_JL", "16"))
     keys = []                                    # (off, jl, pos) to apply if we keep blob
     for off, en in jobs:
         if off not in recs:
@@ -334,11 +338,30 @@ def main():
                 (int(e["offset"], 16), e["en"]))
 
     stats = {k: 0 for k in ("keyed", "skip_norec", "too_small", "inplace_trunc", "big_chunk", "inplace_menu", "look_en")}
+    # AUTOKEY (default): per chunk, use the LOWEST KEY_MIN_JL that still fits the 64KB text
+    # section — so each chunk keys as many short records (menu labels!) as it can afford
+    # instead of a single global threshold. Set AUTOKEY=0 to use a fixed KEY_MIN_JL.
+    autokey = os.environ.get("AUTOKEY", "1") == "1"
+    floor = int(os.environ.get("KEY_MIN_JL", "6" if autokey else "16"))
     chunks = []
+    overflowed = []
     for i in range(N_CHUNKS):
         d = open(os.path.join(ROOT, f"extracted/saturn/data_bin/chunk_{i:03d}.bin"), "rb").read()
         if 21 <= i <= 59 and i in by_chunk:
-            d = build_chunk(d, sorted(by_chunk[i]), stats)
+            jobs = sorted(by_chunk[i])
+            picked = None
+            for kml in (range(floor, 17) if autokey else [floor]):
+                trial = {k: 0 for k in stats}
+                dd = build_chunk(d, jobs, trial, kml)
+                if not trial["big_chunk"]:            # fits the 64KB cap
+                    picked = (dd, trial); break
+            if picked is None:                         # even KEY_MIN_JL=16 overflows
+                trial = {k: 0 for k in stats}
+                dd = build_chunk(d, jobs, trial, 16)
+                picked = (dd, trial); overflowed.append(i)
+            d, ps = picked
+            for k in stats:
+                stats[k] += ps[k]
         chunks.append(d)
 
     entries, datab = [], bytearray()
@@ -360,6 +383,9 @@ def main():
     main_delta = main_secs - orig_main_secs
     total_delta = delta + main_delta
     print(f"records keyed {stats['keyed']} (skip_norec {stats['skip_norec']}, too_small {stats['too_small']})")
+    if overflowed:
+        print(f"*** 64KB OVERFLOW: {len(overflowed)} chunk(s) exceeded the text section and "
+              f"FELL BACK to in-place-truncated (labels truncate!): {overflowed}")
     print(f"DATA.BIN {new_secs} sec (delta {delta:+d}); MAIN_L delta {main_delta:+d}; "
           f"payload {len(payload)}B; decode@{sh2_inject.RESIDENCY:#x}")
 
