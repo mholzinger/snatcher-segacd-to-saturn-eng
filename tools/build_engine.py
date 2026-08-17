@@ -159,7 +159,7 @@ def compile_payload(load_addr):
         return (payload, syms.get("_fontblock", 0),
                 syms.get("_inputcompute", 0), syms.get("_redraw_hook", 0),
                 syms.get("_print_hook", 0), syms.get("_row0_geom", 0),
-                syms.get("_menu_lay", 0))
+                syms.get("_menu_lay", 0), syms.get("_menu_nav", 0))
 
 
 def build_chunk(d, jobs, stats, key_min_jl=None):
@@ -254,7 +254,7 @@ FONTUP_PTR = 0x1208                              # font-upload call pointer (-> 
 
 def patched_index_main_l(entries, payload, fontblock_addr=0, inputcompute_addr=0,
                          redraw_hook_addr=0, print_hook_addr=0, row0_geom_addr=0,
-                         menu_lay_addr=0):
+                         menu_lay_addr=0, menu_nav_addr=0):
     """Stock MAIN_L with new chunk index (no speaker patch), then grown with the
     payload + decode/frame hooks."""
     d = bytearray(open(os.path.join(ROOT, "extracted/saturn/files/MAIN_L.BIN"), "rb").read())
@@ -306,7 +306,18 @@ def patched_index_main_l(entries, payload, fontblock_addr=0, inputcompute_addr=0
     # 10-cell column. (Increment 1: no scroll — options past row 3 skipped.)
     if os.environ.get("MENU1COL") == "1" and menu_lay_addr:
         d[0x9720:0x9724] = struct.pack(">I", menu_lay_addr)
-        print(f"MENU1COL: topic-grid lay 0x060b47fc -> menu_lay {menu_lay_addr:#x}")
+        # Highlight bar: widen 10 -> 20 cells (full 1-col row). 0x060b49ee `add #10,r1`.
+        d[0x49ee], d[0x49ef] = 0x71, 0x14
+        # Cursor: NOP the 2-col Left/Right ±4 column-jump write-backs so nav is linear
+        # Up/Down only (0x060b4cbc / 0x060b4ce4, each `mov.w r1,@r9` = 29 11 -> nop 00 09).
+        d[0x4cbc], d[0x4cbd] = 0x00, 0x09
+        d[0x4ce4], d[0x4ce5] = 0x00, 0x09
+        # Cursor trampoline: repoint the nav handler literal (file 0x9740 -> 0x060b4c54) to
+        # menu_nav, which forces a re-render after each move so the text window scrolls.
+        if menu_nav_addr:
+            d[0x9740:0x9744] = struct.pack(">I", menu_nav_addr)
+        print(f"MENU1COL: topic-grid 1-col+scroll -> menu_lay {menu_lay_addr:#x} "
+              f"(highlight w=20, linear nav, scroll via menu_nav {menu_nav_addr:#x})")
     return sh2_inject.grow_main_l(bytes(d), payload, hooks=hooks)
 
 
@@ -374,10 +385,10 @@ def main():
     delta = new_secs - (MAIN_LBA - DATA_LBA)
 
     payload, fontblock_addr, inputcompute_addr, redraw_hook_addr, print_hook_addr, \
-        row0_geom_addr, menu_lay_addr = compile_payload(sh2_inject.RESIDENCY)
+        row0_geom_addr, menu_lay_addr, menu_nav_addr = compile_payload(sh2_inject.RESIDENCY)
     main_l = patched_index_main_l(entries, payload, fontblock_addr, inputcompute_addr,
                                   redraw_hook_addr, print_hook_addr, row0_geom_addr,
-                                  menu_lay_addr)
+                                  menu_lay_addr, menu_nav_addr)
     orig_main_secs = (sh2_inject.MAIN_L_END + 2047) // 2048
     main_secs = (len(main_l) + 2047) // 2048
     main_delta = main_secs - orig_main_secs

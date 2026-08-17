@@ -96,37 +96,6 @@ void __attribute__((section(".text.fontblock"))) fontblock(void)
         stampglyph(subidx[i], subchr[i]);
 }
 
-/* Trampoline replacement for the input-edge routine FUN_060b2134 (its first instruction
- * is patched to jmp here). Faithfully reimplements it: walks param_2 for the connected
- * pad, then for that pad sets current/prev/edge-pressed/edge-released in param_1[0..3].
- * THEN, for the DIALOGUE input struct (param_1 == 0x060f2710), masks the advance edge
- * (A=0x0400 | C=0x0200 | Start=0x0800) out of edge-pressed — so the advance-check that
- * runs right after sees no press. This is the correct injection point: after the edge is
- * computed, before it's read. (Test build masks unconditionally; real build gates on a
- * pending-page flag.) */
-void __attribute__((section(".text.pagehook")))
-inputcompute(unsigned short *p1, char *p2, int p3)
-{
-    if (p3 != 0) {
-        do {
-            if (*p2 == 0) break;
-            p3--; p2 += 4;
-        } while (p3 != 0);
-        if (p3 != 0) {
-            unsigned short *pv = p1 + 1;
-            *pv = *p1;                                          /* prev = current */
-            unsigned short cur = (unsigned short)~((unsigned short)(unsigned char)p2[3]
-                                 + (unsigned short)(unsigned char)p2[2] * 0x100);
-            *p1 = cur;                                          /* current (active high) */
-            p1[2] = (unsigned short)(~*pv & cur);               /* edge-pressed */
-            p1[3] = (unsigned short)(~*p1 & *pv);               /* edge-released */
-            return;
-        }
-    }
-    *p1 = 1;
-    p1[2] = 0;
-}
-
 /* Terminate the SJIS string `s` after `maxrows` rows (¥ = 0x81 0x8f = row break) and
  * return the start of the next page, or 0 if `s` was the last page. decode() output is
  * uniformly 2-byte SJIS, so we step 2 bytes per char. */
@@ -334,20 +303,49 @@ print_hook(int a4, int a5, int a6, int a7)
  * We lay each option across the FULL 20-cell row instead. idx is 1-based. A row = 80
  * bytes = 20 cells of 4 bytes ([SJIS:2][color:1][00]); write_cell(cell,ch,color) is the
  * game's own cell writer at 0x060b45b0 (color 7 = white; 0x889e = blank cell).
- * INCREMENT 1: no scroll yet — options past row 3 are skipped (safe: never writes past
- * the 80-cell line buffer, so no overflow hang). Scroll comes next. */
+ * SCROLL: only 4 rows fit the box, so for menus with >4 options we render a 4-row
+ * WINDOW that follows the selection (sel = *0x060f28a8, count = *0x060fd0c0): once the
+ * cursor passes row 3 the window scrolls so the selected option stays at the bottom row.
+ * Options outside the window are skipped (never writes past the 80-cell line buffer). */
 typedef void (*wcellfn)(unsigned, unsigned, int);
+typedef void (*clearrowfn)(int);
 void __attribute__((section(".text.pagehook")))
 menu_lay(int idx, unsigned short *text)
 {
     wcellfn wc = (wcellfn)0x060b45b0u;
-    int row = idx - 1;                                  /* 0-based; TODO: - scroll */
+    unsigned sel   = *(volatile unsigned short *)0x060f28a8u;   /* selected option index */
+    unsigned count = *(volatile unsigned *)0x060fd0c0u;         /* option count */
+    unsigned scroll = 0;
+    if (count > 4u && sel < count && sel > 3u) {
+        scroll = sel - 3u;                             /* keep the selection at row 3 */
+        if (scroll > count - 4u) scroll = count - 4u;
+    }
+    int row = (idx - 1) - (int)scroll;                 /* idx is 1-based */
     unsigned base, n;
-    if ((unsigned)row >= 4u) return;                    /* only 4 rows fit the box */
-    base = 0x060f28aau + (unsigned)row * 80u;           /* line buffer + row*20 cells */
-    for (n = 0; n < 20u; n++) wc(base + n * 4u, 0x889eu, 7);        /* clear the row */
-    for (n = 0; n < 20u && (text[n] & 0xff00u); n++)
-        wc(base + n * 4u, text[n], 7);                  /* lay up to 20 chars */
+    /* Point the game's highlight-start table (0x060b4950, indexed by selected idx) at this
+     * option's 1-col row so the blue bar tracks the scrolled list. The build widens the
+     * bar 10->20 cells and disables the 2-col Left/Right cursor jumps. */
+    if ((unsigned)(idx - 1) < 8u)
+        *(volatile int *)(0x060b4950u + (unsigned)(idx - 1) * 4u) = 20 * row;
+    if ((unsigned)row >= 4u) return;                   /* outside the visible window */
+    ((clearrowfn)0x060b48dcu)(row);                    /* game's own 20-cell row clear */
+    base = 0x060f28aau + (unsigned)row * 80u;          /* line buffer + row*20 cells */
+    for (n = 0; n < 20u && (text[n] & 0xff00u) && text[n] != 0x818fu; n++)
+        wc(base + n * 4u, text[n], 7);                 /* lay up to 20 chars, stop at ¥ */
+}
+
+/* Cursor-move trampoline for the topic menu's nav handler (orig 0x060b4c54, repointed via
+ * the literal at file 0x9740). The game lays the menu text ONCE (build-time), so a moving
+ * cursor just walks the highlight off the 4 visible rows without scrolling the text. After
+ * the real nav updates the selection, poke the menu sub-state (state+14 = 0x060f24be) back
+ * to 0 so the dispatcher RE-RENDERS next frame — menu_lay then re-runs with the new
+ * selection and the 4-row window scrolls to follow the cursor. */
+typedef void (*navfn)(int);
+void __attribute__((section(".text.pagehook")))
+menu_nav(int count)
+{
+    ((navfn)0x060b4c54u)(count);
+    *(volatile unsigned char *)0x060f24beu = 0;
 }
 
 /* Row-0 render-table geometry. print_dialogue's own row-0 X loop (patched to jsr here)
