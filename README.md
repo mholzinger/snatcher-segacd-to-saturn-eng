@@ -26,7 +26,10 @@ and ports an English script to it.
 | Half-width (SegaCD-style) font | ✅ glyph-cache substitution at font-upload (`asm/full_hook.c`) |
 | **Full untruncated English dialogue** | ✅ **in-record paging** — long lines page (press A), nothing dropped |
 | Consistent dialogue geometry | ✅ 20/row, 2-row pages, half-width row-0 for no-speaker lines |
-| Menu labels (full English) | 🔜 next — copy-buffer decode detaches the blob (truncated for now) |
+| Look/Investigate vocabulary | ✅ 83 extractor-missed single-token records → English via a payload table |
+| Menu labels (full English) | ✅ mostly — per-chunk auto-keying via the live chunk base (`0x060fd164`); 36/39 scenes full |
+| Menu labels — tight chunks | 🔜 chunks 22/24/42 exceed the 64 KB text-section cap; need menu-only keying |
+| 1-column menu layout + scroll | 🔧 in progress — full-width labels + highlight/nav confirmed; scroll under test (gated `MENU1COL=1`) |
 | English speaker names | 🔜 needs a hang-safe address (not `0x060E71F0`) |
 | Voice dub port (from Sega CD) | 🔜 formats identified |
 | Packaging (xdelta / SSP patch) | 🔜 |
