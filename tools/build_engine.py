@@ -221,6 +221,11 @@ def build_chunk(d, jobs, stats, key_min_jl=None):
             out[off], out[off + 1] = 0x06, LOOK_TOKEN_IDX[tok]
             stats["look_en"] += 1
 
+    # CAP: h1 (text-section length) must fit 16 bits. NOTE (2026-08-20): this is NOT
+    # sufficient near the top — chunk_022 at h1=0xffb6 (AUTOKEY kml=15) HARD-HANGS the
+    # boot at the lobby's first text access (mask-IRQ halt), while h1≈0xd6xx (KEY_MIN_JL
+    # =16) is proven fine. The loader's true limit is unknown (needs RE of the section
+    # loader that copies text to LWRAM 0x202e8001); until then AUTOKEY defaults OFF.
     if len(d) + len(blob) - ts <= 0xFFFF:        # blob fits the 16-bit text section
         for off, jl, pos in keys:
             roff, boff = off - ts, pos - ts      # both relative to ts, <64KB
@@ -352,7 +357,11 @@ def main():
     # AUTOKEY (default): per chunk, use the LOWEST KEY_MIN_JL that still fits the 64KB text
     # section — so each chunk keys as many short records (menu labels!) as it can afford
     # instead of a single global threshold. Set AUTOKEY=0 to use a fixed KEY_MIN_JL.
-    autokey = os.environ.get("AUTOKEY", "1") == "1"
+    # AUTOKEY defaults OFF (2026-08-20): it stuffs text sections toward 64KB, and h1 near
+    # the top (0xffb6) hard-hangs the boot — the loader's real ceiling is unknown (between
+    # ~0xd6xx proven-good and 0xffb6 proven-bad). Re-enable per-chunk once the section
+    # loader is RE'd and the true invariant is known.
+    autokey = os.environ.get("AUTOKEY", "0") == "1"
     floor = int(os.environ.get("KEY_MIN_JL", "6" if autokey else "16"))
     chunks = []
     overflowed = []
