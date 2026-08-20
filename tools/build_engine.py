@@ -361,7 +361,12 @@ def main():
         if 21 <= i <= 59 and i in by_chunk:
             jobs = sorted(by_chunk[i])
             picked = None
-            for kml in (range(floor, 17) if autokey else [floor]):
+            # chunk_021 is the SYSTEM scene (save/load, settings, boot flow): its short
+            # records ('System RAM', 'Quit game', save slots...) are consumed by the
+            # title/boot sequence, which chokes on KEY bytes -> boot hang (2026-08-20).
+            # Keep it at the proven jl>=16 threshold; AUTOKEY applies to scene chunks only.
+            floor_i = 16 if i == 21 else floor
+            for kml in (range(floor_i, 17) if autokey else [floor_i]):
                 trial = {k: 0 for k in stats}
                 dd = build_chunk(d, jobs, trial, kml)
                 if not trial["big_chunk"]:            # fits the 64KB cap
